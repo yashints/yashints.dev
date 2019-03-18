@@ -19,6 +19,7 @@ export const Popular = () => (
               timeToRead
               frontmatter {
                 title
+                unformattedDate: date
                 date(formatString: "MMM DD, YYYY")
                 path
                 thumbnail {

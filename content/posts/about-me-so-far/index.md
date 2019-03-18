@@ -2,7 +2,7 @@
 id: 0
 path: '/about-me-so-far'
 thumbnail: './setup.jpeg'
-date: 2016-12-02T16:45:01.889Z
+date: 2016-12-02T10:38:01.889Z
 edited: 2019-1-01T11:29:01.889Z
 next: '/istanbul-trip'
 title: 'About me so far...'

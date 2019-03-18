@@ -12,12 +12,17 @@ import {
   Info,
   StyledSpan,
 } from './styles'
+import Util from 'Util'
 
 export const CardPost = ({ node, landing }) => {
   const { theme } = useContext(ThemeContext)
+  const postPath = Util.getPostPath(
+    node.frontmatter.path,
+    node.frontmatter.unformattedDate
+  )
   return (
     <Item>
-      <Post onClick={() => navigate(node.frontmatter.path)} theme={theme}>
+      <Post onClick={() => navigate(postPath)} theme={theme}>
         <ArticleImg landing={landing}>
           <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
         </ArticleImg>

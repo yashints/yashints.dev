@@ -6,7 +6,8 @@ module.exports = `
     edges {
       node {
         frontmatter {
-          path
+          path,
+          date
         }
       }
     }

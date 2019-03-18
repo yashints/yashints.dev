@@ -11,7 +11,7 @@ import { Layout, SEO } from 'Common'
 
 export default () => (
   <Layout>
-    <SEO title="Hello world!" type="Organization" />
+    <SEO title="Personal site" type="Organization" />
     <Intro />
     <Skills />
     <Work />

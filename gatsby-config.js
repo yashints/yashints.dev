@@ -6,13 +6,13 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://smakosh.com',
+    siteUrl: config.url,
     rssMetadata: {
-      site_url: 'https://smakosh.com',
+      site_url: config.url,
       feed_url: `${config.url}${config.siteRss}`,
-      title: 'Smakosh | Blog',
+      title: 'Yashints | Blog',
       description: config.defaultDescription,
-      image_url: 'https://smakosh.com/static/favicon/logo-512.png',
+      image_url: `https://${config.url}/static/favicon/logo-512.png`,
       author: config.author,
       copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
     },
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://smakosh.com',
+        siteUrl: config.url,
       },
     },
     {
@@ -73,10 +73,10 @@ module.exports = {
                   description: edge.node.excerpt,
                   url:
                     site.siteMetadata.rssMetadata.site_url +
-                    edge.node.frontmatter.path,
+                    edge.frontmatter.path,
                   guid:
                     site.siteMetadata.rssMetadata.site_url +
-                    edge.node.frontmatter.path,
+                    edge.frontmatter.path,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })
@@ -178,8 +178,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Smakosh',
-        short_name: 'Smakosh',
+        name: config.defaultTitle,
+        short_name: config.shortName,
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
