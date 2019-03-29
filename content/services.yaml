@@ -1,12 +1,12 @@
-- title: Design System
-  icon: '/services/branding.svg'
-  description: Colors, fonts, typography, components... in one place and easy to access.
-- title: UI/UX Design
-  icon: '/services/uix.svg'
-  description: Good looking user interfaces with a good user experience for an affordable price.
-- title: Full Stack Development
-  icon: '/services/dev.svg'
-  description: Get your mvp up & running in less than a week built with the MERN stack, ask your early users for feedback before moving into the next steps
-- title: SEO & growth
-  icon: '/services/seo.svg'
-  description: Your ranking on search engines will improve and growth hacking strategies will be tested and reported to keep you ahead of your competitors
+- title: Public speaking
+  icon: "/services/speaking.svg"
+  description: Meetups, conferences, national, international, you name it. He is all in.
+- title: Blogging
+  icon: "/services/blogging.svg"
+  description: Although he lost many of his previous posts when there was an accident with a webserver, he has restarted and is continuing. Topics vary, but mostly web development related.
+- title: Web Development
+  icon: "/services/webdev.svg"
+  description: He is being involved in web development for more than 10 years. In short, he is in love with making web a better place for everyone.
+- title: Internet of Things (IoT)
+  icon: "/services/smart-home.svg"
+  description: IoT, smart homes, and what you can do with them is been a facinating story for him since the beginning. So he spends whatever time he's left with working on small little mini projects in this space.

@@ -5,14 +5,15 @@ module.exports = {
   url: 'http://localhost:8000',
   legalName: 'Yaser Adel Mehraban',
   shortName: 'Yaser',
+  siteGithubRepo: 'https://github.com/yashints/blog',
   defaultDescription:
     'A front end lead engineer, international speaker, blogger and a hiker.',
   socialLinks: {
     twitter: 'http://www.twitter.com/yashints',
     github: 'https://github.com/yashints',
-    linkedin: 'https://www.linkedin.com/in/ismail-ghallou-630149122',
-    youtube: 'https://www.youtube.com/user/smakoshthegamer',
-    google: 'https://plus.google.com/u/0/+IsmailSmakoshGhallou',
+    linkedIn: 'https://www.linkedin.com/in/yashints',
+    youtube: '',
+    google: '',
   },
   googleAnalyticsID: 'UA-107068383-4',
   themeColor: '#00c6ff',

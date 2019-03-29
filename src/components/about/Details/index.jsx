@@ -1,52 +1,30 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 import { Container, ThemeContext } from 'Common'
-import Envelope from 'Static/about/envelope.svg'
-import Phone from 'Static/about/phone.svg'
-import Marker from 'Static/about/marker.svg'
-import EnvelopeWhite from 'Static/about/envelope-white.svg'
-import PhoneWhite from 'Static/about/phone-white.svg'
-import MarkerWhite from 'Static/about/marker-white.svg'
-import { Wrapper, Img, P, DetailsContainer, Text } from './styles'
+
+import { Wrapper, Text } from './styles'
 
 export const Details = () => {
-	const { theme } = useContext(ThemeContext)
-	return (
-		<Wrapper as={Container}>
-			<Text theme={theme}>
-				I’m Ismail Ghallou, also known as Smakosh, I’m a self-taught Graphic,
-				UI/UX Designer and full stack JavaScript developer. I'm really
-				interested in Technology & solving technical problems. You can know more
-				about me by reading my <Link to="/blog">articles</Link>.
-			</Text>
-			<Text theme={theme}>
-				Currently I'm working remotely for{' '}
-				<a
-					href="https://obytes.com/?ref=smakosh"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Obytes
-				</a>{' '}
-				as a Front-end developer.
-			</Text>
-			<Text theme={theme}>
-				For business inquiries feel free to get in touch with me at:
-			</Text>
-			<DetailsContainer>
-				<P theme={theme}>
-					<Img src={theme === 'dark' ? EnvelopeWhite : Envelope} alt="email" />
-					ismai23l@hotmail.com
-				</P>
-				<P theme={theme}>
-					<Img src={theme === 'dark' ? PhoneWhite : Phone} alt="phone" />
-					+212 663-532761
-				</P>
-				<P theme={theme}>
-					<Img src={theme === 'dark' ? MarkerWhite : Marker} alt="address" />
-					Nr 23 Lot El Waha, Errachidia, Morocco
-				</P>
-			</DetailsContainer>
-		</Wrapper>
-	)
+  const { theme } = useContext(ThemeContext)
+  return (
+    <Wrapper as={Container}>
+      <Text theme={theme}>
+        Although it doesn’t look like it, Yaser is an almond croissant addict
+        cleverly disguised as a successful web developer. Since it was
+        relatively clear early on that it would be slightly more than difficult
+        to make a living out of thin air and sitting in a café eating a
+        croissant and drinking a cappuccino, he’s focused his energy on the web,
+        which happily has proven itself to be a wonderful decision.
+      </Text>
+      <Text theme={theme}>
+        Apart from that, he has a hunger for public speaking, hence a number of
+        talks in big conferences like NDC and Voxxed Days around the world under
+        his belt.
+      </Text>
+      <Text theme={theme}>
+        Progressive web apps, WebAssembly, Payment API, Web Share API, web
+        performance, you name it. He is all in.
+      </Text>
+    </Wrapper>
+  )
 }

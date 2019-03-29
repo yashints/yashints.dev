@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  text-align: left;
+  text-align: center;
   width: 100%;
   height: 100%;
 
@@ -30,10 +30,9 @@ export const Wrapper = styled.div`
 
 export const Grow = styled.div`
   height: 150px;
-  overflow: hidden;
 
   img {
-    width: 130px;
+    width: 150px;
     transition: all 0.2s ease-in-out;
     margin: 0 auto 1rem auto;
 
@@ -53,5 +52,8 @@ export const Grow = styled.div`
 `
 
 export const Title = styled.h4`
+  margin-top: 1em;
   font-weight: bold;
 `
+
+export const Description = styled.p``

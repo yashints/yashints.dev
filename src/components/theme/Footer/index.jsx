@@ -66,7 +66,7 @@ export const Footer = () => {
   ]
   return (
     <FooterContainer theme={theme}>
-      <FullContainer>
+      <FullContainer theme={theme}>
         <Wrapper as={Container}>
           <List>
             <li>

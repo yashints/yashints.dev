@@ -1,6 +1,8 @@
-- title: 'Graphic Design'
-  icon: '/skills/brand.svg'
-- title: 'UI/UX Design'
-  icon: '/skills/designer.svg'
-- title: 'Full stack development'
-  icon: '/skills/coder.svg'
+- title: "Web development"
+  icon: "/skills/webdev.svg"
+- title: "Full stack development"
+  icon: "/skills/fs.svg"
+- title: "Cloud"
+  icon: "/skills/cloud-computing.svg"
+- title: "IoT"
+  icon: "/skills/coffee-machine.svg"

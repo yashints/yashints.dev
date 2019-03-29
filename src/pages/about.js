@@ -18,12 +18,15 @@ export default () => (
       <Layout>
         <Container>
           <SEO title="About" type="Organization" location="/about" />
-          <PageTitle>About me</PageTitle>
+          <PageTitle>Who is this guy?</PageTitle>
           <Flex>
             <Details />
             <Portrait>
               <a href={data.AboutImage.fluid.src}>
-                <Img fluid={data.AboutImage.fluid} alt="just me chilling" />
+                <Img
+                  fluid={data.AboutImage.fluid}
+                  alt="Yaser Adel Mehraban's headshot"
+                />
               </a>
             </Portrait>
           </Flex>

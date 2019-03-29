@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 `
 
 export const Grow = styled.img`
-  width: 200px;
+  width: 128px;
   transition: all 0.2s ease-in-out;
   margin: 0 auto 1rem auto;
 

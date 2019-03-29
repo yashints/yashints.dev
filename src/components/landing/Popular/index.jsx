@@ -34,7 +34,7 @@ export const Popular = () => (
       }
     `}
     render={({ popular: { edges } }) => (
-      <Wrapper as={Container}>
+      <Wrapper id="popular" as={Container}>
         <Subtitle>Popular articles</Subtitle>
         <Row>
           {edges.map(post => (

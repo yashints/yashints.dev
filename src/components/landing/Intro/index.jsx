@@ -8,18 +8,17 @@ export const Intro = () => {
   const { theme } = useContext(ThemeContext)
   return (
     <Wrapper theme={theme} as={SmallerContainer}>
-      <h1>Meet {config.legalName}</h1>
+      <h1>Meet {config.shortName}</h1>
       <p>
-        Also known as {config.defaultTitle}, front-end lead engineer,
+        Also known as {config.defaultTitle}, a front-end lead engineer,
         international speaker, blogger, and hiker.
       </p>
       <Flex>
-        <MagicalButton
-          href="https://docs.google.com/document/d/1yxCORtBMNxj_ukgOxoYQfRu3HTUqjtNXwcMajzcftF8"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          View resume
+        <MagicalButton as={Link} to="#work">
+          Work
+        </MagicalButton>
+        <MagicalButton as={Link} to="#popular">
+          Popular articles
         </MagicalButton>
         <MagicalButton as={Link} to="/contact">
           Get In Touch

@@ -25,7 +25,7 @@ export const Services = () => {
 			render={({ services }) => (
 				<Wrapper theme={theme}>
 					<Container>
-						<h2>Services</h2>
+						<h2>Inetrests</h2>
 						<Grid>
 							{services.edges.map(({ node }) => (
 								<Service theme={theme} key={node.id} {...node} />
