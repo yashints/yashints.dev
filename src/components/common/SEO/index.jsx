@@ -128,7 +128,7 @@ export const SEO = ({
       <meta name="twitter:site" content={social.twitter} />
       <meta
         name="twitter:title"
-        content={title ? `Smakosh | ${title}` : defaultTitle}
+        content={title ? `Yashints | ${title}` : defaultTitle}
       />
       <meta
         name="twitter:description"

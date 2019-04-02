@@ -17,12 +17,11 @@ import {
   FullContainer,
   List,
   Brand,
-  StyledLogo,
   Social,
   Grow,
 } from './styles'
 
-import config from '../../../../data/config'
+import config from 'Data'
 
 export const Footer = () => {
   const { theme } = useContext(ThemeContext)
@@ -71,7 +70,6 @@ export const Footer = () => {
           <List>
             <li>
               <Brand as={Link} to="/">
-                <StyledLogo as={Logo} color="#fff" strokeWidth="2" />{' '}
                 {config.defaultTitle}
               </Brand>
             </li>

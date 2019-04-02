@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   margin-bottom: 1.45rem;
   color: #212121;
-  padding: 8rem 0 8rem 0;
+  padding: 4rem 0 4rem 0;
   clip-path: polygon(0% 14%, 100% 0, 100% 84%, 0 100%);
-  background: #f9f9f9;
+  background-color: #fff;
   text-align: center;
 
   @media (max-width: 680px) {
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
     theme === 'dark' &&
     `
 		color: #fff;
-		background: #2b2a2a;
+		background-color: inherit;
 	`}
 `
 

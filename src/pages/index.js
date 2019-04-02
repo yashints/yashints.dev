@@ -14,7 +14,6 @@ export default () => (
     <SEO title="Personal site" type="Organization" />
     <Intro />
     <Skills />
-    <Work />
     <Services />
     <Github />
     <Popular />

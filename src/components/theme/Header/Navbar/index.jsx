@@ -1,22 +1,37 @@
 import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import { Container, Logo, ThemeContext } from 'Common'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { Container, ThemeContext } from 'Common'
 import NavbarLinks from '../NavbarLinks'
-import { Wrapper, BrandLogo, Brand } from './styles'
+import { Wrapper, Brand, BrandLogo } from './styles'
 
 export default () => {
   const { theme } = useContext(ThemeContext)
   return (
-    <Wrapper as={Container}>
-      <Brand as={Link} theme={theme} to="/">
-        <BrandLogo
-          as={Logo}
-          color={theme === 'dark' ? '#fff' : '#212121'}
-          strokeWidth="2"
-        />
-        Yashints
-      </Brand>
-      <NavbarLinks desktop />
-    </Wrapper>
+    <StaticQuery
+      query={graphql`
+        query LogoImageQuery {
+          Logo: imageSharp(fluid: { originalName: { regex: "/logo.png/" } }) {
+            ...imageFields
+          }
+        }
+      `}
+      render={data => {
+        return (
+          <Wrapper as={Container}>
+            <Brand as={Link} theme={theme} to="/">
+              <BrandLogo>
+                <Img
+                  fluid={data.Logo.fluid}
+                  alt="Yaser Adel Mehraban's headshot"
+                />
+              </BrandLogo>
+              Yashints
+            </Brand>
+            <NavbarLinks desktop />
+          </Wrapper>
+        )
+      }}
+    />
   )
 }

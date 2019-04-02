@@ -1,7 +1,16 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
-import { Container, CardPost, Row, Subtitle, CustomButton } from 'Common'
+import { Container, CardPost, Row, Subtitle } from 'Common'
+import { MagicalButton } from '../../theme/shared-styles'
 import { Wrapper, Center } from './styles.js'
+
+export const imageFields = graphql`
+  fragment imageFields on ImageSharp {
+    fluid(maxWidth: 630) {
+      ...GatsbyImageSharpFluid_tracedSVG
+    }
+  }
+`
 
 export const Popular = () => (
   <StaticQuery
@@ -42,9 +51,9 @@ export const Popular = () => (
           ))}
         </Row>
         <Center>
-          <CustomButton>
-            <Link to="/blog/">See more</Link>
-          </CustomButton>
+          <MagicalButton as={Link} to="/blog/">
+            See more
+          </MagicalButton>
         </Center>
       </Wrapper>
     )}

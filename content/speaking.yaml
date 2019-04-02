@@ -1,0 +1,15 @@
+- title: NDC Oslo
+  image: '../src/assets/images/confs/front-oslo.jpg'
+  link: https://ndcoslo.com/talk/web-components-and-micro-apps-the-web-technologies-peacekeeper/
+  description: Micro apps and web components, the web technologies peacemaker
+  date: June 17 - 21 2019
+- title: VoxxedDays Australia Tour
+  image: '../src/assets/images/confs/VoxxedDays.jpg'
+  link: https://australia.voxxeddays.com/
+  description: Web assembly, post MVP future
+  date: May 17 2019
+- title: NDC Porto
+  image: '../src/assets/images/confs/front-oslo.jpg'
+  link: https://ndcporto.com
+  description: Need for speed 8, performance tuning of your web application
+  date: May 17 2019

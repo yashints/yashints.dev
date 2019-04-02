@@ -15,7 +15,11 @@ export const FullContainer = styled.div`
   width: 100%;
   padding: 2rem 0 1rem 0;
   color: #fff;
-  background-image: linear-gradient(10deg, #0072ff 0%, #00c6ff 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(34, 111, 190, 1) 0%,
+    rgba(35, 83, 138, 1) 100%
+  );
 
   ${({ theme }) =>
     theme === 'dark' &&
@@ -28,6 +32,12 @@ export const FullContainer = styled.div`
 export const List = styled.ul`
   list-style: none;
   align-self: center;
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    padding: 0 1rem;
+  }
 
   a {
     color: #fff;
