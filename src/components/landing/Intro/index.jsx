@@ -23,7 +23,7 @@ export const Intro = () => {
         , spending most of his time helping clients with architectural or
         development decisions in large scale web applications and SPAs. From ASP
         classic to Progressive Web Apps and Web Assembly (you can guess his age
-        at this point 😉) he's had a heck of a journey in web development world
+        at this point 😉) he's had a heck of a journey in the web development world
         so far.
       </p>
       <Flex>

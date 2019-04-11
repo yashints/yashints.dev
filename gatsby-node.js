@@ -43,6 +43,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         Theme: `${__dirname}/src/components/theme`,
         Data: `${__dirname}/data/config`,
         Util: `${__dirname}/src/util`,
+        Images: `${__dirname}/src/static/images`,
       },
     },
   })

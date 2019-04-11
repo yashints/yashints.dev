@@ -1,15 +1,101 @@
+
 - title: NDC Oslo
-  image: '../src/assets/images/confs/front-oslo.jpg'
+  image: '/speaking/front-oslo.jpg'
   link: https://ndcoslo.com/talk/web-components-and-micro-apps-the-web-technologies-peacekeeper/
   description: Micro apps and web components, the web technologies peacemaker
-  date: June 17 - 21 2019
+  date: June 17-21 2019
+  postDate: future
+  video: ''
+  slides: ''
+  code: ''
+
 - title: VoxxedDays Australia Tour
-  image: '../src/assets/images/confs/VoxxedDays.jpg'
+  image: '/speaking/VoxxedDays.jpg'
   link: https://australia.voxxeddays.com/
   description: Web assembly, post MVP future
-  date: May 17 2019
+  date: May 14-17 2019
+  postDate: future
+  video: ''
+  slides: ''
+  code: ''
+
 - title: NDC Porto
-  image: '../src/assets/images/confs/front-oslo.jpg'
+  image: '/speaking/porto.jpg'
   link: https://ndcporto.com
   description: Need for speed 8, performance tuning of your web application
-  date: May 17 2019
+  date: 26 Feb - 1st March 2019
+  postDate: past
+  video: https://www.youtube.com/watch?v=tUsbF6SuTZY&t=136s
+  slides: https://github.com/yashints/PublicSpeaking/blob/master/2019/Feb/NDCPorto/WebPerf.pptx
+  code: https://developers.google.com/web/fundamentals/performance/why-performance-matters/
+
+- title: Coder Academy
+  image: '/speaking/ca.png'
+  link: https://coderacademy.edu.au/
+  description: Career development
+  date: December 11 2018
+  postDate: past
+  video: ''
+  slides: ''
+  code: ''
+
+- title: VIC.Net Meetup
+  image: '/speaking/meetup.png'
+  link: https://www.meetup.com/en-AU/VIC-NET-Meetup/events/nscblpyxnbxb/
+  description: Need for speed 8, performance tuning of your web application
+  date: October 18 2018
+  postDate: past
+  video: ''
+  slides: ''
+  code: ''
+
+- title: NDC Sydney
+  image: '/speaking/ndcsyd.jpeg'
+  link: https://ndcsydney.com/talk/need-for-speed-8-performance-tuning-of-your-web-application/
+  description: Need for speed 8, performance tuning of your web application
+  date: Sep 17-21 2018
+  postDate: past
+  video: https://yas.fyi/2AJ9Z5Q
+  slides: https://github.com/yashints/PublicSpeaking/blob/master/2018/WebPerfTuning/WebPerfTuning.pdf
+  code: https://developers.google.com/web/fundamentals/performance/why-performance-matters/
+
+
+- title: DDD By night
+  image: ''
+  link: https://www.meetup.com/en-AU/DDD-Melbourne-By-Night/
+  description: Crafting makes your day
+  date: Aug 2nd 2018
+  postDate: past
+  video: ''
+  slides: ''
+  code: ''
+
+- title: Angular Melbourne
+  image: ''
+  link: https://www.meetup.com/Angular-Melbourne/
+  description: Angular service worker behind the scene
+  date: May 7th 2018
+  postDate: past
+  video: ''
+  slides: ''
+  code: ''
+
+- title: Voxxed Days Melbourne
+  image: ''
+  link: https://australia.voxxeddays.com/
+  description: Get your PWA ready with VueJs in no time
+  date: May 3rd 2018
+  postDate: past
+  video: ''
+  slides: ''
+  code: ''
+
+- title: Angular Melbourne
+  image: ''
+  link: https://www.meetup.com/Angular-Melbourne/
+  description: PWAs with Angular Service Worker
+  date: Feb 28 2018
+  postDate: past
+  video: ''
+  slides: ''
+  code: ''

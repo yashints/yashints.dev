@@ -1,47 +1,66 @@
-import React from 'react'
-import Img from 'gatsby-image'
+import React, { useContext } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, Container, SEO, PageTitle } from 'Common'
+import { Layout, Container, SEO, PageTitle, Talk, ThemeContext } from 'Common'
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        speaking: allSpeakingYaml {
-          edges {
-            node {
-              title
-              image
-              link
-              description
-              date
+export default () => {
+  const { theme } = useContext(ThemeContext)
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          speaking: allSpeakingYaml {
+            edges {
+              node {
+                title
+                image
+                link
+                description
+                date
+                postDate
+                video
+                slides
+                code
+              }
             }
           }
         }
-      }
-    `}
-    render={({ speaking }) => (
-      <Layout>
-        <Container>
-          <SEO title="Speaking" type="Organization" location="/speaking" />
-          <PageTitle>Speaking schedule</PageTitle>
-          {speaking.edges.map(({ node }) => (
-            <div key={node.title}>{node.title}</div>
-          ))}
-          <Flex />
-        </Container>
-      </Layout>
-    )}
-  />
-)
+      `}
+      render={({ speaking }) => {
+        const pastEvents = speaking.edges.filter(
+          x => x.node.postDate === 'past'
+        )
+        const futureEvents = speaking.edges.filter(
+          x => x.node.postDate === 'future'
+        )
 
-const Flex = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+        return (
+          <Layout>
+            <Container>
+              <SEO title="Speaking" type="Organization" location="/speaking" />
+              <PageTitle>Speaking schedule</PageTitle>
+              <H3 theme={theme}>Future</H3>
+              <HR />
+              <Talk talks={futureEvents} />
+              <H3 theme={theme}>Past</H3>
+              <HR />
+              <Talk talks={pastEvents} />
+            </Container>
+          </Layout>
+        )
+      }}
+    />
+  )
+}
 
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+const H3 = styled.h3`
+  ${({ theme }) =>
+    theme === 'dark' &&
+    `
+  color: #fff;
+`};
+`
+
+const HR = styled.hr`
+  margin-bottom: 0;
 `
