@@ -1,4 +1,4 @@
-# Smakosh.com
+# Yashints.dev
 
 My personal website
 
