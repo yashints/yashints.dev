@@ -31,8 +31,7 @@ module.exports = {
     zipCode: '3000',
   },
   contact: {
-    email: 'adel.mehrban@gmail.com',
-    phone: '+61451704664',
+    email: 'me@mehraban.com.au',
   },
   foundingDate: '2012',
 }

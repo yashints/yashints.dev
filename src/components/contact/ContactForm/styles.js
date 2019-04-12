@@ -1,49 +1,69 @@
 import styled from 'styled-components'
 
 export const ContactWrapper = styled.div`
-	padding: 2rem 0;
-	text-align: left;
+  text-align: left;
+
+  hr {
+    margin-top: 1rem;
+  }
+  form {
+    margin-top: 3rem;
+    padding: 3rem;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.6s 0.6s;
+
+    textarea {
+      margin-top: 1rem;
+    }
+  }
+  ${({ theme }) =>
+    theme === 'dark' &&
+    `
+		color: #fff;
+		hr {
+			background: rgb(255, 255, 255, 0.4);
+		}
+		a {
+			color: #6e9fef;
+		}
+		input, textarea {
+			background: #333;
+			color: #fff;
+		}
+	`};
 `
 
 export const Wrapper = styled.div`
-	margin-bottom: 2rem;
-
-	${({ theme }) =>
-		theme === 'dark' &&
-		`
-		color: #fff;
-	`};
+  margin-bottom: 1rem;
 `
 
 export const InputField = styled.div`
-	width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	box-sizing: border-box;
-	transition: all 0.2s ease;
-	text-align: left;
-	border-width: 1px;
-	border-color: #212121;
-	border-style: solid;
-	border-radius: 4px;
-	padding: 0.6rem 1rem;
-	-webkit-appearance: none;
-	color: #828282;
+  width: 100%;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  transition: transform 0.5s 0.6s;
+  -webkit-appearance: none;
+  color: #828282;
 
-	&:focus {
-		border-color: #212121;
-		transition: all 0.2s ease;
-	}
+  &:focus {
+    border-color: #212121;
+    transition: all 0.2s ease;
+  }
 
-	${({ error }) =>
-		error &&
-		`
+  ${({ error }) =>
+    error &&
+    `
 		border-color: red;
 	`};
 
-	${({ textarea }) =>
-		textarea &&
-		`
+  ${({ textarea }) =>
+    textarea &&
+    `
 		resize: vertical;
 		min-height: 8rem;
 		margin: 0;
@@ -51,17 +71,24 @@ export const InputField = styled.div`
 `
 
 export const Center = styled.div`
-	text-align: center;
+  text-align: center;
 `
 
 export const Error = styled.div`
-	color: red;
+  color: red;
 `
 
-export const Text = styled.h4`
-	${({ theme }) =>
-		theme === 'dark' &&
-		`
-		color: #fff;
-	`};
+export const Text = styled.div`
+  margin-bottom: 1rem;
 `
+export const StackedText = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+
+  svg {
+    margin-right: 20px;
+  }
+`
+
+export const Icon = styled.div``

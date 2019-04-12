@@ -59,15 +59,11 @@ export const Socials = () => {
         <Title theme={theme}>Need to get in touch?</Title>
         <P theme={theme}>
           <Img src={theme === 'dark' ? EnvelopeWhite : Envelope} alt="email" />
-          yaser@mehraban.com.au
-        </P>
-        <P theme={theme}>
-          <Img src={theme === 'dark' ? PhoneWhite : Phone} alt="phone" />
-          (+61) 451 704 664
+          {config.contact.email}
         </P>
         <P theme={theme}>
           <Img src={theme === 'dark' ? MarkerWhite : Marker} alt="address" />
-          Melbourne, Australia
+          {config.address.city}, {config.address.country}
         </P>
       </DetailsContainer>
       <DetailsContainer>

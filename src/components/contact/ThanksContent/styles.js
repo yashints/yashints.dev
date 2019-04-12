@@ -1,18 +1,18 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-	padding: 1rem 0;
-	margin-bottom: 7rem;
-	text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 16rem;
+  text-align: center;
+  height: 100%;
+  h2,
+  p {
+    color: #212121;
+  }
 
-	h2,
-	p {
-		color: #212121;
-	}
-
-	${({ theme }) =>
-		theme === 'dark' &&
-		`
+  ${({ theme }) =>
+    theme === 'dark' &&
+    `
     h2, p {
       color: #fff;
     }
