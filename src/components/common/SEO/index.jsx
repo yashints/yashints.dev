@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Thumbnail from 'Static/me.jpg'
 import {
   url,
+  rootUrl,
   defaultTitle,
   defaultDescription,
   social,
@@ -35,11 +36,7 @@ export const SEO = ({
 		"headline": "${description}",
 		"image": {
 			"@type": "imageObject",
-			"url": "${
-        cover
-          ? `https://yashints.dev${cover}`
-          : `https://yashints.dev${Thumbnail}`
-      }",
+			"url": "${cover ? `${url}${cover}` : `${url}${Thumbnail}`}",
 			"height": "600",
 			"width": "800"
 		},
@@ -59,7 +56,7 @@ export const SEO = ({
 			}
 		},
 		"description": "${description}",
-		"url": "${url}${location}/?ref=yashints.dev"
+		"url": "${url}${location}/?ref=${rootUrl}"
 	}`
 
   const structuredDataOrganization = `{ 
@@ -88,10 +85,8 @@ export const SEO = ({
 		},
 		"sameAs": [
 			"${socialLinks.twitter}",
-			"${socialLinks.google}",
-			"${socialLinks.youtube}",
-			"${socialLinks.linkedin}",
-			"${socialLinks.instagram}",
+			"${socialLinks.github}",			
+			"${socialLinks.linkedin}",			
 			"${socialLinks.github}"
 		]
   	}`
@@ -104,14 +99,14 @@ export const SEO = ({
         content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
 
-      <meta property="og:url" content={`${url}${location}/?ref=yashints.dev`} />
+      <meta property="og:url" content={`${url}${location}/?ref=${rootUrl}`} />
       <meta
         property="og:type"
         content={type === 'NewsArticle' ? 'NewsArticle' : 'website'}
       />
       <meta
         property="og:title"
-        content={title ? `Smakosh | ${title}` : defaultTitle}
+        content={title ? `${defaultTitle} | ${title}` : defaultTitle}
       />
       <meta
         property="og:description"
@@ -128,7 +123,7 @@ export const SEO = ({
       <meta name="twitter:site" content={social.twitter} />
       <meta
         name="twitter:title"
-        content={title ? `Yashints | ${title}` : defaultTitle}
+        content={title ? `${defaultTitle} | ${title}` : defaultTitle}
       />
       <meta
         name="twitter:description"
@@ -144,7 +139,7 @@ export const SEO = ({
           : structuredDataOrganization}
       </script>
       <link rel="publisher" href={socialLinks.google} />
-      <title>{title ? `Yashints | ${title}` : defaultTitle}</title>
+      <title>{title ? `${defaultTitle} | ${title}` : defaultTitle}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
   )

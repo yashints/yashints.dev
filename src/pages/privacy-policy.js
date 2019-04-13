@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout, SEO, Container } from 'Common'
+import { url, legalName, contact } from 'Data'
 
 export default () => (
   <Layout>
@@ -10,17 +11,17 @@ export default () => (
     />
     <Container>
       <h1>Privacy Policy</h1>
-      <p>Effective date: November 11, 2018</p>
+      <p>Effective date: November 11, 2016</p>
 
       <p>
-        Ai Hashtags ("us", "we", or "our") operates the https://smakosh.com
-        website and the Ai Hashtags mobile application (the "Service").
+        {legalName} ("us", "we", or "our") operates the {url}
+        website and the {legalName} mobile application (the "Service").
       </p>
 
       <p>
         This page informs you of our policies regarding the collection, use, and
         disclosure of personal data when you use our Service and the choices you
-        have associated with that data. Our Privacy Policy for Ai Hashtags is
+        have associated with that data. Our Privacy Policy for {legalName} is
         managed through{' '}
         <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator.php">
           Free Privacy Policy
@@ -117,7 +118,7 @@ export default () => (
 
       <h2>Use of Data</h2>
 
-      <p>Ai Hashtags uses the collected data for various purposes:</p>
+      <p>{legalName} uses the collected data for various purposes:</p>
       <ul>
         <li>To provide and maintain the Service</li>
         <li>To notify you about changes to our Service</li>
@@ -151,7 +152,7 @@ export default () => (
         information represents your agreement to that transfer.
       </p>
       <p>
-        Ai Hashtags will take all steps reasonably necessary to ensure that your
+        {legalName} will take all steps reasonably necessary to ensure that your
         data is treated securely and in accordance with this Privacy Policy and
         no transfer of your Personal Data will take place to an organization or
         a country unless there are adequate controls in place including the
@@ -162,12 +163,12 @@ export default () => (
 
       <h3>Legal Requirements</h3>
       <p>
-        Ai Hashtags may disclose your Personal Data in the good faith belief
+        {legalName} may disclose your Personal Data in the good faith belief
         that such action is necessary to:
       </p>
       <ul>
         <li>To comply with a legal obligation</li>
-        <li>To protect and defend the rights or property of Ai Hashtags</li>
+        <li>To protect and defend the rights or property of {legalName}</li>
         <li>
           To prevent or investigate possible wrongdoing in connection with the
           Service
@@ -274,12 +275,8 @@ export default () => (
         If you have any questions about this Privacy Policy, please contact us:
       </p>
       <ul>
-        <li>By email: ismai23l@hotmail.com</li>
-        <li>
-          By visiting this page on our website: https://smakosh.com/contact
-        </li>
-
-        <li>By phone number: +212663532761</li>
+        <li>By email: {contact.email}</li>
+        <li>By visiting this page on our website: {url}/contact</li>
       </ul>
     </Container>
   </Layout>

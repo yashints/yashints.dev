@@ -2,9 +2,9 @@
 
 My personal website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a5f007a0-0a92-4fbb-8218-d99087068d14/deploy-status)](https://app.netlify.com/sites/smakoshnew/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/42c5d017-5834-4ec5-bbe3-5c5a4a96fe08/deploy-status)](https://app.netlify.com/sites/yashintsdev/deploys)
 
-Built with [Gatsby](https://www.gatsbyjs.org/) and [more](https://github.com/smakosh/smakosh.com/blob/master/package.json#L6)
+Built with [Gatsby](https://www.gatsbyjs.org/) and [more](https://github.com/yashints/yashints.dev/blob/master/package.json)
 
 [Lighthouse test](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://yashints.dev)
 

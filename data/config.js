@@ -3,6 +3,7 @@ module.exports = {
   logo: 'https://yashints.dev/favicon/logo-48.png',
   author: 'Yaser Adel Mehraban (Yashints)',
   url: 'https://yashints.dev',
+  rootUrl: 'yashints.dev',
   legalName: 'Yaser Adel Mehraban',
   shortName: 'Yaser',
   siteGithubRepo: 'https://github.com/yashints/blog',
