@@ -1,4 +1,5 @@
 # Redirect domain aliases to primary domain
+https://www.yashints.dev/* https://yashints.dev/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://yashintsdev.netlify.com/* https://yashints.dev/:splat 301!
