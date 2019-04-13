@@ -3,8 +3,8 @@ id: 13
 path: '/2018-year-review'
 thumbnail: './2018.jpg'
 date: 2019-01-13T10:38:01.889Z
-edited:
-next: '/one-year-working-remotely'
+edited: 2019-01-13T10:38:01.889Z
+next: ''
 title: '2018 year review'
 popular: true
 ---

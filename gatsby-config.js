@@ -1,4 +1,4 @@
-const config = require('./data/Config')
+const config = require('./data/config')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -35,12 +35,6 @@ module.exports = {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
         fetchOptions: {},
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: process.env.MC_ENDPOINT,
       },
     },
     {
