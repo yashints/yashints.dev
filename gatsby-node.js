@@ -6,31 +6,24 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   try {
     const postTemplate = nodePath.resolve('src/templates/post.js')
 
-    // const res = await graphql(Queries)
-    // res.data.posts.edges.forEach(
-    //   ({
-    //     node: {
-    //       frontmatter: { path, date },
-    //     },
-    //   }) => {
-    //     const postPath = Util.getPostPath(path, date)
-    //     createPage({
-    //       path: postPath,
-    //       component: postTemplate,
-    //       context: {
-    //         postPath: path,
-    //         fullPath: postPath,
-    //       },
-    //     })
-    //   }
-    // )
     const res = await graphql(Queries)
-    res.data.posts.edges.forEach(({ node: { frontmatter: { path } } }) => {
-      createPage({
-        path: path,
-        component: postTemplate,
-      })
-    })
+    res.data.posts.edges.forEach(
+      ({
+        node: {
+          frontmatter: { path, date },
+        },
+      }) => {
+        const postPath = Util.getPostPath(path, date)
+        createPage({
+          path: postPath,
+          component: postTemplate,
+          context: {
+            postPath: path,
+            fullPath: postPath,
+          },
+        })
+      }
+    )
 
     if (res.errors) {
       throw new Error(res.errors)

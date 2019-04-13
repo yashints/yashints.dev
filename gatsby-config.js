@@ -1,4 +1,6 @@
 const config = require('./data/config')
+const nodePath = require('path')
+const Util = require(nodePath.resolve('src/util'))
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -63,14 +65,14 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
+                const postPath = Util.getPostPath(
+                  edge.node.frontmatter.path,
+                  edge.node.frontmatter.date
+                )
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
-                  url:
-                    site.siteMetadata.rssMetadata.site_url +
-                    edge.frontmatter.path,
-                  guid:
-                    site.siteMetadata.rssMetadata.site_url +
-                    edge.frontmatter.path,
+                  url: site.siteMetadata.rssMetadata.site_url + postPath,
+                  guid: site.siteMetadata.rssMetadata.site_url + postPath,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })

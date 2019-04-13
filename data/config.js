@@ -18,7 +18,7 @@ module.exports = {
   googleAnalyticsID: 'UA-107068383-4',
   themeColor: '#00c6ff',
   backgroundColor: '#00c6ff',
-  siteRss: '/rss.xml',
+  siteRss: '/rss',
   social: {
     twitter: 'yashints',
     linkedIn: 'yashints',

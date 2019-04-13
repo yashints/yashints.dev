@@ -33,8 +33,8 @@ export default ({ data: { post } }) => {
 }
 
 export const postQuery = graphql`
-  query($path: String!) {
-    post: markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($postPath: String!) {
+    post: markdownRemark(frontmatter: { path: { eq: $postPath } }) {
       html
       timeToRead
       frontmatter {
