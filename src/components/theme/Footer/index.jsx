@@ -43,14 +43,14 @@ export const Footer = () => {
     {
       id: 2,
       name: 'Linkedin',
-      link: config.socialLinks.linkedin,
+      link: config.socialLinks.linkedIn,
       icon: Linkedin,
       last: false,
     },
     {
       id: 3,
       name: 'Email',
-      link: config.contact.email,
+      link: `mailto:${config.contact.email}`,
       icon: EmailIcon,
       last: false,
     },
@@ -79,6 +79,9 @@ export const Footer = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
+              <Link to="/speaking">Speaking</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
             <li>
@@ -91,6 +94,7 @@ export const Footer = () => {
                 <Social
                   key={id}
                   target="_blank"
+                  title={name}
                   rel="noopener noreferrer"
                   aria-label={`follow me on ${name}`}
                   href={link}
