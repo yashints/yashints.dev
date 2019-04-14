@@ -2,13 +2,14 @@ import React, { useContext } from 'react'
 import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
 import { SocialShare, PageTitle, ThemeContext } from 'Common'
+import config from 'Data'
 import { ArticleWrapper, Back, Content, Comments, ArticleDate } from './styles'
 
 export const Post = ({ html, frontmatter, timeToRead }) => {
   const { theme } = useContext(ThemeContext)
-  const disqusShortName = 'https-smakosh-com'
+  const disqusShortName = `${config.defaultTitle.toLowerCase()}`
   const disqusConfig = {
-    url: `https://smakosh.com${frontmatter.fullPath}`,
+    url: `${config.url}${frontmatter.fullPath}`,
     identifier: frontmatter.id,
     title: frontmatter.title,
   }
