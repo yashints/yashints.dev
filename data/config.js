@@ -16,7 +16,7 @@ module.exports = {
     youtube: '',
     google: '',
   },
-  googleAnalyticsID: 'UA-107068383-4',
+  googleAnalyticsID: 'UA-107068383-5',
   themeColor: '#00c6ff',
   backgroundColor: '#00c6ff',
   siteRss: '/rss',
