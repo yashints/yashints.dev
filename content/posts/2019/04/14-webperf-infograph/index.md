@@ -1,17 +1,18 @@
 ---
 id: 13
 path: '/webperf-statistics-inforgraphic'
+author: Yaser Adel Mehraban
 thumbnail: './Website-Speed-IG.jpg'
 date: 2019-04-14T10:38:01.889Z
-edited: 2019-04-14T10:38:01.889Z
-next: ''
 title: 'Web performance statistics infographic'
 popular: true
+categories: [web, Performance Tuning]
+tags: [web, performance, page load time]
 ---
 
-# Context
-
 A while back, Nick Galov from [Hostingtribunal.com](https://hostingtribunal.com) contacted me to let me know they had created an inforgraphic photo for web performance statistics.
+
+<!--more-->
 
 This infographic contains some very useful statistics regarding page load time and some advice on where to focus for improvements.
 

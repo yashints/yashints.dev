@@ -9,6 +9,9 @@ export default ({ data: { post } }) => {
     post.frontmatter.path,
     post.frontmatter.date
   )
+  const thumbnail = post.frontmatter.thumbnail
+    ? post.frontmatter.thumbnail.childImageSharp.fluid.originalImg
+    : ''
   post.frontmatter.fullPath = postPath
   return (
     <Layout>
@@ -18,12 +21,7 @@ export default ({ data: { post } }) => {
           title={post.frontmatter.title}
           articleBody={post.html}
           datePublished={post.frontmatter.date}
-          dateModified={
-            post.frontmatter.edited
-              ? post.frontmatter.edited
-              : post.frontmatter.date
-          }
-          cover={post.frontmatter.thumbnail.childImageSharp.fluid.originalImg}
+          cover={thumbnail}
           location={postPath}
         />
         <Post {...post} />
@@ -40,11 +38,11 @@ export const postQuery = graphql`
       frontmatter {
         unformattedDate: date
         date(formatString: "MMMM DD, YYYY")
-        edited(formatString: "MMMM DD, YYYY")
         path
         title
-        next
         id
+        author
+        tags
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 700) {

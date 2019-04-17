@@ -23,14 +23,16 @@ export const Popular = () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 230)
               id
+              html
               timeToRead
               frontmatter {
                 title
                 unformattedDate: date
                 date(formatString: "MMM DD, YYYY")
                 path
+                tags
+                author
                 thumbnail {
                   childImageSharp {
                     ...imageFields

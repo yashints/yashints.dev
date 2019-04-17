@@ -29,7 +29,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       throw new Error(res.errors)
     }
   } catch (err) {
-    console.log(err)
+    console.error(err)
   }
 }
 

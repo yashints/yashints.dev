@@ -22,7 +22,6 @@ export const SEO = ({
   description,
   articleBody,
   datePublished,
-  dateModified,
   cover,
   location = '',
 }) => {
@@ -41,7 +40,7 @@ export const SEO = ({
 			"width": "800"
 		},
 		"datePublished": "${datePublished}",
-		"dateModified": "${dateModified}",
+		"dateModified": "${datePublished}",
 		"author": {
 			"@type": "Person",
 			"name": "${author}"

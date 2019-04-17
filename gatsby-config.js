@@ -81,7 +81,7 @@ module.exports = {
 							allMarkdownRemark(
 								sort: { order: DESC, fields: [frontmatter___date] }
 							) {
-								edges {
+								edges {                  
 									node {
 										excerpt
 										html
@@ -90,7 +90,7 @@ module.exports = {
 											path
 											date
 										}
-									}
+                  }
 								}
 							}
 						}`,
@@ -118,6 +118,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        excerpt_separator: `<!--more-->`,
         plugins: [
           {
             resolve: 'gatsby-remark-images',

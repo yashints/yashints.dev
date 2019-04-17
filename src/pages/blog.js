@@ -11,20 +11,32 @@ export default () => (
           limit: 20
         ) {
           edges {
+            previous {
+              frontmatter {
+                path
+              }
+            }
             node {
-              excerpt(pruneLength: 230)
               id
+              html
               timeToRead
               frontmatter {
                 title
                 unformattedDate: date
                 date(formatString: "MMM DD, YYYY")
                 path
+                author
+                tags
                 thumbnail {
                   childImageSharp {
                     ...imageFields
                   }
                 }
+              }
+            }
+            next {
+              frontmatter {
+                path
               }
             }
           }

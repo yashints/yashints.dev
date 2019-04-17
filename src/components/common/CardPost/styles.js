@@ -1,32 +1,22 @@
 import styled from 'styled-components'
 
 export const Item = styled.div`
-  max-width: 32%;
   width: 100%;
   margin-bottom: 1rem;
   height: 100%;
-
-  @media (max-width: 960px) {
-    max-width: 48%;
-  }
-
-  @media (max-width: 480px) {
-    max-width: 100%;
-  }
 `
 
 export const Post = styled.div`
   border-radius: 0.2rem;
   box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
   background: #fff;
-  cursor: pointer;
   transition: 0.7s;
-  height: 100%;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
   @media (max-width: 680px) {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 
   &:hover,
@@ -47,20 +37,14 @@ export const ArticleContent = styled.div`
 
   @media (max-width: 680px) {
     flex: 2;
-    overflow: hidden;
-    padding: 0 1rem;
+    padding: 1.5rem;
   }
 `
 
 export const ArticleImg = styled.div`
-  height: 300px;
+  width: 300px;
   overflow: hidden;
-
-  ${({ landing }) =>
-    landing &&
-    `
-		height: 200px;
-	`}
+  height: 200px;
 
   .gatsby-image-wrapper {
     height: 100%;
@@ -68,12 +52,7 @@ export const ArticleImg = styled.div`
 
   @media (max-width: 992px) {
     height: 300px;
-
-    ${({ landing }) =>
-      landing &&
-      `
-			height: 200px;
-		`}
+    display: none;
   }
 
   @media (max-width: 680px) {
@@ -85,13 +64,10 @@ export const ArticleImg = styled.div`
 
 export const ArticleTitle = styled.h2`
   color: #212121;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   @media (max-width: 680px) {
-    margin-bottom: 0.1rem;
-    font-size: 12pt;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 
   ${({ theme }) =>
@@ -103,14 +79,10 @@ export const ArticleTitle = styled.h2`
 
 export const Paragraph = styled.p`
   color: #616161;
-  height: 150px;
-  overflow-y: hidden;
 
   @media (max-width: 680px) {
-    height: 20px;
-    overflow-y: hidden;
-    margin-bottom: 0.1rem;
-    font-size: 10pt;
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
   ${({ theme }) =>
@@ -122,10 +94,13 @@ export const Paragraph = styled.p`
 
 export const Info = styled.i`
   color: #212121;
-  font-size: 0.8em;
+  font-size: 0.85em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
 
   @media (max-width: 680px) {
-    font-size: 0.6em;
+    flex-direction: column;
   }
 
   ${({ theme }) =>
@@ -136,5 +111,39 @@ export const Info = styled.i`
 `
 
 export const StyledSpan = styled.span`
-  margin-left: 10px;
+  margin-left: 20px;
+
+  @media (max-width: 680px) {
+    margin-left: 0;
+  }
+`
+
+export const TagWrapper = styled.span`
+  margin-left: 2rem;
+
+  @media (max-width: 680px) {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+`
+
+export const Tag = styled.span`
+  margin-right: 10px;
+  padding: 8px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 680px) {
+    margin-top: 5px;
+  }
+
+  ${({ theme }) =>
+    theme === 'dark' &&
+    `
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+	`};
 `
