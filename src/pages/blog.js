@@ -34,11 +34,6 @@ export default () => (
                 }
               }
             }
-            next {
-              frontmatter {
-                path
-              }
-            }
           }
         }
       }

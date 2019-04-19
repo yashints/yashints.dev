@@ -33,6 +33,11 @@ pre[class*='language-'] {
   background: #1d1f21;
 }
 
+:not(pre) > code[class='language-text'] {
+  color: white;
+  background-color: #2c497a;
+}
+
 /* Inline code */
 :not(pre) > code[class*='language-'] {
   padding: 0.1em;

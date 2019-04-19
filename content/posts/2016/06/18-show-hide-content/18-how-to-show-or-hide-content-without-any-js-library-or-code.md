@@ -1,8 +1,8 @@
 ---
 id: 1
-path: '/how-to-show-or-hide-content-without-any-js-library-or-code'
+path: '/how-to-show-or-hide-content-without-any-js-library-or-code/'
 title: 'How to show or hide content without any JS library or code'
-date: 2016-06-18T20:38:01.889Z
+date: 2016-06-18
 author: Yaser Adel Mehraban
 popular: false
 categories: [css, Html, JQuery, JS]

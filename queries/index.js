@@ -6,10 +6,17 @@ module.exports = `
     edges {
       previous {
         frontmatter {
-          path
+          path,
+          date
         }
       }
       node {
+        frontmatter {
+          path,
+          date
+        }
+      }
+      next {
         frontmatter {
           path,
           date

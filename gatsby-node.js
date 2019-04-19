@@ -9,17 +9,26 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     const res = await graphql(Queries)
     res.data.posts.edges.forEach(
       ({
+        previous,
         node: {
           frontmatter: { path, date },
         },
+        next,
       }) => {
         const postPath = Util.getPostPath(path, date)
+        const nextPostPath =
+          next && Util.getPostPath(next.frontmatter.path, next.frontmatter.date)
+        const prevPostPath =
+          previous &&
+          Util.getPostPath(previous.frontmatter.path, previous.frontmatter.date)
         createPage({
           path: postPath,
           component: postTemplate,
           context: {
             postPath: path,
             fullPath: postPath,
+            nextPost: nextPostPath,
+            previousPost: prevPostPath,
           },
         })
       }

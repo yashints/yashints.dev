@@ -23,6 +23,7 @@ export const CardPost = ({ node, landing }) => {
     node.frontmatter.path,
     node.frontmatter.unformattedDate
   )
+
   return (
     <Item>
       <Post theme={theme}>
@@ -45,7 +46,9 @@ export const CardPost = ({ node, landing }) => {
               <StyledSpan>{node.timeToRead} min</StyledSpan>
               <TagWrapper>
                 {node.frontmatter.tags.map(tag => (
-                  <Tag theme={theme}>{tag}</Tag>
+                  <Tag theme={theme} key={tag}>
+                    {tag}
+                  </Tag>
                 ))}
               </TagWrapper>
               {node.frontmatter.author !== config.legalName && (

@@ -1,8 +1,8 @@
 ---
 id: 2
-path: './ng-repeat-and-groupBy-filter'
+path: '/ng-repeat-and-groupby-filter/'
 title: 'ng-repeat and groupBy filter'
-date: 2016-06-18T20:38:01.889Z
+date: 2016-06-18
 author: Yaser Adel Mehraban
 popular: true
 categories: [Angular, Html, JS]

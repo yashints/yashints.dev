@@ -4,7 +4,7 @@ import { Layout, SmallerContainer, SEO, Post } from 'Common'
 import './highlight.scss'
 import Util from 'Util'
 
-export default ({ data: { post } }) => {
+export default ({ data: { post }, pageContext }) => {
   const postPath = Util.getPostPath(
     post.frontmatter.path,
     post.frontmatter.date
@@ -13,6 +13,8 @@ export default ({ data: { post } }) => {
     ? post.frontmatter.thumbnail.childImageSharp.fluid.originalImg
     : ''
   post.frontmatter.fullPath = postPath
+  post.frontmatter.nextPost = pageContext.nextPost
+  post.frontmatter.previousPost = pageContext.previousPost
   return (
     <Layout>
       <SmallerContainer>
@@ -43,6 +45,9 @@ export const postQuery = graphql`
         id
         author
         tags
+        img: thumbnail {
+          publicURL
+        }
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 700) {

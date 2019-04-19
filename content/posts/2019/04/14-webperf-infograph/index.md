@@ -2,7 +2,6 @@
 id: 13
 path: '/webperf-statistics-inforgraphic'
 author: Yaser Adel Mehraban
-thumbnail: './Website-Speed-IG.jpg'
 date: 2019-04-14T10:38:01.889Z
 title: 'Web performance statistics infographic'
 popular: true

@@ -1,20 +1,23 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  padding: 4rem 1rem;
+  padding: 2rem 7em;
 
   p {
-    color: gray;
     margin-bottom: 1rem;
     &:last-of-type {
       margin-bottom: 2rem;
     }
   }
 
+  @media (max-width: 680px) {
+    padding: 2rem 1rem;
+  }
+
   ${({ theme }) =>
     theme === 'dark' &&
     `
-			color: #fff;
+      color: #fff;
 	`}
 `
 
