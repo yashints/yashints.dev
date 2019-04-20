@@ -14,7 +14,7 @@ module.exports = {
       feed_url: `${config.url}${config.siteRss}`,
       title: 'Yashints | Blog',
       description: config.defaultDescription,
-      image_url: `https://${config.url}/static/favicon/logo-512.png`,
+      image_url: `https://${config.url}/static/favicon/logo-512x512.png`,
       author: config.author,
       copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
     },
@@ -125,6 +125,25 @@ module.exports = {
             options: {
               maxWidth: 1080,
               linkImagesToOriginal: true,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-custom-blocks',
+            options: {
+              blocks: {
+                danger: {
+                  classes: 'danger',
+                  title: 'optional',
+                },
+                warning: {
+                  classes: 'warning',
+                  title: 'optional',
+                },
+                info: {
+                  classes: 'info',
+                  title: 'optional',
+                },
+              },
             },
           },
           {

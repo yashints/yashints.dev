@@ -1,16 +1,18 @@
 ---
-layout: post
-title: "Are you facing docker version error?"
+title: 'Are you facing docker version error?'
 date: 2017-02-15 18:16
 author: Yaser Adel Mehraban
-comments: true
+popular: true
 categories: [docker]
 tags: [docker, docker-compose]
 ---
-I was working with my docker image for my pet project and suddenly got a message saying:
+
+I was working with my docker image for my pet project and suddenly got an error message:
+
 <!--more-->
-{: .box-error}
-**Error:** client version 1.22 is too old. Minimum supported API version is 1.24, please upgrade your client to a newer version.
+
+[[danger]]
+| client version 1.22 is too old. Minimum supported API version is 1.24, please upgrade your client to a newer version.
 
 I just opened a command line and typed:
 
@@ -39,13 +41,14 @@ Server:
 ```
 
 Turns out my current version is higher than the error version, so what is going on here.
-    
+
 The catch is the `docker-compose` file format has been versioned and therefore we should increment the version requested in the `docker.yml` file.
-    
+
 In any docker-compose file that is used with 1.24 or later version of the docker client, we should request version `2.1`.
-    
+
 So change your file to look like this and you should be good to go:
-```    
+
+```
 version: '2.1'
 
   services:

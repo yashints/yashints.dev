@@ -1,6 +1,15 @@
-exports.getPostPath = (path, date) => {
+exports.getPostPath = (title, date) => {
   const postDate = new Date(date)
   const month = `${postDate.getMonth() + 1}`.padStart(2, '0')
   const day = `${postDate.getDate()}`.padStart(2, '0')
-  return `/${postDate.getFullYear()}/${month}/${day}${path}`
+  const path = title
+    .toLowerCase()
+    .replace(/\(/g, '')
+    .replace(/\)/g, '')
+    .replace(/\?/g, '')
+    .replace(/\//g, '')
+    .replace(/\,/g, '')
+    .replace(/'/g, '')
+    .replace(/ /g, '-')
+  return `/blog/${postDate.getFullYear()}/${month}/${day}/${path}`
 }

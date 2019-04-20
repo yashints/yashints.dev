@@ -1,8 +1,14 @@
 import React, { useContext } from 'react'
 import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
-import { SocialShare, PageTitle, ThemeContext } from 'Common'
+import {
+  SocialShare,
+  PageTitle,
+  ThemeContext,
+} from 'Common'
 import Img from 'gatsby-image'
+import CalendarIcon from 'Static/icons/calendar.svg'
+import TimerIcon from 'Static/icons/stopwatch.svg'
 import config from 'Data'
 import {
   ArticleWrapper,
@@ -13,17 +19,22 @@ import {
   ArticleImg,
   Next,
   LinksWrapper,
+  PageSubtitle,
+  Author,
 } from './styles'
 
-export const Post = ({ html, frontmatter, timeToRead }) => {
+export const Post = ({
+  html,
+  frontmatter,
+  timeToRead,
+}) => {
   const { theme } = useContext(ThemeContext)
   const disqusShortName = `${config.defaultTitle.toLowerCase()}`
   const disqusConfig = {
-    url: `${config.url}${frontmatter.fullPath}`,
+    url: `${config.url}${frontmatter.path}`,
     identifier: frontmatter.id,
     title: frontmatter.title,
   }
-  console.log(frontmatter.img)
   return (
     <ArticleWrapper theme={theme}>
       {frontmatter.img && (
@@ -32,11 +43,42 @@ export const Post = ({ html, frontmatter, timeToRead }) => {
         </ArticleImg>
       )}
       <PageTitle>{frontmatter.title}</PageTitle>
+      <PageSubtitle>
+        {frontmatter.subtitle}
+      </PageSubtitle>
       <ArticleDate>
-        <i>{frontmatter.date} -</i>
+        <img
+          src={CalendarIcon}
+          width="24px"
+          height="24px"
+          alt="Published"
+          title="Published on"
+        />
+        <i>{frontmatter.date}</i>
+        <img
+          src={TimerIcon}
+          width="24px"
+          height="24px"
+          alt="Time to read"
+          title="Time to read"
+        />
         <i>{timeToRead} min read</i>
       </ArticleDate>
-      <Content dangerouslySetInnerHTML={{ __html: html }} />
+      {frontmatter.author !==
+        config.legalName && (
+        <Author>
+          <img
+            width="48px"
+            height="48px"
+            src={frontmatter.gravatar}
+            alt={frontmatter.author}
+          />
+          {frontmatter.author}
+        </Author>
+      )}
+      <Content
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
       <SocialShare {...frontmatter} />
       <LinksWrapper theme={theme}>
         <Back>

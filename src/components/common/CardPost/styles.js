@@ -34,6 +34,7 @@ export const Post = styled.div`
 
 export const ArticleContent = styled.div`
   padding: 1rem;
+  flex: auto;
 
   @media (max-width: 680px) {
     flex: 2;
@@ -42,9 +43,9 @@ export const ArticleContent = styled.div`
 `
 
 export const ArticleImg = styled.div`
-  width: 300px;
+  width: 250px;
+  min-width: 250px;
   overflow: hidden;
-  height: 200px;
 
   .gatsby-image-wrapper {
     height: 100%;
@@ -64,6 +65,10 @@ export const ArticleImg = styled.div`
 
 export const ArticleTitle = styled.h2`
   color: #212121;
+
+  a {
+    color: inherit;
+  }
 
   @media (max-width: 680px) {
     margin-bottom: 1rem;
@@ -97,7 +102,13 @@ export const Info = styled.i`
   font-size: 0.85em;
   font-weight: 600;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  img {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
 
   @media (max-width: 680px) {
     flex-direction: column;
@@ -110,8 +121,10 @@ export const Info = styled.i`
 	`};
 `
 
-export const StyledSpan = styled.span`
+export const StyledSpan = styled.div`
   margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
 
   @media (max-width: 680px) {
     margin-left: 0;
@@ -122,9 +135,9 @@ export const TagWrapper = styled.span`
   margin-left: 2rem;
 
   @media (max-width: 680px) {
-    margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem 0;
   }
 `
 

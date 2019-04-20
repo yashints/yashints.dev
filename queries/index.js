@@ -5,20 +5,23 @@ module.exports = `
   ) {
     edges {
       previous {
-        frontmatter {
-          path,
+        frontmatter {          
           date
+          path
+          title
         }
       }
       node {
         frontmatter {
-          path,
+          title
+          path
           date
         }
       }
       next {
         frontmatter {
-          path,
+          title
+          path
           date
         }
       }

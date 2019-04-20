@@ -1,20 +1,32 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Layout, SmallerContainer, SEO, Post } from 'Common'
+import {
+  Layout,
+  SmallerContainer,
+  SEO,
+  Post,
+} from 'Common'
 import './highlight.scss'
 import Util from 'Util'
 
-export default ({ data: { post }, pageContext }) => {
+export default ({
+  data: { post },
+  pageContext,
+}) => {
   const postPath = Util.getPostPath(
-    post.frontmatter.path,
+    !post.frontmatter.path
+      ? post.frontmatter.title
+      : post.frontmatter.path,
     post.frontmatter.date
   )
   const thumbnail = post.frontmatter.thumbnail
-    ? post.frontmatter.thumbnail.childImageSharp.fluid.originalImg
+    ? post.frontmatter.thumbnail.childImageSharp
+        .fluid.originalImg
     : ''
-  post.frontmatter.fullPath = postPath
+  post.frontmatter.path = postPath
   post.frontmatter.nextPost = pageContext.nextPost
-  post.frontmatter.previousPost = pageContext.previousPost
+  post.frontmatter.previousPost =
+    pageContext.previousPost
   return (
     <Layout>
       <SmallerContainer>
@@ -24,6 +36,9 @@ export default ({ data: { post }, pageContext }) => {
           articleBody={post.html}
           datePublished={post.frontmatter.date}
           cover={thumbnail}
+          canonical_url={
+            post.frontmatter.canonical_url
+          }
           location={postPath}
         />
         <Post {...post} />
@@ -33,17 +48,21 @@ export default ({ data: { post }, pageContext }) => {
 }
 
 export const postQuery = graphql`
-  query($postPath: String!) {
-    post: markdownRemark(frontmatter: { path: { eq: $postPath } }) {
+  query($title: String!) {
+    post: markdownRemark(
+      frontmatter: { title: { eq: $title } }
+    ) {
       html
       timeToRead
       frontmatter {
         unformattedDate: date
         date(formatString: "MMMM DD, YYYY")
-        path
         title
+        subtitle
         id
         author
+        gravatar
+        canonical_url
         tags
         img: thumbnail {
           publicURL

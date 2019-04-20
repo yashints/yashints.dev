@@ -1,6 +1,4 @@
 ---
-id: 11
-path: '/getting-to-know-webpack/'
 title: 'Getting to know webpack'
 date: 2016-09-11
 author: Yaser Adel Mehraban
@@ -72,7 +70,7 @@ Following loaders are all used to deal with static resources like css, fonts, im
 
 I think you can easily find the use of other loaders on the [webpack](https://webpack.github.io/docs/) documentation repository.
 
-### add script to `package.json` to run `webpack-dev-server` with node
+### Add script to `package.json` to run `webpack-dev-server` with node
 
 Add this to scripts section of your `package.json`:
 
@@ -267,7 +265,7 @@ Long setup nah?
 
 Believe me this is the last one. You can now type `npm start` to run the project and see the result.
 
-```ps
+```bash
 npm start
 ```
 

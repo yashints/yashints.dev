@@ -11,25 +11,52 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       ({
         previous,
         node: {
-          frontmatter: { path, date },
+          frontmatter: { title, path, date },
         },
         next,
       }) => {
-        const postPath = Util.getPostPath(path, date)
+        const postPath = Util.getPostPath(!path ? title : path, date)
         const nextPostPath =
-          next && Util.getPostPath(next.frontmatter.path, next.frontmatter.date)
+          next &&
+          Util.getPostPath(
+            !next.frontmatter.path
+              ? next.frontmatter.title
+              : next.frontmatter.path,
+            next.frontmatter.date
+          )
         const prevPostPath =
           previous &&
-          Util.getPostPath(previous.frontmatter.path, previous.frontmatter.date)
+          Util.getPostPath(
+            !previous.frontmatter.path
+              ? previous.frontmatter.title
+              : previous.frontmatter.path,
+            previous.frontmatter.date
+          )
         createPage({
           path: postPath,
           component: postTemplate,
           context: {
-            postPath: path,
-            fullPath: postPath,
+            title: title,
             nextPost: nextPostPath,
             previousPost: prevPostPath,
           },
+        })
+
+        // Create blog post list pages
+        const postsPerPage = 10
+        const numPages = Math.ceil(res.data.posts.edges.length / postsPerPage)
+
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+            component: nodePath.resolve('./src/templates/blog-list.js'),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1,
+            },
+          })
         })
       }
     )

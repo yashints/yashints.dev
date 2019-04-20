@@ -11,7 +11,7 @@ export default () => {
     <StaticQuery
       query={graphql`
         query LogoImageQuery {
-          Logo: imageSharp(fluid: { originalName: { regex: "/logo.png/" } }) {
+          Logo: imageSharp(fluid: { originalName: { eq: "logo.png" } }) {
             ...imageFields
           }
         }

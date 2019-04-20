@@ -154,4 +154,4 @@ Well ES6 is not currently supported by all browsers and also those who does supp
 
 Here there are a couple of options but apparently best of which is Babel (which is a compiler). You can run it as a standalone tool or use with your build system. There are Babel [plugins](http://babeljs.io/docs/setup) for Grunt, Gulp and webpack (again my favourite).
 
-![babel](/img/posts/babel.png)
+![babel](./babel.png)

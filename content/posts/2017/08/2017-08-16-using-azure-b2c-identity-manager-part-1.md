@@ -1,22 +1,27 @@
 ---
-layout: post
-title: "Using Azure B2C as your identity manager (Part 1)"
-date: 2017-08-16 20:59
+path: 'using-azure-b2c-identity-manager-part-1/'
+title: 'Using Azure B2C as your identity manager (Part 1)'
+date: 2017-08-16
 author: Yaser Adel Mehraban
-comments: true
+popular: true
 categories: [aspnetcore, Azure B2C]
 tags: [angular 2, aspnetcore, authentication, azure, b2c, idm, mfa]
-image: /img/posts/b2c.png
+thumbnail: './b2c.png'
 ---
-This article is one of the two part series I wrote on how to use Azure B2C as your identity manager.
+
+Flexibility is a key part of Azure Active Directory B2C. Use built-in policies to create a login experience in minutes. For more complex scenarios, use our identity experience framework to build custom policies.
+
 <!--more-->
-You can find [part 2 here.](/2017-08-21-using-azure-b2c-identity-manager-part-2/)
+
+This article is one of the two part series I wrote on how to use Azure B2C as your identity manager.
+
+You can find [part 2 here.](/blog/2017/08/21/using-azure-b2c-identity-manager-part-2/)
 
 [Full source code on Github.](https://github.com/yashints/Angular4AzureB2C)
 
 A while ago I was engaged in a front end project using Asp.Net Core and Angular 2. At some point we decided to integrate our application with Azure B2C as our identity management aka IDM.
 
-In a nutshell, Azure B2C allows us to let users sign in with their own email address as their username compared to Azure Active Directory (AD) in which you have to have an email with the domain associated with your tenant. 
+In a nutshell, Azure B2C allows us to let users sign in with their own email address as their username compared to Azure Active Directory (AD) in which you have to have an email with the domain associated with your tenant.
 
 It also supports social login and multi factor authentication (MFA), learn more about it with [this short video](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication).
 
@@ -34,13 +39,13 @@ You will need an application in order to talk to the login endpoint provided by 
 
 The below picture demonstrates the screen you will need to fill in.
 
-![New B2C App](/img/posts/b2c-new-app-settings.png)
+![New B2C App](./b2c-new-app-settings.png)
 
 The most important things you will need at the end of these steps are the **application Id** and **secret key** which you will generate on the keys menu. Also make sure the reply URL is pointing to where you handle the login callback (either on client or server side).
 
 ## Setup MFA
 
-The only thing that you cannot do through the new Azure portal is to create the MFA, which you can do via the [classic portal](https://manage.windowsazure.com/). The instructions to setup the MFA can be found here. 
+The only thing that you cannot do through the new Azure portal is to create the MFA, which you can do via the [classic portal](https://manage.windowsazure.com/). The instructions to setup the MFA can be found here.
 
 Unfortunately the soft tokens are not available with the default MFA settings (you will need a [MFA server](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started)), but you can use SMS or email verification.
 
@@ -52,7 +57,8 @@ You can simply get started by using one of sign-in or sign-up policies. This [ar
 
 After you setup the policies you can check the metadata endpoint by hitting metadata URL (replace the tenant and policy with yours):
 
-    https://login.microsoftonline.com/your-tenant-domain-qualifier/v2.0/.well-known/openid-configuration?p=your-policy-name
+[[info]]
+| https://login.microsoftonline.com/your-tenant-domain-qualifier/v2.0/.well-known/openid-configuration?p=your-policy-name
 
 You can find the same link at the bottom of the policy details page where you can test the policy alone.
 

@@ -33,6 +33,16 @@ export const ArticleWrapper = styled.div`
       blockquote {
         color: #fff;
       }
+
+      .custom-block {
+        &.info, &.error, &.warning {
+          box-shadow: 0 5px 5px rgba(255,255,255,0.15), 0 2px 2px rgba(255,255,255,0.15);
+          border-top-color: #444;
+          border-bottom-color: #444;
+          border-right-color: #444;
+          background-color: #444;
+        }   
+      }
 	`};
 `
 
@@ -49,7 +59,8 @@ export const LinksWrapper = styled.div`
     border-radius: 5px;
     background-color: #f1f1f1;
     color: #000;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+      0 3px 6px rgba(0, 0, 0, 0.23);
     span {
       position: relative;
       top: -3px;
@@ -71,8 +82,31 @@ export const Back = styled.div``
 export const Next = styled.div``
 
 export const Content = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 2rem;
+
+  .gatsby-resp-image-wrapper {
+    margin-left: unset !important;
+  }
+`
+
+export const PageSubtitle = styled.h3`
+  font-weight: 400;
+  margin-bottom: 3rem;
+`
+
+export const Author = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: #a7a7a7;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 `
 
 export const Comments = styled.div`
@@ -85,6 +119,10 @@ export const ArticleDate = styled.div`
   text-align: center;
   margin-top: -1rem;
   margin-bottom: 1rem;
+
+  img {
+    margin: 0 0.8rem;
+  }
 
   i {
     font-size: 0.9em;
