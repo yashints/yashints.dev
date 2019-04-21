@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Layout, SEO, SmallerContainer } from 'Common'
+import NotFound from 'Static/404/404.gif'
+import {
+  Layout,
+  SEO,
+  SmallerContainer,
+} from 'Common'
 
 export default () => (
   <Layout>
@@ -12,13 +17,21 @@ export default () => (
       description="404 page not found"
     />
     <Center as={SmallerContainer}>
-      <h1>404 PAGE NOT FOUND</h1>
-      <Link to="/">Go Back Home</Link>
+      <img
+        src={NotFound}
+        alt="404 page not found"
+      />
+      <Link to="/">
+        Go back home, it's much safer there...
+      </Link>
     </Center>
   </Layout>
 )
 
 const Center = styled.div`
-  padding: 4rem 0;
+  padding: 1rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
