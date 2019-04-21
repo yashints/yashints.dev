@@ -27,7 +27,7 @@ export const SocialShare = ({
         <RedditIcon
           round
           size={iconSize}
-          iconBgStyle={{ fill: 'grey' }}
+          iconBgStyle={{ fill: '#333' }}
         />
       </RedditShareButton>
       <TwitterShareButton
@@ -38,7 +38,7 @@ export const SocialShare = ({
         <TwitterIcon
           round
           size={iconSize}
-          iconBgStyle={{ fill: 'grey' }}
+          iconBgStyle={{ fill: '#333' }}
         />
       </TwitterShareButton>
       <LinkedinShareButton
@@ -48,7 +48,7 @@ export const SocialShare = ({
         <LinkedinIcon
           round
           size={iconSize}
-          iconBgStyle={{ fill: 'grey' }}
+          iconBgStyle={{ fill: '#333' }}
         />
       </LinkedinShareButton>
     </Wrapper>
