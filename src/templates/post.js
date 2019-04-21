@@ -13,17 +13,11 @@ export default ({
   data: { post },
   pageContext,
 }) => {
-  const postPath = Util.getPostPath(
-    !post.frontmatter.path
-      ? post.frontmatter.title
-      : post.frontmatter.path,
-    post.frontmatter.date
-  )
   const thumbnail = post.frontmatter.thumbnail
     ? post.frontmatter.thumbnail.childImageSharp
         .fluid.originalImg
     : ''
-  post.frontmatter.path = postPath
+  post.postPath = pageContext.postPath
   post.frontmatter.nextPost = pageContext.nextPost
   post.frontmatter.previousPost =
     pageContext.previousPost
@@ -39,7 +33,7 @@ export default ({
           canonical_url={
             post.frontmatter.canonical_url
           }
-          location={postPath}
+          location={pageContext.postPath}
         />
         <Post {...post} />
       </SmallerContainer>

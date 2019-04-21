@@ -27,14 +27,16 @@ export const Post = ({
   html,
   frontmatter,
   timeToRead,
+  postPath,
 }) => {
   const { theme } = useContext(ThemeContext)
   const disqusShortName = `${config.defaultTitle.toLowerCase()}`
   const disqusConfig = {
-    url: `${config.url}${frontmatter.path}`,
+    url: `${config.url}${postPath}`,
     identifier: frontmatter.id,
     title: frontmatter.title,
   }
+
   return (
     <ArticleWrapper theme={theme}>
       {frontmatter.img && (
@@ -79,7 +81,10 @@ export const Post = ({
       <Content
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <SocialShare {...frontmatter} />
+      <SocialShare
+        title={frontmatter.title}
+        path={postPath}
+      />
       <LinksWrapper theme={theme}>
         <Back>
           {frontmatter.nextPost && (
