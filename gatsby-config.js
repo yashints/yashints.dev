@@ -14,9 +14,13 @@ module.exports = {
       feed_url: `${config.url}${config.siteRss}`,
       title: 'Yashints | Blog',
       description: config.defaultDescription,
-      image_url: `https://${config.url}/static/favicon/logo-512x512.png`,
+      image_url: `https://${
+        config.url
+      }/static/favicon/logo-512x512.png`,
       author: config.author,
-      copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
+      copyright: `${
+        config.defaultTitle
+      } © ${new Date().getFullYear()}`,
     },
   },
   plugins: [
@@ -34,7 +38,9 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+          Authorization: `bearer ${
+            process.env.GITHUB_TOKEN
+          }`,
         },
         fetchOptions: {},
       },
@@ -63,19 +69,43 @@ module.exports = {
 				}`,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                const postPath = Util.getPostPath(
-                  edge.node.frontmatter.path,
-                  edge.node.frontmatter.date
-                )
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  url: site.siteMetadata.rssMetadata.site_url + postPath,
-                  guid: site.siteMetadata.rssMetadata.site_url + postPath,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
-                })
-              })
+            serialize: ({
+              query: { site, allMarkdownRemark },
+            }) => {
+              return allMarkdownRemark.edges.map(
+                edge => {
+                  const postPath = Util.getPostPath(
+                    !edge.node.frontmatter.path
+                      ? edge.node.frontmatter
+                          .title
+                      : edge.node.frontmatter
+                          .path,
+                    edge.node.frontmatter.date
+                  )
+                  return Object.assign(
+                    {},
+                    edge.node.frontmatter,
+                    {
+                      description:
+                        edge.node.excerpt,
+                      url:
+                        site.siteMetadata
+                          .rssMetadata.site_url +
+                        postPath,
+                      guid:
+                        site.siteMetadata
+                          .rssMetadata.site_url +
+                        postPath,
+                      custom_elements: [
+                        {
+                          'content:encoded':
+                            edge.node.html,
+                        },
+                      ],
+                    }
+                  )
+                }
+              )
             },
             query: `{
 							allMarkdownRemark(
@@ -128,7 +158,8 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-custom-blocks',
+            resolve:
+              'gatsby-remark-custom-blocks',
             options: {
               blocks: {
                 danger: {
@@ -147,9 +178,11 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-responsive-iframe',
+            resolve:
+              'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem',
+              wrapperStyle:
+                'margin-bottom: 1.0725rem',
             },
           },
           'gatsby-remark-prismjs',

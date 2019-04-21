@@ -2,14 +2,26 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, Container, SEO, PageTitle } from 'Common'
-import { Details, Socials } from 'Components/about'
+import {
+  Layout,
+  Container,
+  SEO,
+  PageTitle,
+} from 'Common'
+import {
+  Details,
+  Socials,
+} from 'Components/about'
 
 export default () => (
   <StaticQuery
     query={graphql`
       query AboutImageQuery {
-        AboutImage: imageSharp(fluid: { originalName: { regex: "/me.jpg/" } }) {
+        AboutImage: imageSharp(
+          fluid: {
+            originalName: { eq: "me.jpg" }
+          }
+        ) {
           ...imageFields
         }
       }
@@ -17,7 +29,11 @@ export default () => (
     render={data => (
       <Layout>
         <Container>
-          <SEO title="About" type="Organization" location="/about" />
+          <SEO
+            title="About"
+            type="Organization"
+            location="/about"
+          />
           <PageTitle>Who is this guy?</PageTitle>
           <Flex>
             <Details />
@@ -25,7 +41,7 @@ export default () => (
               <a href={data.AboutImage.fluid.src}>
                 <Img
                   fluid={data.AboutImage.fluid}
-                  alt="Yaser Adel Mehraban's headshot"
+                  alt="Yaser Adel Mehraban's photo"
                 />
               </a>
             </Portrait>

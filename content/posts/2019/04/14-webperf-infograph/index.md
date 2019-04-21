@@ -4,7 +4,7 @@ path: '/webperf-statistics-inforgraphic'
 author: Yaser Adel Mehraban
 date: 2019-04-14T10:38:01.889Z
 title: 'Web performance statistics infographic'
-popular: true
+popular: false
 categories: [web, Performance Tuning]
 tags: [web, performance, page load time]
 ---

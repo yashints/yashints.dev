@@ -18,6 +18,10 @@ export const Wrapper = styled.div`
     theme === 'dark' &&
     `
       color: #fff;
+
+      a {
+        color: #adad2e;
+      }
 	`}
 `
 

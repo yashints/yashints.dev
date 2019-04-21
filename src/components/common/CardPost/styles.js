@@ -28,7 +28,11 @@ export const Post = styled.div`
   ${({ theme }) =>
     theme === 'dark' &&
     `
-			background: #2b2a2a;
+      background: #2b2a2a;
+      
+      a {
+        color: #adad2e;
+      }
 	`};
 `
 

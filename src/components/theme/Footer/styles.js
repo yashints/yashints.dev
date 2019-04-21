@@ -7,7 +7,11 @@ export const FooterContainer = styled.footer`
     theme === 'dark' &&
     `
 		margin-top: 0;
-		background: #212121;
+    background: #212121;
+    
+    a {
+      color: #adad2e;
+    }
 	`};
 `
 

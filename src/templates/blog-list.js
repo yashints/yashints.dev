@@ -10,23 +10,41 @@ import {
   PostsPagination,
 } from 'Common'
 
-export default ({ data, pageContext, location }) => {
+export default ({
+  data,
+  pageContext,
+  location,
+}) => {
   const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage =
-    currentPage - 1 === 1 ? '/blog' : `/blog/${(currentPage - 1).toString()}`
-  const nextPage = `/blog/${(currentPage + 1).toString()}`
+    currentPage - 1 === 1
+      ? '/blog'
+      : `/blog/${(currentPage - 1).toString()}`
+  const nextPage = `/blog/${(
+    currentPage + 1
+  ).toString()}`
 
   return (
     <Layout>
       <Container>
-        <SEO title="Blog" type="Organization" location={location.pathName} />
+        <SEO
+          title="Blog"
+          type="Organization"
+          location={location.pathName}
+        />
         <PageTitle>Articles</PageTitle>
+        <br />
         <Row>
-          {data.allMarkdownRemark.edges.map(post => (
-            <CardPost key={post.node.id} {...post} />
-          ))}
+          {data.allMarkdownRemark.edges.map(
+            post => (
+              <CardPost
+                key={post.node.id}
+                {...post}
+              />
+            )
+          )}
         </Row>
         <PostsPagination
           isFirst={isFirst}
@@ -42,7 +60,10 @@ export default ({ data, pageContext, location }) => {
 export const pageQuery = graphql`
   query BlogPageQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: {
+        order: DESC
+        fields: [frontmatter___date]
+      }
       limit: $limit
       skip: $skip
     ) {
