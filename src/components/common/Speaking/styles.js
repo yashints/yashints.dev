@@ -1,4 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  @media (max-width: 680px) {
+    padding: 2rem;
+  }
+`;
 
 export const H3 = styled.h3`
   ${({ theme }) =>
@@ -6,7 +12,11 @@ export const H3 = styled.h3`
     `
   color: #fff;
 `};
-`
+
+  @media (max-width: 680px) {
+    text-align: center;
+  }
+`;
 
 export const HR = styled.hr`
   margin-bottom: 0;
@@ -15,4 +25,4 @@ export const HR = styled.hr`
     `
 			color: #fff;
 	`};
-`
+`;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const DetailsContainer = styled.div`
   &:last-of-type {
@@ -6,11 +6,14 @@ export const DetailsContainer = styled.div`
   }
 
   @media (max-width: 960px) {
+    padding: 2rem;
+    text-align: center;
+
     &:last-of-type {
       margin-left: 0;
     }
   }
-`
+`;
 
 export const Wrapper = styled.div`
   margin-top: 2rem;
@@ -18,9 +21,11 @@ export const Wrapper = styled.div`
   display: flex;
 
   @media (max-width: 960px) {
+    margin-top: 0;
+    padding-top: 0;
     flex-direction: column;
   }
-`
+`;
 
 export const Title = styled.h2`
   margin-bottom: 3rem;
@@ -34,11 +39,11 @@ export const Title = styled.h2`
     `
 		color: #fff;
 	`}
-`
+`;
 
 export const Img = styled.img`
   margin-right: 0.6rem;
-`
+`;
 
 export const P = styled.p`
   display: flex;
@@ -48,8 +53,12 @@ export const P = styled.p`
     theme === 'dark' &&
     `
 		color: #fff;
-	`};
-`
+  `};
+
+  @media (max-width: 680px) {
+    padding-left: 2rem;
+  }
+`;
 
 export const Text = styled.p`
   color: #212121;
@@ -59,8 +68,8 @@ export const Text = styled.p`
     theme === 'dark' &&
     `
 		color: #fff;
-	`};
-`
+  `};
+`;
 
 export const Social = styled.div`
   display: grid;
@@ -88,7 +97,12 @@ export const Social = styled.div`
 
   @media (max-width: 680px) {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
-`
+`;

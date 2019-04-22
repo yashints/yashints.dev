@@ -1,35 +1,39 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-	text-align: center;
-	padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 
-	${({ theme }) =>
-		theme === 'dark' &&
-		`
+  @media (max-width: 680px) {
+    display: none;
+  }
+
+  ${({ theme }) =>
+    theme === 'dark' &&
+    `
 			background: #212121;
 			color: #fff;
   `};
-`
+`;
 
 export const Links = styled.div`
-	margin: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	@media (max-width: 960px) {
-		flex-direction: column;
-	}
-`
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
 
 export const Item = styled.img`
-	margin: 0 0.2rem;
+  margin: 0 0.2rem;
 
-	${({ img }) =>
-		img &&
-		`
+  ${({ img }) =>
+    img &&
+    `
 		position: relative;
 		top: .15rem;
 	`};
-`
+`;

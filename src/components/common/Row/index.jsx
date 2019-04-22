@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Row = styled.div`
   display: flex;
@@ -15,4 +15,8 @@ export const Row = styled.div`
       content: unset;
     }
   }
-`
+
+  @media (max-width: 960px) {
+    padding: 2rem;
+  }
+`;

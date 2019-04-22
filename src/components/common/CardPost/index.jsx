@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
-import CalendarIcon from 'Static/icons/calendar.svg'
-import TimerIcon from 'Static/icons/stopwatch.svg'
-import { ThemeContext } from 'Common'
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import CalendarIcon from 'Static/icons/calendar.svg';
+import TimerIcon from 'Static/icons/stopwatch.svg';
+import { ThemeContext } from 'Common';
 import {
   Item,
   Post,
@@ -15,44 +15,59 @@ import {
   StyledSpan,
   Tag,
   TagWrapper,
-} from './styles'
-import config from 'Data'
-import Util from 'Util'
+  PublishInfo,
+} from './styles';
+import config from 'Data';
+import Util from 'Util';
 
 export const CardPost = ({ node, landing }) => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   const postPath = Util.getPostPath(
-    !node.frontmatter.path ? node.frontmatter.title : node.frontmatter.path,
+    !node.frontmatter.path
+      ? node.frontmatter.title
+      : node.frontmatter.path,
     node.frontmatter.unformattedDate
-  )
+  );
 
   return (
     <Item>
       <Post theme={theme}>
         {node.frontmatter.thumbnail && (
           <ArticleImg landing={landing}>
-            <Img fluid={node.frontmatter.thumbnail.childImageSharp.fluid} />
+            <Img
+              fluid={
+                node.frontmatter.thumbnail
+                  .childImageSharp.fluid
+              }
+            />
           </ArticleImg>
         )}
         <ArticleContent>
           <ArticleTitle theme={theme}>
-            <Link to={postPath}>{node.frontmatter.title}</Link>
+            <Link to={postPath}>
+              {node.frontmatter.title}
+            </Link>
           </ArticleTitle>
           <Paragraph
             theme={theme}
             dangerouslySetInnerHTML={{
-              __html: node.html.split('<!--more-->')[0],
+              __html: node.html.split(
+                '<!--more-->'
+              )[0],
             }}
           />
-          <Info>
-            <Info theme={theme}>
-              <img
-                src={CalendarIcon}
-                width="24px"
-                alt="Published"
-                title="Published on"
-              />
-              {node.frontmatter.date}
+
+          <Info theme={theme}>
+            <PublishInfo>
+              <StyledSpan>
+                <img
+                  src={CalendarIcon}
+                  width="24px"
+                  alt="Published"
+                  title="Published on"
+                />
+                {node.frontmatter.date}
+              </StyledSpan>
               <StyledSpan>
                 <img
                   src={TimerIcon}
@@ -62,21 +77,27 @@ export const CardPost = ({ node, landing }) => {
                 />
                 {node.timeToRead} min
               </StyledSpan>
-              <TagWrapper>
-                {node.frontmatter.tags.slice(0, 3).map(tag => (
+            </PublishInfo>
+            <TagWrapper>
+              {node.frontmatter.tags
+                .slice(0, 3)
+                .map(tag => (
                   <Tag theme={theme} key={tag}>
                     {tag}
                   </Tag>
                 ))}
-              </TagWrapper>
-              {node.frontmatter.author !== config.legalName && (
-                <StyledSpan>Author: {node.frontmatter.author}</StyledSpan>
-              )}
-            </Info>
+            </TagWrapper>
+            {node.frontmatter.author !==
+              config.legalName && (
+              <StyledSpan>
+                Author: {node.frontmatter.author}
+              </StyledSpan>
+            )}
+
             <Link to={postPath}>Read more</Link>
           </Info>
         </ArticleContent>
       </Post>
     </Item>
-  )
-}
+  );
+};

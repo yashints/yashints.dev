@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 7em;
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   }
 
   @media (max-width: 680px) {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
 
   ${({ theme }) =>
@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
         color: #adad2e;
       }
 	`}
-`
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -32,4 +32,4 @@ export const Flex = styled.div`
   @media (max-width: 380px) {
     flex-direction: column;
   }
-`
+`;

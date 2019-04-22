@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   padding: 1rem 0 2rem 0;
-`
+`;
 
 export const Card = styled.div`
   flex: 0 0 15%;
@@ -17,7 +17,8 @@ export const Card = styled.div`
     margin-top: 15px;
   }
 
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
   img {
@@ -33,18 +34,23 @@ export const Card = styled.div`
       box-shadow: 0 2px 1px -1px rgba(255, 255, 255, 0.2), 0 1px 1px 0 rgba(255, 255, 255, 0.14),
     0 1px 3px 0 rgba(255, 255, 255, 0.12);
 	`};
-`
+`;
+
+export const CardLink = styled.a`
+  cursor: pointer;
+  color: inherit;
+`;
 
 export const CardHeader = styled.div`
   font-weight: 700;
   padding: 1rem;
-`
+`;
 
 export const CardDescription = styled.div`
   font-size: 0.9em;
   padding: 1rem;
   margin-bottom: auto;
-`
+`;
 
 export const CardDate = styled.div`
   display: flex;
@@ -58,7 +64,7 @@ export const CardDate = styled.div`
   img {
     margin-right: 10px;
   }
-`
+`;
 
 export const CardActions = styled.div`
   display: flex;
@@ -70,9 +76,9 @@ export const CardActions = styled.div`
     margin: 10px;
     cursor: pointer;
   }
-`
+`;
 
 export const Grow = styled.div`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-`
+`;

@@ -1,17 +1,17 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
+import React from 'react';
+import Img from 'gatsby-image';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 import {
   Layout,
   Container,
   SEO,
   PageTitle,
-} from 'Common'
+} from 'Common';
 import {
   Details,
   Socials,
-} from 'Components/about'
+} from 'Components/about';
 
 export default () => (
   <StaticQuery
@@ -51,7 +51,7 @@ export default () => (
       </Layout>
     )}
   />
-)
+);
 
 const Flex = styled.div`
   display: flex;
@@ -60,12 +60,13 @@ const Flex = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding: 2rem;
   }
-`
+`;
 
 const Portrait = styled.div`
   position: relative;
   flex: 1;
   width: 100%;
   padding-left: 0.5rem;
-`
+`;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   margin-bottom: 1.45rem;
@@ -14,7 +14,9 @@ export const Wrapper = styled.div`
   text-align: center;
 
   @media (max-width: 680px) {
-    padding: 12rem 0 14rem 0;
+    clip-path: unset;
+    padding: 0 2rem;
+    margin-bottom: 0;
   }
 
   ${({ theme }) =>
@@ -27,7 +29,7 @@ export const Wrapper = styled.div`
       color: #adad2e;
     }
 	`}
-`
+`;
 
 export const Grid = styled.div`
   padding: 2rem 0;
@@ -44,4 +46,4 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
-`
+`;

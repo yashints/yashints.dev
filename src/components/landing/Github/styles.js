@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   margin-bottom: 1.45rem;
@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
   background: #f9f9f9;
   text-align: center;
 
+  @media (max-width: 680px) {
+    padding: 14rem 1rem 18rem 1rem;
+    margin-bottom: 0;
+  }
+
   ${({ theme }) =>
     theme === 'dark' &&
     `
@@ -23,4 +28,4 @@ export const Wrapper = styled.div`
       color: #adad2e;
     }
 	`}
-`
+`;

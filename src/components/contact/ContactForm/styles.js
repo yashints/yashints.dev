@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
   text-align: left;
@@ -23,19 +23,56 @@ export const ContactWrapper = styled.div`
 		hr {
 			background: rgb(255, 255, 255, 0.4);
 		}
-		a {
-			color: #6e9fef;
+		a, button {
+			color: #adad2e;
 		}
 		input, textarea {
 			background: #333;
-			color: #fff;
-		}
-	`};
-`
+      color: #fff;
+    }
+    
+    @media (max-width: 680px) {
+      width: 100%;
+
+      form {
+        padding: 0;
+
+        input, textarea {
+          padding-top: 1rem;
+          padding-left: 1rem;
+          border-bottom: none;
+        }
+
+        button {
+          border-color: #333;
+        }
+      }
+    }
+  `};
+
+  @media (max-width: 680px) {
+    width: 100%;
+
+    form {
+      padding: 1rem;
+
+      div[form] {
+        div {
+          div {
+            width: 100% !important;
+            iframe {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export const Wrapper = styled.div`
   margin-bottom: 1rem;
-`
+`;
 
 export const InputField = styled.div`
   width: 100%;
@@ -68,27 +105,28 @@ export const InputField = styled.div`
 		min-height: 8rem;
 		margin: 0;
 	`};
-`
+`;
 
 export const Center = styled.div`
   text-align: center;
-`
+`;
 
 export const Error = styled.div`
   color: red;
-`
+`;
 
 export const Text = styled.div`
   margin-bottom: 1rem;
-`
+`;
 export const StackedText = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 
   svg {
     margin-right: 20px;
   }
-`
+`;
 
-export const Icon = styled.div``
+export const Icon = styled.div``;
