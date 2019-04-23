@@ -1,6 +1,8 @@
-const nodePath = require('path')
-const Queries = require('./queries')
-const Util = require(nodePath.resolve('src/util'))
+const nodePath = require('path');
+const Queries = require('./queries');
+const Util = require(nodePath.resolve(
+  'src/util'
+));
 
 exports.createPages = async ({
   actions: { createPage },
@@ -9,21 +11,31 @@ exports.createPages = async ({
   try {
     const postTemplate = nodePath.resolve(
       'src/templates/post.js'
-    )
+    );
 
-    const res = await graphql(Queries)
+    let tagList = [];
+
+    const res = await graphql(Queries);
     res.data.posts.edges.forEach(
       ({
         previous,
         node: {
-          frontmatter: { title, path, date },
+          frontmatter: {
+            title,
+            path,
+            date,
+            tags,
+          },
         },
         next,
       }) => {
+        // concat all tags
+        tagList = tagList.concat(tags || []);
+
         const postPath = Util.getPostPath(
           !path ? title : path,
           date
-        )
+        );
         const nextPostPath =
           next &&
           Util.getPostPath(
@@ -31,7 +43,7 @@ exports.createPages = async ({
               ? next.frontmatter.title
               : next.frontmatter.path,
             next.frontmatter.date
-          )
+          );
         const prevPostPath =
           previous &&
           Util.getPostPath(
@@ -39,7 +51,7 @@ exports.createPages = async ({
               ? previous.frontmatter.title
               : previous.frontmatter.path,
             previous.frontmatter.date
-          )
+          );
         createPage({
           path: postPath,
           component: postTemplate,
@@ -49,44 +61,56 @@ exports.createPages = async ({
             nextPost: nextPostPath,
             previousPost: prevPostPath,
           },
-        })
-
-        // Create blog post list pages
-        const postsPerPage = 10
-        const numPages = Math.ceil(
-          res.data.posts.edges.length /
-            postsPerPage
-        )
-
-        Array.from({ length: numPages }).forEach(
-          (_, i) => {
-            createPage({
-              path:
-                i === 0
-                  ? `/blog`
-                  : `/blog/${i + 1}`,
-              component: nodePath.resolve(
-                './src/templates/blog-list.js'
-              ),
-              context: {
-                limit: postsPerPage,
-                skip: i * postsPerPage,
-                numPages,
-                currentPage: i + 1,
-              },
-            })
-          }
-        )
+        });
       }
-    )
+    );
+
+    // Create blog post list pages
+    const postsPerPage = 10;
+    const numPages = Math.ceil(
+      res.data.posts.edges.length / postsPerPage
+    );
+
+    Array.from({ length: numPages }).forEach(
+      (_, i) => {
+        createPage({
+          path:
+            i === 0 ? `/blog` : `/blog/${i + 1}`,
+          component: nodePath.resolve(
+            './src/templates/blog-list.js'
+          ),
+          context: {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
+          },
+        });
+      }
+    );
+
+    //generate tag pages
+    const tagTemplate = nodePath.resolve(
+      'src/templates/tags.js'
+    );
+    const uniqueTags = [...new Set(tagList)];
+    uniqueTags.forEach((tag, i) => {
+      createPage({
+        path: `/tags/${tag}`,
+        component: tagTemplate,
+        context: {
+          tag,
+        },
+      });
+    });
 
     if (res.errors) {
-      throw new Error(res.errors)
+      throw new Error(res.errors);
     }
   } catch (err) {
-    console.error(err)
+    console.error(err);
   }
-}
+};
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -101,5 +125,5 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         Images: `${__dirname}/src/static/images`,
       },
     },
-  })
-}
+  });
+};

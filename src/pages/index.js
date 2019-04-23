@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Intro,
   Skills,
@@ -6,16 +6,22 @@ import {
   Services,
   Github,
   Popular,
-} from 'Components/landing'
-import { Layout, SEO } from 'Common'
+} from 'Components/landing';
+import config from 'Data';
+import { Layout, SEO } from 'Common';
 
 export default () => (
   <Layout>
-    <SEO title="Personal site" type="Organization" />
+    <SEO
+      title={`(${
+        config.legalName
+      }) Personal site`}
+      type="Organization"
+    />
     <Intro />
     <Skills />
     <Services />
     <Github />
     <Popular />
   </Layout>
-)
+);

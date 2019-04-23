@@ -16,6 +16,7 @@ module.exports = `
           title
           path
           date
+          tags
         }
       }
       next {

@@ -1,7 +1,7 @@
 ---
 path: 'angular-preloading/'
 title: 'Boost up your performance using Angular preloading strategy'
-date: 2018-06-20
+date: 2018-06-06
 author: Yaser Adel Mehraban
 popular: true
 categories: [Angular, Router, Preloading Stragetgy]
