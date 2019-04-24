@@ -4,8 +4,7 @@ author: Yaser Adel Mehraban
 date: 2019-04-24
 title: 'Removing duplicates from arrays in JavaScript'
 popular: false
-categories: [web, Performance Tuning]
-tags: [web, performance, page load time]
+tags: [javascript, arrays, deduplication]
 thumbnail: './javascript.png'
 ---
 
