@@ -23,7 +23,7 @@ export const MostPopularPosts = ({ edges }) => {
       </Row>
       <Center>
         <ButtonLink
-          to="/tags"
+          to="/blog"
           linkText="See more"
           minwidth="200px"
         />
