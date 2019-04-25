@@ -7,7 +7,9 @@ import {
   PageTitle,
   CardPost,
   Row,
+  ButtonLink,
 } from 'Common';
+import styled from 'styled-components';
 
 export default ({ data, pageContext }) => {
   const { tag } = pageContext;
@@ -25,19 +27,31 @@ export default ({ data, pageContext }) => {
         <SEO
           title={tag}
           type="Organization"
-          location={`/tags/${tag}`}
+          location={`/tags/${tag.replace(
+            ' ',
+            ''
+          )}`}
         />
         <PageTitle>{tagHeader}</PageTitle>
-        <br />
-        <Row>
-          {edges.map(post => (
-            <CardPost
-              key={post.node.id}
-              {...post}
-            />
-          ))}
-        </Row>
-        <Link to="/tags">All tags</Link>
+        <TagContainer>
+          <Row>
+            {edges.map(post => (
+              <CardPost
+                key={post.node.id}
+                {...post}
+              />
+            ))}
+
+            <Center>
+              <ButtonLink
+                to="/tags"
+                linkText="All tags"
+                minwidth="200px"
+                hasMarginTop={true}
+              />
+            </Center>
+          </Row>
+        </TagContainer>
       </Container>
     </Layout>
   );
@@ -78,4 +92,15 @@ export const pageQuery = graphql`
       }
     }
   }
+`;
+
+const Center = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const TagContainer = styled.div`
+  padding-top: 2rem;
+  min-height: 470px;
 `;

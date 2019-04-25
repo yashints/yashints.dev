@@ -1,15 +1,15 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import {
   ThemeContext,
   Row,
   CardPost,
-} from 'Common'
-import { Link } from 'gatsby'
-import { MagicalButton } from '../../theme/shared-styles'
-import { Wrapper, Center } from './styles.js'
+  ButtonLink,
+} from 'Common';
+import { Link } from 'gatsby';
+import { Wrapper, Center } from './styles.js';
 
 export const MostPopularPosts = ({ edges }) => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   return (
     <Wrapper theme={theme}>
       <Row>
@@ -22,10 +22,12 @@ export const MostPopularPosts = ({ edges }) => {
         ))}
       </Row>
       <Center>
-        <MagicalButton as={Link} to="/blog/">
-          See more
-        </MagicalButton>
+        <ButtonLink
+          to="/tags"
+          linkText="See more"
+          minwidth="200px"
+        />
       </Center>
     </Wrapper>
-  )
-}
+  );
+};

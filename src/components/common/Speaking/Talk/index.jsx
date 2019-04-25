@@ -37,28 +37,31 @@ export const Talk = ({ talks, theme }) => {
           arr
         ) => (
           <Card key={title + i} theme={theme}>
-            <CardLink href={link} target="_blank">
-              <CardHeader>{title}</CardHeader>
-              {image && (
-                <img
-                  src={image}
-                  width="100%"
-                  height="120px"
-                />
-              )}
-              <CardDescription>
-                {description}
-              </CardDescription>
-              <CardDate>
-                <img
-                  src={CalendarIcon}
-                  width="36px"
-                  alt="Calendar"
-                  title="Date"
-                />
-                {date}
-              </CardDate>
-            </CardLink>
+            <CardHeader theme={theme}>
+              <a href={link} target="_blank">
+                {title}
+              </a>
+            </CardHeader>
+            {image && (
+              <img
+                src={image}
+                width="100%"
+                height="120px"
+              />
+            )}
+            <CardDescription>
+              {description}
+            </CardDescription>
+            <CardDate>
+              <img
+                src={CalendarIcon}
+                width="28px"
+                alt="Calendar"
+                title="Date"
+              />
+              {date}
+            </CardDate>
+
             <CardActions>
               {code && (
                 <a
@@ -68,7 +71,7 @@ export const Talk = ({ talks, theme }) => {
                 >
                   <img
                     src={CodeIcon}
-                    width="36px"
+                    width="28px"
                     alt="code"
                   />
                 </a>
@@ -81,7 +84,7 @@ export const Talk = ({ talks, theme }) => {
                 >
                   <img
                     src={SlidesIcon}
-                    width="36px"
+                    width="28px"
                     alt="slides"
                   />
                 </a>
@@ -94,7 +97,7 @@ export const Talk = ({ talks, theme }) => {
                 >
                   <img
                     src={VideoIcon}
-                    width="36px"
+                    width="28px"
                     alt="video"
                   />
                 </a>

@@ -130,7 +130,7 @@ export const Info = styled.i`
 `;
 
 export const PublishInfo = styled.div`
-  width: 30%;
+  width: 40%;
   padding: 0 1rem;
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ export const StyledSpan = styled.div`
 `;
 
 export const TagWrapper = styled.span`
-  width: 40%;
+  width: 35%;
   display: flex;
 
   @media only screen and (min-width: 680px) and (max-width: 1024px) {
@@ -168,23 +168,25 @@ export const TagWrapper = styled.span`
   }
 `;
 
-export const Tag = styled.span`
+export const Tag = styled.a`
+  cursor: pointer;
   margin-right: 10px;
   padding: 8px;
   font-weight: 500;
+  font-size: 0.8rem;
   border-radius: 20px;
+  text-align: center;
   color: rgba(0, 0, 0, 0.8);
   background: rgba(0, 0, 0, 0.1);
 
   @media (max-width: 680px) {
-    padding: 6px;
+    padding: 8px;
     margin-top: 5px;
   }
 
   ${({ theme }) =>
     theme === 'dark' &&
     `
-      color: #fff;
       background: rgba(255, 255, 255, 0.1);
 	`};
 `;

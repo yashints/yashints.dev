@@ -82,7 +82,15 @@ export const CardPost = ({ node, landing }) => {
               {node.frontmatter.tags
                 .slice(0, 3)
                 .map(tag => (
-                  <Tag theme={theme} key={tag}>
+                  <Tag
+                    theme={theme}
+                    key={tag}
+                    as={Link}
+                    to={`/tags/${tag.replace(
+                      ' ',
+                      ''
+                    )}`}
+                  >
                     {tag}
                   </Tag>
                 ))}

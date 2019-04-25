@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
-import { Container, ThemeContext } from 'Common';
+import {
+  Container,
+  ThemeContext,
+  ButtonLink,
+} from 'Common';
 import { Wrapper, Flex } from './styles';
-import { MagicalButton } from '../../theme/shared-styles';
 import config from 'Data';
 
 export const Intro = () => {
@@ -33,18 +36,27 @@ export const Intro = () => {
         like NDC and Voxxed Days around the world.
       </p>
       <Flex>
-        <MagicalButton as={Link} to="#interests">
-          Interests
-        </MagicalButton>
-        <MagicalButton as={Link} to="#popular">
-          Popular articles
-        </MagicalButton>
-        <MagicalButton as={Link} to="/speaking">
-          Upcoming talks
-        </MagicalButton>
-        <MagicalButton as={Link} to="/contact">
-          Get In Touch
-        </MagicalButton>
+        <ButtonLink
+          to="#interests"
+          linkText="Interests"
+          hasMargin={true}
+        />
+        <ButtonLink
+          to="#popular"
+          linkText="Popular articles"
+          hasMargin={true}
+        />
+        <ButtonLink
+          to="/speaking"
+          linkText="Upcoming talks"
+          hasMargin={true}
+        />
+        <ButtonLink
+          as={Link}
+          to="/contact"
+          linkText="Get In Touch"
+          hasMargin={true}
+        />
       </Flex>
     </Wrapper>
   );

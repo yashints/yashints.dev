@@ -96,7 +96,7 @@ exports.createPages = async ({
     const uniqueTags = [...new Set(tagList)];
     uniqueTags.forEach((tag, i) => {
       createPage({
-        path: `/tags/${tag}`,
+        path: `/tags/${tag.replace(' ', '')}`,
         component: tagTemplate,
         context: {
           tag,

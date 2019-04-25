@@ -1,24 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import {
   Form,
   FastField,
   ErrorMessage,
   withFormik,
-} from 'formik'
-import * as Yup from 'yup'
-import Recaptcha from 'react-google-recaptcha'
-import { navigate } from 'gatsby'
+} from 'formik';
+import * as Yup from 'yup';
+import Recaptcha from 'react-google-recaptcha';
+import { navigate } from 'gatsby';
 import {
   ThemeContext,
   EmailIcon,
   Twitter,
   Linkedin,
-} from 'Common'
-import {
-  MagicalSubmitButton,
-  MagicalButton,
-} from '../../theme/shared-styles'
-import config from 'Data'
+  SubmitButton,
+} from 'Common';
+
+import config from 'Data';
 
 import {
   ContactWrapper,
@@ -29,7 +27,7 @@ import {
   Text,
   Icon,
   StackedText,
-} from './styles'
+} from './styles';
 
 const ContactForm = ({
   errors,
@@ -37,7 +35,7 @@ const ContactForm = ({
   setFieldValue,
   isSubmitting,
 }) => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   return (
     <ContactWrapper theme={theme}>
       <Text>
@@ -235,18 +233,15 @@ const ContactForm = ({
           name="recaptcha"
         />
         <Center>
-          <MagicalSubmitButton
-            theme={theme}
-            type="submit"
+          <SubmitButton
+            btnText="Send"
             disabled={isSubmitting}
-          >
-            Send
-          </MagicalSubmitButton>
+          />
         </Center>
       </Form>
     </ContactWrapper>
-  )
-}
+  );
+};
 
 export default withFormik({
   mapPropsToValues: () => ({
@@ -283,8 +278,8 @@ export default withFormik({
                 key
               )}=${encodeURIComponent(data[key])}`
           )
-          .join('&')
-      }
+          .join('&');
+      };
       await fetch('/?no-cache=1', {
         method: 'POST',
         headers: {
@@ -298,15 +293,15 @@ export default withFormik({
           message,
           'g-recaptcha-response': recaptcha,
         }),
-      })
-      setSubmitting(false)
-      resetForm()
-      navigate('/thanks/')
+      });
+      setSubmitting(false);
+      resetForm();
+      navigate('/thanks/');
     } catch (err) {
-      setSubmitting(false)
+      setSubmitting(false);
       alert(
         'Something went wrong, please try again!'
-      ) // eslint-disable-line
+      ); // eslint-disable-line
     }
   },
-})(ContactForm)
+})(ContactForm);

@@ -31,12 +31,16 @@ export const Card = styled.div`
       color: #fff;
       background-color: #333;
       
+      
       box-shadow: 0 2px 1px -1px rgba(255, 255, 255, 0.2), 0 1px 1px 0 rgba(255, 255, 255, 0.14),
     0 1px 3px 0 rgba(255, 255, 255, 0.12);
+    
 	`};
 `;
 
 export const CardLink = styled.a`
+  display: block;
+  min-height: 150px;
   cursor: pointer;
   color: inherit;
 `;
@@ -44,6 +48,16 @@ export const CardLink = styled.a`
 export const CardHeader = styled.div`
   font-weight: 700;
   padding: 1rem;
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+
+  ${({ theme }) =>
+    theme === 'dark' &&
+    `
+      color: #adad2e;
+  `}
 `;
 
 export const CardDescription = styled.div`
@@ -70,7 +84,7 @@ export const CardActions = styled.div`
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  min-height: 52px;
+  height: 55px;
   justify-content: flex-end;
   a {
     margin: 10px;
