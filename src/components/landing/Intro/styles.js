@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   padding: 2rem 7em;
@@ -23,13 +23,24 @@ export const Wrapper = styled.div`
         color: #adad2e;
       }
 	`}
-`;
+`
 
 export const Flex = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    margin: 5px;
+  }
+
+  @media (max-width: 505px) {
+    a {
+      width: 100%;
+    }
+  }
 
   @media (max-width: 380px) {
     flex-direction: column;
   }
-`;
+`

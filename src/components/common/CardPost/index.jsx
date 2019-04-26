@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { Link } from 'gatsby';
-import Img from 'gatsby-image';
-import CalendarIcon from 'Static/icons/calendar.svg';
-import TimerIcon from 'Static/icons/stopwatch.svg';
-import { ThemeContext } from 'Common';
+import React, { useContext } from 'react'
+import { Link } from 'gatsby'
+import Img from 'gatsby-image'
+import CalendarIcon from 'Static/icons/calendar.svg'
+import TimerIcon from 'Static/icons/stopwatch.svg'
+import { ThemeContext } from 'Common'
 import {
   Item,
   Post,
@@ -16,32 +16,32 @@ import {
   Tag,
   TagWrapper,
   PublishInfo,
-} from './styles';
-import config from 'Data';
-import Util from 'Util';
+} from './styles'
+import config from 'Data'
+import Util from 'Util'
 
 export const CardPost = ({ node, landing }) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
   const postPath = Util.getPostPath(
     !node.frontmatter.path
       ? node.frontmatter.title
       : node.frontmatter.path,
     node.frontmatter.unformattedDate
-  );
+  )
 
   return (
     <Item>
       <Post theme={theme}>
-        {node.frontmatter.thumbnail && (
-          <ArticleImg landing={landing}>
+        <ArticleImg landing={landing}>
+          {node.frontmatter.thumbnail && (
             <Img
               fluid={
                 node.frontmatter.thumbnail
                   .childImageSharp.fluid
               }
             />
-          </ArticleImg>
-        )}
+          )}
+        </ArticleImg>
         <ArticleContent>
           <ArticleTitle theme={theme}>
             <Link to={postPath}>
@@ -107,5 +107,5 @@ export const CardPost = ({ node, landing }) => {
         </ArticleContent>
       </Post>
     </Item>
-  );
-};
+  )
+}

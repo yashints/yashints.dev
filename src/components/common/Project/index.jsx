@@ -1,6 +1,17 @@
 import React, { useContext } from 'react'
-import { Card, More, ThemeContext, Repository } from 'Common'
-import { Wrapper, Work, Icon, Title } from './styles'
+import {
+  Card,
+  More,
+  ThemeContext,
+  Repository,
+  ButtonLink,
+} from 'Common'
+import {
+  Wrapper,
+  Work,
+  Icon,
+  Title,
+} from './styles'
 
 export const Project = ({
   title,
@@ -17,14 +28,22 @@ export const Project = ({
       <Title theme={theme}>{title}</Title>
       <Work github={github} side={side}>
         {!github
-          ? projects.edges.map(({ node }) => <Card key={node.id} {...node} />)
+          ? projects.edges.map(({ node }) => (
+              <Card key={node.id} {...node} />
+            ))
           : projects.map((project, index) => (
-              <Repository key={project.node.id} id={index} {...project} />
+              <Repository
+                key={project.node.id}
+                id={index}
+                {...project}
+              />
             ))}
         {!side && (
-          <More link={link} color={color}>
-            <Icon as={icon} />
-          </More>
+          <ButtonLink
+            linkText="See more"
+            to={link}
+            external={true}
+          />
         )}
       </Work>
     </Wrapper>

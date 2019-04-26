@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const LinkButton = styled.a`
   display: inline-flex;
@@ -14,14 +14,14 @@ export const LinkButton = styled.a`
   align-items: center;
   max-height: 55px;
 
-  ${({ hasMarginTop }) =>
-    hasMarginTop &&
+  ${({ hasmargintop }) =>
+    hasmargintop &&
     `
       margin-top: 2rem;
   `}
 
-  ${({ hasMargin }) =>
-    hasMargin &&
+  ${({ hasmargin }) =>
+    hasmargin &&
     `
       margin-right: 1rem;
       
@@ -107,4 +107,4 @@ export const LinkButton = styled.a`
     box-shadow: 0px 0px 17px 0px
       rgba(185, 185, 185, 0.4);
   }
-`;
+`

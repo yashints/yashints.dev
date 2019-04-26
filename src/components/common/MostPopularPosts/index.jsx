@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext } from 'react'
 import {
   ThemeContext,
   Row,
   CardPost,
   ButtonLink,
-} from 'Common';
-import { Link } from 'gatsby';
-import { Wrapper, Center } from './styles.js';
+} from 'Common'
+import { Wrapper, Center } from './styles.js'
 
 export const MostPopularPosts = ({ edges }) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
   return (
     <Wrapper theme={theme}>
       <Row>
@@ -25,9 +24,9 @@ export const MostPopularPosts = ({ edges }) => {
         <ButtonLink
           to="/blog"
           linkText="See more"
-          minwidth="200px"
+          minwidth={'200px'}
         />
       </Center>
     </Wrapper>
-  );
-};
+  )
+}

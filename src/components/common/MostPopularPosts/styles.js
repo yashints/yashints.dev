@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
       color: #adad2e;
     }
 	`};
-`;
+`
 
 export const Center = styled.div`
   padding: 2rem 0;
@@ -22,4 +22,4 @@ export const Center = styled.div`
       margin: 0;
     }
   }
-`;
+`

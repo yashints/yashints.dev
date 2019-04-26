@@ -17,7 +17,6 @@ export const SocialShare = ({
   path,
   iconSize = 48,
 }) => {
-  console.warn(path)
   return (
     <Wrapper>
       <RedditShareButton
