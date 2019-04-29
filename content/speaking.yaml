@@ -1,3 +1,12 @@
+- title: ComponentsConf Melbourne
+  image: '/speaking/componentsconf.jpg'
+  link: https://www.componentsconf.com.au/sessions
+  description: AI and JavaScript, no you're not dreaming
+  date: Sep 09-10 2019
+  postDate: future
+  video: ''
+  slides: ''
+  code: ''
 
 - title: NDC Oslo
   image: '/speaking/front-oslo.jpg'
@@ -18,6 +27,16 @@
   video: ''
   slides: ''
   code: ''
+
+- title: Alt.Net Melbourne Meetup
+  image: '/speaking/meetup.png'
+  link: https://www.meetup.com/Melbourne-ALT-NET/events/260497262/
+  description: docker for web developers
+  date: April 30 2019
+  postDate: future
+  video: ''
+  slides: 'https://speakerdeck.com/yashints/docker-for-web-developers'
+  code: 'https://github.com/yashints/dockerdemo'
 
 - title: NDC Porto
   image: '/speaking/porto.jpg'
