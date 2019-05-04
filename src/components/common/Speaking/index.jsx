@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'Common';
-import { H3, HR, Wrapper } from './styles';
-import { Talk } from './Talk';
+import React, { useContext } from 'react'
+import { ThemeContext } from 'Common'
+import { H3, HR, Wrapper } from './styles'
+import { Talk } from './Talk'
 
 export const Speaking = ({ events }) => {
   const pastEvents = events.filter(
-    x => x.node.postDate === 'past'
-  );
+    x => new Date(x.node.postDate) < new Date()
+  )
   const futureEvents = events.filter(
-    x => x.node.postDate === 'future'
-  );
+    x => new Date(x.node.postDate) >= new Date()
+  )
 
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
   return (
     <Wrapper>
       <H3 theme={theme}>Future</H3>
@@ -21,5 +21,5 @@ export const Speaking = ({ events }) => {
       <HR theme={theme} />
       <Talk talks={pastEvents} theme={theme} />
     </Wrapper>
-  );
-};
+  )
+}
