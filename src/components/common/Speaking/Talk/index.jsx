@@ -1,10 +1,11 @@
-import React from 'react';
-import { navigate } from 'gatsby';
+import React from 'react'
+import { navigate } from 'gatsby'
 
-import CalendarIcon from 'Static/icons/calendar.svg';
-import VideoIcon from 'Static/icons/video.svg';
-import SlidesIcon from 'Static/icons/powerpoint.svg';
-import CodeIcon from 'Static/icons/coding.svg';
+import CalendarIcon from 'Static/icons/calendar.svg'
+import VideoIcon from 'Static/icons/video.svg'
+import SlidesIcon from 'Static/icons/powerpoint.svg'
+import CodeIcon from 'Static/icons/coding.svg'
+import LinkIcon from 'Static/icons/link.svg'
 
 import {
   Wrapper,
@@ -14,7 +15,7 @@ import {
   CardActions,
   CardDate,
   CardLink,
-} from './styles';
+} from './styles'
 
 export const Talk = ({ talks, theme }) => {
   return (
@@ -39,7 +40,14 @@ export const Talk = ({ talks, theme }) => {
           <Card key={title + i} theme={theme}>
             <CardHeader theme={theme}>
               <a href={link} target="_blank">
-                {title}
+                <span>
+                  {title}
+                  <img
+                    src={LinkIcon}
+                    width="20px"
+                    alt="link"
+                  />
+                </span>
               </a>
             </CardHeader>
             {image && (
@@ -107,5 +115,5 @@ export const Talk = ({ talks, theme }) => {
         )
       )}
     </Wrapper>
-  );
-};
+  )
+}

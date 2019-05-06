@@ -49,9 +49,23 @@ export const CardLink = styled.a`
 export const CardHeader = styled.div`
   font-weight: 700;
   padding: 1rem;
+
   a {
+    display: block;
     cursor: pointer;
     color: inherit;
+
+    span {
+      display: inline;
+      display: inline-table;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 24px;
+    }
+
+    img {
+      margin-left: 10px;
+    }
   }
 
   ${({ theme }) =>
