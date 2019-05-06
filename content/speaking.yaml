@@ -18,6 +18,16 @@
   slides: ''
   code: ''
 
+- title: DDD By Night
+  image: '/speaking/meetup.png'
+  link: https://www.meetup.com/en-AU/DDD-Melbourne-By-Night/events/259751807/
+  description: Web assembly, post MVP future
+  date: May 23 2019
+  postDate: '2019-05-23'
+  video: ''
+  slides: ''
+  code: ''
+
 - title: VoxxedDays Australia Tour
   image: '/speaking/VoxxedDays.jpg'
   link: https://australia.voxxeddays.com/
