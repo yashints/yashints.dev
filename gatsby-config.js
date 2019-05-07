@@ -31,6 +31,7 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-twitter',
     {
       resolve: 'gatsby-source-graphql',
       options: {
