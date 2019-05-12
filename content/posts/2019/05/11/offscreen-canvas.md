@@ -2,11 +2,10 @@
 path: '/offscreen-canvas/'
 author: Yaser Adel Mehraban
 date: 2019-05-11
-title: 'Render your graphics off the main thread'
+title: 'OffscreenCanvas - Render your graphics off the main thread'
 popular: true
 tags:
   [webdev, tips, frontend, canvas, performance]
-thumbnail: ''
 ---
 
 Rendering images on a web page can be a very compute heavy operation. This makes it harder to run these kind of operations on the main thread since it might slow down the rendering or affect the user experience.
