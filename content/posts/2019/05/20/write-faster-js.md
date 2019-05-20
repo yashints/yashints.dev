@@ -1,5 +1,5 @@
 ---
-path: '/write=faster-js/'
+path: '/write-faster-js/'
 author: Yaser Adel Mehraban
 date: 2019-05-20
 title: 'Write faster JavaScript'
