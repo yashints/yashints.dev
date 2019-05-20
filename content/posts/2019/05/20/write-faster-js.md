@@ -7,13 +7,13 @@ popular: true
 tags: [webdev, showdev, javascript, performance]
 ---
 
-Most of the times, we write code which is being copy pasted from all over internet. StackOverflow is the main source these days for finding solutions to all sort of problems. But is it OK to blindly copy paste code without really knowing what's happening behind the scenes?
+Most of the times, we write code which is being copy pasted from all over internet. [StackOverflow](https://stackoverflow.com/) is the main source these days for finding solutions to all sort of problems. But is it OK to blindly copy paste code without really knowing what's happening behind the scenes?
 
 <!--more-->
 
 # A bit of context
 
-Don't get me wrong when I say StackOverflow should not be used blindly. It's a great source of information for most of the day to day issues and bugs developers face all around the world. It's just that we should be a bit more proactive and decide the best way out of all the available options out there.
+Don't get me wrong when I say **StackOverflow** should not be used blindly. It's a great source of information for most of the day to day issues and bugs developers face all around the world. It's just that we should be a bit more proactive and decide the best way out of all the available options out there.
 
 Let me show you some examples where a piece of code can be written in multiple ways, and the most obvious choice is not necessarily the best one.
 
@@ -130,11 +130,51 @@ The most obvious difference between an `array` and a `Set` is that `array` is an
 
 So why you should be using a `Set`?
 
-- **Searching for an Item**: Using `indexOf()` or `includes()` to check whether an item exists in an array is slow.
-- **Deleting an Item**: In a `Set`, you can delete an item by its value. In an array, the equivalent is using `splice()` based on an element’s `index`. As in the previous point, depending on indices is slow.
-- **Insert an Item**: It is much faster to add an item to a `Set` than to an array using `push()` or `unshift()`.
-- **Storing NaN**: You cannot use `indexOf()` or `includes()` to find the value `NaN`, while a `Set` is able to store this value.
-- **Removing Duplicates**: `Set` objects only store unique values. If you want to avoid storing duplicates, this is a significant advantage over arrays, where additional code would be required to deal with duplicates.
+### Searching for an Item
+
+Using `indexOf()` or `includes()` to check whether an item exists in an array is slow. In a `Set` you can find an item really easy using `has()`:
+
+```js
+const mySet = new Set([1, 1, 2])
+
+console.log(mySet.has(2)) // true
+```
+
+### Deleting an Item
+
+In a `Set`, you can delete an item by its value. In an array, the equivalent is using `splice()` based on an element’s `index`. As in the previous point, depending on indices is slow.
+
+```js
+const mySet = new Set([1, 2, 3, 4, 5])
+
+mySet.delete(1)
+```
+
+### Insert an Item
+
+It is much faster to add an item to a `Set` than to an array using `push()` or `unshift()`.
+
+```js
+const mySet = new Set([1, 2])
+
+mySet.add(3) // Successfully added
+```
+
+### Storing NaN
+
+You cannot use `indexOf()` or `includes()` to find the value `NaN`, while a `Set` is able to store this value.
+
+### Removing Duplicates
+
+`Set` objects only store unique values. If you want to avoid storing duplicates, this is a significant advantage over arrays, where additional code would be required to deal with duplicates.
+
+```js
+const mySet = new Set([1, 1, 2])
+
+mySet.add(3) // Successfully added
+
+console.log(mySet.values()) // 1,2,3
+```
 
 # Summary
 
