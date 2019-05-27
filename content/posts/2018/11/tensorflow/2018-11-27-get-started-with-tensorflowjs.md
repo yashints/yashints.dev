@@ -22,7 +22,7 @@ Things has changed, and people are now using machine learning in mobile devices 
 
 Don't get me wrong, I am not afraid of learning a new language and in fact it is one of my hobbies. But since I have been busy with lot's of different tasks, simply haven't had time to dive into that area.
 
-The good thing about this library is that you don't need to have prior knowledge on ML, you just deal with some hight level APIs that have simplified a lot of concepts for you, so you can focus on deploying the models and solving problems rather than reinventing the wheel 🔥.
+The good thing about this library is that you don't need to have prior knowledge on ML, you just deal with some high level APIs that have simplified a lot of concepts for you, so you can focus on deploying the models and solving problems rather than reinventing the wheel 🔥.
 
 But there are more options which open up a whole lot of opportunities for us. Basically you can:
 
@@ -97,7 +97,7 @@ I am using [Angular](https://angular.io/) in my example, but feel free to use an
 
 ### Create the app
 
-I've got the Angular CLI installed already, so I am just gonig to open up a command prompt and create a new application:
+I've got the Angular CLI installed already, so I am just going to open up a command prompt and create a new application:
 
 ```bash
 ng new mobilenet
@@ -122,8 +122,8 @@ You will also need to have the image classes for prediction purposes. So create 
 Open your `app.component.ts` file and add the import statement:
 
 ```ts
-import * as tf from '@tensorflow/tfjs';
-import { IMAGENET_CLASSES } from '../assets/imagenet-classes';
+import * as tf from '@tensorflow/tfjs'
+import { IMAGENET_CLASSES } from '../assets/imagenet-classes'
 ```
 
 We will need some variables to hold our data and some references to out HTML elements we have to use:
@@ -142,8 +142,8 @@ The model will have our model, classes is used for our prediction result, and `i
 And two global variables, the image size is the size which model is trained on, and the number of predictions we want to pick from prediction result (since it is an array):
 
 ```ts
-const IMAGE_SIZE = 224;
-const TOPK_PREDICTIONS = 5;
+const IMAGE_SIZE = 224
+const TOPK_PREDICTIONS = 5
 ```
 
 Time to add a method to load the model and call it in the `ngOnInit`:
