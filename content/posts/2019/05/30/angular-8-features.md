@@ -2,9 +2,9 @@
 path: '/angular-8-features/'
 author: Yaser Adel Mehraban
 date: 2019-05-30
-title: 'What's new in Angular 8'
-popular: true
+title: 'What`s new in Angular 8'
 tags: [angular, webdev, showdev, features]
+popular: true
 thumbnail: './8.jpg'
 ---
 
