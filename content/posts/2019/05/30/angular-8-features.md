@@ -20,7 +20,7 @@ To put your mind at rest, Ivy is not here **yet**. If you don't know what is Ivy
 
 Differential loading is a feature in which browser decides to use modern vs legacy JavaScript based on its own capabilities.
 
-This is really important not just because we can use modern JavaScriptm but because we can get rid of all of those polyfills we've had to ship with our applications previously.
+This is really important not just because we can use modern JavaScript but because we can get rid of all of those polyfills we've had to ship with our applications previously.
 
 In short it takes advantage of the `es2015` flag in the TypeScript config and creates two bundles one for modern browsers and one for older ones.
 
