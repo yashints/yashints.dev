@@ -3,7 +3,7 @@ path: '/seo-tips/'
 author: Yaser Adel Mehraban
 date: 2019-06-11
 title: 'Boost your ranking with these 10 tips'
-subtitle: "Let's talk SEO"
+subtitle: 'Let’s talk SEO'
 popular: true
 tags: [webdev, seo, showdev]
 thumbnail: './seo.jpg'
@@ -60,7 +60,10 @@ Here is an example of on of my articles being the first result on Google 😍:
 As I mentioned above, having description tags is really helpful to expose your page to a wider range of searches in addition to title.
 
 ```html
-<meta name="description" content="Key HTML tags to have better SEO."/>
+<meta
+  name="description"
+  content="Key HTML tags to have better SEO."
+/>
 ```
 
 For example, above is a tag where someone tried to highlight "Key HTML tags" and "better SEO" phrases and also to be displayed in search results.
@@ -95,7 +98,10 @@ For example:
 Search engines wouldn't know whether this image is showing a cute puppy or a cat. So adding `alt` tag would help them understand it and use it for categorisation.
 
 ```html
-<img src="cute-puppy.jpg" alt="Such a cute puppy"/>
+<img
+  src="cute-puppy.jpg"
+  alt="Such a cute puppy"
+/>
 ```
 
 Above tag will correctly help search engines identify what the image is about. This will help to show this image when someone is trying to search for a cute puppy using Google images for example.
@@ -109,7 +115,9 @@ Although it doesn't look like it, hyperlinks are vital, not only to external con
 In its core, they are like you're voting for other content, so use it in your benefit and make sure the linked content is relevant.
 
 ```html
-<a href="https://dev.to/yashints/pet-projects-the-secret-to-keep-yourself-updated-51e0">
+<a
+  href="https://dev.to/yashints/pet-projects-the-secret-to-keep-yourself-updated-51e0"
+>
   My previous post about pet projects
 </a>
 ```
@@ -117,8 +125,10 @@ In its core, they are like you're voting for other content, so use it in your be
 If for some reason you didn't want the search engine to make a connection with what you're linking to, consider using `rel=nofollow`. This tells the search engine to not link your current article with the link destination. In other words, you won’t help improve the domain authority of an external site.
 
 ```html
-<a href="https://dev.to/yashints/pet-projects-the-secret-to-keep-yourself-updated-51e0"
-  rel="nofollow">
+<a
+  href="https://dev.to/yashints/pet-projects-the-secret-to-keep-yourself-updated-51e0"
+  rel="nofollow"
+>
   My previous post about pet projects
 </a>
 ```
@@ -132,7 +142,11 @@ These tags are great for showing nicely formatted version of your page on social
 Here is an example of an open graph tag:
 
 ```html
-<meta name="og:title" property="og:title" content="The Title of Your Article"/>
+<meta
+  name="og:title"
+  property="og:title"
+  content="The Title of Your Article"
+/>
 ```
 
 Now if this article is shared on something like Facebook, the social site will pull the title directly from this tag. As you saw from the tweet I showed above, open graph supports things like descriptions and images as well. It simply gives you customization options if your webpage is shared on social media.
@@ -164,7 +178,10 @@ Another reason why you should use this tag is that search engines might crawl yo
 To a human, all of these URLs represent a single page. To a crawler, though, every single one of these URLs is a unique `page`. Even in this limited example, we can see there are five copies of the homepage in play. In reality, though, this is just a small sample of the variations you might encounter.
 
 ```html
-<link rel="canonical" href="http://yashints.dev/index.html?param=value"/>
+<link
+  rel="canonical"
+  href="http://yashints.dev/index.html?param=value"
+/>
 ```
 
 So by putting above tag on my home page, I can tell search engines that this URL is representing the same and not a separate page.
@@ -178,7 +195,10 @@ Let's first go through the fact that more than %80 of traffic in China comes thr
 For the same reason it's important to let the search engines know that this site has responsive design available. This will ensure that the page is surfaces if a user is searching through a mobile device.
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+/>
 ```
 
 Above tag is the minimum you will need to let search engines know your site is mobile friendly. It’s important to note that **Google** puts emphasis on websites that are mobile-friendly. And if you don’t have something readily available that people can view from a hand-held device, it will reflect your rankings in search.
@@ -194,9 +214,18 @@ Apart from open graph tags, [Twitter](twitter.com) has [its own tags](https://de
 ```html
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@flickr" />
-<meta name="twitter:title" content="Small Island Developing States Photo Submission"/>
-<meta name="twitter:description" content="View the album on Flickr."/>
-<meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg"/>
+<meta
+  name="twitter:title"
+  content="Small Island Developing States Photo Submission"
+/>
+<meta
+  name="twitter:description"
+  content="View the album on Flickr."
+/>
+<meta
+  name="twitter:image"
+  content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg"
+/>
 ```
 
 Example:
@@ -206,14 +235,32 @@ Example:
 #### Player
 
 ```html
-<meta name="twitter:card" content="player"/>
-<meta name="twitter:title" content="Bison in Yellowstone"/>
-<meta name="twitter:site" content="@BrightcoveLearn"/>
-<meta name="twitter:description" content="Bison walking in Yellowstone National Park."/>
-<meta name="twitter:player" content="https://solutions.brightcove.com/bcls/twittercards/bison.html"/>
-<meta name="twitter:player:width" content="360"/>
-<meta name="twitter:player:height" content="200"/>
-<meta name="twitter:image" content="https://solutions.brightcove.com/bcls/twittercards/bison.jpg"/>
+<meta name="twitter:card" content="player" />
+<meta
+  name="twitter:title"
+  content="Bison in Yellowstone"
+/>
+<meta
+  name="twitter:site"
+  content="@BrightcoveLearn"
+/>
+<meta
+  name="twitter:description"
+  content="Bison walking in Yellowstone National Park."
+/>
+<meta
+  name="twitter:player"
+  content="https://solutions.brightcove.com/bcls/twittercards/bison.html"
+/>
+<meta name="twitter:player:width" content="360" />
+<meta
+  name="twitter:player:height"
+  content="200"
+/>
+<meta
+  name="twitter:image"
+  content="https://solutions.brightcove.com/bcls/twittercards/bison.jpg"
+/>
 ```
 
 Example:
