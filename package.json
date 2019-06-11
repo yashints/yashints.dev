@@ -61,7 +61,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
-    "reset": "rm -rf cache/ public/",
+    "reset": "rm -rf .cache/ public/",
     "lint": "eslint src",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"

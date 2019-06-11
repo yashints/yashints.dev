@@ -77,7 +77,7 @@ exports.createPages = async ({
           path:
             i === 0 ? `/blog` : `/blog/${i + 1}`,
           component: nodePath.resolve(
-            './src/templates/blog-list.js'
+            'src/templates/blog-list.js'
           ),
           context: {
             limit: postsPerPage,

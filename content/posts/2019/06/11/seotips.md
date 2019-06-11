@@ -275,4 +275,8 @@ You might wondering why I didn't mention keyword tags. That's because most searc
 
 ## Summary
 
-You now know 10 tips to improve your SEO organically and save some money. So head to a bar or coffee shop and spend it responsibly 😉. Till next post.
+You now know 10 tips to improve your SEO organically and save some money. So head to a bar or coffee shop and spend it responsibly 😉.
+
+Another tip I forgot to mention was around people who use a SPA framework. If you want to have SEO for your site, you will need to define some critical paths (i.e. homepage) and create a server side rendered of that page which gets replaced by the normal route on client side. This way crawlers would be able to index your statically generated file while your end users still have the benefit of fast interactions on client side.
+
+Till next post 👋🏼.
