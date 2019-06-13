@@ -51,7 +51,7 @@ It sounds very simple right? Well as simple as it looks, below are the points yo
 - Make it readable
 - Use dates, numbers and questions if relevant
 
-Here is an example of on of my articles being the first result on Google 😍:
+Here is an example of one of my articles being the first result on Google 😍:
 
 ![Title helping SEO](./nestedfg.jpg)
 
