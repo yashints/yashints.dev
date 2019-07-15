@@ -8,6 +8,16 @@
   slides: ''
   code: ''
 
+- title: DDD Perth
+  image: '/speaking/DDDPerth2019.png'
+  link: https://dddperth.com/agenda
+  description: AI and JavaScript, no you're not dreaming
+  date: Aug 03 2019
+  postDate: '2019-08-03'
+  video: ''
+  slides: ''
+  code: ''
+
 - title: NDC Oslo
   image: '/speaking/front-oslo.jpg'
   link: https://ndcoslo.com/talk/web-components-and-micro-apps-the-web-technologies-peacekeeper/
