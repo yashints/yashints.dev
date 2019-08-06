@@ -66,7 +66,7 @@ Before we can setup our authentication we need to setup our configuration with t
 
 Now navigate to `ConfigureServices` method and add the authentication and authorisation services options as below:
 
-```csharpharp
+```cs
 // Add Authentication services.
 //Configure Auth
 var clientId = Configuration["AzureAd:ClientId"];

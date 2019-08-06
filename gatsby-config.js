@@ -151,6 +151,7 @@ module.exports = {
       options: {
         excerpt_separator: `<!--more-->`,
         plugins: [
+          `gatsby-remark-prismjs`,
           {
             resolve: 'gatsby-remark-images',
             options: {

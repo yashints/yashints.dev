@@ -11,7 +11,9 @@ export const Layout = ({ children }) => (
       {({ theme }) => (
         <>
           <Header />
-          <LayoutStyled theme={theme}>{children}</LayoutStyled>
+          <LayoutStyled theme={theme}>
+            {children}
+          </LayoutStyled>
           <Footer />
         </>
       )}

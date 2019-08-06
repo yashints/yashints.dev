@@ -4,8 +4,16 @@ title: 'Setting up VSTS CI/CD for a SPA app using AngularCLI, ASPNetCore (Part 1
 date: 2017-04-27
 author: Yaser Adel Mehraban
 popular: true
-categories: [Angular, asp.net, CI/CD, VSTS, webpack]
-tags: [angular 2, angular cli, aspnetcore, CI/CI, VSTS]
+categories:
+  [Angular, asp.net, CI/CD, VSTS, webpack]
+tags:
+  [
+    angular 2,
+    angular cli,
+    aspnetcore,
+    CI/CI,
+    VSTS,
+  ]
 ---
 
 Recently I was assigned to a green field project where we had to create an initial structure of a project which was going to be written in [Angular 2](https://angular.io/) using [Angular CLI](https://github.com/angular/angular-cli) for front end side and ASP.Net Core for back-end.
@@ -77,7 +85,7 @@ Write-Output "Applied Version"</pre>
 
 As you can see we are extracting the major and minor from `project.json` and date and revision from build number. In order to set that in the first place you need to define the build output format as follow in the options tab of the build:
 
-```ps
+```powershell
 $(BuildDefinitionName)_$(Year:yy)$(DayOfYear)$(rev:.rr)
 ```
 

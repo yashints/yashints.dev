@@ -4,8 +4,25 @@ title: 'Authentication in ASP.NET Core 2.0'
 date: 2017-09-23
 author: Yaser Adel Mehraban
 popular: true
-categories: [asp.net, aspnetcore, authentication, authorization, C#, security]
-tags: [2fa, active, aspnetcore, authentication, qrcode, security, sms]
+categories:
+  [
+    asp.net,
+    aspnetcore,
+    authentication,
+    authorization,
+    C#,
+    security,
+  ]
+tags:
+  [
+    2fa,
+    active,
+    aspnetcore,
+    authentication,
+    qrcode,
+    security,
+    sms,
+  ]
 thumbnail: './net-core-logo-proposal.jpg'
 ---
 
@@ -17,7 +34,7 @@ As you might know the [.NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/20
 
 If you have previously used any form of authentication in ASP.NET Core 1.0, you would know that in order to configure your preferred mechanism you have to call one of the middle-wares available. For example if you wanted to use cookie authentication (local) this is how it would look like:
 
-```csharpharp
+```cs
 app.UseCookieAuthentication(new CookieAuthenticationOptions
 {
     AuthenticationScheme = "Cookie",
@@ -32,7 +49,7 @@ This basically means that you are letting ASP.Net know that you want to use cook
 
 I will not go through more details as it is not the purpose of this post but you can find all the details on [Microsoft Official Documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?tabs=visual-studio%2Caspnetcore2x). Same thing is true if you wanted to use [JWT bearer](https://blogs.msdn.microsoft.com/webdev/2017/04/06/jwt-validation-and-authorization-in-asp-net-core/) or any other form of authentication.
 
-```csharpharp
+```cs
 app.UseJwtBearerAuthentication(new JwtBearerOptions()
 {
     Audience = "http://localhost:5001/",

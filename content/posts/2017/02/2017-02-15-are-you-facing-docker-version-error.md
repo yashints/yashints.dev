@@ -16,7 +16,7 @@ I was working with my docker image for my pet project and suddenly got an error 
 
 I just opened a command line and typed:
 
-```ps
+```powershell
 $ docker version
 ```
 
