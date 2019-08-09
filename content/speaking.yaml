@@ -1,3 +1,13 @@
+- title: TConf Melbourne
+  image: '/speaking/tconf.jpg'
+  link: https://tconf.io/speakers
+  description: AI and JavaScript, no you're not dreaming
+  date: Nov 29 2019
+  postDate: '2019-11-29'
+  video: ''
+  slides: ''
+  code: ''
+
 - title: ComponentsConf Melbourne
   image: '/speaking/componentsconf.jpg'
   link: https://www.componentsconf.com.au/sessions
