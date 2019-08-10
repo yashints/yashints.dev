@@ -146,3 +146,23 @@ There are heaps of other stuff which is outside of scope of a single post. But I
 
 The **Accessibility Inspector** allows you to access important information exposed to assistive technologies on the current page via the accessibility tree, which lets you to check what's missing or needs improvements.
 
+![Accessibility panel in Firefox Developer tools](./accessibility.jpg)
+
+On the left-hand side, there is a node tree representing all the items in the accessibility tree for the current page. Each item has two properties listed:
+
+* _Role_ — the role this item has on the page (e.g., pushbutton, or footer, text leaf). This can be either a default role provided by the browser, or a role given to it via a `WAI-ARIA` role attribute.
+* _Name_ — the name this item has on the page. The name depends on the element; for example, the name of most text elements is simply their textContent, whereas form elements' names are the contents of their associated `<label>`.
+
+The cool thing here is that you can print the whole tree to `JSON`. This will help you to parse this structure looking for any specific non compliant item. As an example, [someone made an ML model](https://medium.com/myplanet-musings/making-the-web-more-accessible-using-machine-learning-8a32eaafdb3a) to validate accessibility and this JSON is ideal for data prep for those models.
+
+### Eyedropper
+
+If you want to select any particular colour in the current page, this tool is your friend. The fact that it works like a magnifying glass is really helpful to choose a colour in small areas of the page.
+
+![Eyedropper in Firefox developer tools](./eyedropper.gif)
+
+## Summary
+
+Firefox has come a long way and the team are working furiously adding new features and improvements with every minor and major release. Plus, we should always test our applications with multiple browsers and make sure users will have the same experience in every major browser.
+
+Have fun exploring these tricks and happy debugging.
