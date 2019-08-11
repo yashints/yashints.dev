@@ -10,4 +10,4 @@ yarn-error.log
 .env.development
 .env.production
 .netlify
-package-lock.json
+./package-lock.json

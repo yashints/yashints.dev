@@ -166,3 +166,28 @@ If you want to select any particular colour in the current page, this tool is yo
 Firefox has come a long way and the team are working furiously adding new features and improvements with every minor and major release. Plus, we should always test our applications with multiple browsers and make sure users will have the same experience in every major browser.
 
 Have fun exploring these tricks and happy debugging.
+
+## Update
+
+[Cécile Lebleu](https://dev.to/cecilelebleu) mentioned in comments that I've forgot about CSS Grid inspector and it's true. So let me tell you about it.
+
+### Grid inspector
+
+[Grid inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) is one of the unique tools in Firefox developer tools which allows you to examine [CSS Grid Layouts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), discovering grids present on a page, examining and modifying them inline, debugging layout issues, and more.
+
+In the HTML Pane, elements laid out using a grid have a "grid" marker beside them:
+
+![Grid marker beside CSS grid element in Firefox developer tools](./girdmarker.JPG)
+
+In addition to that, in the CSS pane's Rules view, any instance of a `display: grid` declaration gets a grid icon included within it: <img src="gridicon.png" alt="Grid icon" width="12"/>:
+
+![Grid icon next in css pane](./gridicon.jpg)
+
+You can click on the icon and the layout will be toggled in the page for you to see the grid with lines separating each cell:
+
+![Toggle grid view](./gridview.gif)
+
+By default line numbers and area names are hidden. But you can check the two checkbox on the right to enable these.
+
+![Line numbers and area names in grid view](./gridlinenumber.jpg)
+
