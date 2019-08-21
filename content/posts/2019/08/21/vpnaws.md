@@ -1,7 +1,7 @@
 ---
 path: '/vpn-aws/'
 author: Yaser Adel Mehraban
-date: 2019-08-17
+date: 2019-08-21
 title: "Let's setup a VPN server, for free, on AWS, under 5 min"
 popular: true
 tags: [showdev, aws, vpn, free]
