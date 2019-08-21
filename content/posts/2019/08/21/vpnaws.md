@@ -7,7 +7,7 @@ popular: true
 tags: [showdev, aws, vpn, free]
 ---
 
-Sometimes you want to connect to internet without someone watching you. This can be due to restrictions applied by governments, ISPs, etc. Maintaining privacy while using internet is very important to some people, and for me personally, the experience was to bypass a ridiculous sensor on sites like Twitter and software like Telegram.
+Sometimes you want to connect to internet without someone watching you. This can be due to restrictions applied by governments, ISPs, etc. Maintaining privacy while using internet is very important to some people, and for me personally, the experience was to bypass a ridiculous censor on sites like Twitter and software like Telegram.
 
 <!--more-->
 
