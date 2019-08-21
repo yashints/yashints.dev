@@ -18,6 +18,16 @@
   slides: ''
   code: ''
 
+- title: VIC.NET Melbourne
+  image: '/speaking/meetup.png'
+  link: https://www.meetup.com/VIC-NET-Meetup/events/259786658/
+  description: AI and JavaScript, no you're not dreaming
+  date: Aug 22 2019
+  postDate: '2019-08-22'
+  video: ''
+  slides: ''
+  code: ''
+
 - title: DDD Perth
   image: '/speaking/DDDPerth2019.png'
   link: https://dddperth.com/agenda
