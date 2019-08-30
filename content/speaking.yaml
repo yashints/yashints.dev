@@ -1,160 +1,169 @@
 - title: TConf Melbourne
-  image: '/speaking/tconf.jpg'
+  image: "/speaking/tconf.jpg"
   link: https://tconf.io/speakers
   description: AI and JavaScript, no you're not dreaming
   date: Nov 29 2019
-  postDate: '2019-11-29'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-11-29"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: ComponentsConf Melbourne
-  image: '/speaking/componentsconf.jpg'
+  image: "/speaking/componentsconf.jpg"
   link: https://www.componentsconf.com.au/sessions
   description: AI and JavaScript, no you're not dreaming
   date: Sep 09-10 2019
-  postDate: '2019-09-10'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-09-10"
+  video: ""
+  slides: ""
+  code: ""
+
+- title: DDD By Night September 2019 - Melbourne
+  image: "/speaking/meetup.png"
+  link: https://www.meetup.com/DDD-Melbourne-By-Night/events/263799242/
+  description: Let's bring AI to web
+  date: Sep 05-10 2019
+  postDate: "2019-09-05"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: VIC.NET Melbourne
-  image: '/speaking/meetup.png'
+  image: "/speaking/meetup.png"
   link: https://www.meetup.com/VIC-NET-Meetup/events/259786658/
   description: AI and JavaScript, no you're not dreaming
   date: Aug 22 2019
-  postDate: '2019-08-22'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-08-22"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: DDD Perth
-  image: '/speaking/DDDPerth2019.png'
+  image: "/speaking/DDDPerth2019.png"
   link: https://dddperth.com/agenda
   description: AI and JavaScript, no you're not dreaming
   date: Aug 03 2019
-  postDate: '2019-08-03'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-08-03"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: NDC Oslo
-  image: '/speaking/front-oslo.jpg'
+  image: "/speaking/front-oslo.jpg"
   link: https://ndcoslo.com/talk/web-components-and-micro-apps-the-web-technologies-peacekeeper/
   description: Micro apps and web components, the web technologies peacemaker
   date: June 17-21 2019
-  postDate: '2019-06-17'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-06-17"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: DDD By Night
-  image: '/speaking/meetup.png'
+  image: "/speaking/meetup.png"
   link: https://www.meetup.com/en-AU/DDD-Melbourne-By-Night/events/259751807/
   description: Web assembly, post MVP future
   date: May 23 2019
-  postDate: '2019-05-23'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-05-23"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: VoxxedDays Australia Tour
-  image: '/speaking/VoxxedDays.jpg'
+  image: "/speaking/VoxxedDays.jpg"
   link: https://australia.voxxeddays.com/
   description: Web assembly, post MVP future
   date: May 14-17 2019
-  postDate: '2019-05-14'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2019-05-14"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: Alt.Net Melbourne Meetup
-  image: '/speaking/meetup.png'
+  image: "/speaking/meetup.png"
   link: https://www.meetup.com/Melbourne-ALT-NET/events/260497262/
   description: docker for web developers
   date: April 30 2019
-  postDate: '2019-03-30'
-  video: ''
-  slides: 'https://speakerdeck.com/yashints/docker-for-web-developers'
-  code: 'https://github.com/yashints/dockerdemo'
+  postDate: "2019-03-30"
+  video: ""
+  slides: "https://speakerdeck.com/yashints/docker-for-web-developers"
+  code: "https://github.com/yashints/dockerdemo"
 
 - title: NDC Porto
-  image: '/speaking/porto.jpg'
+  image: "/speaking/porto.jpg"
   link: https://ndcporto.com/talk/need-for-speed-8-performance-tuning-of-your-web-application/
   description: Need for speed 8, performance tuning of your web application
   date: 26 Feb - 1st March 2019
-  postDate: '2019-02-26'
+  postDate: "2019-02-26"
   video: https://www.youtube.com/watch?v=tUsbF6SuTZY&t=136s
   slides: https://github.com/yashints/PublicSpeaking/blob/master/2019/Feb/NDCPorto/WebPerf.pptx
   code: https://developers.google.com/web/fundamentals/performance/why-performance-matters/
 
 - title: Coder Academy
-  image: '/speaking/ca.png'
+  image: "/speaking/ca.png"
   link: https://coderacademy.edu.au/
   description: Career development
   date: December 11 2018
-  postDate: '2018-11-11'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2018-11-11"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: VIC.Net Meetup
-  image: '/speaking/meetup.png'
+  image: "/speaking/meetup.png"
   link: https://www.meetup.com/en-AU/VIC-NET-Meetup/events/nscblpyxnbxb/
   description: Need for speed 8, performance tuning of your web application
   date: October 18 2018
-  postDate: '2018-10-18'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2018-10-18"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: NDC Sydney
-  image: '/speaking/ndcsyd.jpeg'
+  image: "/speaking/ndcsyd.jpeg"
   link: https://ndcsydney.com/talk/need-for-speed-8-performance-tuning-of-your-web-application/
   description: Need for speed 8, performance tuning of your web application
   date: Sep 17-21 2018
-  postDate: '2018-17-09'
+  postDate: "2018-17-09"
   video: https://yas.fyi/2AJ9Z5Q
   slides: https://github.com/yashints/PublicSpeaking/blob/master/2018/WebPerfTuning/WebPerfTuning.pdf
   code: https://developers.google.com/web/fundamentals/performance/why-performance-matters/
 
-
 - title: DDD By night
-  image: ''
+  image: ""
   link: https://www.meetup.com/en-AU/DDD-Melbourne-By-Night/
   description: Crafting makes your day
   date: Aug 2nd 2018
-  postDate: '2018-08-02'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2018-08-02"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: Angular Melbourne
-  image: ''
+  image: ""
   link: https://www.meetup.com/Angular-Melbourne/
   description: Angular service worker behind the scene
   date: May 7th 2018
-  postDate: '2018-05-07'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2018-05-07"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: Voxxed Days Melbourne
-  image: ''
+  image: ""
   link: https://australia.voxxeddays.com/
   description: Get your PWA ready with VueJs in no time
   date: May 3rd 2018
-  postDate: '2018-05-03'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2018-05-03"
+  video: ""
+  slides: ""
+  code: ""
 
 - title: Angular Melbourne
-  image: ''
+  image: ""
   link: https://www.meetup.com/Angular-Melbourne/
   description: PWAs with Angular Service Worker
   date: Feb 28 2018
-  postDate: '2018-02-28'
-  video: ''
-  slides: ''
-  code: ''
+  postDate: "2018-02-28"
+  video: ""
+  slides: ""
+  code: ""

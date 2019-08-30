@@ -7,11 +7,21 @@ export const Speaking = ({ events }) => {
   const pastEvents = events.filter(
     x => new Date(x.node.postDate) < new Date()
   )
-  const futureEvents = events.filter(
+  let futureEvents = events.filter(
     x => new Date(x.node.postDate) >= new Date()
   )
 
+  if (futureEvents && futureEvents.length) {
+    futureEvents = futureEvents.sort((a, b) => {
+      return (
+        new Date(a.node.postDate) -
+        new Date(b.node.postDate)
+      )
+    })
+  }
+
   const { theme } = useContext(ThemeContext)
+
   return (
     <Wrapper>
       <H3 theme={theme}>Future</H3>
