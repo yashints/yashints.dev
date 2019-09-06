@@ -21,6 +21,17 @@ export default ({
   post.frontmatter.nextPost = pageContext.nextPost
   post.frontmatter.previousPost =
     pageContext.previousPost
+
+  let scripts = document.querySelectorAll(
+    '[data-inline-script="data-inline-script"]'
+  )
+  scripts.forEach(function forEachScript(
+    element
+  ) {
+    const script = element.innerHTML
+    window.eval(script)
+  })
+
   return (
     <Layout>
       <SmallerContainer>
