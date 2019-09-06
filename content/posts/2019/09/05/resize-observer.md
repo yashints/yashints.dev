@@ -57,43 +57,10 @@ As you can see, the object you get has two properties, **`contentRect`** and `ta
 
 You can do a lot with this API, from changing the font size based on the element's size to change the styling when the size changes. Below is one where I'm changing the border radios based on element's size. Resize your window and see what happens 😎.
 
-<style>
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40vw;
-  margin-bottom: 50px;
-}
-.box {
-  height: 200px;
-  flex-shrink: 1;
-  flex-grow: 1;
-  margin: 10px;
-  box-sizing: border-box;
-  border: 3px solid black;
-}
-</style>
-
-<div class="boxes">
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-
-<script data-inline-script="data-inline-script">
-const ro = new ResizeObserver(entries => {
-  for (let entry of entries) {
-    entry.target.style.borderRadius =
-      Math.max(0, 250 - entry.contentRect.width) +
-      'px'
-  }
-})
-console.log('horay');
-// Only observe the 2nd box
-ro.observe(
-  document.querySelector('.box:nth-child(2)')
-)
-</script>
-
+<iframe height="265" style="width: 100%;" scrolling="no" title="ResizeObserver" src="//codepen.io/yashints/embed/QWLaMej/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/yashints/pen/QWLaMej/'>ResizeObserver</a> by Yaser Adel Mehraban
+  (<a href='https://codepen.io/yashints'>@yashints</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ## Demo explained
 
