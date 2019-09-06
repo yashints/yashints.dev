@@ -55,7 +55,7 @@ As you can see, the object you get has two properties, **`contentRect`** and `ta
 
 ## Demo
 
-You can do a lot with this API, from changing the font size based on the element's size to change the styling when the size changes. Below is one where I'm changing the border radios based on element's size.
+You can do a lot with this API, from changing the font size based on the element's size to change the styling when the size changes. Below is one where I'm changing the border radios based on element's size. Resize your window and see what happens 😎.
 
 <style>
 .boxes {
