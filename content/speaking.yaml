@@ -8,14 +8,24 @@
   slides: ""
   code: ""
 
+- title: GDG Melbourne DevFest 2019
+  image: "/speaking/gdgdevfest.jpg"
+  link: https://www.gdgmelbourne.com/devfest
+  description: AI and JavaScript, no you're not dreaming
+  date: Nov 9 2019
+  postDate: "2019-11-09"
+  video: ""
+  slides: ""
+  code: ""
+
 - title: ComponentsConf Melbourne
   image: "/speaking/componentsconf.jpg"
   link: https://www.componentsconf.com.au/sessions
   description: AI and JavaScript, no you're not dreaming
   date: Sep 09-10 2019
   postDate: "2019-09-10"
-  video: ""
-  slides: ""
+  video: "https://www.youtube.com/watch?v=P1gBGT7R7jE"
+  slides: "https://yas.fyi/2m8HMBf"
   code: ""
 
 - title: DDD By Night September 2019 - Melbourne
@@ -45,7 +55,7 @@
   date: Aug 03 2019
   postDate: "2019-08-03"
   video: ""
-  slides: ""
+  slides: "https://yas.fyi/2MxNh7z"
   code: ""
 
 - title: NDC Oslo
