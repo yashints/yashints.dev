@@ -199,9 +199,7 @@ export const SEO = ({
         href={canonical_url}
       />
       <title>
-        {title
-          ? `${defaultTitle} | ${title}`
-          : defaultTitle}
+        {title ? `${author} | ${title}` : author}
       </title>
       <html lang="en" dir="ltr" />
     </Helmet>
