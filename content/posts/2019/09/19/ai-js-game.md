@@ -7,7 +7,7 @@ popular: true
 tags: [showdev, webdev, tensorflowjs, ai]
 ---
 
-I've been looking into Tensorflow.js recently and have found the whole concept fascinating. Previously I wrote a piece on [how to get started](https://yashints.dev/blog/2018/11/27/get-started-with-tensorflowjs), and I intent to write more around all aspects of creating a new model, transfer learning with it, and just use pre-trained models for inference.
+I've been looking into [Tensorflow.js](https://www.tensorflow.org/js) recently and have found the whole concept fascinating. Previously I wrote a piece on [how to get started](https://yashints.dev/blog/2018/11/27/get-started-with-tensorflowjs), and I intent to write more around all aspects of creating a new model, transfer learning with it, or just use pre-trained models for inference.
 
 <!--more-->
 
@@ -17,8 +17,8 @@ Today we want to:
 
 * Find a game written with JavaScript
 * Find a model which we can control the game with
-* Mix these two together and have 🤪
-* Not complain about the code we just wrote to spoil the fun
+* Mix these two together and have fun 🤪
+* Not complain about the code we just wrote to spoil the fun 😁
 
 ## Disclaimer
 
@@ -26,7 +26,11 @@ I am not showing any best practices here around the JavaScript code. It is copy 
 
 ## Finding the game
 
-The very first thing I did when I was creating one of the demo's for [my talk]() was to search for a game written with JavaScript. I didn't want a complex game, just something which is lightweight and can be customised easily.
+The very first thing I did when I was creating one of the demo's for [my talk on AI and JavaScript](https://www.youtube.com/watch?v=P1gBGT7R7jE) was to search for a game written with JavaScript. I didn't want a complex game, just something lightweight which could be customised easily.
+
+PS: You can now watch my talk 👇🏼
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/P1gBGT7R7jE/0.jpg)](http://www.youtube.com/watch?v=P1gBGT7R7jE  "AI and JavaScript, no you're not dreaming")
 
 After searching for `JavaScript game` in Google, I found [this game on W3schools](https://www.w3schools.com/graphics/game_score.asp):
 
@@ -397,7 +401,7 @@ export const clearmove = function() {
 }
 ```
 
-All I did here is change some of those functions to `const` and export what need later on. Now let's write our `index.js` and import the speech command model.
+All I did here is change some of those functions to be constant and export what need later on. Now let's write our `index.js` and import the speech command model.
 
 ```js
 import * as speechCommands from "@tensorflow-models/speech-commands";
@@ -504,4 +508,4 @@ That's it. This is all you need to do in order to control this mini game using y
 
 Now go and create something fun with those pre-trained models and make sure to check their example repository.
 
-For more inspiring demo's check [aijs.rocks](https://aijs.rocks/) which is was built by [Asim Hussain](https://twitter.com/jawache), [Eleanor Haproff](https://twitter.com/EleanorHaproff) and [Osama Jandali](https://twitter.com/osama_jandali).
+For more inspiring demo's check [aijs.rocks](https://aijs.rocks/) which is built by [Asim Hussain](https://twitter.com/jawache), [Eleanor Haproff](https://twitter.com/EleanorHaproff) and [Osama Jandali](https://twitter.com/osama_jandali).
