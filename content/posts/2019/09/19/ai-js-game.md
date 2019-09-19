@@ -5,6 +5,7 @@ date: 2019-09-19
 title: "Let's build a game with Tensorflow.js in 10 minutes 🎮"
 popular: true
 tags: [showdev, webdev, tensorflowjs, ai]
+thumbnail: './maxresdefault.jpg'
 ---
 
 I've been looking into [Tensorflow.js](https://www.tensorflow.org/js) recently and have found the whole concept fascinating. Previously I wrote a piece on [how to get started](https://yashints.dev/blog/2018/11/27/get-started-with-tensorflowjs), and I intent to write more around all aspects of creating a new model, transfer learning with it, or just use pre-trained models for inference.
