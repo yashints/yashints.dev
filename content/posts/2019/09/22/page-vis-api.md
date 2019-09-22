@@ -2,7 +2,7 @@
 path: '/page-visibility-api/'
 author: Yaser Adel Mehraban
 date: 2019-09-22
-title: "It's time for Page Visibility API"
+title: "Page Visibility API, let's help users save their battery life 😀"
 popular: true
 tags: [showdev, webdev, javascript, pagevisibilityapi]
 thumbnail: './bn.jpg'
