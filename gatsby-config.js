@@ -215,8 +215,8 @@ module.exports = {
         injectHTML: true,
         icons: {
           android: true,
-          appleIcon: true,
-          appleStartup: true,
+          appleIcon: false,
+          appleStartup: false,
           coast: false,
           favicons: true,
           firefox: true,
