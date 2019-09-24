@@ -31,7 +31,7 @@ The very first thing I did when I was creating one of the demo's for [my talk on
 
 PS: You can now watch my talk 👇🏼
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/P1gBGT7R7jE/0.jpg)](http://www.youtube.com/watch?v=P1gBGT7R7jE  "AI and JavaScript, no you're not dreaming")
+[![IMAGE ALT TEXT](https://img.youtube.com/vi/P1gBGT7R7jE/0.jpg)](http://www.youtube.com/watch?v=P1gBGT7R7jE  "AI and JavaScript, no you're not dreaming")
 
 After searching for `JavaScript game` in Google, I found [this game on W3schools](https://www.w3schools.com/graphics/game_score.asp):
 
