@@ -1,6 +1,12 @@
 import React, { useContext } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Layout, Container, SEO, PageTitle, Speaking } from 'Common'
+import {
+  Layout,
+  Container,
+  SEO,
+  PageTitle,
+  Speaking,
+} from 'Common'
 
 export default () => {
   return (
@@ -28,8 +34,12 @@ export default () => {
         return (
           <Layout>
             <Container>
-              <SEO title="Speaking" type="Organization" location="/speaking" />
-              <PageTitle>Speaking schedule</PageTitle>
+              <SEO
+                title="Speaking"
+                type="Organization"
+                location="/speaking"
+              />
+              <PageTitle>Speaking</PageTitle>
               <Speaking events={speaking.edges} />
             </Container>
           </Layout>
