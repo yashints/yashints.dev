@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", main);
 
 If you don't setup the babel plugins properly, you will get an error like below:
 
-[[error]]
+[[danger]]
 | ❌ Uncaught ReferenceError: regeneratorRuntime is not defined at HTMLDocument.main (index.js:8)
 
 That's because we're using an `async` function on the top level. Add the below config to your `.babelrc` file to get around the error.
