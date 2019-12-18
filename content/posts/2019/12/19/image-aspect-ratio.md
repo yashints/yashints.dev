@@ -7,7 +7,7 @@ popular: true
 tags: [showdev, webdev, image, aspectratio]
 ---
  
-If you have an image on the page which is 600x200 pixels, what is the chance of it shown exactly with that size? I'd say not likely, because most of the time it's put inside a container which defined the width and the image is set to `width: %100`. But the size of the image is not that important at this point, what is important is that you will have a re-layout once the image is loaded.
+If you have an image on the page which is 600x200 pixels, what is the chance of it shown exactly with that size? I'd say not likely, because most of the time it's put inside a container which defined the width and the image is set to `width: %100`. But the size of the image is not that important at this point, what is important is that you will have a DOM reflow once the image is loaded.
 
 <!--more-->
 
@@ -56,7 +56,7 @@ If we load the site under a slow network now (on high speed network you can't se
 
 ![Page loads with text first close together, then image loads and fills the gap](./before.gif)
 
-First the two paragraphs appear close to each other, then when the network request is finished, the image fills its gap and there is a re-layout performed to push the second paragraph down. How sad is that 😥?
+First the two paragraphs appear close to each other, then when the network request is finished, the image fills its gap and there is a DOM reflow performed to push the second paragraph down. How sad is that 😥?
 
 ## Solution #1
 
