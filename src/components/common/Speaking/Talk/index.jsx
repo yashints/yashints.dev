@@ -50,20 +50,13 @@ export const Talk = ({ talks, theme }) => {
                 </span>
               </a>
             </CardHeader>
-            {image && (
-              <img
-                src={image}
-                width="100%"
-                height="120px"
-              />
-            )}
             <CardDescription>
               {description}
             </CardDescription>
             <CardDate>
               <img
                 src={CalendarIcon}
-                width="28px"
+                width="20px"
                 alt="Calendar"
                 title="Date"
               />
@@ -79,7 +72,7 @@ export const Talk = ({ talks, theme }) => {
                 >
                   <img
                     src={CodeIcon}
-                    width="28px"
+                    width="20px"
                     alt="code"
                   />
                 </a>
@@ -92,7 +85,7 @@ export const Talk = ({ talks, theme }) => {
                 >
                   <img
                     src={SlidesIcon}
-                    width="28px"
+                    width="20px"
                     alt="slides"
                   />
                 </a>
@@ -105,7 +98,7 @@ export const Talk = ({ talks, theme }) => {
                 >
                   <img
                     src={VideoIcon}
-                    width="28px"
+                    width="20px"
                     alt="video"
                   />
                 </a>
