@@ -224,6 +224,12 @@ You can see a full demo here:
   (<a href='https://codepen.io/yashints'>@yashints</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+## Browser support
+
+The browser support for this API as of writing this article is not there yet. Chrome and Firefox are fully supporting both the Clipboard API and ClipboardEvent API.
+
+Edge doesn't support it and it's been worked on in Safari.
+
 ## Summary
 
 We saw how easy and convenient it is to work with clipboard with this awesome API, and how much better the user experience will be.
