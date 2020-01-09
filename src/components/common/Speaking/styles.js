@@ -1,27 +1,6 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  #back2Top {
-    width: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 999;
-    cursor: pointer;
-    transform: rotate(270deg);
-    position: fixed;
-    bottom: 50px;
-    right: 0;
-    background-color: #ddd;
-    color: #555;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
-  }
-  #back2Top:hover {
-    background-color: #ddf;
-    color: #000;
-  }
-
   ${({ theme }) =>
     theme === 'dark' &&
     `

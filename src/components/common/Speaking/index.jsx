@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ThemeContext, ButtonLink } from 'Common'
 import { HR, Wrapper, Tags } from './styles'
+
 import { Talk } from './Talk'
 
 export const Speaking = ({ events }) => {
@@ -24,13 +25,6 @@ export const Speaking = ({ events }) => {
 
   return (
     <Wrapper theme={theme}>
-      <a
-        id="back2Top"
-        title="Back to top"
-        href="#"
-      >
-        &#10148;
-      </a>
       <div>
         <p>
           Having spoken at many conferences and
