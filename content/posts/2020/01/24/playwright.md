@@ -2,18 +2,18 @@
 path: '/playwright/'
 author: Yaser Adel Mehraban
 date: 2020-01-24
-title: "If you consider Puppeteer cool, then playwright is awesomeness 😍"
+title: "If you consider Puppeteer cool, then Playwright is awesomeness 😍"
 popular: true
 tags: [webdev, showdev, testing, playwright]
 ---
  
-If you've ever used [Puppeteer](https://github.com/puppeteer/puppeteer), you'd know it enables you to control a Chrome instance (or any other Chrome DevTools Protocol based browser) and execute common actions, much like in a real browser - programmatically, through a decent API. The same team has now build a new product called [Playwright](https://github.com/microsoft/playwright) which apparently is their new favourite.
+If you've ever used [Puppeteer](https://github.com/puppeteer/puppeteer), you'd know it enables you to control a Chrome instance (or any other **Chrome DevTools** Protocol based browser) and execute common actions, much like in a real browser - programmatically, through a decent API. The same team has now build a new product called [Playwright](https://github.com/microsoft/playwright) which apparently is their new favourite.
 
 <!--more-->
 
 ## What is Playwright? 🤔
 
-Playwright is a Node library which allows you to automate all major browsers - Chrome, Firefox, WebKit, and the new Microsoft Edge - plus the ability to execute actions, take screenshots, and much more, similar to Puppeteer.
+[Playwright](https://github.com/microsoft/playwright) is a Node library which allows you to automate all major browsers - Chrome, Firefox, WebKit, and the new Microsoft Edge - plus the ability to execute actions, take screenshots, and much more, similar to Puppeteer.
 
 In their own words:
 
