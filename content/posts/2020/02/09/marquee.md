@@ -24,13 +24,13 @@ You can see it in action:
 
 ## CSS marquees
 
-So I want to simulate some of these with just CSS. We'll be using animations and play with overflow to simulate text reaching to the edge.
+So I want to simulate some of these with just `CSS`. We'll be using `CSS` animations and play with `overflow` to simulate text reaching to the edge.
 
 ### Scrolling text
 
 So let's play with `translateX()` to specify the content placement at the start and end of the animation. We'll use this to keep the text moving between start and end.
 
-For the animation we will use an infinite linear with 20 seconds duration.
+For the animation we will use an infinite linear with 10 seconds duration.
 
 ```css
 .marquee {
