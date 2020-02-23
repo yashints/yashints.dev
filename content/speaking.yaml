@@ -1,3 +1,13 @@
+- title: NDC Porto
+  image: "/speaking/porto.jpg"
+  link: https://ndcporto.com/talk/lets-fly-a-drone-with-ai-and-a-bit-of-javascript/
+  description: Let's fly a drone with AI and bit of JavaScript
+  date: April (21st - 24th) 2020
+  postDate: "2020-04-21"
+  video: ""
+  slides: ""
+  code: ""
+
 - title: Microservices, Containers and Serverless Day | Melbourne
   image: "/speaking/eventbrite.jpg"
   link: https://www.eventbrite.com/e/microservices-containers-and-serverless-daymelbourne20-february-2020-tickets-63041245061
@@ -5,7 +15,7 @@
   date: Feb 20 2020
   postDate: "2020-02-20"
   video: ""
-  slides: ""
+  slides: "https://yas.fyi/2uYNXfV"
   code: ""
 
 - title: Front End Web Developers Perth (Fenders)
