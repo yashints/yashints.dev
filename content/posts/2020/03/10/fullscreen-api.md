@@ -9,6 +9,8 @@ tags: [webdev, showdev, fullscreenapi, javascript]
  
 There are many situations where we'd like to see our web page in fullscreen mode. Be it games, online courses, video tutorials, or simply wanting more reading space while reading a book. What we usually do in these sort of scenarios is we manually set our browser's tab/window in fullscreen mode (<kbd>F11</kbd>), but the result is not always what we expect, because some content is not designed to be viewed in fullscreen mode. Besides, what if we help our users to go fullscreen automatically instead, again it all comes to having a better user experience.
 
+<!--more-->
+
 ## Intro
 
 [Full Screen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) adds methods to the HTML `Element` to enable us to programmatically turn any content on a page to enter in fullscreen mode via JavaScript. `WebGL`, `canvas`, and `video` elements are the usual targets when it comes to going fullscreen. Online newspapers and magazines are other areas where this can be helpful.
