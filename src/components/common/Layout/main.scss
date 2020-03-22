@@ -103,6 +103,17 @@ textarea:focus {
   }
 }
 
+span.image-inline {
+  span.gatsby-resp-image-wrapper {
+    display: inline-block !important;
+
+    a.gatsby-resp-image-link {
+      width: 1em;
+      height: auto;
+    }
+  }
+}
+
 @keyframes anim {
   0% {
     display: none;
