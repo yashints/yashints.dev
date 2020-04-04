@@ -8,7 +8,7 @@ module.exports = {
   legalName: 'Yaser Adel Mehraban',
   shortName: 'Yaser',
   siteGithubRepo:
-    'https://github.com/yashints/blog',
+    'https://github.com/yashints/yashints.dev',
   defaultDescription:
     'A front end lead engineer, international speaker, blogger and a hiker.',
   socialLinks: {
