@@ -25,7 +25,7 @@ So I pulled down the master branch and rebased it directly from origin using (do
 git pull origin master --rebase
 ```
 
-Once down I realised I had some conflicts since someone else had worked on one of the files I'd modified. So I started the merge conflict process and made sure all was good. However, I didn't realised that when I tested the web application, the latest code wasn't refreshed, and I was seeing my own code (don't ask me why, it's an old code base and you need to rebuild and hard refresh every time you make a change).
+Once done, I realised I had some conflicts since someone else had worked on one of the files I'd modified. So I started the merge conflict process and made sure all was good. However, I didn't realised that when I tested the web application, the latest code wasn't refreshed, and I was seeing my own code (don't ask me why, it's an old code base and you need to rebuild and hard refresh every time you make a change).
 
 Having seen all is good I created a PR and went for lunch. One of colleagues then reviewed the PR and since all my changes had gone apart from the small parts from yesterday's commit, he approved and completed the PR.
 

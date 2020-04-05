@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { Link } from 'gatsby';
-import { Container, ThemeContext } from 'Common';
+import React, { useContext } from 'react'
+import { Link } from 'gatsby'
+import { Container, ThemeContext } from 'Common'
 
-import { Wrapper, Text } from './styles';
+import { Wrapper, Text } from './styles'
 
 export const Details = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
   return (
     <Wrapper as={Container}>
       <Text theme={theme}>
@@ -15,25 +15,24 @@ export const Details = () => {
           target="_blank"
         >
           {' '}
-          Readify
+          Telstra Purple
         </a>
-        , (a successful software consultancy based
-        in Australia) and enjoys building
-        everything from small business sites to
-        large scale rich interactive web apps.
+        , who enjoys building everything from
+        small business sites to large scale rich
+        interactive web applications.
       </Text>
       <Text>
         He is passionate about everything web and
-        in his spare time, apart from some wood
-        working, he reads, writes, and works on
-        the latest and greatest web technologies
-        and frameworks.
+        in his spare time, apart from some
+        woodworking, he reads, writes, and works
+        on the latest and greatest web
+        technologies and frameworks.
       </Text>
       <Text theme={theme}>
-        Progressive web apps, WebAssembly, Payment
-        API, Web Share API, web performance, you
-        name it. He is all in.
+        Progressive web apps, WebAssembly, Client
+        side web APIs, web performance, you name
+        it. He is all in.
       </Text>
     </Wrapper>
-  );
-};
+  )
+}

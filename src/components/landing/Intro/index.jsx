@@ -19,7 +19,7 @@ export const Intro = () => {
         speaker, blogger, and hiker.
       </p>
       <p>
-        Although it doesn’t look like it, Yaser is
+        Although it doesn’t look like it, Yas is
         an almond croissant addict cleverly
         disguised as a successful web developer
         😁. Since it was relatively clear early on
@@ -31,9 +31,10 @@ export const Intro = () => {
         to be a wonderful decision 🙃.
       </p>
       <p>
-        Apart from that, he is keen public
-        speaker, and has spoken in big conferences
-        like NDC and Voxxed Days around the world.
+        Apart from that, he is a keen public
+        speaker, and has spoken in many meetups
+        and conferences like NDC and Voxxed Days
+        around the world.
       </p>
       <Flex>
         <ButtonLink
