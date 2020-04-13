@@ -211,7 +211,7 @@ But before we get to the content of our `yaml` file, let's see what we need to d
 
 1. Pull down the code
 2. Build the app
-3. Deploy to a temporary site (I am using Netlify Preview here, but you can use others like staging slots on Azure DevOps, etc)
+3. Deploy to a temporary site (I am using Netlify Preview here, but you can use others like staging slots on Azure App Service, etc)
 4. Run Lighthouse CI on the site
 5. Fail if the conditions are not met
 
