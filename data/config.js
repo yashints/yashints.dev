@@ -6,7 +6,7 @@ module.exports = {
   url: 'https://yashints.dev',
   rootUrl: 'yashints.dev',
   legalName: 'Yaser Adel Mehraban',
-  shortName: 'Yaser',
+  shortName: 'Yas',
   siteGithubRepo:
     'https://github.com/yashints/yashints.dev',
   defaultDescription:
@@ -38,4 +38,4 @@ module.exports = {
     email: 'me@yashints.dev',
   },
   foundingDate: '2012',
-};
+}
