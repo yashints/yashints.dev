@@ -34,7 +34,7 @@ There are countless metrics on which we could focus on. Some are user centric li
 
 ## How does it know?
 
-You're probably wondering how does **Lighthouse CI*|**know what to measure and when to raise an alert. This **||is done via a `JSON` file which is usually named `budget.json`, but you can choose any name you prefer. 
+You're probably wondering how does **Lighthouse CI** know what to measure and when to raise an alert. This **||is done via a `JSON` file which is usually named `budget.json`, but you can choose any name you prefer. 
 
 ## Performance budget
 
@@ -96,7 +96,7 @@ For example, the following file will set a 200Kb budget for all scripts, a 500Kb
 ]
 ```
 
-As of **Lighthouse*|**5.3 you can add a `path` property **||to select which pages the budget should apply to. This is very handy because it allows you to have a centralised budget file for all your pages.
+As of **Lighthouse** 5.3 you can add a `path` property to select which pages the budget should apply to. This is very handy because it allows you to have a centralised budget file for all your pages.
 
 ```json
 [
