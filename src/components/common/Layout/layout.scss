@@ -679,3 +679,41 @@ div.custom-block {
     font-size: 1.5em;
   }
 }
+
+// scrollbar
+
+html::-webkit-scrollbar {
+  width: 25px;
+  height: 25px;
+}
+
+/* The grabbable scrollbar button  */
+html::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#50d1dd),
+    to(#3498db)
+  );
+  background: linear-gradient(
+    180deg,
+    #50d1dd,
+    #3498db
+  );
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 2px
+      hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* The vertical scrollbar background */
+html::-webkit-scrollbar-track {
+  background: linear-gradient(
+    90deg,
+    #f9f9f9,
+    #e9e9e9 1px,
+    #d9d9d9 0,
+    #a9a9a9
+  );
+}
