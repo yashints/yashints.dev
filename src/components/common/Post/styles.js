@@ -20,8 +20,7 @@ export const ArticleWrapper = styled.div`
   blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee;
+    border-left: 8px solid #bbb;
     color: #808080;
     font-style: italic;
   }
@@ -82,9 +81,6 @@ export const Back = styled.div``
 export const Next = styled.div``
 
 export const Content = styled.div`
-  font-size: 1.1rem;
-  line-height: 2rem;
-
   .gatsby-resp-image-wrapper {
     margin-left: unset !important;
   }
