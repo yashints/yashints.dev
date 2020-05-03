@@ -14,9 +14,7 @@ module.exports = {
       feed_url: `${config.url}${config.siteRss}`,
       title: 'Yashints | Blog',
       description: config.defaultDescription,
-      image_url: `https://${
-        config.url
-      }/static/favicon/logo-512x512.png`,
+      image_url: `https://${config.url}/static/favicon/logo-512x512.png`,
       author: config.author,
       copyright: `${
         config.defaultTitle
@@ -39,9 +37,7 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${
-            process.env.GITHUB_TOKEN
-          }`,
+          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
         fetchOptions: {},
       },
@@ -177,6 +173,14 @@ module.exports = {
                   title: 'optional',
                 },
               },
+            },
+          },
+          {
+            resolve: 'gatsby-plugin-preconnect',
+            options: {
+              domains: [
+                'https://www.google-analytics.com',
+              ],
             },
           },
           {

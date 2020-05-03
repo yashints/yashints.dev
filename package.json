@@ -21,6 +21,7 @@
     "gatsby-plugin-netlify": "^2.3.0",
     "gatsby-plugin-nprogress": "^2.3.0",
     "gatsby-plugin-offline": "^3.2.0",
+    "gatsby-plugin-preconnect": "^1.1.18",
     "gatsby-plugin-react-helmet": "^3.3.0",
     "gatsby-plugin-sass": "^2.3.0",
     "gatsby-plugin-sharp": "^2.6.0",
