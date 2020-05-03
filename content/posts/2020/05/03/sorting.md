@@ -143,7 +143,7 @@ function insertionSort(list){
     item = list[i];
     j = i;
 
-    while(j > 0 && list[j-1] > toInsert) {
+    while(j > 0 && list[j-1] > item) {
       list[j] = list[j-1];
       j--;
    }
