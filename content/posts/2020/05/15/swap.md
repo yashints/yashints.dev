@@ -63,7 +63,7 @@ console.log(x); // 5
 console.log(y); // 3
 ```
 
-If you're not familiar with `XOR`, it works on bits. When you perform `XOR` two bits, it evaluates to `0` if they are different, and evaluates to `1` if they're the same.
+If you're not familiar with `XOR`, it works on bits. When you perform `XOR` two bits, it evaluates to `1` if they are different, and evaluates to `0` if they're the same.
 
 | x | y | XOR |
 |:-:|:-:|:-:|
