@@ -5,6 +5,7 @@ date: 2020-05-23
 title: "Microsoft Build 2020 highlights 🔣"
 popular: true
 tags: [showdev, microsoft, build]
+thumbnail: './build.png'
 ---
 
 [Microsoft Build](https://mybuild.microsoft.com/) went on fully online and it came with some really exciting announcements. For us developers some of these can bring massive efficiencies. So let's see what's on offer.
