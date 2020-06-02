@@ -47,8 +47,8 @@ export const ArticleContent = styled.div`
 `
 
 export const ArticleImg = styled.div`
-  width: 200px;
-  min-width: 200px;
+  width: 250px;
+  min-width: 250px;
   overflow: hidden;
   background: linear-gradient(
     to right,

@@ -32,16 +32,16 @@ export const CardPost = ({ node, landing }) => {
   return (
     <Item>
       <Post theme={theme}>
+      {node.frontmatter.thumbnail && (
         <ArticleImg landing={landing}>
-          {node.frontmatter.thumbnail && (
             <Img
               fluid={
                 node.frontmatter.thumbnail
                   .childImageSharp.fluid
               }
-            />
-          )}
+            />          
         </ArticleImg>
+        )}
         <ArticleContent>
           <ArticleTitle theme={theme}>
             <Link to={postPath}>
