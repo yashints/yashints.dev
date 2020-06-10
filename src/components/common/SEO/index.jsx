@@ -185,6 +185,8 @@ export const SEO = ({
             : `${url}${Thumbnail}`
         }
       />
+      <meta name="monetization" 
+        content="$ilp.uphold.com/XQeUdN6MjiGz"/>
       <script type="application/ld+json">
         {type === 'NewsArticle'
           ? structuredDataArticle
@@ -193,7 +195,7 @@ export const SEO = ({
       <link
         rel="publisher"
         href={socialLinks.google}
-      />
+      />      
       <link
         rel="canonical"
         href={canonical_url}
