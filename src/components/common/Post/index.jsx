@@ -9,7 +9,7 @@ import {
 import Img from 'gatsby-image'
 import CalendarIcon from 'Static/icons/calendar.svg'
 import TimerIcon from 'Static/icons/stopwatch.svg'
-import PayPalIcon from 'Static/icons/PayPal.svg'
+import PayPalIcon from 'Static/icons/paypal.svg'
 import CryptoIcon from 'Static/icons/bitcoin.svg'
 import config from 'Data'
 import {
