@@ -9,6 +9,8 @@ import {
 import Img from 'gatsby-image'
 import CalendarIcon from 'Static/icons/calendar.svg'
 import TimerIcon from 'Static/icons/stopwatch.svg'
+import PayPalIcon from 'Static/icons/PayPal.svg'
+import CryptoIcon from 'Static/icons/bitcoin.svg'
 import config from 'Data'
 import {
   ArticleWrapper,
@@ -21,6 +23,8 @@ import {
   LinksWrapper,
   PageSubtitle,
   Author,
+  DonateButton,
+  DonateContainer
 } from './styles'
 
 export const Post = ({
@@ -85,6 +89,27 @@ export const Post = ({
         title={frontmatter.title}
         path={postPath}
       />
+      <DonateContainer>
+        <div>Support my work 👇🏽</div>
+        <a className="btn-donate crypto"
+        title="via Crypro Currency"
+          href="https://commerce.coinbase.com/checkout/f305ab16-b8a6-460a-a517-af767ec3c0c7">
+          <img width="24px" src={CryptoIcon} /> Crypto
+        </a>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="77G26DQHZZRRW" />
+          <input type="hidden" name="currency_code" value="AUD" />
+          <DonateButton>
+            <img width="24px" src={PayPalIcon} />
+            PayPal
+          </DonateButton>
+          <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+
+        <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807" async defer>
+        </script>
+      </DonateContainer>
       <LinksWrapper theme={theme}>
         <Back>
           {frontmatter.nextPost && (

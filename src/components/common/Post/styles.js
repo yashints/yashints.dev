@@ -128,6 +128,21 @@ export const ArticleDate = styled.div`
     }
   }
 `
+export const DonateContainer = styled.div`
+  img {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .btn-donate {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  form {
+    display: inline-block;
+  }
+`
 
 export const ArticleImg = styled.div`
   display: flex;
@@ -142,5 +157,20 @@ export const ArticleImg = styled.div`
     height: 100px;
     width: auto;
     flex: 1;
+  }
+`
+
+export const DonateButton = styled.button`
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: rgb(0,119,255);  
+
+  img {
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 `
