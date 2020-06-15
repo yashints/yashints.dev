@@ -3,3 +3,6 @@ https://www.yashints.dev/* https://yashints.dev/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://yashintsdev.netlify.com/* https://yashints.dev/:splat 301!
+
+# Typo in URL
+https://yashints.dev/blog/2020/06/14/scrol-to-text/* https://yashints.dev/blog/2020/06/14/scroll-to-text/:splat 301!

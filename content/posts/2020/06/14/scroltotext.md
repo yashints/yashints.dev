@@ -1,5 +1,5 @@
 ---
-path: '/scrol-to-text/'
+path: '/scroll-to-text/'
 author: Yaser Adel Mehraban
 date: 2020-06-14
 title: "Did you know about scroll to text? 📜"
