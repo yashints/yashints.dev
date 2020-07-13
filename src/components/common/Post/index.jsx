@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Disqus from 'disqus-react'
 import { Link } from 'gatsby'
 import {
   SocialShare,
@@ -24,7 +23,7 @@ import {
   PageSubtitle,
   Author,
   DonateButton,
-  DonateContainer
+  DonateContainer,
 } from './styles'
 
 export const Post = ({
@@ -34,13 +33,6 @@ export const Post = ({
   postPath,
 }) => {
   const { theme } = useContext(ThemeContext)
-  const disqusShortName = `${config.defaultTitle.toLowerCase()}`
-  const disqusConfig = {
-    url: `${config.url}${postPath}`,
-    identifier: frontmatter.id,
-    title: frontmatter.title,
-  }
-
   return (
     <ArticleWrapper theme={theme}>
       {frontmatter.img && (
@@ -91,24 +83,52 @@ export const Post = ({
       />
       <DonateContainer>
         <div>Support my work 👇🏽</div>
-        <a className="btn-donate crypto"
-        title="via Crypro Currency"
-          href="https://commerce.coinbase.com/checkout/f305ab16-b8a6-460a-a517-af767ec3c0c7">
-          <img width="24px" src={CryptoIcon} /> Crypto
+        <a
+          className="btn-donate crypto"
+          title="via Crypro Currency"
+          href="https://commerce.coinbase.com/checkout/f305ab16-b8a6-460a-a517-af767ec3c0c7"
+        >
+          <img width="24px" src={CryptoIcon} />{' '}
+          Crypto
         </a>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_donations" />
-          <input type="hidden" name="business" value="77G26DQHZZRRW" />
-          <input type="hidden" name="currency_code" value="AUD" />
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_top"
+        >
+          <input
+            type="hidden"
+            name="cmd"
+            value="_donations"
+          />
+          <input
+            type="hidden"
+            name="business"
+            value="77G26DQHZZRRW"
+          />
+          <input
+            type="hidden"
+            name="currency_code"
+            value="AUD"
+          />
           <DonateButton>
             <img width="24px" src={PayPalIcon} />
             PayPal
           </DonateButton>
-          <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+          <img
+            alt=""
+            border="0"
+            src="https://www.paypal.com/en_AU/i/scr/pixel.gif"
+            width="1"
+            height="1"
+          />
         </form>
 
-        <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807" async defer>
-        </script>
+        <script
+          src="https://commerce.coinbase.com/v1/checkout.js?version=201807"
+          async
+          defer
+        ></script>
       </DonateContainer>
       <LinksWrapper theme={theme}>
         <Back>
@@ -126,12 +146,6 @@ export const Post = ({
           )}
         </Next>
       </LinksWrapper>
-      <Comments>
-        <Disqus.DiscussionEmbed
-          shortname={disqusShortName}
-          config={disqusConfig}
-        />
-      </Comments>
     </ArticleWrapper>
   )
 }

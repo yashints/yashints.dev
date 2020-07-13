@@ -65,23 +65,63 @@ textarea:focus {
   outline: none;
 }
 
-.gatsby-highlight-code-line {
+.gatsby-highlight {
+  margin-right: -2em;
   background-color: #022a4b;
   display: block;
-  padding-right: 1em;
-  padding-left: 1.25em;
+  padding-left: 0.25em;
   border-left: 0.25em solid #ffa7c4;
-}
-
-.gatsby-highlight,
-.gatsby-highlight-code-line {
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-bottom: 1em;
 }
 
 .gatsby-highlight
   pre[class*='language-'].line-numbers {
-  padding-left: 2.8em; /* 3 */
+  padding: 0;
+  padding-left: 2.8em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  background-color: inherit;
+  margin-bottom: 0;
+}
+
+.line-numbers .line-numbers-rows {
+  height: 100%;
+}
+
+.gatsby-highlight pre[class*='language-'] > code {
+  white-space: pre-wrap;
+}
+
+.gatsby-code-button-container {
+  margin-bottom: -1em;
+  margin-right: -1.8em;
+}
+
+.gatsby-code-button-icon path:last-child {
+  fill: #fff;
+}
+
+.gatsby-code-button-icon {
+  margin-left: 5px;
+}
+
+.gatsby-code-button {
+  color: #fff;
+  font-size: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.gatsby-code-button-toaster-text {
+  width: 100%;
+  margin-top: 1em;
+  margin-left: 1.6em;
+  background-color: #022a4b;
+  color: #fff;
+  opacity: 0.7;
 }
 
 #back2Top {

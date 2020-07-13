@@ -147,7 +147,20 @@ module.exports = {
       options: {
         excerpt_separator: `<!--more-->`,
         plugins: [
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-code-buttons`,
+            options: {
+              buttonText: 'Copy',
+              toasterText:
+                'Copied to clipboard ✅',
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+            },
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
