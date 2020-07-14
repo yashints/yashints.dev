@@ -56,7 +56,7 @@ export const Speaking = ({ events }) => {
           for you to make our job a bit easier.
         </p>
       </div>
-      <HR theme={theme} />
+      <br />
       <h3>Topics I've frequently talked about</h3>
       <Tags>
         <span>Web technologies</span>
@@ -69,15 +69,12 @@ export const Speaking = ({ events }) => {
           JavaScript and AI (Tensorflow.js)
         </span>
       </Tags>
-      <HR theme={theme} />
+      <br />
       <h3 id="upcoming">Future Events</h3>
-      <HR theme={theme} />
       <Talk talks={futureEvents} theme={theme} />
+      <br />
       <h3>Past Events</h3>
-      <HR theme={theme} />
       <Talk talks={pastEvents} theme={theme} />
-      <HR theme={theme} />
-
       <h3 id="info">Request to Speak</h3>
       <div>
         <p>

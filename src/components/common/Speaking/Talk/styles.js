@@ -2,28 +2,17 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  padding: 1rem 0 2rem 0;
+  flex-flow: column wrap;
 `
 
 export const Card = styled.div`
-  flex: 0 0 15%;
-  min-width: 300px;
   display: flex;
-  flex-direction: column;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  &:not(first-of-type) {
-    margin-right: 1rem;
-    margin-top: 15px;
-  }
-
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.5),
-    0 1px 1px 0 rgba(0, 0, 0, 0.5),
-    0 1px 3px 0 rgba(0, 0, 0, 0.5);
-
+  flex-wrap: wrap;
+  font-size: 0.9em;
   img {
     margin-bottom: 0;
+    width: 32px;
+    height: 32px;
   }
 
   ${({ theme }) =>
@@ -31,27 +20,24 @@ export const Card = styled.div`
     `
       color: #fff;
       background-color: #333;
-      
-      
-      box-shadow: 0 2px 1px -1px rgba(255, 255, 255, 0.2), 0 1px 1px 0 rgba(255, 255, 255, 0.14),
-    0 1px 3px 0 rgba(255, 255, 255, 0.12);
     
 	`};
 `
 
 export const CardLink = styled.a`
-  display: block;
-  min-height: 150px;
   cursor: pointer;
   color: inherit;
 `
 
 export const CardHeader = styled.div`
-  font-weight: 700;
+  font-weight: 600;
   padding: 1rem;
+  padding-left: 0;
+  display: flex;
+  width: 100%;
 
   a {
-    display: block;
+    display: inline;
     cursor: pointer;
     color: inherit;
 
@@ -76,19 +62,15 @@ export const CardHeader = styled.div`
 `
 
 export const CardDescription = styled.div`
-  font-size: 0.9em;
-  padding: 1rem;
-  margin-bottom: auto;
+  display: inline-block;
 `
 
 export const CardDate = styled.div`
-  display: flex;
-  font-size: 0.9em;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 0.8em;
-  padding-top: 0.8em;
-  border-top: 1px solid #ddd;
+  padding-left: 1em;
+  font-weight: 600;
 
   img {
     margin-right: 10px;
@@ -96,14 +78,18 @@ export const CardDate = styled.div`
 `
 
 export const CardActions = styled.div`
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   box-sizing: border-box;
-  height: 55px;
-  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
   a {
-    margin: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 10px;
+    }
   }
 `
 

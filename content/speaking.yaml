@@ -3,7 +3,17 @@
   link: https://www.webdirections.org/code/speakers/yaser-adel-mehraban.php
   description: Tuning web performance with just browser APIs
   date: June 4th & 5th 2020
-  postDate: "2020-06-04"
+  postDate: "2020-09-04"
+  video: ""
+  slides: ""
+  code: ""
+
+- title: NDC Melbourne
+  image: "/speaking/webdirectioncode.jpg"
+  link: https://ndcmelbourne.com/speaker/yaser-adel-mehraban/
+  description: 1 day web performance workshop
+  date: July 27th - 30th 2020
+  postDate: "2020-07-27"
   video: ""
   slides: ""
   code: ""
