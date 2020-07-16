@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   display: flex;
   flex-flow: column wrap;
+  box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
+  padding: 1em;
 `
 
 export const Card = styled.div`

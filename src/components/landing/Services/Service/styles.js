@@ -32,7 +32,7 @@ export const Grow = styled.div`
   height: 150px;
 
   img {
-    width: 150px;
+    width: 130px;
     transition: all 0.2s ease-in-out;
     margin: 0 auto 1rem auto;
 

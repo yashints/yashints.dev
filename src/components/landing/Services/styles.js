@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   margin-bottom: 1.45rem;
@@ -29,15 +29,17 @@ export const Wrapper = styled.div`
       color: #adad2e;
     }
 	`}
-`;
+`
 
 export const Grid = styled.div`
-  padding: 2rem 0;
+  padding: 2rem;
   display: grid;
+  margin: auto 2em;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 4fr;
   gap: 1.2rem 3rem;
+  box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
 
   @media (max-width: 960px) {
     grid-template-columns: 1fr 1fr;
@@ -46,4 +48,4 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
-`;
+`

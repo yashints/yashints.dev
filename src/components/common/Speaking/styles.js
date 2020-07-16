@@ -13,6 +13,14 @@ export const Wrapper = styled.div`
   }
 `
 
+export const Box = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
+  padding: 1em;
+  margin-bottom: 2em;
+`
+
 export const HR = styled.hr`
   margin: 1em 0;
   ${({ theme }) =>
@@ -27,6 +35,8 @@ export const Tags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
+  padding: 1em;
 
   span {
     color: #7a7a8c;

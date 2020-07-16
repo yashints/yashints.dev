@@ -1,12 +1,12 @@
 - title: Public speaking
   icon: "/services/speaking.svg"
-  description: Meetups, conferences, national, international, you name it. He is all in.
+  description: Loves sharing knowledge
 - title: Blogging
   icon: "/services/blogging.svg"
-  description: Although he lost many of his previous posts when there was an accident with a webserver, he has restarted and is continuing. Topics vary, but mostly web development related.
+  description: Active blogger
 - title: Web Development
   icon: "/services/webdev.svg"
-  description: He is being involved in web development for more than 10 years. In short, he is in love with making web a better place for everyone.
+  description: In love with web technologies
 - title: Internet of Things (IoT)
   icon: "/services/smart-home.svg"
-  description: IoT, smart homes, and what you can do with them is been a facinating story for him since the beginning. So he spends whatever time he's left with working on small little mini projects in this space.
+  description: He likes things smart

@@ -90,19 +90,32 @@ export const Footer = () => {
           </List>
           <List>
             <li>
-              {social.map(({ id, name, link, icon, width, last }) => (
-                <Social
-                  key={id}
-                  target="_blank"
-                  title={name}
-                  rel="noopener noreferrer"
-                  aria-label={`follow me on ${name}`}
-                  href={link}
-                  last={last}
-                >
-                  <Grow as={icon} width={width ? width : '48'} height="48" />
-                </Social>
-              ))}
+              {social.map(
+                ({
+                  id,
+                  name,
+                  link,
+                  icon,
+                  width,
+                  last,
+                }) => (
+                  <Social
+                    key={id}
+                    target="_blank"
+                    title={name}
+                    rel="noopener noreferrer"
+                    aria-label={`follow me on ${name}`}
+                    href={link}
+                    last={last}
+                  >
+                    <Grow
+                      as={icon}
+                      width={width ? width : '48'}
+                      height="48"
+                    />
+                  </Social>
+                )
+              )}
             </li>
           </List>
         </Wrapper>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   margin-bottom: 1.45rem;
@@ -28,4 +28,4 @@ export const Wrapper = styled.div`
       color: #adad2e;
     }
 	`}
-`;
+`

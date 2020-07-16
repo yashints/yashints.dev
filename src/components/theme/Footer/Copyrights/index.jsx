@@ -14,18 +14,25 @@ export default () => {
   const { theme } = useContext(ThemeContext)
   return (
     <Wrapper as={SmallerContainer} theme={theme}>
+      <div>
+        All illustrations used are from{' '}
+        <a
+          href="https://iconscout.com/"
+          target="_blank"
+        >
+          iconscout
+        </a>
+      </div>
       <Links>
         ©{' '}
         <Item
           as={Link}
           to="/"
-          aria-label={`Copyright to ${
-            config.defaultTitle
-          }`}
+          aria-label={`Copyright to ${config.defaultTitle}`}
         >
           {config.defaultTitle}
         </Item>{' '}
-        2016-{`${new Date().getFullYear()} `}
+        2016-{`${new Date().getFullYear()} `}-
         Built with
         <a
           href="https://www.gatsbyjs.org"
@@ -56,7 +63,7 @@ export default () => {
             }
           />
         </a>
-        and deployed on
+        deployed on
         <a
           href="https://www.netlify.com"
           rel="noopener noreferrer"

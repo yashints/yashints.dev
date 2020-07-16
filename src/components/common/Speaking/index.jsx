@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext, ButtonLink } from 'Common'
-import { HR, Wrapper, Tags } from './styles'
+import { HR, Wrapper, Tags, Box } from './styles'
 
 import { Talk } from './Talk'
 
@@ -25,7 +25,7 @@ export const Speaking = ({ events }) => {
 
   return (
     <Wrapper theme={theme}>
-      <div>
+      <Box>
         <p>
           Having spoken at many conferences and
           meetups, sharing my knowledge with
@@ -55,7 +55,7 @@ export const Speaking = ({ events }) => {
           </a>{' '}
           for you to make our job a bit easier.
         </p>
-      </div>
+      </Box>
       <br />
       <h3>Topics I've frequently talked about</h3>
       <Tags>
@@ -75,8 +75,9 @@ export const Speaking = ({ events }) => {
       <br />
       <h3>Past Events</h3>
       <Talk talks={pastEvents} theme={theme} />
+      <br />
       <h3 id="info">Request to Speak</h3>
-      <div>
+      <Box>
         <p>
           I would absolutely love to speak at your
           conference! However, there are a few
@@ -211,10 +212,9 @@ export const Speaking = ({ events }) => {
             .
           </li>
         </ul>
-      </div>
-      <HR theme={theme} />
+      </Box>
       <h3>What’s in It for You?</h3>
-      <div>
+      <Box>
         Apart from helping to promote and
         publicise the event, I will endeavour to
         make myself available to attendees for the
@@ -223,19 +223,20 @@ export const Speaking = ({ events }) => {
         will deliver a quality talk of practical
         relevance, and hold myself to a high
         standard.
-      </div>
-      <ButtonLink
-        to="mailto:me@yashints.dev"
-        linkText="Sounds OK? Get in touch!"
-        hasMarginTop="20px"
-        hasMargin={'true'}
-        minwidth="200px"
-        external={true}
-      />
+        <ButtonLink
+          to="mailto:me@yashints.dev"
+          linkText="Sounds OK? Get in touch!"
+          hasMarginTop="20px"
+          hasMargin={'true'}
+          minwidth="200px"
+          external={true}
+        />
+      </Box>
 
-      <HR theme={theme} />
+      <br />
+      <br />
       <h3 id="bio">Bio</h3>
-      <div>
+      <Box>
         <p>
           Although it doesn’t look like it, Yaser
           is an almond croissant addict cleverly
@@ -277,7 +278,7 @@ export const Speaking = ({ events }) => {
             </a>
           </li>
         </ul>
-      </div>
+      </Box>
     </Wrapper>
   )
 }
