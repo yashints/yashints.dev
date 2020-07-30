@@ -1,6 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledTitle = styled.h1`
+  font-weight: 400;
   margin-bottom: 1rem;
 
   @media (max-width: 960px) {
@@ -12,4 +13,4 @@ export const StyledTitle = styled.h1`
     `
 			color: #fff;
 	`};
-`
+`;

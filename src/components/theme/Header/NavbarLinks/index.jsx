@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import { ThemeContext } from 'Common'
-import night from 'Static/icons/night.svg'
-import day from 'Static/icons/day.svg'
-import { Links, StyledButton } from './styles'
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import { ThemeContext } from 'Common';
+import night from 'Static/icons/night.svg';
+import day from 'Static/icons/day.svg';
+import { Links, StyledButton } from './styles';
 
 export default ({ desktop }) => {
-  const { theme, toggleTheme } = useContext(ThemeContext)
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <Links desktop={desktop} theme={theme}>
       <Link to="/" activeClassName="current">
@@ -14,6 +14,9 @@ export default ({ desktop }) => {
       </Link>
       <Link to="/about" activeClassName="current">
         About
+      </Link>
+      <Link to="/services" activeClassName="current">
+        Services
       </Link>
       <Link to="/speaking" activeClassName="current">
         Speaking
@@ -28,5 +31,5 @@ export default ({ desktop }) => {
         <img src={theme === 'dark' ? day : night} alt={theme} />
       </StyledButton>
     </Links>
-  )
-}
+  );
+};
