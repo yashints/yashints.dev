@@ -1,9 +1,29 @@
+- title: NDC Sydney
+  image: "/speaking/ndcsyd.jpeg"
+  link: https://ndcsydney.com/speaker/yaser-adel-mehraban/
+  description: Tuning web performance with just browser APIs
+  date: October 12 - 16th 2020
+  postDate: "2020-10-16"
+  video: ""
+  slides: ""
+  code: ""
+
 - title: Web Directions Code
   image: "/speaking/webdirectioncode.jpg"
   link: https://www.webdirections.org/code/speakers/yaser-adel-mehraban.php
   description: Tuning web performance with just browser APIs
-  date: June 4th & 5th 2020
-  postDate: "2020-09-04"
+  date: September 4th & 5th 2020
+  postDate: "2020-09-30"
+  video: ""
+  slides: ""
+  code: ""
+
+- title: NDC Minnesota
+  image: "/speaking/webdirectioncode.jpg"
+  link: https://ndcminnesota.com/speakers/yaser-adel-mehraban
+  description: Web performance matters
+  date: September 8 - 11th 2020
+  postDate: "2020-09-11"
   video: ""
   slides: ""
   code: ""
