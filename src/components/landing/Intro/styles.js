@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 2em;
@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
         color: #adad2e;
       }
 	`}
-`
+`;
 
 export const Flex = styled.div`
   display: flex;
@@ -43,9 +43,15 @@ export const Flex = styled.div`
   @media (max-width: 380px) {
     flex-direction: column;
   }
-`
+`;
 
 export const Box = styled.div`
   box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
   padding: 1em;
-`
+`;
+export const BoxAttention = styled.div`
+  margin-top: 5px;
+  box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
+  font-weight: 500;
+  padding: 1em;
+`;

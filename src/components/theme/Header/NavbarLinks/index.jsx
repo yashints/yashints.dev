@@ -15,6 +15,9 @@ export default ({ desktop }) => {
       <Link to="/about" activeClassName="current">
         About
       </Link>
+      <Link to="/services" activeClassName="current">
+        Services
+      </Link>
       <Link to="/speaking" activeClassName="current">
         Speaking
       </Link>

@@ -1,42 +1,30 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import {
-  Container,
-  ThemeContext,
-  ButtonLink,
-} from 'Common'
-import { Wrapper, Flex, Box } from './styles'
-import config from 'Data'
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import { Container, ThemeContext, ButtonLink } from 'Common';
+import { Wrapper, Flex, Box, BoxAttention } from './styles';
+import config from 'Data';
 
 export const Intro = () => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   return (
     <Wrapper theme={theme} as={Container}>
       <h1>Meet {config.shortName}</h1>
       <Box>
         <p>
-          Also known as {config.defaultTitle}, a
-          front-end lead engineer, international
-          speaker, blogger, and hiker.
+          Also known as {config.defaultTitle}, a front-end lead engineer,
+          international speaker, blogger, and hiker.
         </p>
         <p>
-          Although it doesn’t look like it, Yas is
-          an almond croissant addict cleverly
-          disguised as a successful web developer
-          😁. Since it was relatively clear early
-          on that it would be slightly more than
-          difficult to make a living while sitting
-          in a café eating a croissant and
-          drinking a cappuccino, he’s focused his
-          energy on the web, which happily has
-          proven itself to be a wonderful decision
-          🙃.
+          Although it doesn’t look like it, Yas is an almond croissant addict
+          cleverly disguised as a successful web developer 😁. Since it was
+          relatively clear early on that it would be slightly more than
+          difficult to make a living while sitting in a café eating a croissant
+          and drinking a cappuccino, he’s focused his energy on the web, which
+          happily has proven itself to be a wonderful decision 🙃.
         </p>
         <p>
-          Apart from that, he is a keen public
-          speaker, and has spoken in many meetups
-          and conferences like NDC and Voxxed Days
-          around the world.
+          Apart from that, he is a keen public speaker, and has spoken in many
+          meetups and conferences like NDC and Voxxed Days around the world.
         </p>
         <Flex>
           <ButtonLink
@@ -66,6 +54,11 @@ export const Intro = () => {
           />
         </Flex>
       </Box>
+      <Link to="https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps">
+        <BoxAttention>
+          ⚡ Checkout my Web performance for PWAs course on PluralSight. ⚡
+        </BoxAttention>
+      </Link>
     </Wrapper>
-  )
-}
+  );
+};

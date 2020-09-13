@@ -15,9 +15,11 @@ export const Important = styled.span`
   font-weight: 500;
 `;
 
-export const FAQ = styled.h3`
+export const H3 = styled.h3`
   font-weight: 500;
 `;
+
+export const Link = styled.a``;
 
 export const DIV = styled.div`
   margin: 2em 0;

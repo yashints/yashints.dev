@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ButtonLink } from 'Common';
-import { Wrapper, Important, DIV, Summary, FAQ } from './styles';
+import { Wrapper, Important, DIV, Summary, H3, Link } from './styles';
 
 export const Services = () => {
   const [ppl, setPPLVisibility] = useState(false);
@@ -11,6 +11,22 @@ export const Services = () => {
   const [uni, setUniversity] = useState(false);
   return (
     <Wrapper>
+      <H3>Courses</H3>
+      <DIV>
+        I've recently published my{' '}
+        <Link
+          href={
+            'https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps'
+          }
+        >
+          <Important>Web performance for PWAs </Important>
+          course on PluralSight
+        </Link>
+        . It's packed with practical examples, tips and tricks to equip you for
+        your journey on web performance tuning. Make sure to check it out and
+        leave your feedback once finished.
+      </DIV>
+      <H3>Workshops</H3>
       <Important>You and your team armed with my knowledge.</Important>
       <DIV>
         Being a consultant means I get to work with many web applications from
@@ -41,7 +57,7 @@ export const Services = () => {
           minwidth="100%"
         />
       </DIV>
-      <FAQ>FAQ</FAQ>
+      <H3>FAQ</H3>
       <Summary active={ppl} onClick={() => setPPLVisibility(!ppl)}>
         <Important>
           {!ppl && '⯈ '}
