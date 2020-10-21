@@ -258,3 +258,5 @@ And now it should look like this:
 ## Summary
 
 We saw how to add `Tailwindcss` library to our Vue 3 application created by Vue CLI. Hopefully this will help some of you out there facing the same issue as me. See you next time 👏🏽.
+
+You can find the code in my [GitHub repository](https://github.com/yashints/Vue-Tailwind).
