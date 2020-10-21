@@ -1,7 +1,7 @@
 ---
 path: '/vue-tailwind/'
 author: Yaser Adel Mehraban
-date: 2020-10-09
+date: 2020-10-22
 title: "Get started with Vue 3 and Tailwindcss"
 popular: true
 tags: [showdev, webdev, vue, tailwind]
