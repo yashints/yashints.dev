@@ -2,7 +2,7 @@
 path: '/e2e-vue-playwright/'
 author: Yaser Adel Mehraban
 date: 2021-02-07
-title: "How to end-to-end test your Vue.js apps with Playwright"
+title: "How to end-to-end test your Vue.js apps with Playwright 🧪"
 popular: true
 tags: [webdev, showdev, vue, playwright]
 thumbnail: './vue-playwright.png'
