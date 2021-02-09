@@ -1,3 +1,13 @@
+- title: NDC London
+  image: "/speaking/ndcsyd.jpeg"
+  link: https://ndc-london.com/speakers/yaser-adel-mehraban
+  description: Tuning web performance with just browser APIs
+  date: January 25 - 29th 2021
+  postDate: "2021-01-25"
+  video: ""
+  slides: ""
+  code: ""
+
 - title: NDC Sydney
   image: "/speaking/ndcsyd.jpeg"
   link: https://ndcsydney.com/speaker/yaser-adel-mehraban/
