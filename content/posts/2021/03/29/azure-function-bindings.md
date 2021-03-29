@@ -2,9 +2,9 @@
 path: '/azure-function-bindings/'
 author: Yaser Adel Mehraban
 date: 2021-03-29
-title: "Exploring Azure Function Bindings ⚡"
+title: "Exploring Azure Function Triggers and Bindings ⚡"
 popular: true
-tags: [showdev, azure, function, binding]
+tags: [showdev, azure, functions, serverless]
 ---
 
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/) is one of the the serverless services in Azure which allows you to run your business logic without worrying about where it's running and how it scales. But it being serverless is not the highlight of this amazing service, the way it's designed which allows you to leverage a very diverse set of triggers and input/output bindings without writing much code is to me the best of the best. So in this article I've decided to take you on a journey with a few of the common triggers and bindings and show you how to set them up quickly and without writing any unnecessary code.
@@ -75,7 +75,7 @@ public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, ILogger
 }
 ```
 
-This function will run based on the [CORN expression](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=csharp#ncrontab-expressions) you have specified. Our example CORN expression will run the function 12 times an hour, every 5th minute of every hour of the day.
+This function will run based on the [CRON expression](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=csharp#ncrontab-expressions) you have specified. Our example CRON expression will run the function 12 times an hour, every 5th minute of every hour of the day.
 
 ### Blob trigger
 
