@@ -364,3 +364,6 @@ If you're using [GitHub Actions](https://github.com/features/actions) for your C
 
 Bicep comes with a CLI that you can install locally on [Windows, MacOS, and Linux](https://github.com/Azure/bicep/blob/main/docs/installing.md). That gives you the ability to build and deploy your Bicep files with [Azure CLI](https://docs.microsoft.com/en-us/cli/azure).
 
+## Summery
+
+In short, I highly recommend using Bicep and improving your IaC and deployments. Of course if your ARM templates are too many, or very complex you might benefit from converting them more, but if you already have a streamlined pipeline with maintainable templates, you could keep them and create any new template using Bicep instead.
