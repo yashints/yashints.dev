@@ -260,12 +260,10 @@ export const Speaking = ({ events }) => {
             hiker.
           </li>
           <li>
-            <strong>Designation:</strong> Lead
-            Consultant
+            <strong>Designation:</strong> Azure Technical Trainer
           </li>
           <li>
-            <strong>Company:</strong> Telstra
-            Purple
+            <strong>Company:</strong> Microsoft
           </li>
           <li>
             <strong>Headshot:</strong>{' '}

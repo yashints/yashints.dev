@@ -29,7 +29,8 @@ export const Services = () => {
       <H3>Workshops</H3>
       <Important>You and your team armed with my knowledge.</Important>
       <DIV>
-        Being a consultant means I get to work with many web applications from
+        Coming with strong development and consulting background means I had the 
+        chance to work on many web applications from
         small to large commercial products. Because of this, I've seen far too
         many occasions where the application is suffering from poor performance
         and the users are not happy when interacting with it. So I've put

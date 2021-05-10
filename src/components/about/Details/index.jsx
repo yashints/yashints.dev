@@ -9,22 +9,16 @@ export const Details = () => {
   return (
     <Wrapper as={Container}>
       <Text theme={theme}>
-        He is a Melbourne based lead consultant at
-        <a
-          href="https://readify.net"
-          target="_blank"
-        >
-          {' '}
-          Telstra Purple
-        </a>
-        , who enjoys building everything from
-        small business sites to large scale rich
-        interactive web applications.
+        He is an Azure Technical Trainer at
+        <a target="_blank" href="microsoft.com">Microsoft</a>
+        , who enjoys sharing his knowledge with the community,
+        building stuff (mostly apps, but sometimes wooden projects) 
+        and solve problems.
       </Text>
       <Text>
-        He is passionate about everything web and
+        He is passionate about everything cloud and web, and
         in his spare time, apart from some
-        woodworking, he reads, writes, and works
+        woodworking, reads, writes, and works
         on the latest and greatest web
         technologies and frameworks.
       </Text>
