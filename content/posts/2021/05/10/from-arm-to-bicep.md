@@ -1,7 +1,7 @@
 ---
 path: '/from-arm-to-bicep/'
 author: Yaser Adel Mehraban
-date: 2021-04-30
+date: 2021-05-10
 title: "From ARM to Bicep 💪🏽"
 popular: true
 tags: [showdev, azure, arm, bicep]
