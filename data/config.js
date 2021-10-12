@@ -18,6 +18,7 @@ module.exports = {
       'https://www.linkedin.com/in/yashints',
     youtube: '',
     google: '',
+    email: 'mailto:me@yashints.dev'
   },
   googleAnalyticsID: 'UA-107068383-5',
   themeColor: '#00c6ff',

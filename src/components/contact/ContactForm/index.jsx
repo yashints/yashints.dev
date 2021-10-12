@@ -91,7 +91,7 @@ const ContactForm = ({
           }
         />
         Email:&nbsp;
-        <a href={config.socialLinks.twitter}>
+        <a href={config.socialLinks.email}>
           {config.contact.email}
         </a>
       </StackedText>
