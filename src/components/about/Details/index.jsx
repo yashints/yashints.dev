@@ -10,7 +10,7 @@ export const Details = () => {
     <Wrapper as={Container}>
       <Text theme={theme}>
         He is an Azure Technical Trainer at
-        <a target="_blank" href="microsoft.com">Microsoft</a>
+        <a target="_blank" href="microsoft.com"> Microsoft</a>
         , who enjoys sharing his knowledge with the community,
         building stuff (mostly apps, but sometimes wooden projects) 
         and solve problems.
