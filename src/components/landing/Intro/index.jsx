@@ -54,9 +54,19 @@ export const Intro = () => {
           />
         </Flex>
       </Box>
+      <Link to="https://www.amazon.com/author/yas">
+        <BoxAttention>
+          📖 Woohoo, my first book ever is now listed on Amazon. If you're interested in Azure Bicep, check it out. ⚡
+        </BoxAttention>
+      </Link>
+      <Link to="https://app.pluralsight.com/library/courses/vue-authentication-authorization/table-of-contents">
+        <BoxAttention>
+          📽️ Checkout my latest PluralSight course on Authentication and Authorization for VueJs apps. 
+        </BoxAttention>
+      </Link>
       <Link to="https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps">
         <BoxAttention>
-          ⚡ Checkout my Web performance for PWAs course on PluralSight. ⚡
+          📽️ Checkout my Web performance for PWAs course on PluralSight. 
         </BoxAttention>
       </Link>
     </Wrapper>
