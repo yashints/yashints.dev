@@ -56,7 +56,7 @@ export const Intro = () => {
       </Box>
       <Link to="https://www.amazon.com/author/yas">
         <BoxAttention>
-          📖 Woohoo, my first book ever is now listed on Amazon. If you're interested in Azure Bicep, check it out. ⚡
+          📖 Woohoo, my first book ever is now listed on Amazon. If you're interested in Azure Bicep, check it out. 
         </BoxAttention>
       </Link>
       <Link to="https://app.pluralsight.com/library/courses/vue-authentication-authorization/table-of-contents">
