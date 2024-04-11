@@ -1,5 +1,5 @@
-export * from './Intro'
-export * from './Skills'
-export * from './Services'
-export * from './Github'
-export * from './Popular'
+export { GitHub } from './GitHub';
+export { Intro } from './Intro';
+export { Popular } from './Popular';
+export { Services } from './Services';
+export { Skills } from './Skills';

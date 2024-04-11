@@ -1,27 +1,20 @@
 import React from 'react';
-import {
-  Intro,
-  Skills,
-  Work,
-  Services,
-  Github,
-  Popular,
-} from 'Components/landing';
+import { Intro, Skills, Services, GitHub, Popular } from 'Components/landing';
 import config from 'Data';
 import { Layout, SEO } from 'Common';
 
-export default () => (
+const IndexPage = () => (
   <Layout>
-    <SEO
-      title={`(${
-        config.legalName
-      }) Personal site`}
-      type="Organization"
-    />
     <Intro />
     <Skills />
     <Services />
-    <Github />
+    <GitHub />
     <Popular />
   </Layout>
 );
+
+export const Head = () => (
+  <SEO title={`(${config.legalName}) Personal site`} type="Organization" />
+);
+
+export default IndexPage;

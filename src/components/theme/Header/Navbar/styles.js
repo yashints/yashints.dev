@@ -20,8 +20,8 @@ export const Brand = styled.div`
     width: 80px;
   }
 
-  ${({ theme }) =>
-    theme === 'dark' &&
+  ${({ $theme }) =>
+    $theme === 'dark' &&
     `
 			color: #fff;
 	`};

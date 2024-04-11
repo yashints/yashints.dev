@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
   text-align: left;
@@ -68,11 +68,11 @@ export const ContactWrapper = styled.div`
       }
     }
   }
-`
+`;
 
 export const Wrapper = styled.div`
   margin-bottom: 1rem;
-`
+`;
 
 export const InputField = styled.div`
   width: 100%;
@@ -105,19 +105,19 @@ export const InputField = styled.div`
 		min-height: 8rem;
 		margin: 0;
 	`};
-`
+`;
 
 export const Center = styled.div`
   text-align: center;
-`
+`;
 
 export const Error = styled.div`
   color: red;
-`
+`;
 
 export const Text = styled.div`
   margin-bottom: 1rem;
-`
+`;
 export const StackedText = styled.div`
   display: flex;
   align-items: center;
@@ -127,6 +127,6 @@ export const StackedText = styled.div`
   svg {
     margin-right: 20px;
   }
-`
+`;
 
-export const Icon = styled.div``
+export const Icon = styled.div``;

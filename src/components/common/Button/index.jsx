@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
-import { Link } from 'gatsby'
-import { LinkButton } from './styles'
+import React, { useContext } from 'react';
+import { ThemeContext } from 'Common';
+import { Link } from 'gatsby';
+import { LinkButton } from './styles';
 
 export const ButtonLink = ({
   to,
@@ -11,14 +11,14 @@ export const ButtonLink = ({
   hasMargin,
   external = false,
 }) => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   return !external ? (
     <LinkButton
       as={Link}
       to={to}
-      theme={theme}
-      minwidth={minwidth}
-      hasmargintop={hasMarginTop}
+      $theme={theme}
+      $minwidth={minwidth}
+      $hasmargintop={hasMarginTop}
     >
       {linkText}
     </LinkButton>
@@ -28,10 +28,10 @@ export const ButtonLink = ({
       theme={theme}
       target="_blank"
       rel="noopener norefferer"
-      minwidth={minwidth}
-      hasmargintop={hasMarginTop}
+      $minwidth={minwidth}
+      $hasmargintop={hasMarginTop}
     >
       {linkText}
     </LinkButton>
-  )
-}
+  );
+};

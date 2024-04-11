@@ -1,8 +1,8 @@
-import React from 'react'
-import { Layout, SEO, Container } from 'Common'
-import { url, legalName, contact } from 'Data'
+import React from 'react';
+import { Layout, SEO, Container } from 'Common';
+import { url, legalName, contact } from 'Data';
 
-export default () => (
+const PrivacyPolicyPage = () => (
   <Layout>
     <SEO
       title="Privacy Policy"
@@ -280,4 +280,6 @@ export default () => (
       </ul>
     </Container>
   </Layout>
-)
+);
+
+export default PrivacyPolicyPage;

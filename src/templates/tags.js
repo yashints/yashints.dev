@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import {
   Layout,
   Container,
@@ -11,12 +11,10 @@ import {
 } from 'Common';
 import styled from 'styled-components';
 
-export default ({ data, pageContext }) => {
+const Tags = ({ pageContext }) => {
+  const data = useStaticQuery(pageQuery);
   const { tag } = pageContext;
-  const {
-    edges,
-    totalCount,
-  } = data.allMarkdownRemark;
+  const { edges, totalCount } = data.allMarkdownRemark;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
@@ -27,19 +25,13 @@ export default ({ data, pageContext }) => {
         <SEO
           title={tag}
           type="Organization"
-          location={`/tags/${tag.replace(
-            ' ',
-            ''
-          )}`}
+          location={`/tags/${tag.replace(' ', '')}`}
         />
         <PageTitle>{tagHeader}</PageTitle>
         <TagContainer>
           <Row>
-            {edges.map(post => (
-              <CardPost
-                key={post.node.id}
-                {...post}
-              />
+            {edges.map((post) => (
+              <CardPost key={post.node.id} {...post} />
             ))}
 
             <Center>
@@ -57,17 +49,14 @@ export default ({ data, pageContext }) => {
   );
 };
 
+export default Tags;
+
 export const pageQuery = graphql`
-  query($tag: String) {
+  query postsByTagsQuery($tag: String) {
     allMarkdownRemark(
-      limit: 2000
-      sort: {
-        fields: [frontmatter___date]
-        order: DESC
-      }
-      filter: {
-        frontmatter: { tags: { in: [$tag] } }
-      }
+      limit: 50
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       totalCount
       edges {
@@ -84,7 +73,7 @@ export const pageQuery = graphql`
             tags
             thumbnail {
               childImageSharp {
-                ...imageFields
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

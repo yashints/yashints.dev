@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import { ThemeContext } from 'Common'
-import { PageWrapper, PageLink } from './styles'
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import { ThemeContext } from 'Common';
+import { PageWrapper, PageLink } from './styles';
 
 export const PostsPagination = ({ isFirst, isLast, prevPage, nextPage }) => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
 
   return (
     <PageWrapper theme={theme}>
@@ -23,5 +23,5 @@ export const PostsPagination = ({ isFirst, isLast, prevPage, nextPage }) => {
         )}
       </PageLink>
     </PageWrapper>
-  )
-}
+  );
+};

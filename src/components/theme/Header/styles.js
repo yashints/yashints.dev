@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   background: #fff;
@@ -7,14 +7,14 @@ export const Wrapper = styled.div`
   border-bottom: 0.01em solid rgb(204, 204, 204);
   margin-bottom: -3rem;
 
-  ${({ theme }) =>
-    theme === 'dark' &&
+  ${({ $theme }) =>
+    $theme === 'dark' &&
     `
 		background: #212121;
 		border-bottom: unset;
 		box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.2);
 	`}
-`
+`;
 
 export const Overlay = styled.div`
   position: fixed;
@@ -24,10 +24,10 @@ export const Overlay = styled.div`
   display: none;
   transition: 0.4s;
 
-  ${({ sidebar }) =>
-    sidebar &&
+  ${({ $sidebar }) =>
+    $sidebar &&
     `
 		display: block;
 		z-index: 4;	
 	`}
-`
+`;

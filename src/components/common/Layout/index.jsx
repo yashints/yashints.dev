@@ -1,54 +1,45 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import { ThemeContext, Provider } from 'Common'
-import { Header, Footer } from 'Theme'
-import SpaceCraft from 'Static/icons/spacecraft.svg'
-import './layout.scss'
-import './main.scss'
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import { ThemeContext, Provider } from 'Common';
+import { Header, Footer } from 'Theme';
+import SpaceCraft from 'Static/icons/spacecraft.svg';
+import './layout.scss';
+import './main.scss';
 
 function throttle(func, timeout) {
-  let ready = true
+  let ready = true;
   return (...args) => {
     if (!ready) {
-      return
+      return;
     }
 
-    ready = false
-    func(...args)
+    ready = false;
+    func(...args);
     setTimeout(() => {
-      ready = true
-    }, timeout)
-  }
+      ready = true;
+    }, timeout);
+  };
 }
 
 export const Layout = ({ children }) => {
-  const [scrollY, setScrollY] = useState(0)
+  const [scrollY, setScrollY] = useState(0);
 
   const scrollHandler = () => {
-    setScrollY(window.pageYOffset)
-  }
+    setScrollY(window.scrollY);
+  };
 
   useEffect(() => {
-    const handleInputThrottled = throttle(
-      scrollHandler,
-      200
-    )
+    const handleInputThrottled = throttle(scrollHandler, 200);
 
     function watchScroll() {
-      window.addEventListener(
-        'scroll',
-        handleInputThrottled
-      )
+      window.addEventListener('scroll', handleInputThrottled);
     }
-    watchScroll()
+    watchScroll();
 
     return () => {
-      window.removeEventListener(
-        'scroll',
-        handleInputThrottled
-      )
-    }
-  })
+      window.removeEventListener('scroll', handleInputThrottled);
+    };
+  });
 
   return (
     <Provider>
@@ -57,9 +48,7 @@ export const Layout = ({ children }) => {
           <>
             <div id="top">
               <a
-                className={
-                  scrollY > 350 ? 'visible' : ''
-                }
+                className={scrollY > 350 ? 'visible' : ''}
                 id="back2Top"
                 title="Back to top"
                 href="#top"
@@ -72,17 +61,15 @@ export const Layout = ({ children }) => {
                 />
               </a>
               <Header />
-              <LayoutStyled theme={theme}>
-                {children}
-              </LayoutStyled>
+              <LayoutStyled theme={theme}>{children}</LayoutStyled>
               <Footer />
             </div>
           </>
         )}
       </ThemeContext.Consumer>
     </Provider>
-  )
-}
+  );
+};
 
 const LayoutStyled = styled.div`
   width: 100%;
@@ -93,4 +80,4 @@ const LayoutStyled = styled.div`
     `
 		background: #212121;
 	`};
-`
+`;

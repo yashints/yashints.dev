@@ -1,57 +1,48 @@
 import React from 'react';
-import Img from 'gatsby-image';
-import { StaticQuery, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import {
-  Layout,
-  Container,
-  SEO,
-  PageTitle,
-} from 'Common';
-import {
-  Details,
-  Socials,
-} from 'Components/about';
+import { Layout, Container, SEO, PageTitle } from 'Common';
+import { Details, Socials } from 'Components/about';
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query AboutImageQuery {
-        AboutImage: imageSharp(
-          fluid: {
-            originalName: { eq: "me.jpg" }
-          }
-        ) {
-          ...imageFields
-        }
+export const query = graphql`
+  query AboutImageQuery {
+    file(name: { eq: "me" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
       }
-    `}
-    render={data => (
-      <Layout>
-        <Container>
-          <SEO
-            title="About"
-            type="Organization"
-            location="/about"
-          />
-          <PageTitle>Who is this guy?</PageTitle>
-          <Flex>
-            <Details />
-            <Portrait>
-              <a href={data.AboutImage.fluid.src}>
-                <Img
-                  fluid={data.AboutImage.fluid}
-                  alt="Yaser Adel Mehraban's photo"
-                />
-              </a>
-            </Portrait>
-          </Flex>
-          <Socials />
-        </Container>
-      </Layout>
-    )}
-  />
-);
+    }
+  }
+`;
+
+const AboutPage = () => {
+  const {
+    file: {
+      childImageSharp: { gatsbyImageData },
+    },
+  } = useStaticQuery(query);
+  return (
+    <Layout>
+      <Container>
+        <PageTitle>Who is this guy?</PageTitle>
+        <Flex>
+          <Details />
+          <Portrait>
+            <a href={gatsbyImageData.src}>
+              <GatsbyImage
+                image={gatsbyImageData}
+                alt="Yaser Adel Mehraban's photo"
+              />
+            </a>
+          </Portrait>
+        </Flex>
+        <Socials />
+      </Container>
+    </Layout>
+  );
+};
+
+export default AboutPage;
 
 const Flex = styled.div`
   display: flex;
@@ -70,3 +61,7 @@ const Portrait = styled.div`
   width: 100%;
   padding-left: 0.5rem;
 `;
+
+export const Head = () => (
+  <SEO title="About" type="Organization" location="/about" />
+);

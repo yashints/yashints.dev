@@ -1,26 +1,24 @@
 module.exports = {
   defaultTitle: 'Yashints',
-  logo:
-    'https://yashints.dev/favicon/logo-48.png',
-  author: 'Yaser Adel Mehraban (Yashints)',
+  logo: 'https://yashints.dev/favicon/logo-48.png',
+  author: 'Yas Adel Mehraban (Yashints)',
   url: 'https://yashints.dev',
   rootUrl: 'yashints.dev',
+  title: 'Yashints | Blog',
   legalName: 'Yaser Adel Mehraban',
   shortName: 'Yas',
-  siteGithubRepo:
-    'https://github.com/yashints/yashints.dev',
+  siteGithubRepo: 'https://github.com/yashints/yashints.dev',
   defaultDescription:
     'A front end lead engineer, international speaker, blogger and a hiker.',
   socialLinks: {
     twitter: 'http://www.twitter.com/yashints',
     github: 'https://github.com/yashints',
-    linkedIn:
-      'https://www.linkedin.com/in/yashints',
+    linkedIn: 'https://www.linkedin.com/in/yashints',
     youtube: '',
     google: '',
-    email: 'mailto:me@yashints.dev'
+    email: 'mailto:me@yashints.dev',
   },
-  googleAnalyticsID: 'UA-107068383-5',
+  googleAnalyticsID: 'G-KZ55P1V3M1',
   themeColor: '#00c6ff',
   backgroundColor: '#00c6ff',
   siteRss: '/rss',
@@ -39,4 +37,4 @@ module.exports = {
     email: 'me@yashints.dev',
   },
   foundingDate: '2012',
-}
+};

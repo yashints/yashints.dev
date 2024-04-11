@@ -1,26 +1,17 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import {
-  Layout,
-  SmallerContainer,
-  SEO,
-  Post,
-} from 'Common'
-import './highlight.scss'
-import Util from 'Util'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Layout, SmallerContainer, SEO, Post } from 'Common';
+import './highlight.scss';
 
-export default ({
-  data: { post },
-  pageContext,
-}) => {
+const PostTemplate = ({ pageContext }) => {
+  const { post } = useStaticQuery(postQuery);
+  console.log(post);
   const thumbnail = post.frontmatter.thumbnail
-    ? post.frontmatter.thumbnail.childImageSharp
-        .fluid.originalImg
-    : ''
-  post.postPath = pageContext.postPath
-  post.frontmatter.nextPost = pageContext.nextPost
-  post.frontmatter.previousPost =
-    pageContext.previousPost
+    ? post.frontmatter.thumbnail.childImageSharp.gatsbyImageData
+    : '';
+  post.postPath = pageContext.postPath;
+  post.frontmatter.nextPost = pageContext.nextPost;
+  post.frontmatter.previousPost = pageContext.previousPost;
 
   return (
     <Layout>
@@ -31,22 +22,20 @@ export default ({
           articleBody={post.html}
           datePublished={post.frontmatter.date}
           cover={thumbnail}
-          canonical_url={
-            post.frontmatter.canonical_url
-          }
+          canonical_url={post.frontmatter.canonical_url}
           location={pageContext.postPath}
         />
         <Post {...post} />
       </SmallerContainer>
     </Layout>
-  )
-}
+  );
+};
+
+export default PostTemplate;
 
 export const postQuery = graphql`
-  query($title: String!) {
-    post: markdownRemark(
-      frontmatter: { title: { eq: $title } }
-    ) {
+  query postQuery($title: String) {
+    post: markdownRemark(frontmatter: { title: { eq: $title } }) {
       html
       timeToRead
       frontmatter {
@@ -64,12 +53,10 @@ export const postQuery = graphql`
         }
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              originalImg
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }
     }
   }
-`
+`;

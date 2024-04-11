@@ -5,10 +5,10 @@ import night from 'Static/icons/night.svg';
 import day from 'Static/icons/day.svg';
 import { Links, StyledButton } from './styles';
 
-export default ({ desktop }) => {
+export const NavbarLinks = ({ $desktop }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <Links desktop={desktop} theme={theme}>
+    <Links $desktop={$desktop} $theme={theme}>
       <Link to="/" activeClassName="current">
         Home
       </Link>

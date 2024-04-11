@@ -1,30 +1,17 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import {
-  Layout,
-  Container,
-  SEO,
-  PageTitle,
-  Tag,
-} from 'Common';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Layout, Container, SEO, PageTitle, Tag } from 'Common';
 import styled from 'styled-components';
 
-export default ({
-  data: {
-    allMarkdownRemark: { group },
-  },
-}) => {
+const TagsPage = () => {
+  const data = useStaticQuery(pageQuery);
+  const group = data.allMarkdownRemark.group;
   return (
     <Layout>
       <Container>
-        <SEO
-          title="Tags"
-          type="Organization"
-          location="/tags"
-        />
         <PageTitle>Tags</PageTitle>
         <Wrapper>
-          {group.map(tag => (
+          {group.map((tag) => (
             <Tag {...tag} key={tag.fieldValue} />
           ))}
         </Wrapper>
@@ -33,10 +20,16 @@ export default ({
   );
 };
 
+export default TagsPage;
+
+export const Head = () => (
+  <SEO title="Tags" type="Organization" location="/tags" />
+);
+
 export const pageQuery = graphql`
-  query {
+  query tagsQuery {
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }

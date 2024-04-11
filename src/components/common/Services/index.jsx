@@ -29,14 +29,14 @@ export const Services = () => {
       <H3>Workshops</H3>
       <Important>You and your team armed with my knowledge.</Important>
       <DIV>
-        Coming with strong development and consulting background means I had the 
-        chance to work on many web applications from
-        small to large commercial products. Because of this, I've seen far too
-        many occasions where the application is suffering from poor performance
-        and the users are not happy when interacting with it. So I've put
-        together my <Important>Web Performance</Important> workshop which covers
-        many areas from measuring and base lining to using modern Web APIs to be
-        reactive to performance.
+        Coming with strong development and consulting background means I had the
+        chance to work on many web applications from small to large commercial
+        products. Because of this, I've seen far too many occasions where the
+        application is suffering from poor performance and the users are not
+        happy when interacting with it. So I've put together my{' '}
+        <Important>Web Performance</Important> workshop which covers many areas
+        from measuring and base lining to using modern Web APIs to be reactive
+        to performance.
       </DIV>
 
       <DIV>

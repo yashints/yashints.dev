@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   ${({ theme }) =>
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     padding: 2rem;
     text-align: center;
   }
-`
+`;
 
 export const Box = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const Box = styled.div`
   box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
   padding: 1em;
   margin-bottom: 2em;
-`
+`;
 
 export const HR = styled.hr`
   margin: 1em 0;
@@ -28,7 +28,7 @@ export const HR = styled.hr`
     `
 			color: #fff;
 	`};
-`
+`;
 
 export const Tags = styled.div`
   padding: 0.5rem 0 1rem;
@@ -48,4 +48,4 @@ export const Tags = styled.div`
     padding: 0.2rem 0.85rem 0.25rem;
     margin: 0.3em;
   }
-`
+`;

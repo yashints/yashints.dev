@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ArticleWrapper = styled.div`
   color: #212121;
@@ -43,7 +43,7 @@ export const ArticleWrapper = styled.div`
         }   
       }
 	`};
-`
+`;
 
 export const LinksWrapper = styled.div`
   padding-top: 2rem;
@@ -58,7 +58,8 @@ export const LinksWrapper = styled.div`
     border-radius: 5px;
     background-color: #f1f1f1;
     color: #000;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    box-shadow:
+      0 3px 6px rgba(0, 0, 0, 0.16),
       0 3px 6px rgba(0, 0, 0, 0.23);
     span {
       position: relative;
@@ -74,22 +75,22 @@ export const LinksWrapper = styled.div`
       background-color: #333;
     }
 	`};
-`
+`;
 
-export const Back = styled.div``
+export const Back = styled.div``;
 
-export const Next = styled.div``
+export const Next = styled.div``;
 
 export const Content = styled.div`
   .gatsby-resp-image-wrapper {
     margin-left: unset !important;
   }
-`
+`;
 
 export const PageSubtitle = styled.h3`
   font-weight: 400;
   margin-bottom: 3rem;
-`
+`;
 
 export const Author = styled.div`
   display: flex;
@@ -103,11 +104,11 @@ export const Author = styled.div`
     margin-bottom: 0;
     margin-right: 20px;
   }
-`
+`;
 
 export const Comments = styled.div`
   margin-top: 2rem;
-`
+`;
 
 export const ArticleDate = styled.div`
   display: flex;
@@ -127,7 +128,7 @@ export const ArticleDate = styled.div`
       margin-right: 0.2rem;
     }
   }
-`
+`;
 export const DonateContainer = styled.div`
   img {
     margin-bottom: 0;
@@ -142,7 +143,7 @@ export const DonateContainer = styled.div`
   form {
     display: inline-block;
   }
-`
+`;
 
 export const ArticleImg = styled.div`
   display: flex;
@@ -158,19 +159,19 @@ export const ArticleImg = styled.div`
     width: auto;
     flex: 1;
   }
-`
+`;
 
 export const DonateButton = styled.button`
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
-  outline:none;
-  color: rgb(0,119,255);  
+  outline: none;
+  color: rgb(0, 119, 255);
 
   img {
     margin-bottom: 0;
     margin-right: 10px;
   }
-`
+`;

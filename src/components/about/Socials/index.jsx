@@ -1,36 +1,26 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
-import config from 'Data'
+import React, { useContext } from 'react';
+import { ThemeContext } from 'Common';
+import config from 'Data';
 
 // Dark icons
-import twitter from 'Static/social/twitter.svg'
-import linkedin from 'Static/social/linkedin.svg'
-import github from 'Static/creative/github.svg'
+import twitter from 'Static/social/twitter.svg';
+import linkedin from 'Static/social/linkedin.svg';
+import github from 'Static/creative/github.svg';
 
 // Light icons
-import twitterWhite from 'Static/social/twitter-white.svg'
-import linkedinWhite from 'Static/social/linkedin-white.svg'
-import githubWhite from 'Static/creative/github-white.svg'
-import SocialIcon from './SocialIcon'
-import Envelope from 'Static/about/envelope.svg'
-import Phone from 'Static/about/phone.svg'
-import Marker from 'Static/about/marker.svg'
-import EnvelopeWhite from 'Static/about/envelope-white.svg'
-import PhoneWhite from 'Static/about/phone-white.svg'
-import MarkerWhite from 'Static/about/marker-white.svg'
+import twitterWhite from 'Static/social/twitter-white.svg';
+import linkedinWhite from 'Static/social/linkedin-white.svg';
+import githubWhite from 'Static/creative/github-white.svg';
+import { SocialIcon } from './SocialIcon';
+import Envelope from 'Static/about/envelope.svg';
+import Marker from 'Static/about/marker.svg';
+import EnvelopeWhite from 'Static/about/envelope-white.svg';
+import MarkerWhite from 'Static/about/marker-white.svg';
 
-import {
-  Wrapper,
-  Title,
-  Social,
-  DetailsContainer,
-  P,
-  Img,
-  Text,
-} from './styles'
+import { Wrapper, Title, Social, DetailsContainer, P, Img } from './styles';
 
 export const Socials = () => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   const socials = [
     {
       id: 0,
@@ -44,7 +34,7 @@ export const Socials = () => {
       icon: theme === 'dark' ? linkedinWhite : linkedin,
       link: config.socialLinks.linkedIn,
     },
-  ]
+  ];
   const creatives = [
     {
       id: 2,
@@ -52,7 +42,7 @@ export const Socials = () => {
       icon: theme === 'dark' ? githubWhite : github,
       link: config.socialLinks.github,
     },
-  ]
+  ];
   return (
     <Wrapper>
       <DetailsContainer>
@@ -69,14 +59,14 @@ export const Socials = () => {
       <DetailsContainer>
         <Title theme={theme}>Or on social media</Title>
         <Social>
-          {socials.map(social => (
+          {socials.map((social) => (
             <SocialIcon theme={theme} key={social.id} {...social} />
           ))}
-          {creatives.map(creative => (
+          {creatives.map((creative) => (
             <SocialIcon theme={theme} key={creative.id} {...creative} />
           ))}
         </Social>
       </DetailsContainer>
     </Wrapper>
-  )
-}
+  );
+};

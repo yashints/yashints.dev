@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   text-align: center;
@@ -14,8 +14,8 @@ export const Wrapper = styled.div`
     }
   }
 
-  ${({ theme }) =>
-    theme === 'dark'
+  ${({ $theme }) =>
+    $theme === 'dark'
       ? `
     p {
       color: #BABABA;
@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
       color: #545454;
     }
   `}
-`
+`;
 
 export const Grow = styled.div`
   height: 150px;
@@ -49,11 +49,11 @@ export const Grow = styled.div`
       width: 160px;
     }
   }
-`
+`;
 
 export const Title = styled.h4`
   margin-top: 1em;
   font-weight: bold;
-`
+`;
 
-export const Description = styled.p``
+export const Description = styled.p``;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Title = styled.h4`
   color: #212121;
@@ -8,11 +8,11 @@ export const Title = styled.h4`
     `
 			color: #fff;
 	`};
-`
+`;
 
 export const Wrapper = styled.div`
   margin-bottom: 2.5rem;
-`
+`;
 
 export const Work = styled.div`
   display: grid;
@@ -46,8 +46,8 @@ export const Work = styled.div`
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(1, 8fr);
 	`};
-`
+`;
 
 export const Icon = styled.div`
   margin-right: 1rem;
-`
+`;

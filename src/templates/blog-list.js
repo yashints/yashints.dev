@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { graphql, Link } from 'gatsby'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import {
   Layout,
   Container,
@@ -8,43 +8,27 @@ import {
   CardPost,
   Row,
   PostsPagination,
-} from 'Common'
+} from 'Common';
 
-export default ({
-  data,
-  pageContext,
-  location,
-}) => {
-  const { currentPage, numPages } = pageContext
-  const isFirst = currentPage === 1
-  const isLast = currentPage === numPages
+const BlogList = ({ pageContext, location }) => {
+  const { currentPage, numPages } = pageContext;
+  const isFirst = currentPage === 1;
+  const isLast = currentPage === numPages;
   const prevPage =
-    currentPage - 1 === 1
-      ? '/blog'
-      : `/blog/${(currentPage - 1).toString()}`
-  const nextPage = `/blog/${(
-    currentPage + 1
-  ).toString()}`
+    currentPage - 1 === 1 ? '/blog' : `/blog/${(currentPage - 1).toString()}`;
+  const nextPage = `/blog/${(currentPage + 1).toString()}`;
+  const data = useStaticQuery(pageQuery);
 
   return (
     <Layout>
       <Container>
-        <SEO
-          title="Blog"
-          type="Organization"
-          location={location.pathName}
-        />
+        <SEO title="Blog" type="Organization" location={location.pathName} />
         <PageTitle>Articles</PageTitle>
         <br />
         <Row>
-          {data.allMarkdownRemark.edges.map(
-            post => (
-              <CardPost
-                key={post.node.id}
-                {...post}
-              />
-            )
-          )}
+          {data.allMarkdownRemark.edges.map((post) => (
+            <CardPost key={post.node.id} {...post} />
+          ))}
         </Row>
         <PostsPagination
           isFirst={isFirst}
@@ -54,19 +38,16 @@ export default ({
         />
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
-export const pageQuery = graphql`
-  query BlogPageQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: {
-        order: DESC
-        fields: [frontmatter___date]
-      }
-      limit: $limit
-      skip: $skip
-    ) {
+export default BlogList;
+
+export const Head = () => <SEO title="Blog" type="Organization" />;
+
+const pageQuery = graphql`
+  query ($limit: Int!, $skip: Int!) {
+    allMarkdownRemark(limit: $limit, skip: $skip) {
       edges {
         node {
           id
@@ -81,7 +62,7 @@ export const pageQuery = graphql`
             tags
             thumbnail {
               childImageSharp {
-                ...imageFields
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -89,4 +70,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

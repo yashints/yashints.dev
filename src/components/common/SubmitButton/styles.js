@@ -29,8 +29,7 @@ export const Btn = styled.button`
     left: 50%;
     background: #fff;
     opacity: 0;
-    transform: translateX(-50%) translateY(-50%)
-      rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
   }
 
   &:hover {

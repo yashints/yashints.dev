@@ -1,32 +1,32 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    height: 100%;
+  height: 100%;
 
-    ${({ id }) =>
-      id === 0 &&
-      `
+  ${({ id }) =>
+    id === 0 &&
+    `
 			@media (max-width: 680px) {
 					grid-row: 3;
 			}
     `}
 
-    ${({ id }) =>
-      id === 1 &&
-      `
+  ${({ id }) =>
+    id === 1 &&
+    `
 			@media (max-width: 680px) {
 					grid-row: 2;
 			}
     `}
 
     ${({ id }) =>
-      id === 2 &&
-      `
+    id === 2 &&
+    `
 			@media (max-width: 680px) {
 					grid-row: 1;
 			}
     `}
-`
+`;
 
 export const StyledRepository = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ export const StyledRepository = styled.div`
 			background: #2b2a2a;
 			color: #fff;
 	`};
-`
+`;
 
 export const Header = styled.div`
   padding: 1rem 0;
@@ -71,7 +71,7 @@ export const Header = styled.div`
 				color: #fff;
 		`};
   }
-`
+`;
 
 export const Description = styled.div`
   padding: 1rem 0;
@@ -88,7 +88,7 @@ export const Description = styled.div`
 				color: #fff;
 		`};
   }
-`
+`;
 
 export const Stars = styled.div`
   padding: 1rem 0;
@@ -110,4 +110,4 @@ export const Stars = styled.div`
     `
 			color: #fff;
 	`};
-`
+`;

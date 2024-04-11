@@ -17,8 +17,8 @@ export const Links = styled.div`
       border-bottom: 3px solid #107dac;
     }
 
-    ${({ theme }) =>
-      theme === 'dark' &&
+    ${({ $theme }) =>
+      $theme === 'dark' &&
       `
             color: #fff;
             &:hover {
@@ -32,8 +32,8 @@ export const Links = styled.div`
         `}
   }
 
-  ${({ desktop }) =>
-    desktop
+  ${({ $desktop }) =>
+    $desktop
       ? `
         @media (max-width: 960px) {
             display: none;

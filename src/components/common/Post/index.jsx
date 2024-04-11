@@ -1,16 +1,12 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import {
-  SocialShare,
-  PageTitle,
-  ThemeContext,
-} from 'Common'
-import Img from 'gatsby-image'
-import CalendarIcon from 'Static/icons/calendar.svg'
-import TimerIcon from 'Static/icons/stopwatch.svg'
-import PayPalIcon from 'Static/icons/paypal.svg'
-import CryptoIcon from 'Static/icons/bitcoin.svg'
-import config from 'Data'
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+import { SocialShare, PageTitle, ThemeContext } from 'Common';
+import Img from 'gatsby-image';
+import CalendarIcon from 'Static/icons/calendar.svg';
+import TimerIcon from 'Static/icons/stopwatch.svg';
+import PayPalIcon from 'Static/icons/paypal.svg';
+import CryptoIcon from 'Static/icons/bitcoin.svg';
+import config from 'Data';
 import {
   ArticleWrapper,
   Back,
@@ -24,15 +20,10 @@ import {
   Author,
   DonateButton,
   DonateContainer,
-} from './styles'
+} from './styles';
 
-export const Post = ({
-  html,
-  frontmatter,
-  timeToRead,
-  postPath,
-}) => {
-  const { theme } = useContext(ThemeContext)
+export const Post = ({ html, frontmatter, timeToRead, postPath }) => {
+  const { theme } = useContext(ThemeContext);
   return (
     <ArticleWrapper theme={theme}>
       {frontmatter.img && (
@@ -41,9 +32,7 @@ export const Post = ({
         </ArticleImg>
       )}
       <PageTitle>{frontmatter.title}</PageTitle>
-      <PageSubtitle>
-        {frontmatter.subtitle}
-      </PageSubtitle>
+      <PageSubtitle>{frontmatter.subtitle}</PageSubtitle>
       <ArticleDate>
         <img
           src={CalendarIcon}
@@ -62,8 +51,7 @@ export const Post = ({
         />
         <i>{timeToRead} min read</i>
       </ArticleDate>
-      {frontmatter.author !==
-        config.legalName && (
+      {frontmatter.author !== config.legalName && (
         <Author>
           <img
             width="48px"
@@ -74,13 +62,8 @@ export const Post = ({
           {frontmatter.author}
         </Author>
       )}
-      <Content
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-      <SocialShare
-        title={frontmatter.title}
-        path={postPath}
-      />
+      <Content dangerouslySetInnerHTML={{ __html: html }} />
+      <SocialShare title={frontmatter.title} path={postPath} />
       <DonateContainer>
         <div>Support my work 👇🏽</div>
         <a
@@ -88,29 +71,16 @@ export const Post = ({
           title="via Crypro Currency"
           href="https://commerce.coinbase.com/checkout/f305ab16-b8a6-460a-a517-af767ec3c0c7"
         >
-          <img width="24px" src={CryptoIcon} />{' '}
-          Crypto
+          <img width="24px" src={CryptoIcon} /> Crypto
         </a>
         <form
           action="https://www.paypal.com/cgi-bin/webscr"
           method="post"
           target="_top"
         >
-          <input
-            type="hidden"
-            name="cmd"
-            value="_donations"
-          />
-          <input
-            type="hidden"
-            name="business"
-            value="77G26DQHZZRRW"
-          />
-          <input
-            type="hidden"
-            name="currency_code"
-            value="AUD"
-          />
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="77G26DQHZZRRW" />
+          <input type="hidden" name="currency_code" value="AUD" />
           <DonateButton>
             <img width="24px" src={PayPalIcon} />
             PayPal
@@ -147,5 +117,5 @@ export const Post = ({
         </Next>
       </LinksWrapper>
     </ArticleWrapper>
-  )
-}
+  );
+};

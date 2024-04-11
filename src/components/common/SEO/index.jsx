@@ -1,6 +1,5 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import Thumbnail from 'Static/me.jpg'
+import React from 'react';
+import Thumbnail from 'Static/me.jpg';
 import {
   url,
   rootUrl,
@@ -14,7 +13,7 @@ import {
   foundingDate,
   logo,
   author,
-} from 'Data'
+} from 'Data';
 
 export const SEO = ({
   title,
@@ -36,11 +35,7 @@ export const SEO = ({
 		"headline": "${description}",
 		"image": {
 			"@type": "imageObject",
-			"url": "${
-        cover
-          ? `${url}${cover}`
-          : `${url}${Thumbnail}`
-      }",
+			"url": "${cover ? `${url}${cover}` : `${url}${Thumbnail}`}",
 			"height": "600",
 			"width": "800"
 		},
@@ -61,7 +56,7 @@ export const SEO = ({
 		},
 		"description": "${description}",
 		"url": "${url}${location}/?ref=${rootUrl}"
-	}`
+	}`;
 
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
@@ -93,117 +88,60 @@ export const SEO = ({
 			"${socialLinks.linkedin}",			
 			"${socialLinks.github}"
 		]
-  	}`
+  	}`;
 
   return (
-    <Helmet>
-      <meta
-        name="description"
-        content={
-          description || defaultDescription
-        }
-      />
+    <>
+      <meta name="description" content={description || defaultDescription} />
       <meta
         name="image"
-        content={
-          cover
-            ? `${url}${cover}`
-            : `${url}${Thumbnail}`
-        }
+        content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
 
-      <meta
-        property="og:url"
-        content={`${url}${location}/?ref=${rootUrl}`}
-      />
+      <meta property="og:url" content={`${url}${location}/?ref=${rootUrl}`} />
       <meta
         property="og:type"
-        content={
-          type === 'NewsArticle'
-            ? 'NewsArticle'
-            : 'website'
-        }
+        content={type === 'NewsArticle' ? 'NewsArticle' : 'website'}
       />
       <meta
         property="og:title"
-        content={
-          title
-            ? `${defaultTitle} | ${title}`
-            : defaultTitle
-        }
+        content={title ? `${defaultTitle} | ${title}` : defaultTitle}
       />
       <meta
         property="og:description"
-        content={
-          description || defaultDescription
-        }
+        content={description || defaultDescription}
       />
       <meta
         property="og:image"
-        content={
-          cover
-            ? `${url}${cover}`
-            : `${url}${Thumbnail}`
-        }
+        content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
-      <meta
-        property="fb:app_id"
-        content={social.facebook}
-      />
+      <meta property="fb:app_id" content={social.facebook} />
 
-      <meta
-        name="twitter:card"
-        content="summary"
-      />
-      <meta
-        name="twitter:creator"
-        content={socialLinks.twitter}
-      />
-      <meta
-        name="twitter:site"
-        content={social.twitter}
-      />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={socialLinks.twitter} />
+      <meta name="twitter:site" content={social.twitter} />
       <meta
         name="twitter:title"
-        content={
-          title
-            ? `${defaultTitle} | ${title}`
-            : defaultTitle
-        }
+        content={title ? `${defaultTitle} | ${title}` : defaultTitle}
       />
       <meta
         name="twitter:description"
-        content={
-          description || defaultDescription
-        }
+        content={description || defaultDescription}
       />
       <meta
         name="twitter:image:src"
-        content={
-          cover
-            ? `${url}${cover}`
-            : `${url}${Thumbnail}`
-        }
+        content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
-      <meta name="monetization" 
-        content="$ilp.uphold.com/XQeUdN6MjiGz"/>
+      <meta name="monetization" content="$ilp.uphold.com/XQeUdN6MjiGz" />
       <script type="application/ld+json">
         {type === 'NewsArticle'
           ? structuredDataArticle
           : structuredDataOrganization}
       </script>
-      <link
-        rel="publisher"
-        href={socialLinks.google}
-      />      
-      <link
-        rel="canonical"
-        href={canonical_url}
-      />
-      <title>
-        {title ? `${author} | ${title}` : author}
-      </title>
+      <link rel="publisher" href={socialLinks.google} />
+      <link rel="canonical" href={canonical_url} />
+      <title>{title ? `${author} | ${title}` : author}</title>
       <html lang="en" dir="ltr" />
-    </Helmet>
-  )
-}
+    </>
+  );
+};

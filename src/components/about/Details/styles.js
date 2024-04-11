@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   flex: 1;
-`
+`;
 
 export const Text = styled.p`
   color: #212121;
@@ -13,4 +13,4 @@ export const Text = styled.p`
     `
 		color: #fff;
 	`};
-`
+`;

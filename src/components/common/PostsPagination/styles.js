@@ -12,7 +12,8 @@ export const PageWrapper = styled.div`
     border-radius: 5px;
     background-color: #f1f1f1;
     color: #000;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    box-shadow:
+      0 3px 6px rgba(0, 0, 0, 0.16),
       0 3px 6px rgba(0, 0, 0, 0.23);
     span {
       position: relative;

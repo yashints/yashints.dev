@@ -1,11 +1,11 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
   flex-flow: column wrap;
   box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
   padding: 1em;
-`
+`;
 
 export const Card = styled.div`
   display: flex;
@@ -24,12 +24,12 @@ export const Card = styled.div`
       background-color: #333;
     
 	`};
-`
+`;
 
 export const CardLink = styled.a`
   cursor: pointer;
   color: inherit;
-`
+`;
 
 export const CardHeader = styled.div`
   font-weight: 600;
@@ -61,11 +61,11 @@ export const CardHeader = styled.div`
     `
       color: #adad2e;
   `}
-`
+`;
 
 export const CardDescription = styled.div`
   display: inline-block;
-`
+`;
 
 export const CardDate = styled.div`
   display: inline-flex;
@@ -77,7 +77,7 @@ export const CardDate = styled.div`
   img {
     margin-right: 10px;
   }
-`
+`;
 
 export const CardActions = styled.div`
   display: inline-flex;
@@ -93,9 +93,9 @@ export const CardActions = styled.div`
       margin-left: 10px;
     }
   }
-`
+`;
 
 export const Grow = styled.div`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-`
+`;
