@@ -3,7 +3,7 @@ const nodePath = require('path');
 const Util = require(nodePath.resolve('src/util'));
 
 require('dotenv').config({
-  path: `${__dirname}\\.env`,
+  path: `${__dirname}/.env`,
 });
 
 module.exports = {
