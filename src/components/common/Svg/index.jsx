@@ -1,6 +1,6 @@
-export * from './GithubIcon'
-export * from './Linkedin'
-export * from './Twitter'
-export * from './Email'
-export * from './RSS'
-export * from './CalendarIcon'
+export { GithubIcon } from './GithubIcon';
+export { Linkedin } from './Linkedin';
+export { Twitter } from './Twitter';
+export { EmailIcon } from './Email';
+export { RSS } from './RSS';
+export { CalendarIcon } from './CalendarIcon';

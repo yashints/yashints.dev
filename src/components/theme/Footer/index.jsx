@@ -1,16 +1,15 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
+import React, { useContext } from 'react';
+import { Link } from 'gatsby';
 import {
   Container,
-  Logo,
   Twitter,
   GithubIcon,
   Linkedin,
   EmailIcon,
   RSS,
   ThemeContext,
-} from 'Common'
-import Copyrights from './Copyrights'
+} from 'Common';
+import { Copyrights } from './Copyrights';
 import {
   Wrapper,
   FooterContainer,
@@ -19,12 +18,12 @@ import {
   Brand,
   Social,
   Grow,
-} from './styles'
+} from './styles';
 
-import config from 'Data'
+import config from 'Data';
 
 export const Footer = () => {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
   const social = [
     {
       id: 0,
@@ -62,10 +61,10 @@ export const Footer = () => {
       width: 40,
       last: true,
     },
-  ]
+  ];
   return (
-    <FooterContainer theme={theme}>
-      <FullContainer theme={theme}>
+    <FooterContainer $theme={theme}>
+      <FullContainer $theme={theme}>
         <Wrapper as={Container}>
           <List>
             <li>
@@ -90,37 +89,24 @@ export const Footer = () => {
           </List>
           <List>
             <li>
-              {social.map(
-                ({
-                  id,
-                  name,
-                  link,
-                  icon,
-                  width,
-                  last,
-                }) => (
-                  <Social
-                    key={id}
-                    target="_blank"
-                    title={name}
-                    rel="noopener noreferrer"
-                    aria-label={`follow me on ${name}`}
-                    href={link}
-                    last={last}
-                  >
-                    <Grow
-                      as={icon}
-                      width={width ? width : '48'}
-                      height="48"
-                    />
-                  </Social>
-                )
-              )}
+              {social.map(({ id, name, link, icon, width, last }) => (
+                <Social
+                  key={id}
+                  target="_blank"
+                  title={name}
+                  rel="noopener noreferrer"
+                  aria-label={`follow me on ${name}`}
+                  href={link}
+                  $last={last}
+                >
+                  <Grow as={icon} width={width ? width : '48'} height="48" />
+                </Social>
+              ))}
             </li>
           </List>
         </Wrapper>
       </FullContainer>
       <Copyrights />
     </FooterContainer>
-  )
-}
+  );
+};

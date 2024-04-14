@@ -1,2 +1,2 @@
-export * from './Details'
-export * from './Socials'
+export { Details } from './Details';
+export { Socials } from './Socials';

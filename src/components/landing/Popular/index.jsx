@@ -1,66 +1,47 @@
-import React from 'react'
-import {
-  StaticQuery,
-  graphql,
-  Link,
-} from 'gatsby'
-import {
-  Container,
-  MostPopularPosts,
-  Subtitle,
-} from 'Common'
-import { Wrapper } from './styles.js'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Container, MostPopularPosts, Subtitle } from 'Common';
+import { Wrapper } from './styles.js';
 
-export const imageFields = graphql`
-  fragment imageFields on ImageSharp {
-    fluid(maxWidth: 630) {
-      ...GatsbyImageSharpFluid_tracedSVG
-    }
-  }
-`
-
-export const Popular = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        popular: allMarkdownRemark(
-          sort: {
-            order: DESC
-            fields: [frontmatter___date]
-          }
-          filter: {
-            frontmatter: { popular: { eq: true } }
-          }
-          limit: 3
-        ) {
-          edges {
-            node {
-              id
-              html
-              timeToRead
-              frontmatter {
-                title
-                unformattedDate: date
-                date(formatString: "MMM DD, YYYY")
-                path
-                tags
-                author
-                thumbnail {
-                  childImageSharp {
-                    ...imageFields
-                  }
-                }
+export const query = graphql`
+  query popularQuery {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { popular: { eq: true } } }
+      limit: 3
+    ) {
+      edges {
+        node {
+          id
+          html
+          timeToRead
+          frontmatter {
+            title
+            unformattedDate: date
+            date(formatString: "MMM DD, YYYY")
+            path
+            tags
+            author
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
         }
       }
-    `}
-    render={({ popular: { edges } }) => (
-      <Wrapper id="popular" as={Container}>
-        <Subtitle>Popular articles</Subtitle>
-        <MostPopularPosts edges={edges} />
-      </Wrapper>
-    )}
-  />
-)
+    }
+  }
+`;
+
+export const Popular = () => {
+  const {
+    allMarkdownRemark: { edges },
+  } = useStaticQuery(query);
+  return (
+    <Wrapper id="popular" as={Container}>
+      <Subtitle>Popular articles</Subtitle>
+      <MostPopularPosts edges={edges} />
+    </Wrapper>
+  );
+};

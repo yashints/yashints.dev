@@ -1,17 +1,17 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   text-align: center;
 
   @media (max-width: 680px) {
     align-self: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &:last-child {
       margin-bottom: unset;
     }
   }
-`
+`;
 
 export const Grow = styled.img`
   width: 128px;
@@ -22,8 +22,8 @@ export const Grow = styled.img`
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
   }
-`
+`;
 
 export const Title = styled.h4`
   font-weight: normal;
-`
+`;

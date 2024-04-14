@@ -1,10 +1,15 @@
-import React from 'react'
-import { Layout, SEO } from 'Common'
-import ThanksContent from 'Components/contact/ThanksContent'
+import React from 'react';
+import { Layout, SEO } from 'Common';
+import { ThanksContent } from 'Components/contact/ThanksContent';
 
-export default () => (
+const ThanksPage = () => (
   <Layout>
-    <SEO title="Thanks!" type="Organization" location="/thanks" />
     <ThanksContent />
   </Layout>
-)
+);
+
+export default ThanksPage;
+
+export const Head = () => (
+  <SEO title="Thanks!" type="Organization" location="/thanks" />
+);

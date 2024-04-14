@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const CalendarIcon = ({
   width = '16',
@@ -51,4 +51,4 @@ export const CalendarIcon = ({
       <path style=" fill:#90A4AE;" d="M 31 32 L 35 32 L 35 36 L 31 36 Z " />
     </g>
   </svg>
-)
+);

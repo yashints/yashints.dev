@@ -6,23 +6,13 @@ export const Wrapper = styled.div`
   p {
     margin-bottom: 1rem;
     &:last-of-type {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 
   @media (max-width: 680px) {
-    padding: 2rem;
+    padding: 1rem;
   }
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-      color: #fff;
-
-      a {
-        color: #adad2e;
-      }
-	`}
 `;
 
 export const Flex = styled.div`
@@ -53,5 +43,5 @@ export const BoxAttention = styled.div`
   margin-top: 5px;
   box-shadow: 0px 2px 28px -6px rgba(0, 0, 0, 0.09);
   font-weight: 500;
-  padding: 1em;
+  padding: 0.5em;
 `;

@@ -7,13 +7,6 @@ export const Wrapper = styled.div`
   @media (max-width: 680px) {
     display: none;
   }
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-			background: #212121;
-			color: #fff;
-  `};
 `;
 
 export const Links = styled.div`
@@ -30,8 +23,8 @@ export const Links = styled.div`
 export const Item = styled.img`
   margin: 0 0.2rem;
 
-  ${({ img }) =>
-    img &&
+  ${({ $img }) =>
+    $img &&
     `
 		position: relative;
 		top: .15rem;

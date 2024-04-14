@@ -1,25 +1,17 @@
-import React, { useContext } from 'react'
-import { Link } from 'gatsby'
-import {
-  SmallerContainer,
-  GithubIcon,
-  ThemeContext,
-} from 'Common'
-import gatsbyIcon from 'Static/footer/gatsby.svg'
-import netlifyIcon from 'Static/footer/netlify.svg'
-import { Wrapper, Links, Item } from './styles'
-import config from 'Data'
+import React from 'react';
+import { Link } from 'gatsby';
+import { SmallerContainer, GithubIcon } from 'Common';
+import gatsbyIcon from 'Static/footer/gatsby.svg';
+import netlifyIcon from 'Static/footer/netlify.svg';
+import { Wrapper, Links, Item } from './styles';
+import config from 'Data';
 
-export default () => {
-  const { theme } = useContext(ThemeContext)
+export const Copyrights = () => {
   return (
-    <Wrapper as={SmallerContainer} theme={theme}>
+    <Wrapper as={SmallerContainer}>
       <div>
         All illustrations used are from{' '}
-        <a
-          href="https://iconscout.com/"
-          target="_blank"
-        >
+        <a href="https://iconscout.com/" target="_blank" rel="noreferrer">
           iconscout
         </a>
       </div>
@@ -32,19 +24,14 @@ export default () => {
         >
           {config.defaultTitle}
         </Item>{' '}
-        2016-{`${new Date().getFullYear()} `}-
-        Built with
+        2016-{`${new Date().getFullYear()} `}- Built with
         <a
           href="https://www.gatsbyjs.org"
           rel="noopener noreferrer"
           target="_blank"
           aria-label="Built with GatsbyJs"
         >
-          <Item
-            src={gatsbyIcon}
-            img
-            alt="Gatssby js"
-          />
+          <Item src={gatsbyIcon} $img alt="Gatssby js" />
         </a>
         Open sourced on
         <a
@@ -53,15 +40,7 @@ export default () => {
           target="_blank"
           aria-label="Open Sourced on Github"
         >
-          <Item
-            as={GithubIcon}
-            img
-            width="24"
-            height="24"
-            color={
-              theme === 'dark' ? '#fff' : '#000'
-            }
-          />
+          <Item as={GithubIcon} img width="24" height="24" />
         </a>
         deployed on
         <a
@@ -70,13 +49,9 @@ export default () => {
           target="_blank"
           aria-label="Hosted on Netlify"
         >
-          <Item
-            src={netlifyIcon}
-            img
-            alt="Netlify"
-          />
+          <Item src={netlifyIcon} $img alt="Netlify" />
         </a>
       </Links>
     </Wrapper>
-  )
-}
+  );
+};

@@ -1,30 +1,35 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
-import { Container, ThemeContext, ButtonLink } from 'Common';
+import { Container, ButtonLink } from 'Common';
 import { Wrapper, Flex, Box, BoxAttention } from './styles';
 import config from 'Data';
 
 export const Intro = () => {
-  const { theme } = useContext(ThemeContext);
   return (
-    <Wrapper theme={theme} as={Container}>
+    <Wrapper as={Container}>
       <h1>Meet {config.shortName}</h1>
       <Box>
         <p>
-          Also known as {config.defaultTitle}, a front-end lead engineer,
-          international speaker, blogger, and hiker.
+          Affectionately known in tech circles as {config.defaultTitle}, a
+          <b> principal software engineer</b>, technologist, international
+          speaker, author, blogger, and hiker.
         </p>
         <p>
-          Although it doesn’t look like it, Yas is an almond croissant addict
-          cleverly disguised as a successful web developer 😁. Since it was
-          relatively clear early on that it would be slightly more than
-          difficult to make a living while sitting in a café eating a croissant
-          and drinking a cappuccino, he’s focused his energy on the web, which
-          happily has proven itself to be a wonderful decision 🙃.
+          Not just a Principal Software Engineer but a visionary in front-end
+          development, <b>Yas</b> brings a human touch to technology. His days
+          are spent architecting elegant solutions that speak not only to
+          machines but to the people using them. While he might jest about his
+          weakness for <i>almond croissants</i>, he is serious about crafting
+          code that makes a difference.
         </p>
         <p>
-          Apart from that, he is a keen public speaker, and has spoken in many
-          meetups and conferences like NDC and Voxxed Days around the world.
+          His journey from café dreamer to tech leader was fueled by a passion
+          for problem-solving and a dedication to excellence in the digital
+          domain. Yas’s expertise isn’t confined to his desk. He’s a master
+          communicator, sharing his knowledge and experiences on the world stage
+          at conferences like NDC and Voxxed Days. His ability to demystify
+          complex concepts and engage with his audience is what sets him apart
+          as a mentor and innovator in the software engineering community.
         </p>
         <Flex>
           <ButtonLink
@@ -54,21 +59,35 @@ export const Intro = () => {
           />
         </Flex>
       </Box>
-      <Link to="https://www.amazon.com/author/yas">
+      <a
+        href="https://www.amazon.com/author/yas"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <BoxAttention>
-          📖 Woohoo, my first book ever is now listed on Amazon. If you're interested in Azure Bicep, check it out. 
+          📖 Woohoo, my first book ever is now listed on Amazon. If you're
+          interested in Azure Bicep, check it out.
         </BoxAttention>
-      </Link>
-      <Link to="https://app.pluralsight.com/library/courses/vue-authentication-authorization/table-of-contents">
+      </a>
+      <a
+        href="https://app.pluralsight.com/library/courses/vue-authentication-authorization/table-of-contents"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <BoxAttention>
-          📽️ Checkout my latest PluralSight course on Authentication and Authorization for VueJs apps. 
+          📽️ Checkout my latest PluralSight course on Authentication and
+          Authorization for VueJs apps.
         </BoxAttention>
-      </Link>
-      <Link to="https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps">
+      </a>
+      <a
+        href="https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <BoxAttention>
-          📽️ Checkout my Web performance for PWAs course on PluralSight. 
+          📽️ Checkout my Web performance for PWAs course on PluralSight.
         </BoxAttention>
-      </Link>
+      </a>
     </Wrapper>
   );
 };

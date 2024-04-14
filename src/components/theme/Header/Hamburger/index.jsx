@@ -1,26 +1,17 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from 'Common'
-import { HamburgerIcon, Bar } from './styles'
+import React from 'react';
+import { HamburgerIcon, Bar } from './styles';
 
-export default ({
-  sidebar,
-  toggle,
-  isHomePage,
-}) => {
-  const { theme } = useContext(ThemeContext)
+export const Hamburger = ({ $sidebar, toggle, $theme, $isHomePage }) => {
   return (
     <HamburgerIcon
-      isHomePage={isHomePage}
-      sidebar={sidebar}
+      $isHomePage={$isHomePage}
+      $sidebar={$sidebar}
+      $theme={$theme}
       onClick={toggle}
     >
-      <Bar top sidebar={sidebar} theme={theme} />
-      <Bar mid sidebar={sidebar} theme={theme} />
-      <Bar
-        bottom
-        sidebar={sidebar}
-        theme={theme}
-      />
+      <Bar $theme={$theme} $top $sidebar={$sidebar} />
+      <Bar $theme={$theme} $mid $sidebar={$sidebar} />
+      <Bar $theme={$theme} $bottom $sidebar={$sidebar} />
     </HamburgerIcon>
-  )
-}
+  );
+};

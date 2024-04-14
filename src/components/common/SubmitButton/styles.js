@@ -29,8 +29,7 @@ export const Btn = styled.button`
     left: 50%;
     background: #fff;
     opacity: 0;
-    transform: translateX(-50%) translateY(-50%)
-      rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
   }
 
   &:hover {
@@ -45,16 +44,11 @@ export const Btn = styled.button`
   ${({ theme }) =>
     theme === 'dark' &&
     `
-      color: #fff;
       background-color: #333;
       
       &:hover {
         color: #000;
         border: 1px solid #333;
-      }
-
-      a {
-        color: #adad2e;
       }
     `}
 `;

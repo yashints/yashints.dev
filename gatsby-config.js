@@ -1,45 +1,37 @@
-const config = require('./data/config')
-const nodePath = require('path')
-const Util = require(nodePath.resolve('src/util'))
+const config = require('./data/config');
+const nodePath = require('path');
+const Util = require(nodePath.resolve('src/util'));
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+  path: `${__dirname}/.env`,
+});
 
 module.exports = {
   siteMetadata: {
     siteUrl: config.url,
-    rssMetadata: {
-      site_url: config.url,
-      feed_url: `${config.url}${config.siteRss}`,
-      title: 'Yashints | Blog',
-      description: config.defaultDescription,
-      image_url: `https://${config.url}/static/favicon/logo-512x512.png`,
-      author: config.author,
-      copyright: `${
-        config.defaultTitle
-      } © ${new Date().getFullYear()}`,
-    },
+    feed_url: `${config.url}${config.siteRss}`,
+    title: 'Yashints | Blog',
+    description: config.defaultDescription,
+    image_url: `https://${config.url}/static/favicon/logo-512x512.png`,
+    author: config.author,
+    copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify',
-    'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-yaml',
     'gatsby-plugin-twitter',
     {
       resolve: 'gatsby-source-graphql',
       options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
         url: 'https://api.github.com/graphql',
+        typeName: `GitHub`,
+        fieldName: `github`,
         headers: {
-          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
         },
-        fetchOptions: {},
       },
     },
     {
@@ -51,77 +43,45 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-feed',
       options: {
-        query: `{
-					site {
-						siteMetadata {
-							rssMetadata {
-								site_url
-								title
-								author
-								copyright
-								description
-							}
-						}
-					}
-				}`,
         feeds: [
           {
-            serialize: ({
-              query: { site, allMarkdownRemark },
-            }) => {
-              return allMarkdownRemark.edges.map(
-                edge => {
-                  const postPath = Util.getPostPath(
-                    !edge.node.frontmatter.path
-                      ? edge.node.frontmatter
-                          .title
-                      : edge.node.frontmatter
-                          .path,
-                    edge.node.frontmatter.date
-                  )
-                  return Object.assign(
-                    {},
-                    edge.node.frontmatter,
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
+                const postPath = Util.getPostPath(
+                  !edge.node.frontmatter.path
+                    ? edge.node.frontmatter.title
+                    : edge.node.frontmatter.path,
+                  edge.node.frontmatter.date
+                );
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  url: site.siteMetadata.siteUrl + postPath,
+                  guid: site.siteMetadata.siteUrl + postPath,
+                  custom_elements: [
                     {
-                      description:
-                        edge.node.excerpt,
-                      url:
-                        site.siteMetadata
-                          .rssMetadata.site_url +
-                        postPath,
-                      guid:
-                        site.siteMetadata
-                          .rssMetadata.site_url +
-                        postPath,
-                      custom_elements: [
-                        {
-                          'content:encoded':
-                            edge.node.html,
-                        },
-                      ],
-                    }
-                  )
-                }
-              )
+                      'content:encoded': edge.node.html,
+                    },
+                  ],
+                });
+              });
             },
-            query: `{
-							allMarkdownRemark(
-								sort: { order: DESC, fields: [frontmatter___date] }
-							) {
-								edges {                  
-									node {
-										excerpt
-										html
-										frontmatter {
-											title
-											path
-											date
-										}
+            query: `{							 
+              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    frontmatter {
+                      title
+                      path
+                      date
+                    }
                   }
-								}
-							}
+                }
+              }              
 						}`,
             output: config.siteRss,
+            title: config.title,
           },
         ],
       },
@@ -140,8 +100,26 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          placeholder: 'blurred',
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: 'transparent',
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -151,8 +129,7 @@ module.exports = {
             resolve: `gatsby-remark-code-buttons`,
             options: {
               buttonText: 'Copy',
-              toasterText:
-                'Copied to clipboard ✅',
+              toasterText: 'Copied to clipboard ✅',
             },
           },
           {
@@ -169,45 +146,33 @@ module.exports = {
             },
           },
           {
-            resolve:
-              'gatsby-remark-custom-blocks',
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              blocks: {
-                danger: {
-                  classes: 'danger',
-                  title: 'optional',
-                },
-                warning: {
-                  classes: 'warning',
-                  title: 'optional',
-                },
-                info: {
-                  classes: 'info',
-                  title: 'optional',
-                },
-              },
+              wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
           {
-            resolve: 'gatsby-plugin-preconnect',
+            resolve: 'gatsby-remark-external-links',
             options: {
-              domains: [
-                'https://www.google-analytics.com',
-              ],
+              target: '_blank',
+              rel: 'nofollow noopener noreferrer',
             },
           },
-          {
-            resolve:
-              'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle:
-                'margin-bottom: 1.0725rem',
-            },
-          },
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-autolink-headers',
+          'yas-remark-custom-blocks',
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: [
+          {
+            domain: 'https://www.google-analytics.com',
+            crossOrigin: true,
+          },
         ],
       },
     },
@@ -223,24 +188,6 @@ module.exports = {
       options: {
         color: config.themeColor,
         showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: './static/favicon/logo-512x512.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: false,
-          appleStartup: false,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
       },
     },
     {
@@ -268,4 +215,4 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
-}
+};

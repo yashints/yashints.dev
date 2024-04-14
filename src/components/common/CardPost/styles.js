@@ -1,15 +1,14 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Item = styled.div`
   width: 100%;
   margin-bottom: 1rem;
   height: 100%;
-`
+`;
 
 export const Post = styled.div`
   border-radius: 0.2rem;
   box-shadow: 0 0 10px 0 rgba(33, 33, 33, 0.14);
-  background: #fff;
   transition: 0.7s;
   width: 100%;
   display: flex;
@@ -25,16 +24,17 @@ export const Post = styled.div`
     transition: 0.7s;
   }
 
-  ${({ theme }) =>
-    theme === 'dark' &&
+  ${({ $theme }) =>
+    $theme === 'dark' &&
     `
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
       background: #2b2a2a;
       
       a {
         color: #adad2e;
       }
 	`};
-`
+`;
 
 export const ArticleContent = styled.div`
   padding: 1rem;
@@ -44,7 +44,7 @@ export const ArticleContent = styled.div`
     flex: 2;
     padding: 1.5rem;
   }
-`
+`;
 
 export const ArticleImg = styled.div`
   width: 250px;
@@ -72,11 +72,9 @@ export const ArticleImg = styled.div`
     width: auto;
     flex: 1;
   }
-`
+`;
 
 export const ArticleTitle = styled.h2`
-  color: #212121;
-
   a {
     color: inherit;
   }
@@ -85,35 +83,16 @@ export const ArticleTitle = styled.h2`
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-      color: #fff;
-      
-      a {
-        color: #fff;
-      }
-	`};
-`
+`;
 
 export const Paragraph = styled.p`
-  color: #616161;
-
   @media (max-width: 680px) {
     margin-bottom: 1rem;
     font-size: 1rem;
   }
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-			color: #fff;
-	`};
-`
+`;
 
 export const Info = styled.i`
-  color: #212121;
   font-size: 0.85em;
   font-weight: 600;
   display: flex;
@@ -128,13 +107,7 @@ export const Info = styled.i`
   @media (max-width: 680px) {
     flex-direction: column;
   }
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-			color: #fff;
-	`};
-`
+`;
 
 export const PublishInfo = styled.div`
   width: 40%;
@@ -150,13 +123,13 @@ export const PublishInfo = styled.div`
     width: 100%;
     justify-content: space-between;
   }
-`
+`;
 
 export const StyledSpan = styled.div`
   margin-right: 20px;
   display: inline-flex;
   align-items: center;
-`
+`;
 
 export const TagWrapper = styled.span`
   width: 35%;
@@ -173,7 +146,7 @@ export const TagWrapper = styled.span`
     margin: 1rem 0;
     font-size: 0.7rem;
   }
-`
+`;
 
 export const Tag = styled.a`
   cursor: pointer;
@@ -196,4 +169,4 @@ export const Tag = styled.a`
     `
       background: rgba(255, 255, 255, 0.1);
 	`};
-`
+`;

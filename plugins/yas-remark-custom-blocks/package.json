@@ -1,0 +1,17 @@
+{
+  "name": "yas-remark-custom-blocks",
+  "version": "1.0.0",
+  "description": "Adds custom blocks to markdown",
+  "main": "index.mjs",
+  "private": true,
+  "keywords": [
+    "gatsby",
+    "remark",
+    "customblocks"
+  ],
+  "author": "Yashints",
+  "license": "MIT",
+  "dependencies": {
+    "unist-util-visit": "^5.0.0"
+  }
+}

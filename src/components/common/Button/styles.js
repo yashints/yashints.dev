@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const LinkButton = styled.a`
   display: inline-flex;
@@ -14,38 +14,31 @@ export const LinkButton = styled.a`
   align-items: center;
   max-height: 55px;
 
-  ${({ hasmargintop }) =>
-    hasmargintop &&
+  ${({ $hasmargintop }) =>
+    $hasmargintop &&
     `
       margin-top: 2rem;
   `}
 
-  ${({ hasmargin }) =>
-    hasmargin &&
+  ${({ $hasmargin }) =>
+    $hasmargin &&
     `
       margin-right: 1rem;
       
   `}
 
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-      color: #adad2e;
-      margin-bottom: 2rem;
-  `};
 
-  ${({ minwidth }) =>
-    minwidth &&
+  ${({ $minwidth }) =>
+    $minwidth &&
     `
-      min-width: ${minwidth};
+      min-width: ${$minwidth};
 	`};
 
   &:before {
     content: '';
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) scaleY(1)
-      scaleX(1.25);
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
     top: 100%;
     width: 140%;
     height: 180%;
@@ -60,8 +53,7 @@ export const LinkButton = styled.a`
     content: '';
     position: absolute;
     left: 55%;
-    transform: translateX(-50%) scaleY(1)
-      scaleX(1.45);
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
     top: 180%;
     width: 160%;
     height: 190%;
@@ -73,21 +65,20 @@ export const LinkButton = styled.a`
   }
 
   &:hover {
-    color: #fff;
+    box-shadow: 0px 0px 17px 0px rgba(185, 185, 185, 0.4);
     border: 1px solid #226fbe;
+    color: #fff;
 
     &:before {
       top: -35%;
       background-color: #226fbe;
-      transform: translateX(-50%) scaleY(1.3)
-        scaleX(0.8);
+      transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
     }
 
     &:after {
       top: -45%;
       background-color: #226fbe;
-      transform: translateX(-50%) scaleY(1.3)
-        scaleX(0.8);
+      transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
     }
   }
 
@@ -102,9 +93,14 @@ export const LinkButton = styled.a`
     width: 100%;
     text-align: center;
   }
-
-  &:hover {
-    box-shadow: 0px 0px 17px 0px
-      rgba(185, 185, 185, 0.4);
-  }
-`
+  ${({ $theme }) =>
+    $theme === 'dark' &&
+    `
+      background-color: #333;
+      
+      &:hover {
+        color: #f0f04d;
+        border: 1px solid #333;
+      }
+    `}
+`;
