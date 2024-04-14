@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import {
   Layout,
   Container,
@@ -11,8 +11,7 @@ import {
 } from 'Common';
 import styled from 'styled-components';
 
-const Tags = ({ pageContext }) => {
-  const data = useStaticQuery(pageQuery);
+const Tags = ({ data, pageContext }) => {
   const { tag } = pageContext;
   const { edges, totalCount } = data.allMarkdownRemark;
   const tagHeader = `${totalCount} post${

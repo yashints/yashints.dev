@@ -6,7 +6,6 @@ export const ArticleWrapper = styled.div`
 
   a {
     text-decoration: none;
-    color: rgb(0, 119, 255);
   }
 
   i {
@@ -28,9 +27,9 @@ export const ArticleWrapper = styled.div`
   ${({ theme }) =>
     theme === 'dark' &&
     `
-      color: #fff;
+      color: #a7a7a7;
       blockquote {
-        color: #fff;
+        color: #a7a7a7;
       }
 
       .custom-block {
@@ -56,8 +55,6 @@ export const LinksWrapper = styled.div`
     padding: 1rem;
     display: block;
     border-radius: 5px;
-    background-color: #f1f1f1;
-    color: #000;
     box-shadow:
       0 3px 6px rgba(0, 0, 0, 0.16),
       0 3px 6px rgba(0, 0, 0, 0.23);
@@ -65,16 +62,18 @@ export const LinksWrapper = styled.div`
       position: relative;
       top: -3px;
     }
-  }
 
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-    a {
-      color: #fff;
+    ${({ $theme }) =>
+      $theme === 'dark' &&
+      `
       background-color: #333;
-    }
-	`};
+      
+      &:hover {
+        color: #f0f04d;
+        border: 1px solid #333;
+      }
+    `}
+  }
 `;
 
 export const Back = styled.div``;
@@ -168,7 +167,6 @@ export const DonateButton = styled.button`
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: rgb(0, 119, 255);
 
   img {
     margin-bottom: 0;

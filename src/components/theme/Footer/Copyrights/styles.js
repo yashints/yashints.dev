@@ -7,13 +7,6 @@ export const Wrapper = styled.div`
   @media (max-width: 680px) {
     display: none;
   }
-
-  ${({ $theme }) =>
-    $theme === 'dark' &&
-    `
-			background: #212121;
-			color: #fff;
-  `};
 `;
 
 export const Links = styled.div`

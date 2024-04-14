@@ -33,6 +33,12 @@ export const HamburgerIcon = styled.div`
     `
 		position: fixed;
 	`}
+
+  ${({ $theme }) =>
+    $theme === 'dark' &&
+    `
+		color: #fff;
+	`}
 `;
 
 export const Bar = styled.div`
@@ -50,12 +56,6 @@ export const Bar = styled.div`
     width: 1.6rem;
   }
 
-  ${({ $theme }) =>
-    $theme === 'dark' &&
-    `
-		background-color: #fff;
-	`}
-
   ${({ $top, $sidebar }) =>
     $top &&
     $sidebar &&
@@ -63,7 +63,7 @@ export const Bar = styled.div`
 		transform: translateY(8px) rotate(-135deg);
 	`}
 
-	${({ $mid, $sidebar }) =>
+  ${({ $mid, $sidebar }) =>
     $mid &&
     $sidebar &&
     `
@@ -76,4 +76,10 @@ export const Bar = styled.div`
     `
 		transform: translateY(-6px) rotate(-45deg);
 	`}
+
+  ${({ $theme }) =>
+    $theme === 'dark' &&
+    `
+      background-color: #adad2e;
+    `}
 `;

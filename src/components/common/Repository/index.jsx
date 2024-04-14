@@ -26,13 +26,13 @@ export const Repository = ({
   return (
     <Wrapper id={id} as="a" href={url}>
       <StyledRepository theme={theme}>
-        <Header theme={theme}>
+        <Header>
           <h3>{name}</h3>
         </Header>
-        <Description theme={theme}>
+        <Description>
           <p>{description}</p>
         </Description>
-        <Stars theme={theme}>
+        <Stars>
           <img src={theme === 'dark' ? StarIconWhite : StarIcon} alt="stars" />
           {totalCount}
           <img src={theme === 'dark' ? ForkIconWhite : ForkIcon} alt="forks" />

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Container, ThemeContext } from 'Common';
+import { Container } from 'Common';
 import { Skill } from './Skill';
 import { Wrapper, Flex } from './styles';
 
@@ -19,10 +19,9 @@ export const query = graphql`
 `;
 
 export const Skills = () => {
-  const { theme } = useContext(ThemeContext);
   const { skills } = useStaticQuery(query);
   return (
-    <Wrapper theme={theme}>
+    <Wrapper>
       <Container>
         <h2>What he does</h2>
         <Flex>

@@ -28,7 +28,7 @@ export const CardPost = ({ node, landing }) => {
   );
   return (
     <Item>
-      <Post theme={theme}>
+      <Post $theme={theme}>
         {node.frontmatter.thumbnail && (
           <ArticleImg landing={landing}>
             <GatsbyImage
@@ -38,19 +38,18 @@ export const CardPost = ({ node, landing }) => {
           </ArticleImg>
         )}
         <ArticleContent>
-          <ArticleTitle theme={theme}>
+          <ArticleTitle>
             <Link to={postPath} itemProp="url">
               {node.frontmatter.title}
             </Link>
           </ArticleTitle>
           <Paragraph
-            theme={theme}
             dangerouslySetInnerHTML={{
               __html: node.html.split('<!--more-->')[0],
             }}
           />
 
-          <Info theme={theme}>
+          <Info>
             <PublishInfo>
               <StyledSpan>
                 <img

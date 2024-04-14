@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
-import { SmallerContainer, GithubIcon, ThemeContext } from 'Common';
+import { SmallerContainer, GithubIcon } from 'Common';
 import gatsbyIcon from 'Static/footer/gatsby.svg';
 import netlifyIcon from 'Static/footer/netlify.svg';
 import { Wrapper, Links, Item } from './styles';
 import config from 'Data';
 
 export const Copyrights = () => {
-  const { theme } = useContext(ThemeContext);
   return (
-    <Wrapper as={SmallerContainer} $theme={theme}>
+    <Wrapper as={SmallerContainer}>
       <div>
         All illustrations used are from{' '}
         <a href="https://iconscout.com/" target="_blank" rel="noreferrer">
@@ -41,13 +40,7 @@ export const Copyrights = () => {
           target="_blank"
           aria-label="Open Sourced on Github"
         >
-          <Item
-            as={GithubIcon}
-            img
-            width="24"
-            height="24"
-            color={theme === 'dark' ? '#fff' : '#000'}
-          />
+          <Item as={GithubIcon} img width="24" height="24" />
         </a>
         deployed on
         <a

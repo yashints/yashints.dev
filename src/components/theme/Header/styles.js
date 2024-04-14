@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background: #fff;
   width: 100%;
   z-index: 1;
   border-bottom: 0.01em solid rgb(204, 204, 204);
@@ -10,7 +9,6 @@ export const Wrapper = styled.div`
   ${({ $theme }) =>
     $theme === 'dark' &&
     `
-		background: #212121;
 		border-bottom: unset;
 		box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.2);
 	`}

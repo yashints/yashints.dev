@@ -2,13 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-    a {
-      color: #adad2e;
-    }
-	`};
 `;
 
 export const Important = styled.span`
@@ -30,8 +23,8 @@ export const Summary = styled.summary`
   cursor: pointer;
   color: #000;
   padding-top: 1em;
-  ${({ active }) =>
-    !!active &&
+  ${({ $active }) =>
+    !!$active &&
     `
       text-decoration: underline;
       color: #000;

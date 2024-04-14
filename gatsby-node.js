@@ -1,5 +1,4 @@
 exports.createPages = require(`./gatsby/createPages`).createPages;
-
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {

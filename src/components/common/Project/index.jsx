@@ -1,13 +1,12 @@
-import React, { useContext } from 'react';
-import { Card, ThemeContext, Repository, ButtonLink } from 'Common';
-import { Wrapper, Work, Title } from './styles';
+import React from 'react';
+import { Card, Repository, ButtonLink } from 'Common';
+import { Wrapper, Work } from './styles';
 
 export const Project = ({ title, projects, link, side, github }) => {
-  const { theme } = useContext(ThemeContext);
   return (
     <Wrapper>
-      <Title theme={theme}>{title}</Title>
-      <Work github={github} side={side}>
+      <h4>{title}</h4>
+      <Work $github={github} $side={side}>
         {!github
           ? projects.edges.map(({ node }) => <Card key={node.id} {...node} />)
           : projects.map((project, index) => (

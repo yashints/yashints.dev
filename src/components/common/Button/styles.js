@@ -27,12 +27,6 @@ export const LinkButton = styled.a`
       
   `}
 
-  ${({ $theme }) =>
-    $theme === 'dark' &&
-    `
-      color: #adad2e;
-      margin-bottom: 2rem;
-  `};
 
   ${({ $minwidth }) =>
     $minwidth &&
@@ -71,8 +65,9 @@ export const LinkButton = styled.a`
   }
 
   &:hover {
-    color: #fff;
+    box-shadow: 0px 0px 17px 0px rgba(185, 185, 185, 0.4);
     border: 1px solid #226fbe;
+    color: #fff;
 
     &:before {
       top: -35%;
@@ -98,8 +93,14 @@ export const LinkButton = styled.a`
     width: 100%;
     text-align: center;
   }
-
-  &:hover {
-    box-shadow: 0px 0px 17px 0px rgba(185, 185, 185, 0.4);
-  }
+  ${({ $theme }) =>
+    $theme === 'dark' &&
+    `
+      background-color: #333;
+      
+      &:hover {
+        color: #f0f04d;
+        border: 1px solid #333;
+      }
+    `}
 `;

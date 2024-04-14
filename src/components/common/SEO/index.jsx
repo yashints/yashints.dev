@@ -141,7 +141,6 @@ export const SEO = ({
       <link rel="publisher" href={socialLinks.google} />
       <link rel="canonical" href={canonical_url} />
       <title>{title ? `${author} | ${title}` : author}</title>
-      <html lang="en" dir="ltr" />
     </>
   );
 };

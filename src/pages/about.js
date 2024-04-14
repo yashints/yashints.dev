@@ -24,7 +24,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <Container>
-        <PageTitle>Who is this guy?</PageTitle>
+        <PageTitle>About</PageTitle>
         <Flex>
           <Details />
           <Portrait>
@@ -48,6 +48,7 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-direction: column;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -59,7 +60,6 @@ const Portrait = styled.div`
   position: relative;
   flex: 1;
   width: 100%;
-  padding-left: 0.5rem;
 `;
 
 export const Head = () => (

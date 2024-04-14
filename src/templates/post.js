@@ -1,11 +1,9 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Layout, SmallerContainer, SEO, Post } from 'Common';
 import './highlight.scss';
 
-const PostTemplate = ({ pageContext }) => {
-  const { post } = useStaticQuery(postQuery);
-  console.log(post);
+const PostTemplate = ({ data: {post}, pageContext }) => {
   const thumbnail = post.frontmatter.thumbnail
     ? post.frontmatter.thumbnail.childImageSharp.gatsbyImageData
     : '';

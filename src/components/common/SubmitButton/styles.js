@@ -44,16 +44,11 @@ export const Btn = styled.button`
   ${({ theme }) =>
     theme === 'dark' &&
     `
-      color: #fff;
       background-color: #333;
       
       &:hover {
         color: #000;
         border: 1px solid #333;
-      }
-
-      a {
-        color: #adad2e;
       }
     `}
 `;

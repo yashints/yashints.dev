@@ -1,7 +1,7 @@
 {
   "name": "yashints.dev",
   "description": "My personal website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Yaser Adel Mehraban <adel.mehrban@gmail.com>",
   "licenses": [
     {
@@ -70,7 +70,8 @@
   ],
   "main": "n/a",
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "cleanbuild": "gatsby clean && gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -85,7 +86,8 @@
     "eslint-config-react-app": "^7.0.1",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-graphql": "^5.13.1",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "unist-util-visit": "^5.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"

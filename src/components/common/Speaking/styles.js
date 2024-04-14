@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-      color: #fff;
-  `};
-
   @media (max-width: 680px) {
     padding: 2rem;
     text-align: center;
@@ -23,11 +17,6 @@ export const Box = styled.div`
 
 export const HR = styled.hr`
   margin: 1em 0;
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-			color: #fff;
-	`};
 `;
 
 export const Tags = styled.div`
@@ -47,5 +36,16 @@ export const Tags = styled.div`
     border-radius: 2rem;
     padding: 0.2rem 0.85rem 0.25rem;
     margin: 0.3em;
+    ${({ $theme }) =>
+      $theme === 'dark' &&
+      `
+      background-color: #333;
+      color: #adad2e;
+      
+      &:hover {
+        color: #f0f04d;
+        border: 1px solid #333;
+      }
+    `}
   }
 `;

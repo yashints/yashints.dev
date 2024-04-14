@@ -9,4 +9,5 @@ yarn-error.log
 .env
 .env.*
 .netlify
-./package-lock.json
+**/package-lock.json
+**/yarn.lock

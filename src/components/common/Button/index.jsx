@@ -25,7 +25,7 @@ export const ButtonLink = ({
   ) : (
     <LinkButton
       href={to}
-      theme={theme}
+      $theme={theme}
       target="_blank"
       rel="noopener norefferer"
       $minwidth={minwidth}

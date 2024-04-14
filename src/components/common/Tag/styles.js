@@ -37,7 +37,6 @@ export const TagWrapper = styled.div`
   ${({ theme }) =>
     theme === 'dark' &&
     `
-      color: #fff;
       
       a {
         background-color: #444;

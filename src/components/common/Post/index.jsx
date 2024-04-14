@@ -100,7 +100,7 @@ export const Post = ({ html, frontmatter, timeToRead, postPath }) => {
           defer
         ></script>
       </DonateContainer>
-      <LinksWrapper theme={theme}>
+      <LinksWrapper $theme={theme}>
         <Back>
           {frontmatter.nextPost && (
             <Link to={frontmatter.nextPost}>

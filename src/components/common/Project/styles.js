@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const Title = styled.h4`
-  color: #212121;
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-			color: #fff;
-	`};
-`;
-
 export const Wrapper = styled.div`
   margin-bottom: 2.5rem;
 `;
@@ -24,8 +14,8 @@ export const Work = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  ${({ side }) =>
-    side &&
+  ${({ $side }) =>
+    $side &&
     `
 			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 3rem;
@@ -40,8 +30,8 @@ export const Work = styled.div`
     grid-gap: 4rem;
   }
 
-  ${({ github }) =>
-    github &&
+  ${({ $github }) =>
+    $github &&
     `
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(1, 8fr);

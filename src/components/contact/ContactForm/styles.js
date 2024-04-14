@@ -19,7 +19,6 @@ export const ContactWrapper = styled.div`
   ${({ theme }) =>
     theme === 'dark' &&
     `
-		color: #fff;
 		hr {
 			background: rgb(255, 255, 255, 0.4);
 		}
@@ -28,7 +27,6 @@ export const ContactWrapper = styled.div`
 		}
 		input, textarea {
 			background: #333;
-      color: #fff;
     }
     
     @media (max-width: 680px) {

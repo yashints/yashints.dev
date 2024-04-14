@@ -46,7 +46,7 @@ export const Layout = ({ children }) => {
       <ThemeContext.Consumer>
         {({ theme }) => (
           <>
-            <div id="top">
+            <GlobalLayout theme={theme} id="top">
               <a
                 className={scrollY > 350 ? 'visible' : ''}
                 id="back2Top"
@@ -63,7 +63,7 @@ export const Layout = ({ children }) => {
               <Header />
               <LayoutStyled theme={theme}>{children}</LayoutStyled>
               <Footer />
-            </div>
+            </GlobalLayout>
           </>
         )}
       </ThemeContext.Consumer>
@@ -74,10 +74,18 @@ export const Layout = ({ children }) => {
 const LayoutStyled = styled.div`
   width: 100%;
   padding-top: 7rem;
+`;
+
+const GlobalLayout = styled.div`
+  color: #212121;
 
   ${({ theme }) =>
     theme === 'dark' &&
     `
-		background: #212121;
-	`};
+    background: #212121;
+    color: #ccc;
+    a {
+      color: #adad2e;
+    }
+  `};
 `;

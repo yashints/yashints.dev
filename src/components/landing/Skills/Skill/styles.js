@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 680px) {
     align-self: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &:last-child {
       margin-bottom: unset;

@@ -26,6 +26,7 @@ export const Header = () => {
       <Hamburger
         $isHomePage={isHomePage}
         $sidebar={showSidebar}
+        $theme={theme}
         toggle={toggle}
       />
       <Sidebar $sidebar={showSidebar} toggle={toggle} />

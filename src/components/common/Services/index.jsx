@@ -14,14 +14,12 @@ export const Services = () => {
       <H3>Courses</H3>
       <DIV>
         I've recently published my{' '}
-        <Link
-          href={
-            'https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps'
-          }
+        <a href='https://app.pluralsight.com/library/courses/web-performance-progressive-web-apps'          
+          target='_blank' rel='noreferrer'
         >
           <Important>Web performance for PWAs </Important>
           course on PluralSight
-        </Link>
+        </a>
         . It's packed with practical examples, tips and tricks to equip you for
         your journey on web performance tuning. Make sure to check it out and
         leave your feedback once finished.
@@ -59,7 +57,7 @@ export const Services = () => {
         />
       </DIV>
       <H3>FAQ</H3>
-      <Summary active={ppl} onClick={() => setPPLVisibility(!ppl)}>
+      <Summary $active={ppl} onClick={() => setPPLVisibility(!ppl)}>
         <Important>
           {!ppl && '⯈ '}
           {!!ppl && '⯆ '}
@@ -75,7 +73,7 @@ export const Services = () => {
         </DIV>
       )}
 
-      <Summary active={agenda} onClick={() => setAgenda(!agenda)}>
+      <Summary $active={agenda} onClick={() => setAgenda(!agenda)}>
         <Important>
           {!agenda && '⯈ '}
           {!!agenda && '⯆ '}
@@ -90,7 +88,7 @@ export const Services = () => {
         </DIV>
       )}
 
-      <Summary active={howLong} onClick={() => setHowLong(!howLong)}>
+      <Summary $active={howLong} onClick={() => setHowLong(!howLong)}>
         <Important>
           {!howLong && '⯈ '}
           {!!howLong && '⯆ '}
@@ -105,7 +103,7 @@ export const Services = () => {
         </DIV>
       )}
 
-      <Summary active={content} onClick={() => setContent(!content)}>
+      <Summary $active={content} onClick={() => setContent(!content)}>
         <Important>
           {!content && '⯈ '}
           {!!content && '⯆ '}
@@ -122,7 +120,7 @@ export const Services = () => {
         </DIV>
       )}
 
-      <Summary active={nfp} onClick={() => setNFP(!nfp)}>
+      <Summary $active={nfp} onClick={() => setNFP(!nfp)}>
         <Important>
           {!nfp && '⯈ '}
           {!!nfp && '⯆ '}
@@ -136,7 +134,7 @@ export const Services = () => {
         </DIV>
       )}
 
-      <Summary active={uni} onClick={() => setUniversity(!uni)}>
+      <Summary $active={uni} onClick={() => setUniversity(!uni)}>
         <Important>
           {!uni && '⯈ '}
           {!!uni && '⯆ '}

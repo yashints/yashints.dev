@@ -145,25 +145,6 @@ module.exports = {
               linkImagesToOriginal: true,
             },
           },
-          // {
-          //   resolve: 'gatsby-remark-custom-blocks',
-          //   options: {
-          //     blocks: {
-          //       danger: {
-          //         classes: 'danger',
-          //         title: 'optional',
-          //       },
-          //       warning: {
-          //         classes: 'warning',
-          //         title: 'optional',
-          //       },
-          //       info: {
-          //         classes: 'info',
-          //         title: 'optional',
-          //       },
-          //     },
-          //   },
-          // },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
@@ -180,6 +161,7 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-autolink-headers',
+          'yas-remark-custom-blocks',
         ],
       },
     },

@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import { ThemeContext, ButtonLink } from 'Common';
+import { ButtonLink, ThemeContext } from 'Common';
 import { Wrapper, Tags, Box } from './styles';
 
 import { Talk } from './Talk';
 
 export const Speaking = ({ events }) => {
+  const { theme } = useContext(ThemeContext);
   const pastEvents = events.filter(
     (x) => new Date(x.node.postDate) < new Date()
   );
@@ -18,10 +19,8 @@ export const Speaking = ({ events }) => {
     });
   }
 
-  const { theme } = useContext(ThemeContext);
-
   return (
-    <Wrapper theme={theme}>
+    <Wrapper>
       <Box>
         <p>
           Having spoken at many conferences and meetups, sharing my knowledge
@@ -43,7 +42,7 @@ export const Speaking = ({ events }) => {
       </Box>
       <br />
       <h3>Topics I've frequently talked about</h3>
-      <Tags>
+      <Tags $theme={theme}>
         <span>Web technologies</span>
         <span>Web Performance</span>
         <span>PWAs</span>
@@ -54,10 +53,10 @@ export const Speaking = ({ events }) => {
       </Tags>
       <br />
       <h3 id="upcoming">Future Events</h3>
-      <Talk talks={futureEvents} theme={theme} />
+      <Talk talks={futureEvents} />
       <br />
       <h3>Past Events</h3>
-      <Talk talks={pastEvents} theme={theme} />
+      <Talk talks={pastEvents} />
       <br />
       <h3 id="info">Request to Speak</h3>
       <Box>

@@ -3,7 +3,7 @@ import {
   LinkedinShareButton,
   TwitterShareButton,
   RedditShareButton,
-  TwitterIcon,
+  XIcon,
   LinkedinIcon,
   RedditIcon,
 } from 'react-share';
@@ -21,7 +21,7 @@ export const SocialShare = ({ title, path, iconSize = 48 }) => {
         via={config.social.twitter}
         title={title}
       >
-        <TwitterIcon round size={iconSize} iconbgstyle={{ fill: '#333' }} />
+        <XIcon round size={iconSize} iconbgstyle={{ fill: '#333' }} />
       </TwitterShareButton>
       <LinkedinShareButton url={`${config.url}${path}`} title={title}>
         <LinkedinIcon round size={iconSize} iconbgstyle={{ fill: '#333' }} />

@@ -19,12 +19,6 @@ export const Brand = styled.div`
   img {
     width: 80px;
   }
-
-  ${({ $theme }) =>
-    $theme === 'dark' &&
-    `
-			color: #fff;
-	`};
 `;
 
 export const BrandLogo = styled.div`
@@ -38,4 +32,8 @@ export const BrandLogo = styled.div`
     transform: scale(1.3);
     transition: all 0.2s ease-in-out;
   }
+`;
+
+export const RoundImage = styled.img`
+  border-radius: 50%;
 `;

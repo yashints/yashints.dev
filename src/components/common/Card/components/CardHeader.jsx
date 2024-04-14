@@ -1,11 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { ThemeContext } from 'Common';
 
 const CardHeader = ({ title }) => {
-  const { theme } = useContext(ThemeContext);
   return (
-    <Wrapper theme={theme}>
+    <Wrapper>
       <h3>{title}</h3>
     </Wrapper>
   );
@@ -18,17 +16,10 @@ const Wrapper = styled.div`
     font-size: 0.9em;
     margin: 0;
     font-weight: normal;
-    color: #212121;
 
     @media (max-width: 680px) {
       font-size: 1.2em;
     }
-
-    ${({ theme }) =>
-      theme === 'dark' &&
-      `
-				color: #fff;
-		`};
   }
 `;
 

@@ -33,12 +33,6 @@ export const Title = styled.h2`
   @media (max-width: 680px) {
     margin-bottom: 2rem;
   }
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-		color: #fff;
-	`}
 `;
 
 export const Img = styled.img`
@@ -49,12 +43,6 @@ export const P = styled.p`
   display: flex;
   align-items: center;
 
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-		color: #fff;
-  `};
-
   @media (max-width: 680px) {
     padding-left: 2rem;
   }
@@ -63,12 +51,6 @@ export const P = styled.p`
 export const Text = styled.p`
   color: #212121;
   text-align: justify;
-
-  ${({ theme }) =>
-    theme === 'dark' &&
-    `
-		color: #fff;
-  `};
 `;
 
 export const Social = styled.div`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import {
   Layout,
   Container,
@@ -10,19 +10,17 @@ import {
   PostsPagination,
 } from 'Common';
 
-const BlogList = ({ pageContext, location }) => {
+const BlogList = ({ data, location, pageContext }) => {
   const { currentPage, numPages } = pageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
   const prevPage =
     currentPage - 1 === 1 ? '/blog' : `/blog/${(currentPage - 1).toString()}`;
   const nextPage = `/blog/${(currentPage + 1).toString()}`;
-  const data = useStaticQuery(pageQuery);
 
   return (
     <Layout>
       <Container>
-        <SEO title="Blog" type="Organization" location={location.pathName} />
         <PageTitle>Articles</PageTitle>
         <br />
         <Row>
@@ -43,11 +41,17 @@ const BlogList = ({ pageContext, location }) => {
 
 export default BlogList;
 
-export const Head = () => <SEO title="Blog" type="Organization" />;
+export const Head = ({ location }) => (
+  <SEO title="Blog" type="Organization" location={location.pathName} />
+);
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query ($limit: Int!, $skip: Int!) {
-    allMarkdownRemark(limit: $limit, skip: $skip) {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           id

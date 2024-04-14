@@ -20,16 +20,16 @@ export const Links = styled.div`
     ${({ $theme }) =>
       $theme === 'dark' &&
       `
-            color: #fff;
-            &:hover {
-              border-bottom: 3px solid #adad2e;
-            }
-            &.current {
-              color: #929090;
-              padding-bottom: 5px;
-		          border-bottom: 2px solid #adad2e;
-            }
-        `}
+        color: #bbb;
+        &:hover {
+          border-bottom: 3px solid #adad2e;
+        }
+        &.current {
+          color: #929090;
+          padding-bottom: 5px;
+          border-bottom: 2px solid #adad2e;
+        }
+    `}
   }
 
   ${({ $desktop }) =>

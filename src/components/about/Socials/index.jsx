@@ -46,24 +46,24 @@ export const Socials = () => {
   return (
     <Wrapper>
       <DetailsContainer>
-        <Title theme={theme}>Need to get in touch?</Title>
-        <P theme={theme}>
+        <Title>Need to get in touch?</Title>
+        <P>
           <Img src={theme === 'dark' ? EnvelopeWhite : Envelope} alt="email" />
           {config.contact.email}
         </P>
-        <P theme={theme}>
+        <P>
           <Img src={theme === 'dark' ? MarkerWhite : Marker} alt="address" />
           {config.address.city}, {config.address.country}
         </P>
       </DetailsContainer>
       <DetailsContainer>
-        <Title theme={theme}>Or on social media</Title>
+        <Title>Or on social media</Title>
         <Social>
           {socials.map((social) => (
-            <SocialIcon theme={theme} key={social.id} {...social} />
+            <SocialIcon key={social.id} {...social} />
           ))}
           {creatives.map((creative) => (
-            <SocialIcon theme={theme} key={creative.id} {...creative} />
+            <SocialIcon key={creative.id} {...creative} />
           ))}
         </Social>
       </DetailsContainer>
