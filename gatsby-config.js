@@ -177,10 +177,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
+        id: config.googleAnalyticsID,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' },
       },
     },
     {
