@@ -4,32 +4,38 @@ import { Layout, SmallerContainer, SEO, Post } from 'Common';
 import './highlight.scss';
 
 const PostTemplate = ({ data: {post}, pageContext }) => {
-  const thumbnail = post.frontmatter.thumbnail
-    ? post.frontmatter.thumbnail.childImageSharp.gatsbyImageData
-    : '';
+  
   post.postPath = pageContext.postPath;
   post.frontmatter.nextPost = pageContext.nextPost;
   post.frontmatter.previousPost = pageContext.previousPost;
 
   return (
     <Layout>
-      <SmallerContainer>
-        <SEO
-          type="NewsArticle"
-          title={post.frontmatter.title}
-          articleBody={post.html}
-          datePublished={post.frontmatter.date}
-          cover={thumbnail}
-          canonical_url={post.frontmatter.canonical_url}
-          location={pageContext.postPath}
-        />
+      <SmallerContainer>        
         <Post {...post} />
       </SmallerContainer>
     </Layout>
   );
 };
 
+export const Head = ({data: { post }, pageContext}) => {
+  const thumbnail = post.frontmatter.thumbnail
+    ? post.frontmatter.thumbnail.publicURL
+    : '';
+  return <SEO
+  type="NewsArticle"
+  title={post.frontmatter.title}
+  articleBody={post.html}
+  datePublished={post.frontmatter.date}
+  cover={thumbnail}
+  canonical_url={post.frontmatter.canonical_url}
+  location={pageContext.postPath}
+/>
+}
+
 export default PostTemplate;
+
+
 
 export const postQuery = graphql`
   query postQuery($title: String) {
@@ -45,14 +51,14 @@ export const postQuery = graphql`
         author
         gravatar
         canonical_url
-        tags
-        img: thumbnail {
-          publicURL
-        }
+        tags       
         thumbnail {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)
           }
+        }
+        img: thumbnail {
+          publicURL
         }
       }
     }

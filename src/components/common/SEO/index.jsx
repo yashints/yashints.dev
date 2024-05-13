@@ -129,7 +129,7 @@ export const SEO = ({
         content={description || defaultDescription}
       />
       <meta
-        name="twitter:image:src"
+        name="twitter:image"
         content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
       <meta name="monetization" content="$ilp.uphold.com/XQeUdN6MjiGz" />
