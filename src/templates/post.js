@@ -19,8 +19,8 @@ const PostTemplate = ({ data: {post}, pageContext }) => {
 };
 
 export const Head = ({data: { post }, pageContext}) => {
-  const thumbnail = post.frontmatter.thumbnail
-    ? post.frontmatter.thumbnail.publicURL
+  const thumbnail = post.frontmatter.img
+    ? post.frontmatter.img.publicURL
     : '';
   return <SEO
   type="NewsArticle"

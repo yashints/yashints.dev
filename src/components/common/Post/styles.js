@@ -147,17 +147,6 @@ export const DonateContainer = styled.div`
 export const ArticleImg = styled.div`
   display: flex;
   justify-content: center;
-
-  @media (max-width: 992px) {
-    height: 300px;
-    display: none;
-  }
-
-  @media (max-width: 680px) {
-    height: 100px;
-    width: auto;
-    flex: 1;
-  }
 `;
 
 export const DonateButton = styled.button`
