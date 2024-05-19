@@ -5,6 +5,7 @@ date: 2020-04-24
 title: "Have you ever thought about for loops? ➰"
 popular: true
 tags: [showdev, webdev, javascript, forloops]
+cover: ./socialpreview.png
 ---
  
 Using a loop is almost a must in our day to day life. But have you ever thought what kind of loop should you use? Do you know the difference between enumerables and iterables? This article sheds some light in this space, so read on if you're interested.

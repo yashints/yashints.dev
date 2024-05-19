@@ -2,9 +2,10 @@
 path: '/mem-leak/'
 author: Yaser Adel Mehraban
 date: 2020-02-28
-title: "Stop gobbling up that memory 🛑"
+title: "Stop gobbling up that memory \U0001F6D1"
 popular: true
 tags: [webdev, showdev, memoryleak, javascript]
+cover: ./socialpreview.png
 ---
  
 I've been writing web applications for more than a decade. From _classic ASP_ to _PHP_, _ASP.Net web forms_ and the list goes on and on. However, something that's been common between all those years for me has been to care about how performing the site is. One important part of that has been to look out for memory leaks, because they can cause the page to go super slow or even crashing in more serious scenarios. 

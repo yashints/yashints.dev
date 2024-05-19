@@ -4,11 +4,10 @@ title: 'Angular Virtual Scrolling'
 subtitle: 'Improve the performance with little effort'
 date: 2018-12-06
 author: Yaser Adel Mehraban
-categories:
-  [angular, virtual scroll, performance tuning]
-tags:
-  [angular, virtual scroll, performance tuning]
+categories: [angular, virtual scroll, performance tuning]
+tags: [angular, virtual scroll, performance tuning]
 thumbnail: './vscroll.jpg'
+cover: ./socialpreview.png
 ---
 
 If you have followed my series on performance improvement, you would've stumbled upon my [image optimisation post](/blog/2018/11/10/web-perf-4) where I went through a series of steps to lazy load images on your page.

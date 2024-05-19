@@ -5,6 +5,7 @@ date: 2019-11-18
 title: "State management in Vue.js"
 popular: true
 tags: [showdev, webdev, vuejs, statemanagement]
+cover: ./socialpreview.png
 ---
 
 [Vue.js](https://vuejs.org/) is an approachable, versatile, performant, and progressive framework to build user interfaces with. I've written three separate articles on it so far:

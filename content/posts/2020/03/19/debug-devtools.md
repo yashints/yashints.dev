@@ -2,9 +2,10 @@
 path: '/debug-devtools/'
 author: Yaser Adel Mehraban
 date: 2020-03-19
-title: "Stop using `console.log`, start using your DevTools 🛠️"
+title: "Stop using `console.log`, start using your DevTools \U0001F6E0️"
 popular: true
 tags: [webdev, showdev, debugging, javascript]
+cover: ./socialpreview.png
 ---
  
 There are many situations where we want to see what's wrong with out code without the trouble of changing source code and push the changes again, regardless of whether we're using local environment or production. Most folks start by writing `console.log` statements throughout their code base and go step by step to find the place where the bug is happening. That's OK for beginners and where you have access to source code, but what if you don't want to waste so much time or you don't even have access to source code?

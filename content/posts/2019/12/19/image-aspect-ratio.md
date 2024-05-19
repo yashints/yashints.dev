@@ -2,9 +2,10 @@
 path: '/image-aspect-ratio/'
 author: Yaser Adel Mehraban
 date: 2019-12-19
-title: "Image aspect ratio done right 😍"
+title: "Image aspect ratio done right \U0001F60D"
 popular: true
 tags: [showdev, webdev, image, aspectratio]
+cover: ./socialpreview.png
 ---
  
 If you have an image on the page which is 600x200 pixels, what is the chance of it shown exactly with that size? I'd say not likely, because most of the time it's put inside a container which defined the width and the image is set to `width: %100`. But the size of the image is not that important at this point, what is important is that you will have a DOM reflow once the image is loaded.

@@ -5,6 +5,7 @@ author: Yaser Adel Mehraban
 categories: [Soft Skills, Public Speaking]
 tags: [soft skills, public speaking]
 thumbnail: './voxxeddays.jpg'
+cover: ./socialpreview.png
 ---
 
 I've been trying to actively improve my public speaking skills (one of the reasons why I blog less these days 😁) and started from local meetups and user groups. However, my goal was to give a talk in an official conference this year.

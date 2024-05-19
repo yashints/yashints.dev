@@ -77,7 +77,8 @@
     "clean": "gatsby clean",
     "lint": "eslint src",
     "format": "prettier es5 --single-quote --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generateSocialPreview": "node ./scripts/generateSocialMediaPreview.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -87,7 +88,9 @@
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-graphql": "^5.13.1",
     "prettier": "^3.2.5",
-    "unist-util-visit": "^5.0.0"
+    "puppeteer": "^22.9.0",
+    "unist-util-visit": "^5.0.0",
+    "yaml": "^2.4.2"
   },
   "eslintConfig": {
     "extends": "react-app"

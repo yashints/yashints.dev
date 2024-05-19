@@ -5,6 +5,7 @@ date: 2019-12-16
 title: "Transfer learning with Tensorflow.js"
 popular: true
 tags: [showdev, webdev, tensorflowjs, transferlearning]
+cover: ./socialpreview.png
 ---
  
 [Tensorflow.js](https://www.tensorflow.org/js/) is a library which lets you perform machine learning in the browser or in Node. A while ago I wrote [an intro](https://yashints.dev/blog/2018/11/27/get-started-with-tensorflowjs) on it and also gave a few talks including one which had a live demo where I re-trained the [Speech Command](https://github.com/tensorflow/tfjs-models/tree/master/speech-commands) model and flew a drone using my voice 😍. Many people asked about the details, so I decided to blog the whole thing down.

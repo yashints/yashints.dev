@@ -11,10 +11,11 @@ module.exports = {
     siteUrl: config.url,
     feed_url: `${config.url}${config.siteRss}`,
     title: 'Yashints | Blog',
-    description: config.defaultDescription,
-    image_url: `https://${config.url}/static/favicon/logo-512x512.png`,
+    description: config.authorDescription,
+    authorAvatar: `${config.url}/static/favicon/logo-512x512.png`,
     author: config.author,
-    copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
+    copyright: `${config.siteTitle} © ${new Date().getFullYear()}`,
+    ...config
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -194,7 +195,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: config.defaultTitle,
+        name: config.siteTitle,
         short_name: config.shortName,
         start_url: '/',
         background_color: config.backgroundColor,

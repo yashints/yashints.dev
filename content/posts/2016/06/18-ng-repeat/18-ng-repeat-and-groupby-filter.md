@@ -7,6 +7,7 @@ author: Yaser Adel Mehraban
 popular: true
 categories: [Angular, Html, JS]
 tags: [angularjs, dropdown, html, ngOptions, ngRepeat, select]
+cover: ./socialpreview.png
 ---
 
 TL/DR,

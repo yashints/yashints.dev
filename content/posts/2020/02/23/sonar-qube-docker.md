@@ -5,6 +5,7 @@ date: 2020-02-23
 title: "Run code analysis with sonarqube using docker"
 popular: true
 tags: [webdev, showdev, codeanalysis, docker]
+cover: ./socialpreview.png
 ---
  
 I help some of my friends perform code reviews on their code bases from time to time as a side activity. I've used [`codelyzer`](https://www.npmjs.com/package/codelyzer) before and it's very similar to `tslint` in a sense. However, I wanted to test something new and thought let's give [SonarQube](https://www.sonarqube.org/) a shot this time.

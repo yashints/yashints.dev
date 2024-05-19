@@ -6,6 +6,7 @@ title: "How to end-to-end test your Vue.js apps with Playwright 🧪"
 popular: true
 tags: [webdev, showdev, vue, playwright]
 thumbnail: './vue-playwright.png'
+cover: "./socialpreview.png"
 ---
 
 [Playwright](https://playwright.dev/) is one of the recently released end to end testing frameworks which enables fast, reliable and capable automation and is cross platform. I really like it, but since it's very easy to setup and the community around it is super cool, I like it even more. 

@@ -2,9 +2,10 @@
 path: '/image-capture-api/'
 author: Yaser Adel Mehraban
 date: 2020-09-06
-title: "Take a selfie 🤳 using Image Capture API and a few lines of code"
+title: "Take a selfie \U0001F933 using Image Capture API and a few lines of code"
 popular: true
 tags: [showdev, webdev, javascript, imagecaptureapi]
+cover: ./socialpreview.png
 ---
 
 It's been a while since I last wrote about Intersection Observer V2, partly because I had a lot on my plate and I was feeling exhausted and partly because I was working on my first [PluralSight course on web performance for PWAs](app.pluralsight.com/library/courses/web-performance-progressive-web-apps).

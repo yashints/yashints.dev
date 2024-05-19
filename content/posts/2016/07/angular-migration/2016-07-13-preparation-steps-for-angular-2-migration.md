@@ -6,18 +6,9 @@ date: 2016-07-13
 author: Yaser Adel Mehraban
 comments: true
 categories: [Angular, JS, AngularJS]
-tags:
-  [
-    angular,
-    angular 2,
-    component,
-    directive,
-    migration,
-    systemjs,
-    typescript,
-    webpack,
-  ]
+tags: [angular, angular 2, component, directive, migration, systemjs, typescript, webpack]
 thumbnail: './migration.png'
+cover: ./socialpreview.png
 ---
 
 I've seen many ways to shape an Angular app in different companies. This means when we try to upgrade to Angular 2 some of them might be easy to migrate compared to others.

@@ -2,10 +2,11 @@
 path: '/chrome-tab-groups/'
 author: Yaser Adel Mehraban
 date: 2020-06-15
-title: "Chrome - Arrange your tabs with tab groups 😍"
+title: "Chrome - Arrange your tabs with tab groups \U0001F60D"
 popular: true
 tags: [showdev, webdev, chrome, tabgroups]
 thumbnail: './tabgroups.jpg'
+cover: ./socialpreview.png
 ---
 
 If you're one of those people with so many tabs open than you can manage, read on.

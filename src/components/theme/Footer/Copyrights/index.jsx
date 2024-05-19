@@ -20,9 +20,9 @@ export const Copyrights = () => {
         <Item
           as={Link}
           to="/"
-          aria-label={`Copyright to ${config.defaultTitle}`}
+          aria-label={`Copyright to ${config.siteTitle}`}
         >
-          {config.defaultTitle}
+          {config.siteTitle}
         </Item>{' '}
         2016-{`${new Date().getFullYear()} `}- Built with
         <a

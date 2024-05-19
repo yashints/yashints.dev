@@ -5,6 +5,7 @@ author: Yaser Adel Mehraban
 popular: true
 categories: [docker]
 tags: [docker, docker-compose]
+cover: ./socialpreview.png
 ---
 
 I was working with my docker image for my pet project and suddenly got an error message:

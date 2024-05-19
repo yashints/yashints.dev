@@ -2,9 +2,10 @@
 path: '/powertoys/'
 author: Yaser Adel Mehraban
 date: 2020-10-09
-title: "Do you know about PowerToy Utilities? 💪🏻"
+title: "Do you know about PowerToy Utilities? \U0001F4AA\U0001F3FB"
 popular: true
 tags: [showdev, windows, powertoys]
+cover: ./socialpreview.png
 ---
 
 If you're a windows user like me, you might have heard of PowerToys Utilities from Microsoft. They are a set of utilities which come handy in many situations, but not many people know and use them. So I thought let's write how and when I use them to help other people be more efficient too.

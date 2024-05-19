@@ -3,8 +3,8 @@ import Thumbnail from 'Static/me.jpg';
 import {
   url,
   rootUrl,
-  defaultTitle,
-  defaultDescription,
+  siteTitle,
+  authorDescription,
   social,
   socialLinks,
   address,
@@ -92,7 +92,7 @@ export const SEO = ({
 
   return (
     <>
-      <meta name="description" content={description || defaultDescription} />
+      <meta name="description" content={description || authorDescription} />
       <meta
         name="image"
         content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
@@ -105,11 +105,11 @@ export const SEO = ({
       />
       <meta
         property="og:title"
-        content={title ? `${defaultTitle} | ${title}` : defaultTitle}
+        content={title ? `${siteTitle} | ${title}` : siteTitle}
       />
       <meta
         property="og:description"
-        content={description || defaultDescription}
+        content={description || authorDescription}
       />
       <meta
         property="og:image"
@@ -122,11 +122,11 @@ export const SEO = ({
       <meta name="twitter:site" content={social.twitter} />
       <meta
         name="twitter:title"
-        content={title ? `${defaultTitle} | ${title}` : defaultTitle}
+        content={title ? `${siteTitle} | ${title}` : siteTitle}
       />
       <meta
         name="twitter:description"
-        content={description || defaultDescription}
+        content={description || authorDescription}
       />
       <meta
         name="twitter:image"

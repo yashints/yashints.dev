@@ -2,9 +2,10 @@
 path: '/chrome-save-tabs/'
 author: Yaser Adel Mehraban
 date: 2020-06-17
-title: "Chrome - where did save sessions go? 🤔"
+title: "Chrome - where did save sessions go? \U0001F914"
 popular: true
 tags: [showdev, webdev, chrome, savetabs]
+cover: ./socialpreview.png
 ---
 
 I remember a while back (not sure how long), Chrome had the ability to save all tabs when you closed the browser regardless of whether it was by accident or not. But they removed that ability and now if you close the window you will lose the tabs.

@@ -2,10 +2,11 @@
 path: '/page-visibility-api/'
 author: Yaser Adel Mehraban
 date: 2019-09-22
-title: "Page Visibility API, let's help users save their battery life 😀"
+title: "Page Visibility API, let's help users save their battery life \U0001F600"
 popular: true
 tags: [showdev, webdev, javascript, pagevisibilityapi]
 thumbnail: './bn.jpg'
+cover: ./socialpreview.png
 ---
 
 Are you want of those people with 200 tabs open? Are you tired of carrying your laptop charger with you all the time? Well, I am here to let you know we can help users save battery, data, and time, if we know how to use the **Page Visibility API**.

@@ -6,6 +6,7 @@ title: 'What`s new in Angular 8'
 tags: [angular, webdev, showdev, features]
 popular: true
 thumbnail: './8.jpg'
+cover: ./socialpreview.png
 ---
 
 You might already know that [Angular](https://angular.io) 8 is out now, but what it means for you or your organisation is described below.

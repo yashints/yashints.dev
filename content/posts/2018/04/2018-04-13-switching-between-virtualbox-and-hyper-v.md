@@ -5,6 +5,7 @@ author: Yaser Adel Mehraban
 categories: [Windows]
 tags: [boot, hyperv, virtualbox]
 thumbnail: './hypervvirtualbox.png'
+cover: ./socialpreview.png
 ---
 
 Recently I had to switch between [VirtualBox](https://www.virtualbox.org/) and [Hyper-V](https://en.wikipedia.org/wiki/Hyper-V) and unfortunately these two don't get along well 😉. So I started googling for a solution and this one was the one that got my attention.

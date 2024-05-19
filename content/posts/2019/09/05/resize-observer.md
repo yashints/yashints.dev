@@ -2,9 +2,10 @@
 path: '/resize-observer/'
 author: Yaser Adel Mehraban
 date: 2019-09-05
-title: "Let's get to know the ResizeObserver 👋🏼"
+title: "Let's get to know the ResizeObserver \U0001F44B\U0001F3FC"
 popular: true
 tags: [showdev, webdev, resizeobserver, javascript]
+cover: ./socialpreview.png
 ---
 
 [Resize Observer](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver) API is another great JavaScript API which lets you get notified when the size of an element changes. Think `window.onresize` but on element level.

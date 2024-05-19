@@ -2,9 +2,10 @@
 path: '/network-info-api/'
 author: Yaser Adel Mehraban
 date: 2019-11-18
-title: "Network Information API, another step towards a better web 😍"
+title: "Network Information API, another step towards a better web \U0001F60D"
 popular: true
 tags: [showdev, webdev, networkinformation, progressiveenhancements]
+cover: ./socialpreview.png
 ---
 
 This year has been full of articles around how the web is bloated with static assets and how this has impacted users to face a poor user experience when using not so good networks around the world. There are resources like [web.dev](https://web.dev/) who are actively publishing content on how to make a better future for the web.

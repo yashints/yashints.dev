@@ -2,9 +2,10 @@
 path: '/vue-router/'
 author: Yaser Adel Mehraban
 date: 2019-10-30
-title: "Deliver a better user experience using Vue.js Router 🛣️"
+title: "Deliver a better user experience using Vue.js Router \U0001F6E3️"
 popular: true
 tags: [showdev, webdev, vuejs, router]
+cover: ./socialpreview.png
 ---
 
 [Vue.js](https://vuejs.org/) is an approachable, versatile, performant, and progressive framework to build user interfaces with. I wrote a [comprehensive intro](https://yashints.dev/blog/2019/10/18/vue-intro) a week or so ago and promised to continue adding more each week. This week is about **Vue** router and how it helps deliver a better user experience.

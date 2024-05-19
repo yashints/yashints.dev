@@ -6,6 +6,7 @@ title: '10 questions to ask in a technical interview'
 subtitle: ''
 popular: true
 tags: [recruitment, interview, questions]
+cover: ./socialpreview.png
 ---
 
 I've been sitting many interview sessions recently as part of our recruitment process and let me tell you it's one of the hardest tasks I've ever had. In this post I wanted to share my findings and approach with you so we can all be more intelligent, inclusive and successful in our hiring process. And I am super keen to hear from you in comments 👇🏼.

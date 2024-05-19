@@ -7,6 +7,7 @@ popular: true
 categories: [Angular, PWA]
 tags: [angular, application manifest, pwa, progressive web apps, service worker]
 thumbnail: './angularpwa.png'
+cover: ./socialpreview.png
 ---
 
 [Progressive Web Applications (PWA)](https://developers.google.com/web/progressive-web-apps/) are getting more and more attractions by day. With recent move from DevKit team, adding service worker support to the latest version of Safari, and [Microsoft adding progressive web applications to their store](https://www.windowscentral.com/first-batch-windows-10-progressive-web-apps-here), we can see the importance of the key role PWAs play in today's market.

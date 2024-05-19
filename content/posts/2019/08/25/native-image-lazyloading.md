@@ -6,6 +6,7 @@ title: "Native lazy loading is landed in Chrome"
 popular: true
 tags: [showdev, webdev, chrome, lazyloading]
 thumbnail: './lazy-load.png'
+cover: ./socialpreview.png
 ---
 
 Lazy loading resources is one of the important parts of web performance tuning, simply because offscreen resources can add a lot of weight to your page if loaded eagerly.

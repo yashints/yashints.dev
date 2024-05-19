@@ -6,6 +6,7 @@ author: Yaser Adel Mehraban
 categories: [vscode, flutter]
 tags: [vscode, flutter]
 thumbnail: './vscodeflutter.jpg'
+cover: ./socialpreview.png
 ---
 
 ## Intro

@@ -7,6 +7,7 @@ subtitle: 'Let’s talk SEO'
 popular: true
 tags: [webdev, seo, showdev]
 thumbnail: './seo.jpg'
+cover: ./socialpreview.png
 ---
 
 For most companies, ranking #1 is like a blessing to their business. However, most of the web developers are not aware of what should be done to reach to that point.

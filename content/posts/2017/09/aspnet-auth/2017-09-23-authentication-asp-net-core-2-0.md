@@ -4,26 +4,10 @@ title: 'Authentication in ASP.NET Core 2.0'
 date: 2017-09-23
 author: Yaser Adel Mehraban
 popular: true
-categories:
-  [
-    asp.net,
-    aspnetcore,
-    authentication,
-    authorization,
-    C#,
-    security,
-  ]
-tags:
-  [
-    2fa,
-    active,
-    aspnetcore,
-    authentication,
-    qrcode,
-    security,
-    sms,
-  ]
+categories: [asp.net, aspnetcore, authentication, authorization, C#, security]
+tags: [2fa, active, aspnetcore, authentication, qrcode, security, sms]
 thumbnail: './net-core-logo-proposal.jpg'
+cover: ./socialpreview.png
 ---
 
 As you might know the [.NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/) was release recently and with it come many improvements and changes. In this post I will point out a couple of changes from a security and authentication perspective.

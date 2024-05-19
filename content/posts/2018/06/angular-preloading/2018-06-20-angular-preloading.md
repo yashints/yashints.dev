@@ -7,6 +7,7 @@ popular: true
 categories: [Angular, Router, Preloading Stragetgy]
 tags: [angular, router, preloading strategy, lazy loading]
 thumbnail: './preloading.png'
+cover: ./socialpreview.png
 ---
 
 [Angular Router](https://angular.io/api/router/Router) has been supporting lazy loading of child modules for a long time. What's even more cool is that later on they added `PreloadAllModules` strategy so you can preload all of the modules in the background asynchronously. This will help boost up the loading time and performance tremendously.

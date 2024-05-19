@@ -2,10 +2,11 @@
 path: '/az-cosmos-emulator/'
 author: Yaser Adel Mehraban
 date: 2020-11-30
-title: "How to use Azure Cosmos Emulator as a local MongoDb database 🌍"
+title: "How to use Azure Cosmos Emulator as a local MongoDb database \U0001F30D"
 popular: true
 tags: [azure, cosmosdb, emulator, mongodb]
 thumbnail: './clipboard.jpg'
+cover: './socialpreview.png'
 ---
 
 I recently was trying to prepare a demo which involved me having a local MongoDb database. I reviewed a few options and was about to choose one when I remembered I have [Azure Cosmos DB Emulator](https://yas.fyi/azcosemu) installed and Cosmos DB supports MongoDb APIs.

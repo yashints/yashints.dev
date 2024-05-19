@@ -38,6 +38,18 @@ exports.createPage = ({ actions }, options) => {
           previousPost: prevPostPath,
         },
       });
+
+      if (process.env.gatsby_executing_command.includes('develop')) {
+        createPage({
+          path: `${postPath}/image_share`,
+          component: nodePath.resolve(`src/templates/social-media-card.js`),
+          context: {
+            title: title,
+            width: 400,
+            height: 200,
+          },
+        });
+      }
     });
   }
 };

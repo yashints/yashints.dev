@@ -5,6 +5,7 @@ date: 2021-05-10
 title: "From ARM to Bicep 💪🏽"
 popular: true
 tags: [showdev, azure, arm, bicep]
+cover: "./socialpreview.png"
 ---
 
 If you have deployed a resource in [Microsoft Azure](https://azure.microsoft.com/) as part of your CI/CD pipeline you have probably worked with [ARM templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview). These templates can be used to automate your resource deployment to Azure and help you to have consistent environments whether it's for testing, development or production purposes. However, there are some shortcomings when it comes to complex environments especially when you have many resources and the dependency between them makes the templates to be either super busy, very complex, or unreadable.

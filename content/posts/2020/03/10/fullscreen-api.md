@@ -2,9 +2,10 @@
 path: '/fullscreen-api/'
 author: Yaser Adel Mehraban
 date: 2020-03-10
-title: "What you need to know about Full screen API 💻"
+title: "What you need to know about Full screen API \U0001F4BB"
 popular: true
 tags: [webdev, showdev, fullscreenapi, javascript]
+cover: ./socialpreview.png
 ---
  
 There are many situations where we'd like to see our web page in fullscreen mode. Be it games, online courses, video tutorials, or simply wanting more reading space while reading a book. What we usually do in these sort of scenarios is we manually set our browser's tab/window in fullscreen mode (<kbd>F11</kbd>), but the result is not always what we expect, because some content is not designed to be viewed in fullscreen mode. Besides, what if we help our users to go fullscreen automatically instead, again it all comes to having a better user experience.

@@ -69,7 +69,7 @@ export const Footer = () => {
           <List>
             <li>
               <Brand as={Link} to="/">
-                {config.defaultTitle}
+                {config.siteTitle}
               </Brand>
             </li>
           </List>

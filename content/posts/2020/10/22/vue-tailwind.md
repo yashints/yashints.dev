@@ -5,6 +5,7 @@ date: 2020-10-22
 title: "Get started with Vue 3 and Tailwindcss"
 popular: true
 tags: [showdev, webdev, vue, tailwind]
+cover: './socialpreview.png'
 ---
 
 Last week I wanted to setup a [Vue.js v3](https://v3.vuejs.org/) app with [Tailwindcss](https://tailwindcss.com/) and although many articles exists for that, I couldn't get it done. The fact is that you need to use [postcss]() to get your setup working, but with new version of **Vue**, the `postcss` config file is not picked up. So after a few try and errors, I finally got it working and thought to jot down what I went through to make it easier for my future self, and hopefully a few of my fellow developers around the world.

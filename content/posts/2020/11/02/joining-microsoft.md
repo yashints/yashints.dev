@@ -2,10 +2,11 @@
 path: '/joining-microsoft/'
 author: Yaser Adel Mehraban
 date: 2020-11-02
-title: "I've joined Microsoft as an Azure Technical Trainer 🗺️ 😍"
+title: "I've joined Microsoft as an Azure Technical Trainer \U0001F5FA️ \U0001F60D"
 popular: true
 tags: [career, dreamjob, story, journey]
 thumbnail: './microsoft.jpg'
+cover: './socialpreview.png'
 ---
 
 The cat is out of the bag now, I've joined [Microsoft](https://www.microsoft.com/) as an **Azure Technical Trainer**. Some of you might be wondering why, and if so, this post is for you. I've decided to write down why I've made this decision and a bit about my 15+ years journey from high school to where I am now.

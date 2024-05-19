@@ -6,6 +6,7 @@ title: "Semantic kernel series - Part two - Plugins"
 popular: true
 tags: [semantickernel, AI, OpenAi, plugins]
 thumbnail: "./sk.png"
+cover: "./socialpreview.png"
 ---
 
 In my previous post, I introduced you to foundational concepts of [Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/), offering a glimpse into its potential. Now, when I was learning about the what and the why, that wasn't enough for me to fully understand the concepts and that's why I started writing these series.

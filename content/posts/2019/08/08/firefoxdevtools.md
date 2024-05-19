@@ -6,6 +6,7 @@ title: "Firefox Developer Tools can do that?"
 popular: true
 tags: [webdev, firefox, devtools, showdev]
 thumbnail: './firefoxdevtools.png'
+cover: ./socialpreview.png
 ---
 
 It's been a while since one of the X can do that posts I've been publishing. Furthermore, [Firefox Developer tools](https://developer.mozilla.org/en-US/docs/Tools) is just getting better and better everyday, so I thought it's about time I write one for it.

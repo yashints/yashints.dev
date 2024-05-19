@@ -6,6 +6,7 @@ author: Yaser Adel Mehraban
 categories: [Angular, React, Angular Elements]
 tags: [angular, react, angular elements]
 thumbnail: './reangular.jpg'
+cover: ./socialpreview.png
 ---
 
 With release of [Angular 6](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4), the team released `Angular Elements` which allows you to bootstrap Angular components within an existing Angular application by registering them as _Custom Components_.

@@ -5,6 +5,7 @@ date: 2017-10-04
 author: Yaser Adel Mehraban
 categories: [asp.net, asp.net mvc, aspnetcore, C#, Dependency Injection]
 tags: [actionfilterattribute, aspnetcore, aspnetmvc, DI, servicefilter]
+cover: ./socialpreview.png
 ---
 
 ## Problem

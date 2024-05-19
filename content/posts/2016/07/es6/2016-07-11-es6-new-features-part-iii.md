@@ -8,6 +8,7 @@ popular: false
 categories: [ES6, JS]
 tags: [class, ES6, module]
 thumbnail: './es6.png'
+cover: ./socialpreview.png
 ---
 
 Well for a long time I wanted to write a blog post about migrating Angular 1.x to 2, however, before doing so I thought it is really helpful to write about some prerequisites of that.

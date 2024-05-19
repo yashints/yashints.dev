@@ -6,6 +6,7 @@ title: 'Knock out your unused CSS'
 popular: true
 tags: [css, webperf, unused]
 thumbnail: './css.jpeg'
+cover: ./socialpreview.png
 ---
 
 Unused CSS is a one of the issues most web applications suffer when it comes to performance and page load time.

@@ -7,6 +7,7 @@ author: Yaser Adel Mehraban
 popular: true
 categories: [leadership skills, soft skills]
 tags: [leadership, promotion, soft skills]
+cover: ./socialpreview.png
 ---
 
 I am currently working towards a promotion to Senior Consultant and as part of the process I have needed to demonstrate my leadership skills and abilities.  Working solo on an engagement with a client who won’t let me go, I have not been in an actual team lead role, and this has made it challenging to demonstrate team leadership skills.  I figure that others might be in a similar position, so thought it worth sharing some of my lessons.

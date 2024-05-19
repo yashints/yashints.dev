@@ -10,6 +10,7 @@ categories: [angular, pipes]
 tags: [angular, pipes, web-development]
 thumbnail: './pure-pipes.jpeg'
 canonical_url: 'https://blog.angularindepth.com/the-essential-difference-between-pure-and-impure-pipes-and-why-that-matters-999818aa068'
+cover: ./socialpreview.png
 ---
 
 When writing a custom pipe in Angular you can specify whether you define a pure or an impure pipe:

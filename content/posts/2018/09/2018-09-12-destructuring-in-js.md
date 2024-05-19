@@ -7,6 +7,7 @@ author: Yaser Adel Mehraban
 categories: [Destructuring, JS]
 tags: [destructuring, js]
 thumbnail: './destructring.jpg'
+cover: ./socialpreview.png
 ---
 
 With improvements on JavaScript and ECMAScript many awesome features are added which we don't normally use. However, when you read other people's code from OSS to doing a simple code review, you might face these features used and not know what they do.

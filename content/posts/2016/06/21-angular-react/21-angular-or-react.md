@@ -6,18 +6,9 @@ date: 2016-06-21
 author: Yaser Adel Mehraban
 popular: true
 categories: [Angular, JS, reactjs]
-tags:
-  [
-    angularjs,
-    binding,
-    debugging,
-    performance,
-    reactjs,
-    scope,
-    template,
-    transclusion,
-  ]
+tags: [angularjs, binding, debugging, performance, reactjs, scope, template, transclusion]
 thumbnail: './angular-vs-react.jpg'
+cover: ./socialpreview.png
 ---
 
 Spoiler alert: we cannot compare these two as they are different in nature, but, I try to go through some points you to need to consider, when choosing a front end technology.

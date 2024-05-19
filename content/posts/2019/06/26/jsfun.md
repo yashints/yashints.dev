@@ -7,6 +7,7 @@ subtitle: ''
 popular: true
 tags: [webdev, javascript, showdev]
 thumbnail: './hdtew.jpg'
+cover: ./socialpreview.png
 ---
 
 You might be wondering why I am writing less these days. I assure you, it's not because I am getting lazy (I am ATM 🤩), it's just that I am on a long overdue holiday. But to keep my juices going, I thought now that I am having fun, let's write a fun post 😊.

@@ -5,6 +5,7 @@ date: 2021-03-29
 title: "Exploring Azure Function Triggers and Bindings ⚡"
 popular: true
 tags: [showdev, azure, functions, serverless]
+cover: "./socialpreview.png"
 ---
 
 [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/) is one of the the serverless services in Azure which allows you to run your business logic without worrying about where it's running and how it scales. But it being serverless is not the highlight of this amazing service, the way it's designed which allows you to leverage a very diverse set of triggers and input/output bindings without writing much code is to me the best of the best. So in this article I've decided to take you on a journey with a few of the common triggers and bindings and show you how to set them up quickly and without writing any unnecessary code.

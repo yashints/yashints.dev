@@ -6,6 +6,7 @@ author: Yaser Adel Mehraban
 categories: [Angular, aspnetcore, Azure Web App, CI/CD, VSTS]
 tags: [angular, aspnetcore, CI/CI, visual studio, VSTS]
 thumbnail: './vstsazure.jpg'
+cover: ./socialpreview.png
 ---
 
 [In my previous post](/2017-04-27-vsts-cicd-angularcli-aspnetcore/) I showed you how to setup a build pipeline for a SPA application written in [Angular](https://angular.io/) using [Angular CLI](https://github.com/angular/angular-cli) and [ASP.Net Core](https://docs.microsoft.com/en-us/aspnet/core/) as back-end. I promised back then to continue with the release as well, but have been pretty busy lately.

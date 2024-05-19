@@ -2,9 +2,10 @@
 path: '/tfjs-wasm/'
 author: Yaser Adel Mehraban
 date: 2019-12-17
-title: "Tensorflow.js available on WebAssembly backend 🔥"
+title: "Tensorflow.js available on WebAssembly backend \U0001F525"
 popular: true
 tags: [showdev, webdev, tensorflowjs, wasm]
+cover: ./socialpreview.png
 ---
  
 [Tensorflow.js](https://www.tensorflow.org/js/) is a library which lets you perform machine learning in the browser or in Node. It uses the GPU or CPU to do training and calculation, but recently the team have done a great job and brought WebAssembly backend to its ecosystem so that you can perform predictions faster. So without further ado, let's deep dive into this greatness.

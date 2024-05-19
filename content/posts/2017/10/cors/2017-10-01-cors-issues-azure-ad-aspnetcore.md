@@ -3,10 +3,10 @@ path: 'cors-issues-azure-ad-aspnetcore/'
 title: 'CORS issues when using Azure AD in ASP.Net Core and Angular'
 date: 2017-10-01 23:32
 author: Yaser Adel Mehraban
-categories:
-  [Angular, asp.net, asp.net mvc, aspnetcore, authentication, Azure AD]
+categories: [Angular, asp.net, asp.net mvc, aspnetcore, authentication, Azure AD]
 tags: [angular, aspnetcore, authentication, azureactivedirectory, cors]
 thumbnail: ./cors.jpg
+cover: ./socialpreview.png
 ---
 
 Recently, I wrote a [post](/2017-09-28-integrating-spa-azure-ad/) about using [Azure Active Directory](https://azure.microsoft.com/en-au/services/active-directory/) (AD) as authentication mechanism for a single page application written in Angular.

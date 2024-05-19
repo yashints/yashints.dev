@@ -2,9 +2,10 @@
 path: '/vue-form-handling/'
 author: Yaser Adel Mehraban
 date: 2019-11-10
-title: "Handling forms with Vue.js 🧾"
+title: "Handling forms with Vue.js \U0001F9FE"
 popular: true
 tags: [showdev, webdev, vuejs, formmanagenment]
+cover: ./socialpreview.png
 ---
 
 [Vue.js](https://vuejs.org/) is an approachable, versatile, performant, and progressive framework to build user interfaces with. I've written two separate articles on it so far:

@@ -7,6 +7,7 @@ popular: true
 categories: [Blog, WordPress, Jekyll]
 tags: [blogging, wordpress, jekyll, cloudflare]
 thumbnail: './jekyll-github-pages.png'
+cover: ./socialpreview.png
 ---
 
 I restarted my blogging around 2016 after loosing all of my previous content and chose [WordPress](https://wordpress.com) because I wanted to focus on content rather than managing the site.

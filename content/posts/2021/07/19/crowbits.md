@@ -5,6 +5,7 @@ date: 2021-07-19
 title: "Crowbits - STEM toy for kids 😍"
 popular: true
 tags: [crowbits, stem, kids, learning]
+cover: "./socialpreview.png"
 ---
 
 Last year I backed up the [Crowbits](https://www.kickstarter.com/projects/elecrow/crowbits-electronic-blocks-for-stem-education-at-any-level) project on Kickstarter because I saw a potential for kids to learn so much by assembling these kits especially that it could be integrated with lego's.

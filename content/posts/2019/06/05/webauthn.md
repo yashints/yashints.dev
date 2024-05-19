@@ -6,6 +6,7 @@ title: 'A world without passwords'
 popular: true
 tags: [webdev, webauthn, frontend, showdev]
 thumbnail: './webauthn.jpg'
+cover: ./socialpreview.png
 ---
 
 Let's face the reality, we can't live without passwords these days. In fact our entire online life is depending on them. But with passwords, comes heaps of problems not only for users, but also for us developers.

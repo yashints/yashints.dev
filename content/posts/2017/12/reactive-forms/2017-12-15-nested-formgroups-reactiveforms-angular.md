@@ -6,6 +6,7 @@ author: Yaser Adel Mehraban
 categories: [Angular]
 tags: [angular, formarray, formcontrol, formgroup, reactiveforms]
 thumbnail: './ReactiveForms.jpg'
+cover: ./socialpreview.png
 ---
 
 It's been a while since I decided to write about reactive forms, as I believe they are an essential part of every developer's life.

@@ -7,6 +7,7 @@ comments: true
 categories: [PowerShell]
 tags: [powershell, certificate]
 thumbnail: './ps.png'
+cover: ./socialpreview.png
 ---
 
 Have ever been stumbled upon needing a certificate very fast and looking for tools for hours? Well I found a series of `PowerShell` commands which makes your life super easy.

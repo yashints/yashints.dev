@@ -2,9 +2,10 @@
 path: '/playwright/'
 author: Yaser Adel Mehraban
 date: 2020-01-24
-title: "If you consider Puppeteer cool, then Playwright is awesomeness 😍"
+title: "If you consider Puppeteer cool, then Playwright is awesomeness \U0001F60D"
 popular: true
 tags: [webdev, showdev, testing, playwright]
+cover: ./socialpreview.png
 ---
  
 If you've ever used [Puppeteer](https://github.com/puppeteer/puppeteer), you'd know it enables you to control a Chrome instance (or any other **Chrome DevTools** Protocol based browser) and execute common actions, much like in a real browser - programmatically, through a decent API. The same team has now build a new product called [Playwright](https://github.com/microsoft/playwright) which apparently is their new favourite.

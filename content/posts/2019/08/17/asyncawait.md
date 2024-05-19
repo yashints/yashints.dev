@@ -6,6 +6,7 @@ title: "6 points you need to know about async & await in JavaScript"
 popular: true
 tags: [showdev, webdev, async, await]
 thumbnail: './asyncawaitjs.jpg'
+cover: ./socialpreview.png
 ---
 
 If you have faced a code like below, then this article will help you in multiple ways 😁.

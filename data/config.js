@@ -1,6 +1,8 @@
 module.exports = {
-  defaultTitle: 'Yashints',
+  siteTitle: 'Yashints',
   logo: 'https://yashints.dev/favicon/logo-48.png',
+  siteCover: 'images/logo.png',
+  siteLogo: 'images/code.png',
   author: 'Yas Adel Mehraban (Yashints)',
   url: 'https://yashints.dev',
   rootUrl: 'yashints.dev',
@@ -8,7 +10,7 @@ module.exports = {
   legalName: 'Yaser Adel Mehraban',
   shortName: 'Yas',
   siteGithubRepo: 'https://github.com/yashints/yashints.dev',
-  defaultDescription:
+  authorDescription:
     'A front end lead engineer, international speaker, blogger and a hiker.',
   socialLinks: {
     twitter: 'http://www.twitter.com/yashints',

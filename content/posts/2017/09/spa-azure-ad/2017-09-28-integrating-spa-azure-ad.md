@@ -4,19 +4,10 @@ title: 'Integrating your SPA with Azure AD'
 date: 2017-09-28 15:10
 author: Yaser Adel Mehraban
 comments: true
-categories:
-  [Angular, aspnetcore, authentication, authorization, Azure AD, C#, security]
-tags:
-  [
-    angular,
-    aspnetcore,
-    authentication,
-    authorisation,
-    azureactivedirectory,
-    security,
-    spa,
-  ]
+categories: [Angular, aspnetcore, authentication, authorization, Azure AD, C#, security]
+tags: [angular, aspnetcore, authentication, authorisation, azureactivedirectory, security, spa]
 thumbnail: './basics_of_auth_in_aad.png'
+cover: ./socialpreview.png
 ---
 
 > As a user I want to be able to login to system using my work account

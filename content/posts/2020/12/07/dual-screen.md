@@ -2,10 +2,11 @@
 path: '/dual-screen/'
 author: Yaser Adel Mehraban
 date: 2020-12-07
-title: "Add dual screen support to your applications 💻"
+title: "Add dual screen support to your applications \U0001F4BB"
 popular: true
 tags: [webdev, showdev, dual-screen, css-media-features]
 thumbnail: './semi-aligned.png'
+cover: './socialpreview.png'
 ---
 
 If you have ever tried to add responsiveness to your web application you would know it's difficult or at least takes a while to get it right. As progressive web apps (PWAs) are the first class citizens on many devices with the ability to get installed, it's even more important to make sure user's have the best experience possible. But technology advances in a much faster pace. We have now foldable devices like the shiny new [Microsoft Surface Duo](https://devblogs.microsoft.com/surface-duo/microsoft-surface-duo-is-released/) which add more complexity to this equation.

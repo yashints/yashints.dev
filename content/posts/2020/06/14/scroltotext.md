@@ -2,9 +2,10 @@
 path: '/scroll-to-text/'
 author: Yaser Adel Mehraban
 date: 2020-06-14
-title: "Did you know about scroll to text? 📜"
+title: "Did you know about scroll to text? \U0001F4DC"
 popular: true
 tags: [showdev, webdev, javascript, scrolltotext]
+cover: ./socialpreview.png
 ---
 
 You probably have used fragments in links to point a link to a part of your page such as a heading. This technique is used in table of content for example and it's a common pattern.

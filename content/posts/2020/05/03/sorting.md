@@ -2,9 +2,10 @@
 path: '/sorting/'
 author: Yaser Adel Mehraban
 date: 2020-05-03
-title: "Let's sort with JavaScript 🔢"
+title: "Let's sort with JavaScript \U0001F522"
 popular: true
 tags: [showdev, webdev, javascript, sorting]
+cover: ./socialpreview.png
 ---
  
 There are many different sorting algorithms out there such as quick sort, merge sort, insertion sort, bubble sort, etc., that could be useful in our day to day life, writing code which gets shipped to production. Knowing all of them is not necessary, but if you have a basic understanding of each one, you can decide on the most efficient one for your scenario.

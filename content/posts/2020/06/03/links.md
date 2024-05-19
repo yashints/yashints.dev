@@ -2,10 +2,11 @@
 path: '/links/'
 author: Yaser Adel Mehraban
 date: 2020-06-03
-title: "Links and JavaScript 🔗"
+title: "Links and JavaScript \U0001F517"
 popular: true
 tags: [showdev, webdev, javascript, links]
 thumbnail: './link.jpg'
+cover: ./socialpreview.png
 ---
 
 I see some occasions where web developers who are a bit less familiar with accessibility use links incorrectly in different forms. So I thought let's write a quick guide on _Links_ in JavaScript apps.

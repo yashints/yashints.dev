@@ -7,6 +7,7 @@ popular: true
 categories: [aspnetcore, Azure B2C]
 tags: [angular 2, aspnetcore, authentication, azure, b2c, idm, mfa]
 thumbnail: './b2c.png'
+cover: ./socialpreview.png
 ---
 
 Flexibility is a key part of Azure Active Directory B2C. Use built-in policies to create a login experience in minutes. For more complex scenarios, use our identity experience framework to build custom policies.

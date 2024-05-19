@@ -5,6 +5,7 @@ date: 2020-06-22
 title: "Introducing the Intersection Observer V2 ⛌"
 popular: true
 tags: [showdev, webdev, javascript, intersectionobserver]
+cover: ./socialpreview.png
 ---
 
 As I mentioned in [one of my other posts](https://yashints.dev/blog/2018/11/12/web-perf-4), **Intersection Observer** will report when an element appears in the viewport, after applying all `overflow` and `CSS clips`. However, there is no way currently to find out whether an item is being put on top of this element, or some filter is applied to it which may alter or obscure the element's display.

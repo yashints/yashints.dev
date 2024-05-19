@@ -2,9 +2,10 @@
 path: '/js-modules/'
 author: Yaser Adel Mehraban
 date: 2019-08-27
-title: "JavaScript modules, the good, the bad and the ugly 🧐"
+title: "JavaScript modules, the good, the bad and the ugly \U0001F9D0"
 popular: true
 tags: [showdev, webdev, javascript, module]
+cover: ./socialpreview.png
 ---
 
 If you ever stumbled upon a piece of vanilla JavaScript code and wanted to refactor it to a module, or have a `CommonJS` module and want to convert it to [`ES6 Modules`](https://tc39.es/ecma262/#sec-modules), you might have faced a couple of tricky situations. I had to go through one of those recently and stumbled upon some  differences/points that you need to be aware of when working with modules. As always, thought sharing these would help someone else, so here we go 😊.

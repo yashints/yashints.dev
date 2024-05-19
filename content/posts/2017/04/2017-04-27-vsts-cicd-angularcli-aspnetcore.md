@@ -4,16 +4,9 @@ title: 'Setting up VSTS CI/CD for a SPA app using AngularCLI, ASPNetCore (Part 1
 date: 2017-04-27
 author: Yaser Adel Mehraban
 popular: true
-categories:
-  [Angular, asp.net, CI/CD, VSTS, webpack]
-tags:
-  [
-    angular 2,
-    angular cli,
-    aspnetcore,
-    CI/CI,
-    VSTS,
-  ]
+categories: [Angular, asp.net, CI/CD, VSTS, webpack]
+tags: [angular 2, angular cli, aspnetcore, CI/CI, VSTS]
+cover: ./socialpreview.png
 ---
 
 Recently I was assigned to a green field project where we had to create an initial structure of a project which was going to be written in [Angular 2](https://angular.io/) using [Angular CLI](https://github.com/angular/angular-cli) for front end side and ASP.Net Core for back-end.

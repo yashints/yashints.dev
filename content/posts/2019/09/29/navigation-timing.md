@@ -5,6 +5,7 @@ date: 2019-09-29
 title: "Send performance metrics from client side with Navigation Timing API ⚡"
 popular: true
 tags: [showdev, webdev, javascript, navigationtiming]
+cover: ./socialpreview.png
 ---
 
 Everybody likes a fast loading web page. In fact, Google has an [entire section](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) dedicated to performance and how companies are moving towards a faster web. Wouldn't it be good if we could measure some critical metrics like page load time in our production environment and constantly monitor them to find out where can be improved?

@@ -5,11 +5,10 @@ subtitle: 'Smart office'
 date: 2019-01-14
 author: Yaser Adel Mehraban
 popular: true
-categories:
-  [amazon, aws, virtual concierge, virtual host]
-tags:
-  [amazon, aws, virtual concierge, virtual host]
+categories: [amazon, aws, virtual concierge, virtual host]
+tags: [amazon, aws, virtual concierge, virtual host]
 thumbnail: './amazonvc.jpg'
+cover: ./socialpreview.png
 ---
 
 Recently we (at [Readify](https://readify.net/)) had a chance to have a go at two very interesting problems and we decided to use a few interesting technologies to solve them.

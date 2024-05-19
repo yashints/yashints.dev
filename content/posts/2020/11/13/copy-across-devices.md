@@ -2,10 +2,11 @@
 path: '/copy-across-devices/'
 author: Yaser Adel Mehraban
 date: 2020-11-13
-title: "Access your clipboard on your other devices 😍 📋"
+title: "Access your clipboard on your other devices \U0001F60D \U0001F4CB"
 popular: true
 tags: [productivity, windows, showdev, clipboard]
 thumbnail: './clipboard.jpg'
+cover: './socialpreview.png'
 ---
 
 How many times have you been working on multiple systems and realised you are trying to paste something which you have copied on the other system? Well with the help of this article you can now share your clipboard between your **Windows** and **Mac** devices 😎.

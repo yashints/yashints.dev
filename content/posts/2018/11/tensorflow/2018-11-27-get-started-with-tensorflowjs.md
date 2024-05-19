@@ -6,6 +6,7 @@ author: Yaser Adel Mehraban
 categories: [tensorflowjs, machine learning]
 tags: [tensorflowjs, machine learning]
 thumbnail: './tfjs.jpg'
+cover: ./socialpreview.png
 ---
 
 If you are like me, who have been wondering what is machine learning (aka ML) and scaped from all those mathematical jargon, it's an exciting time since the `TensorFlow.js` is here to the rescue.

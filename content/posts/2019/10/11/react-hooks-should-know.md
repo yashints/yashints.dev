@@ -2,9 +2,10 @@
 path: '/react-hooks-should-know/'
 author: Yaser Adel Mehraban
 date: 2019-10-06
-title: "React hooks you should know about 🔥"
+title: "React hooks you should know about \U0001F525"
 popular: true
 tags: [showdev, webdev, reactjs, hooks]
+cover: ./socialpreview.png
 ---
 
 [React Hooks](https://reactjs.org/docs/hooks-overview.html) are somewhat a new addition to React. They allow you to use React features without the need to use a class. But I am not going to go through an introduction in this post, there are many great into posts out there. This post shows you eight hooks and what you can achieve with them.

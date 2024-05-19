@@ -5,6 +5,7 @@ date: 2021-12-02
 title: "My first ever book on Azure Bicep"
 popular: true
 tags: [azure, bicep, devops, infrastructureascode]
+cover: "./socialpreview.png"
 ---
 
 I've contributed to the development community in many ways, be it speaking at conferences, writing technical blog posts, getting involved in conferences as volunteer or part of the crew, or helping with Hackatons and Open Hacks. However, writing a book has been in my todo list for quite a while, and honestly, I've been afraid to start due to various reasons, mainly because I heard how much time and energy you need to put into it.

@@ -5,6 +5,7 @@ date: 2024-04-18
 title: "Microsoft Graph SDK has changed, a lot!!!"
 popular: true
 tags: [microsoft, graphapi, graphsdk]
+cover: "./socialpreview.png"
 ---
 
 Have you ever wanted to do something within the context of Microsoft products and wondered how can I do it via APIs or programmatically? I have been in far too many situations where performing a simple task like forwarding multiple calendar events to my colleague which can't be done via the Outlook UI has bothered me, hence leveraging the power of [Microsoft Graph APIs](https://learn.microsoft.com/en-us/graph/overview) heavily in even in my day to day tasks.

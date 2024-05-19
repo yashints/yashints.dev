@@ -2,9 +2,10 @@
 path: '/marquee/'
 author: Yaser Adel Mehraban
 date: 2020-02-09
-title: "Retro HTML, let's create marquees 😃"
+title: "Retro HTML, let's create marquees \U0001F603"
 popular: true
 tags: [webdev, showdev, html, marquee]
+cover: ./socialpreview.png
 ---
  
 One of the first things I learnt to do with HTML was using marquee to move text across the screen horizontally. It was so cool to be able to create advertisements on a page and make users notice things with just a tag. Of course people overused it and then it became a out of fashion item in the new designs just like baggy jeans from 90s.

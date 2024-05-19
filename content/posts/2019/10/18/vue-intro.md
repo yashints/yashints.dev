@@ -2,9 +2,10 @@
 path: '/vue-intro/'
 author: Yaser Adel Mehraban
 date: 2019-10-18
-title: "A comprehensive intro to Vue.js 🔥🚀"
+title: "A comprehensive intro to Vue.js \U0001F525\U0001F680"
 popular: true
 tags: [showdev, webdev, vuejs, intro]
+cover: ./socialpreview.png
 ---
 
 [Vue.js](https://vuejs.org/) is an approachable, versatile, performant, and progressive framework to build user interfaces with. This core library is focused on building the view layer only. It uses the goodies of [Angular](https://angular.io/) (such as template syntax) and [React](https://reactjs.org/) (such as Virtual DOM) and adds a few more enhancements on top.

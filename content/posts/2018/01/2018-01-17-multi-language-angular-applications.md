@@ -7,6 +7,7 @@ popular: true
 categories: [Angular]
 tags: [angular, ngx-translate]
 thumbnail: './ngxtranslate.png'
+cover: ./socialpreview.png
 ---
 
 Are you working on an international product where you need to support multiple languages? Is your application written in Angular? Then this article might help you to get it done easier than ever.

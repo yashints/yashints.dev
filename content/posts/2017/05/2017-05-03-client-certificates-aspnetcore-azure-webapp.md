@@ -7,6 +7,7 @@ popular: true
 categories: [aspnetcore, Azure Web App, SSL/TLS]
 tags: [aspnetcore, azurewebapps, mutualauthentication, ssl, tls]
 thumbnail: './ssl-certificate.png'
+cover: ./socialpreview.png
 ---
 
 Recently we had to communicate with an external API featuring [mutual authentication](https://en.wikipedia.org/wiki/Mutual_authentication) using client certificates (AKA two way SSL).

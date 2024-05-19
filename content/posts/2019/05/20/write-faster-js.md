@@ -5,6 +5,7 @@ date: 2019-05-20
 title: 'Write faster JavaScript'
 popular: true
 tags: [webdev, showdev, javascript, performance]
+cover: ./socialpreview.png
 ---
 
 Most of the times, we write code which is being copy pasted from all over internet. [StackOverflow](https://stackoverflow.com/) is the main source these days for finding solutions to all sort of problems. But is it OK to blindly copy paste code without really knowing what's happening behind the scenes?

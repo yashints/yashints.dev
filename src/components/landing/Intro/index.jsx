@@ -10,7 +10,7 @@ export const Intro = () => {
       <h1>Meet {config.shortName}</h1>
       <Box>
         <p>
-          Affectionately known in tech circles as {config.defaultTitle}, a
+          Affectionately known in tech circles as {config.siteTitle}, a
           <b> principal software engineer</b>, technologist, international
           speaker, author, blogger, and hiker.
         </p>

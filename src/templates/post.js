@@ -3,39 +3,38 @@ import { graphql } from 'gatsby';
 import { Layout, SmallerContainer, SEO, Post } from 'Common';
 import './highlight.scss';
 
-const PostTemplate = ({ data: {post}, pageContext }) => {
-  
+const PostTemplate = ({ data: { post }, pageContext }) => {
   post.postPath = pageContext.postPath;
   post.frontmatter.nextPost = pageContext.nextPost;
   post.frontmatter.previousPost = pageContext.previousPost;
 
   return (
     <Layout>
-      <SmallerContainer>        
+      <SmallerContainer>
         <Post {...post} />
       </SmallerContainer>
     </Layout>
   );
 };
 
-export const Head = ({data: { post }, pageContext}) => {
-  const thumbnail = post.frontmatter.img
-    ? post.frontmatter.img.publicURL
+export const Head = ({ data: { post }, pageContext }) => {
+  const cover = post.frontmatter.socialPreview
+    ? post.frontmatter.socialPreview.publicURL
     : '';
-  return <SEO
-  type="NewsArticle"
-  title={post.frontmatter.title}
-  articleBody={post.html}
-  datePublished={post.frontmatter.date}
-  cover={thumbnail}
-  canonical_url={post.frontmatter.canonical_url}
-  location={pageContext.postPath}
-/>
-}
+  return (
+    <SEO
+      type="NewsArticle"
+      title={post.frontmatter.title}
+      articleBody={post.html}
+      datePublished={post.frontmatter.date}
+      cover={cover}
+      canonical_url={post.frontmatter.canonical_url}
+      location={pageContext.postPath}
+    />
+  );
+};
 
 export default PostTemplate;
-
-
 
 export const postQuery = graphql`
   query postQuery($title: String) {
@@ -51,13 +50,21 @@ export const postQuery = graphql`
         author
         gravatar
         canonical_url
-        tags       
+        tags
         thumbnail {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)
           }
         }
+        cover {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
         img: thumbnail {
+          publicURL
+        }
+        socialPreview: cover {
           publicURL
         }
       }

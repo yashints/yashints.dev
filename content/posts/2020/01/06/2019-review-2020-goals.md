@@ -2,10 +2,11 @@
 path: '/2019-2020/'
 author: Yaser Adel Mehraban
 date: 2020-01-06
-title: "A year in review, what's coming 📆"
+title: "A year in review, what's coming \U0001F4C6"
 popular: true
 tags: [review, goals, personal]
 thumbnail: './20192020.jpg'
+cover: ./socialpreview.png
 ---
  
 I am back from a well deserved holiday and thought first thing first, I should review the last year and set some goals for the new one to be able to focus my energy to the right direction and learn from any mistake or missed opportunities.

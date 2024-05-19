@@ -6,6 +6,7 @@ author: Yaser Adel Mehraban
 categories: [npm, publish, issue]
 tags: [npm, publish, issue]
 thumbnail: './npm.png'
+cover: ./socialpreview.png
 ---
 
 Recently I created a small library with [Angular](https://angular.io/) which I wanted to publish to `npm` (the node package manager). However, when I had everything in place from a build perspective using [Travis CI](https://travis-ci.com/) in my GitHub repo, it was failing to publish the package with a `401` login error.

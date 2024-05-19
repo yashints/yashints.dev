@@ -7,6 +7,7 @@ author: Yaser Adel Mehraban
 popular: true
 categories: [Angular, JS]
 tags: [angular, dependency injection]
+cover: ./socialpreview.png
 ---
 
 Have you ever wondered why you angular code works perfectly in you dev environment but not in production?

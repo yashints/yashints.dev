@@ -4,10 +4,10 @@ title: 'Setting Google Analytics for Angular applications'
 subtitle: 'Using tag manager'
 date: 2019-02-12
 author: Yaser Adel Mehraban
-categories:
-  [angular, tag-manager, google-analytics]
+categories: [angular, tag-manager, google-analytics]
 tags: [angular, tag-manager, google-analytics]
 thumbnail: './ga-angular.jpg'
+cover: ./socialpreview.png
 ---
 
 Many a times we want to add some sort of analytics to our applications and for me the most obvious choice would be Google Analytics.

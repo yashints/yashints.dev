@@ -2,9 +2,10 @@
 path: '/git-logs/'
 author: Yaser Adel Mehraban
 date: 2020-04-05
-title: "How I recovered a day's worth of work with git 🏥"
+title: "How I recovered a day's worth of work with git \U0001F3E5"
 popular: true
 tags: [showdev, git, recovery]
+cover: ./socialpreview.png
 ---
  
 I was working on a project a week ago and had a local branch (with a few commits) I was going to push to upstream to create a PR (pull request). However, after pulling down master and rebasing, I realised all of my code except my first commit is gone after rebase 😱.

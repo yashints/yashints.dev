@@ -2,9 +2,10 @@
 path: '/lighthouse-ci/'
 author: Yaser Adel Mehraban
 date: 2020-04-13
-title: "Stay on top of performance with Lighthouse CI 🚦"
+title: "Stay on top of performance with Lighthouse CI \U0001F6A6"
 popular: true
 tags: [webdev, showdev, performance, lighthouse]
+cover: ./socialpreview.png
 ---
  
 You've spent many hours trying to improve your web performance and have got it to a good speed. What happens next? How do you ensure it remains in good shape especially if you're working in a team with diverse backgrounds and level of coding.

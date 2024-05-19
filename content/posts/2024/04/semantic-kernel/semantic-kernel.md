@@ -6,6 +6,7 @@ title: "Semantic kernel series - Intro"
 popular: true
 tags: [semantickernel, AI, OpenAi]
 thumbnail: "./sk.jpeg"
+cover: "./socialpreview.png"
 ---
 
 Everybody (and I am not exaggerating) is talking about [OpenAI](https://openai.com/), [Large Language Models aka LLMs](https://en.wikipedia.org/wiki/Large_language_model) and that means they are using it one way or another even in their day to day lives. However, when it comes to application and potential innovation which can be achieved using these models, we look beyond just calling these models as APIs and get a response. This is where [Semantic Kernel](https://github.com/microsoft/semantic-kernel) comes into the picture.

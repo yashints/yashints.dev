@@ -5,6 +5,7 @@ date: 2024-04-13
 title: "So, I decided to upgrade my blog's engine!!!"
 popular: true
 tags: [gatsby, blog]
+cover: "./socialpreview.png"
 ---
 
 So, I've decided to write again and since I haven't had time for quite a while, my blog was still using [Gatsby v2](https://www.gatsbyjs.com/). At first it didn't seem like a big change, but little did I know what was I getting myself into.

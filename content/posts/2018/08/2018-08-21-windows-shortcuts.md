@@ -8,6 +8,7 @@ comments: true
 categories: [Windows, Short keys]
 tags: [windows, short keys]
 thumbnail: './win10shortkeys.jpg'
+cover: ./socialpreview.png
 ---
 
 I saw a quote today on Twitter:

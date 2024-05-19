@@ -6,6 +6,7 @@ popular: true
 categories: [Xamarin, Xamarin forms]
 tags: [Mobile development, Xamarin, Xamarin forms]
 thumbnail: './VSXamarin.jpg'
+cover: ./socialpreview.png
 ---
 
 Today I started to install Xamarin and create a pet project for myself. While doing so I faced a couple of issues and solved them using a couple of hints from SO which are worth sharing so other new starters like me can fix them quicker than me.

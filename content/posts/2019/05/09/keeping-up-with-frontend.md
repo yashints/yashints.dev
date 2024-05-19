@@ -6,6 +6,7 @@ title: 'How do I keep up with frontend world'
 popular: true
 tags: [tips, productivity, frontend]
 thumbnail: './frontend.png'
+cover: ./socialpreview.png
 ---
 
 I've been in web development for a long time and not until four or five years ago did I had to keep up with this light speed moving train.

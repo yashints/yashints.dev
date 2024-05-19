@@ -7,6 +7,7 @@ author: Yaser Adel Mehraban
 popular: false
 categories: [css, Html, JQuery, JS]
 tags: [css, html, javascript, Jquery]
+cover: ./socialpreview.png
 ---
 
 Mentioning this is trivial as no one seems to notice this while using default JQuery show and hide methods to show or hide an element on a page. As you might have noticed this before when you use `hide()`, the element gets a  `display:none;` style. The problem is when you use `show()` to show the element again and here is when you see`display:block;` is added to element styles.

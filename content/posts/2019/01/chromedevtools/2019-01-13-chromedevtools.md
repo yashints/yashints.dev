@@ -8,6 +8,7 @@ popular: true
 categories: [chrome, devtools, tips and tricks]
 tags: [chrome, devtools, tips and tricks]
 thumbnail: './chrome-dev-logo-icon.png'
+cover: ./socialpreview.png
 ---
 
 [Google Chrome](https://www.google.com/chrome/) is currently one of the most popular web browsers used by developers today. The [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) can greatly improve your workflow by helping you develop, test and debug your websites right within your browser.

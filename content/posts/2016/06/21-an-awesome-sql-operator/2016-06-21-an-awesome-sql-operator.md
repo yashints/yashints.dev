@@ -7,6 +7,7 @@ author: Yaser Adel Mehraban
 popular: true
 categories: [sql]
 tags: [cross apply, join, query, t-sql]
+cover: ./socialpreview.png
 ---
 
 I was working on a problem and I was desperate to do a clean job and not create a mess that no one can maintain it, and accidentally I read an article about SQL `Apply` operator.

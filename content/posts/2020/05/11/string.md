@@ -2,9 +2,10 @@
 path: '/string/'
 author: Yaser Adel Mehraban
 date: 2020-05-11
-title: "All you need to know about string in JavaScript 🧵"
+title: "All you need to know about string in JavaScript \U0001F9F5"
 popular: true
 tags: [showdev, webdev, javascript, string]
+cover: ./socialpreview.png
 ---
  
 `String` is one of the primitive types in JavaScript and we use it in every project we work on no matter what. But how familiar are you with the methods available in JavaScript to work with a string variable? Let's have a quick look at those in this article.

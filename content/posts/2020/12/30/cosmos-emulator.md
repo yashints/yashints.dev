@@ -2,10 +2,11 @@
 path: '/cosmos-emulator/'
 author: Yaser Adel Mehraban
 date: 2020-12-15
-title: "How much do you know about Azure CosmosDB Emulator? 🧐"
+title: "How much do you know about Azure CosmosDB Emulator? \U0001F9D0"
 popular: true
 tags: [azure, showdev, cosmosdb, emulator]
 thumbnail: './em.png'
+cover: './socialpreview.png'
 ---
 
 [Azure Cosmos DB](https://azure.microsoft.com/en-au/services/cosmos-db/) is one of the foundational services in Azure, which provides high availability, global scale and an impressive performance. However, it could be a bit costly for developers to spin up an instance during their development especially if they don't know some of the basics such as what should be the partition key, what throughput they should select and so on that much. 

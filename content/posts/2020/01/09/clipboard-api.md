@@ -2,9 +2,10 @@
 path: '/clipboard-api/'
 author: Yaser Adel Mehraban
 date: 2020-01-09
-title: "Get to know the Clipboard API, be smarter with user interactions 📋"
+title: "Get to know the Clipboard API, be smarter with user interactions \U0001F4CB"
 popular: true
 tags: [webdev, showdev, clipboardapi]
+cover: ./socialpreview.png
 ---
  
 We face many situations in which we need to interact with user's clipboard. Up until recently, browsers were using `document.execCommand` for clipboard interactions. It sounded great and it was (and still is) widely supported way to copy, cut, and paste into web apps, but the catch was that clipboard access is asynchronous and can just write to DOM.

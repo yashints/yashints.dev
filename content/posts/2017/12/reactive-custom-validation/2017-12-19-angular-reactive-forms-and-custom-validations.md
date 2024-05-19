@@ -4,6 +4,7 @@ date: 2017-12-19
 author: Yaser Adel Mehraban
 categories: [Angular, Reactive Forms]
 tags: [angular, custom validation, reactiveforms]
+cover: ./socialpreview.png
 ---
 
 When using [reactive forms](https://v2.angular.io/docs/ts/latest/guide/reactive-forms.html) in [Angular](https://angular.io/) we usually avoid template based validation like `required`, `maxlength` and so on.

@@ -5,6 +5,7 @@ date: 2019-10-31
 title: "Infrastructure as code, Azure app service using a wildcard certificate from KeyVault"
 popular: false
 tags: [showdev, azure, wildcardcert, webapps]
+cover: ./socialpreview.png
 ---
 
 This post is one of those posts which is related to my consulting side. I was involved in a project where infrastructure as code was the approach from get go and since we had everything on Azure, we chose a mix of ARM templates and PowerShell. I hit a few issues along the way which I think it's very valuable to be aware of for many people and especially myself in future on a similar project 😊.

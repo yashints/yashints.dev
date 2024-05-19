@@ -2,9 +2,10 @@
 path: '/swap/'
 author: Yaser Adel Mehraban
 date: 2020-05-15
-title: "Swapping variables in JavaScript 🔁"
+title: "Swapping variables in JavaScript \U0001F501"
 popular: true
 tags: [showdev, webdev, javascript, swap]
+cover: ./socialpreview.png
 ---
  
 There may be many different reasons why you'd want to swap two variables be it just changing two item's location in an array or when sorting collections. The traditional way is just define a new variable, assign one value to it, put one of the items in the old place, then put the temp variable back in the new place. But my question is, is that the only way?

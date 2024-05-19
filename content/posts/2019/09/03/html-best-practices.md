@@ -2,9 +2,10 @@
 path: '/html-best-practices/'
 author: Yaser Adel Mehraban
 date: 2019-09-03
-title: "Let's write HTML like a pro 😎"
+title: "Let's write HTML like a pro \U0001F60E"
 popular: true
 tags: [showdev, webdev, html, bestpractices]
+cover: ./socialpreview.png
 ---
 
 How often have you wrote a block of HTML without realising the code you've written might not be ideal?

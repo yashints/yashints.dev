@@ -5,6 +5,7 @@ author: Yaser Adel Mehraban
 categories: [Uncategorized]
 tags: [IoT, misconceptions]
 thumbnail: './iot.jpg'
+cover: ./socialpreview.png
 ---
 
 I've being reading around [internet of things (IoT)](https://en.wikipedia.org/wiki/Internet_of_things) and playing with some of the kits available, however, this post is not about how to setup a device and read the data from sensors.

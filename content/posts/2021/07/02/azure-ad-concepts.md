@@ -5,6 +5,7 @@ date: 2021-07-02
 title: "Azure Active Directory - Concepts simplified 🔑"
 popular: true
 tags: [showdev, azure, AAD, OAuth]
+cover: "./socialpreview.png"
 ---
 
 [Application registration, service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#application-registration), [system-assigned managed identity, user-assigned managed identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview), Enterprise Application, these are just a few concepts in Microsoft Identity Platform which helps businesses protect their applications and provide authentication and authorization using Azure Active Directory (aka AAD).

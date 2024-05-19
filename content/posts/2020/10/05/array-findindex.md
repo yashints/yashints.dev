@@ -2,9 +2,10 @@
 path: '/array-findindex/'
 author: Yaser Adel Mehraban
 date: 2020-10-05
-title: "Find an item in an array with the new 'findIndex' method 🔎"
+title: "Find an item in an array with the new 'findIndex' method \U0001F50E"
 popular: true
 tags: [showdev, webdev, javascript, findindex]
+cover: ./socialpreview.png
 ---
 
 Searching for items in an array has been the point of discussion for many years and debate on what is the best and optimum way for searching for objects has had many solutions, some effective and some not.

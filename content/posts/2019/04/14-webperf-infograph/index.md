@@ -7,6 +7,7 @@ title: 'Web performance statistics infographic'
 popular: false
 categories: [web, Performance Tuning]
 tags: [web, performance, page load time]
+cover: ./socialpreview.png
 ---
 
 A while back, Nick Galov from [Hostingtribunal.com](https://hostingtribunal.com) contacted me to let me know they had created an inforgraphic photo for web performance statistics.

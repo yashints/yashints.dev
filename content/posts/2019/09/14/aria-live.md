@@ -2,9 +2,10 @@
 path: '/aria-live/'
 author: Yaser Adel Mehraban
 date: 2019-09-14
-title: "aria-live, accessibility tips 🦮"
+title: "aria-live, accessibility tips \U0001F9AE"
 popular: true
 tags: [showdev, webdev, a11y, html]
+cover: ./socialpreview.png
 ---
 
 Last week I talked about [JavaScript and AI using Tensorflow.js](https://www.componentsconf.com.au/schedule) at [ComponentsConf](https://www.componentsconf.com.au/) in Melbourne, Australia. The line up was a killer and I got to listen to some amazing talks, one of which got me hooked. It's about accessibility and how we can be more inclusive by doing very little at our end.
