@@ -7,28 +7,38 @@ export const Details = () => {
   return (
     <Wrapper as={Container}>
       <Text>
-        I am a developer by heart and a currently a technical trainer at
+        As a seasoned developer and technical trainer at{' '}
         <a target="_blank" href="microsoft.com">
           {' '}
           Microsoft
         </a>
-        , who enjoys coding, learning, and sharing what I've learnt with the dev
-        community. I also love building stuff (mostly apps, but sometimes wooden
-        projects) and solving real world problems.
+        , I thrive on the intersection of human ingenuity and technological
+        innovation. When not crafting engaging training sessions or building
+        cutting-edge web applications, you can find me exploring the latest
+        advancements in cloud computing, artificial intelligence, and machine
+        learning.
       </Text>
       <Text>
-        I use HTML, CSS, JavaScript, TypeScript and C# to build web apps, and
-        have worked with frameworks such as React.js, Angular.js, Node, Next.js
-        and DotNet.
+        My tech toolkit includes HTML, CSS, JavaScript, TypeScript, C#, and a
+        range of frameworks and libraries that enable me to tackle complex
+        problems on both frontend and backend. I've successfully applied my
+        skills to build scalable, high-performing web solutions using React.js,
+        Angular.js, Node, Next.js, and DotNet.
       </Text>
       <Text>
-        I am passionate about everything cloud and web, and in my spare time,
-        apart from some woodworking, read, write, and work on the latest and
-        greatest web technologies and frameworks.
+        With a passion for problem-solving and a knack for learning, I'm always
+        on the lookout for new challenges and opportunities to grow. Whether
+        it's harnessing the power of Progressive Web Apps, optimizing
+        Client-side APIs for seamless user experiences, or leveraging machine
+        learning algorithms to drive intelligent decisions – I'm all about
+        pushing the boundaries of what's possible.
       </Text>
+
       <Text>
-        Progressive web apps, WebAssembly, Client side web APIs, web
-        performance, you name it. I am all in.
+        In my free time, you'll find me staying up-to-date with the latest
+        developments in web development, AI, and cloud computing. I'm fascinated
+        by the potential of WebAssembly, Client-side APIs, and other emerging
+        technologies to transform the way we build and interact with software.
       </Text>
     </Wrapper>
   );

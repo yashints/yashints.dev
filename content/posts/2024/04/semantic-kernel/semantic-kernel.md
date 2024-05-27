@@ -9,9 +9,18 @@ thumbnail: "./sk.jpeg"
 cover: "./socialpreview.png"
 ---
 
+
 Everybody (and I am not exaggerating) is talking about [OpenAI](https://openai.com/), [Large Language Models aka LLMs](https://en.wikipedia.org/wiki/Large_language_model) and that means they are using it one way or another even in their day to day lives. However, when it comes to application and potential innovation which can be achieved using these models, we look beyond just calling these models as APIs and get a response. This is where [Semantic Kernel](https://github.com/microsoft/semantic-kernel) comes into the picture.
 
 <!--more-->
+
+Semantic Kernel Series:
+
+✔️ Part one: [Intro](/blog/2024/04/30/semantic-kernel)
+<br/>
+✔️ Part two: [Plugins](/blog/2024/05/13/semantic-kernel-plugins)
+<br/>
+✔️ Part three: [Planners and Native Function plugins](/blog/2024/05/27/semantic-kernel-planners/)
 
 Semantic Kernel is a lightweight SDK which is created by [Microsoft](https://microsoft.com) and is now open-source. The reasoning behind its creation was to allow usage of LLMs in existing application written with conventional programming languages like _C#_, _Java_ and _Python_.
 
