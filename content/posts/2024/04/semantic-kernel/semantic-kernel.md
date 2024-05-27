@@ -22,6 +22,8 @@ Semantic Kernel Series:
 <br/>
 ✔️ Part three: [Planners and Native Function plugins](/blog/2024/05/27/semantic-kernel-planners/)
 
+[You can find the code on my GitHub repository here](https://github.com/yashints/semantic-kernel-devops).
+
 Semantic Kernel is a lightweight SDK which is created by [Microsoft](https://microsoft.com) and is now open-source. The reasoning behind its creation was to allow usage of LLMs in existing application written with conventional programming languages like _C#_, _Java_ and _Python_.
 
 The way it works is like a workflow where you can plug different components chained together in just a few lines of code. But the magic happens when these plugins are orchestrated with AI. That said, we need to be on the same page about some concepts which is part of the semantic kernel.

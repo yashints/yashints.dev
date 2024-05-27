@@ -21,6 +21,8 @@ Semantic Kernel Series:
 <br/>
 ✔️ Part three: [Planners and Native Function plugins](/blog/2024/05/27/semantic-kernel-planners/)
 
+[You can find the code on my GitHub repository here](https://github.com/yashints/semantic-kernel-devops).
+
 In out last two posts we successfully created some prompts for Azure DevOps and GitHub Action workflows and called Azure OpenAI to generate the YAML files and return the result. However, the result had multiple files separated by a special separator and that gives us a great opportunity to get into planners and native function plugins.
 
 ## Native function plugins

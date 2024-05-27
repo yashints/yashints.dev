@@ -21,6 +21,8 @@ Semantic Kernel Series:
 <br/>
 ✔️ Part three: [Planners and Native Function plugins](/blog/2024/05/27/semantic-kernel-planners/)
 
+[You can find the code on my GitHub repository here](https://github.com/yashints/semantic-kernel-devops).
+
 In order for us to learn about the concepts, the best way is with a story, and I chose DevOps because I was interested in finding better ways to automate daily tasks in that space for my course. Let's go through the context and see what we're trying to achieve.
 
 ## Context
