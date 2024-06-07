@@ -37,7 +37,9 @@ Go into the environment which you have Ollama installed and install the `starcod
 ollama pull starcoder2:7b
 ```
 
-![Pulling down the startcode model in Ollama]()
+And you should see the model being pulled and installed.
+
+![Pulling down the startcode model in Ollama](./pullmodel.png)
 
 ### Install the extension
 First you need to install [Continue extension](https://marketplace.visualstudio.com/items?itemName=Continue.continue) in VS Code. You can click on the link from here or go into your VS Code extensions and get it installed.
@@ -45,7 +47,7 @@ First you need to install [Continue extension](https://marketplace.visualstudio.
 ![Installing continue extension in VS Code](./vscodeext.png)
 
 ### Configuring the extension
-Once you have both of those installed, you can go ahead and configure your extension to use your local Ollama instance. Open the `config.json` settings for Continue using <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + <kbd>P<kbd>, then typing `> continue: open config.json`. Keep in mind that Continue supports a [whole host of providers](https://docs.continue.dev/setup/select-provider) other than local ones. Go ahead and add the models you want to the config file. Do not forget to change the IP address to match your own instance if it is not available on `localhost`.
+Once you have both of those installed, you can go ahead and configure your extension to use your local Ollama instance. Open the `config.json` settings for Continue using <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>, then typing `> continue: open config.json`. Keep in mind that Continue supports a [whole host of providers](https://docs.continue.dev/setup/select-provider) other than local ones. Go ahead and add the models you want to the config file. Do not forget to change the IP address to match your own instance if it is not available on `localhost`.
 
 ```json
 {
@@ -84,7 +86,7 @@ Once you have both of those installed, you can go ahead and configure your exten
 ```
 
 ## Testing
-Let's test our setup, go ahead and open a file in which you have any code written. Select a code block and press <kbd>Ctrl<kbd> + <kbd>L<kbd> which opens the chat window, type `Explain this code to me in a few sentences` and press enter. You should see the explanation getting generated in the chat window:
+Let's test our setup, go ahead and open a file in which you have any code written. Select a code block and press <kbd>Ctrl</kbd> + <kbd>L</kbd> which opens the chat window, type `Explain this code to me in a few sentences` and press enter. You should see the explanation getting generated in the chat window:
 
 ![Local LLM being used in VS Code using the Continue extension](./explain.png)
 
@@ -119,12 +121,12 @@ function calculateTotal(items) {
 }
 ```
 
-Now press <kbd>Ctrl<kbd> + <kbd>I<kbd> and type refactor this code in the prompt and press <kbd>Enter<kbd>. Wait for the model to do its thing and you should see the result which you can accept or reject:
+Now press <kbd>Ctrl</kbd> + <kbd>I</kbd> and type refactor this code in the prompt and press <kbd>Enter</kbd>. Wait for the model to do its thing and you should see the result which you can accept or reject:
 
 ![Code refactoring using local LLMs](./refactor.png)
 
 ## Ask questions about your codebase
-You can also ask questions about your codebase by pressing <kbd>Ctrl<kbd> + <kbd>L<kbd> and typing `@codebase` and then your question.
+You can also ask questions about your codebase by pressing <kbd>Ctrl</kbd> + <kbd>L</kbd> and typing `@codebase` and then your question.
 
 ![using context to ask question about the codebase](./codebase.png)
 
@@ -132,7 +134,7 @@ You can also ask questions about your codebase by pressing <kbd>Ctrl<kbd> + <kbd
 
 You can use documentation when interacting with AI which adds more accuracy to the response. The team have done a fantastic job and have pretty much any language or framework you can think of linked. You can use the `@docs` and then select your preferred documentation, or just simply type the doc name if you know it.
 
-Let's open the chat window using <kbd>Ctrl<kbd> + <kbd>L<kbd>, then type `@react` and then `How do I update the page based on a parameter?` then press <kbd>Enter</kbd>.
+Let's open the chat window using <kbd>Ctrl</kbd> + <kbd>L</kbd>, then type `@react` and then `How do I update the page based on a parameter?` then press <kbd>Enter</kbd>.
 
 ![Using documentation when interacting with AI](./docs.png)
 
@@ -142,19 +144,19 @@ You can kick off an action using the slash in the chat window, this could be edi
 
 ![Slash actions in using continued](./slash.png)
 
-I will use the test command, select the code in your file and press <kbd>Ctrl<kbd> + <kbd>I<kbd>, then `/test` and finally <kbd>Enter<kbd>.
+I will use the test command, select the code in your file and press <kbd>Ctrl</kbd> + <kbd>I</kbd>, then `/test` and finally <kbd>Enter</kbd>.
 
 ![Using commands to perform an action](./test.png)
 
 ## Use files as context
 
-You can use files in your context by using the `@files` tag. Simply type that in the search box and you will get prompted to select a file, or you can type the file name directly. Then type your question and press <kbd>Enter<kbd>.
+You can use files in your context by using the `@files` tag. Simply type that in the search box and you will get prompted to select a file, or you can type the file name directly. Then type your question and press <kbd>Enter</kbd>.
 
 ![Using files as context](./file.png)
 
 ## Understand errors in terminal
 
-When you get any errors or issues in your terminal, select the error text and press <kbd>Ctrl<kbd> + <kbd>Shift<kbd> + <kbd>R<kbd> and you will get an explanation:
+When you get any errors or issues in your terminal, select the error text and press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> and you will get an explanation:
 
 ![Getting terminal errors explained](./terminalerror.png)
 
