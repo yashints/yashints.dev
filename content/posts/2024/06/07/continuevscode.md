@@ -1,5 +1,5 @@
 ---
-path: '/ollama-llamaindex/'
+path: '/ollama-continue/'
 author: Yaser Adel Mehraban
 date: 2024-06-07
 title: "🖥️ Use local AI to supercharge your coding skills"
