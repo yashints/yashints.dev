@@ -11,12 +11,13 @@ export const Intro = () => {
       <Box>
         <p>
           Affectionately known in tech circles as {config.siteTitle}, a
-          <b> principal software engineer</b>, technologist, international
+          <b> seasoned software engineering lead</b>, technologist, international
           speaker, author, blogger, and hiker.
         </p>
         <p>
-          Not just a Principal Software Engineer but a visionary in front-end
-          development, <b>Yas</b> brings a human touch to technology. His days
+          Not just a principal software engineering manager, but a visionary in 
+          building products based on the latest technologies, 
+          <b>Yas</b> brings a human touch to technology. His days
           are spent architecting elegant solutions that speak not only to
           machines but to the people using them. While he might jest about his
           weakness for <i>almond croissants</i>, he is serious about crafting
