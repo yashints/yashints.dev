@@ -7,16 +7,14 @@ export const Details = () => {
   return (
     <Wrapper as={Container}>
       <Text>
-        As a seasoned developer and technical trainer at{' '}
-        <a target="_blank" href="microsoft.com">
+        As a seasoned software engineering lead at{' '}
+        <a target="_blank" href="innovategpt.ai">
           {' '}
-          Microsoft
+          InnovateGPT Group
         </a>
         , I thrive on the intersection of human ingenuity and technological
-        innovation. When not crafting engaging training sessions or building
-        cutting-edge web applications, you can find me exploring the latest
-        advancements in cloud computing, artificial intelligence, and machine
-        learning.
+        innovation. When not crafting elegant solutions powered by GenAI, you can find me exploring the latest
+        advancements in AI, cloud computing, and software engineering.
       </Text>
       <Text>
         My tech toolkit includes HTML, CSS, JavaScript, TypeScript, C#, and a
@@ -28,9 +26,9 @@ export const Details = () => {
       <Text>
         With a passion for problem-solving and a knack for learning, I'm always
         on the lookout for new challenges and opportunities to grow. Whether
-        it's harnessing the power of Progressive Web Apps, optimizing
-        Client-side APIs for seamless user experiences, or leveraging machine
-        learning algorithms to drive intelligent decisions – I'm all about
+        it's harnessing the power of GenAI, working on (progressive) web apps, optimizing
+        Client-side APIs for seamless user experiences, or utilising machine
+        learning algorithms to drive intelligent solutions – I'm all about
         pushing the boundaries of what's possible.
       </Text>
 
