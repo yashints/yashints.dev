@@ -1,9 +1,19 @@
-- title: NDC London
+- title: DDD Melbourne 2025
+  image: "/speaking/dddmelbourne2025.png"
+  link: https://www.dddmelbourne.com/agenda?sessionId=c5a9c1a7-e1d9-437f-ba52-3ba6f2241ee4
+  description: Write secure code, sleep better at nights
+  date: Feb 21 2025
+  postDate: "2025-02-21"
+  video: ""
+  slides: ""
+  code: ""
+
+- title: NDC Melbourne
   image: "/speaking/ndcsyd.jpeg"
-  link: https://ndc-london.com/speakers/yaser-adel-mehraban
-  description: Tuning web performance with just browser APIs
-  date: January 25 - 29th 2021
-  postDate: "2021-01-25"
+  link: https://ndcmelbourne.com/speakers/yaser-adel-mehraban
+  description: Azure and Containers, the tale of the two inseparable friends
+  date: June 20 - 24th 2022
+  postDate: "2022-06-22"
   video: ""
   slides: ""
   code: ""
@@ -24,16 +34,6 @@
   description: Tuning web performance with just browser APIs
   date: September 4th & 5th 2020
   postDate: "2020-09-30"
-  video: ""
-  slides: ""
-  code: ""
-
-- title: NDC Minnesota
-  image: "/speaking/webdirectioncode.jpg"
-  link: https://ndcminnesota.com/speakers/yaser-adel-mehraban
-  description: Web performance matters
-  date: September 8 - 11th 2020
-  postDate: "2020-09-11"
   video: ""
   slides: ""
   code: ""

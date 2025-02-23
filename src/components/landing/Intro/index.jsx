@@ -10,27 +10,18 @@ export const Intro = () => {
       <h1>Meet {config.shortName}</h1>
       <Box>
         <p>
-          Affectionately known in tech circles as {config.siteTitle}, a
-          <b> seasoned software engineering lead</b>, technologist, international
-          speaker, author, blogger, and hiker.
+          Meet <b>Yas</b> — AKA “{config.siteTitle}”—the software whiz who codes
+          with heart, travels the globe sprouting tech wisdom, and still finds
+          time to hike and blog about it all.{' '}
         </p>
         <p>
-          Not just a principal software engineering manager, but a visionary in 
-          building products based on the latest technologies, 
-          <b>Yas</b> brings a human touch to technology. His days
-          are spent architecting elegant solutions that speak not only to
-          machines but to the people using them. While he might jest about his
-          weakness for <i>almond croissants</i>, he is serious about crafting
-          code that makes a difference.
-        </p>
-        <p>
-          His journey from café dreamer to tech leader was fueled by a passion
-          for problem-solving and a dedication to excellence in the digital
-          domain. Yas’s expertise isn’t confined to his desk. He’s a master
-          communicator, sharing his knowledge and experiences on the world stage
-          at conferences like NDC and Voxxed Days. His ability to demystify
-          complex concepts and engage with his audience is what sets him apart
-          as a mentor and innovator in the software engineering community.
+          He’s not just mapping out cutting-edge solutions; he’s ensuring those
+          solutions actually make people’s lives better. Almond croissants might
+          be his kryptonite, but demystifying complex code for conference
+          audiences? That’s where he truly shines. From dreamer in a café to
+          top-tier tech maestro, Yas is proof that passion, communication, and a
+          dash of pastry-fuelled creativity can change the world—one line of
+          code at a time.
         </p>
         <Flex>
           <ButtonLink
@@ -68,16 +59,6 @@ export const Intro = () => {
         <BoxAttention>
           📖 Woohoo, my first book ever is now listed on Amazon. If you're
           interested in Azure Bicep, check it out.
-        </BoxAttention>
-      </a>
-      <a
-        href="https://app.pluralsight.com/library/courses/vue-authentication-authorization/table-of-contents"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <BoxAttention>
-          📽️ Checkout my latest PluralSight course on Authentication and
-          Authorization for VueJs apps.
         </BoxAttention>
       </a>
       <a

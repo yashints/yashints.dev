@@ -49,7 +49,7 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "gatsby-transformer-yaml": "^5.13.1",
     "graphql": "^16.8.1",
-    "node-sass": "^9.0.0",
+    "sass": "^1.85.0",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-async-script": "^1.1.1",
@@ -72,11 +72,11 @@
   "scripts": {
     "cleanbuild": "gatsby clean && gatsby build",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "WATCHPACK_POLLING=TRUE gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint src",
-    "format": "prettier es5 --single-quote --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --single-quote --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "generateSocialPreview": "node ./scripts/generateSocialMediaPreview.js"
   },
