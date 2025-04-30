@@ -29,3 +29,5 @@ export { Tag } from './Tag';
 export { ButtonLink } from './Button';
 export { SubmitButton } from './SubmitButton';
 export { Services } from './Services';
+export { Courses } from './Courses';
+export { CourseInfo } from './CourseInfo';

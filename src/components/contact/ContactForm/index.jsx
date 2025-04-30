@@ -153,6 +153,7 @@ const ContactForm = ({ touched, errors, isSubmitting, setFieldValue }) => {
               name="message"
               placeholder="Message"
               textarea="true"
+              value={window.history.state.message || ''}
             />
           </label>
           <ErrorMessage component={Error} name="message" />

@@ -16,7 +16,7 @@ export default ServicesPage;
 
 export const Head = () => (
   <SEO
-    title="Workshops and Training &ndash; Yashints &ndash; Web Performance Optimisation"
+    title="Workshops and Training - Web Performance Optimisation"
     type=""
     location="/contact"
   />

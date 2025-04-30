@@ -18,6 +18,9 @@ export const NavbarLinks = ({ $desktop }) => {
       <Link to="/services" activeClassName="current">
         Services
       </Link>
+      <Link to="/courses" activeClassName="current">
+        Online Courses
+      </Link>
       <Link to="/speaking" activeClassName="current">
         Speaking
       </Link>

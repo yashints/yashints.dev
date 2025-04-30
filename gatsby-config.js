@@ -15,7 +15,7 @@ module.exports = {
     authorAvatar: `${config.url}/static/favicon/logo-512x512.png`,
     author: config.author,
     copyright: `${config.siteTitle} © ${new Date().getFullYear()}`,
-    ...config
+    ...config,
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -23,6 +23,7 @@ module.exports = {
     'gatsby-plugin-netlify',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-use-query-params',
     'gatsby-plugin-twitter',
     {
       resolve: 'gatsby-source-graphql',
