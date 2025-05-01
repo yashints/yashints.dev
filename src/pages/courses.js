@@ -4,7 +4,7 @@ import { Layout, SEO, PageTitle, Container, Row, Courses } from 'Common';
 const OnlineCoursesPage = () => (
   <Layout>
     <Container>
-      <PageTitle>Online Courses</PageTitle>
+      <PageTitle>Courses</PageTitle>
       <Row>
         <Courses></Courses>
       </Row>
