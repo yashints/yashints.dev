@@ -1,6 +1,7 @@
 const createBlogPages = require('./create/page.js').createBlogPages;
 const createPost = require('./create/post.js').createPage;
 const createTag = require('./create/tag.js').createTags;
+const createCourseInfo = require('./create/courseInfo.js').createCourseInfo;
 
 exports.createPages = async (props) => {
   const { graphql } = props;
@@ -29,5 +30,6 @@ exports.createPages = async (props) => {
 
   createBlogPages(props, { posts, prefix: '/blog' });
   createPost(props, { posts });
+  createCourseInfo(props, {});
   await createTag(props, { posts });
 };

@@ -7,6 +7,11 @@ require('dotenv').config({
 });
 
 module.exports = {
+  flags: {
+    FAST_DEV: true,
+    PARALLEL_SOURCING: true,
+    DEV_SSR: true,
+  },
   siteMetadata: {
     siteUrl: config.url,
     feed_url: `${config.url}${config.siteRss}`,

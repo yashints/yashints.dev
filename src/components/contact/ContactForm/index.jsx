@@ -24,8 +24,14 @@ import {
   StackedText,
 } from './styles';
 
+const isBrowser = () => typeof window !== 'undefined';
+
 const ContactForm = ({ touched, errors, isSubmitting, setFieldValue }) => {
   const { theme } = useContext(ThemeContext);
+  let courseMsg = '';
+  if (isBrowser()) {
+    courseMsg = window.history.state.message;
+  }
   return (
     <ContactWrapper theme={theme}>
       <Text>
@@ -153,7 +159,7 @@ const ContactForm = ({ touched, errors, isSubmitting, setFieldValue }) => {
               name="message"
               placeholder="Message"
               textarea="true"
-              value={window.history.state.message || ''}
+              value={courseMsg}
             />
           </label>
           <ErrorMessage component={Error} name="message" />

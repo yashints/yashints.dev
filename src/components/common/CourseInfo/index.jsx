@@ -33,8 +33,6 @@ import html from 'Static/courses/html.png';
 import react from 'Static/courses/react.png';
 import devops from 'Static/courses/devops.png';
 
-import courses from 'Static/course';
-
 const imageMap = new Map([
   [1, kids],
   [2, kids],
@@ -49,12 +47,8 @@ const imageMap = new Map([
   [11, devops],
 ]);
 
-export const CourseInfo = ({ location }) => {
-  console.log(location);
-  const params = new URLSearchParams(location.search);
-  const courseId = params.get('course');
-  const courseInfo = courses[courseId - 1];
-
+export const CourseInfo = ({ courseInfo }) => {
+  if (!courseInfo) return;
   const modalRef = useRef(null);
   const contactMe = (e) => {
     navigate('/contact', {
