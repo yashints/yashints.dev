@@ -7,36 +7,34 @@ export const Details = () => {
   return (
     <Wrapper as={Container}>
       <Text>
-        As a seasoned software engineering lead at{' '}
-        <a target="_blank" href="innovategpt.ai">
-          {' '}
-          InnovateGPT Group
+        By day, I'm a GenAI guru and Principal Software Engineer at{' '}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.atlassian.com"
+        >
+          Atlassian
         </a>
-        , I thrive on the intersection of human ingenuity and technological
-        innovation. When not crafting elegant solutions powered by GenAI, you can find me exploring the latest
-        advancements in AI, cloud computing, and software engineering.
+        , which mostly means teaching AI to be useful before it gets too
+        confident. I work on bringing calm to the madness of the developer loop
+        and shipping AI-powered features in Jira. My happy place is where
+        product engineering, developer experience, and useful AI stop arguing
+        and start helping people get work done.
       </Text>
       <Text>
-        My tech toolkit includes HTML, CSS, JavaScript, TypeScript, C#, and a
-        range of frameworks and libraries that enable me to tackle complex
-        problems on both frontend and backend. I've successfully applied my
-        skills to build scalable, high-performing web solutions using React.js,
-        Angular.js, Node, Next.js, and DotNet.
-      </Text>
-      <Text>
-        With a passion for problem-solving and a knack for learning, I'm always
-        on the lookout for new challenges and opportunities to grow. Whether
-        it's harnessing the power of GenAI, working on (progressive) web apps, optimizing
-        Client-side APIs for seamless user experiences, or utilising machine
-        learning algorithms to drive intelligent solutions – I'm all about
-        pushing the boundaries of what's possible.
+        I have a suspicious amount of fun translating scary-looking technology
+        into "oh, I get it now" moments. Sometimes that happens on conference
+        stages, sometimes in blog posts or mentoring chats, and sometimes while
+        politely convincing GenAI, browser APIs, and software architecture to
+        behave like they are all on the same team.
       </Text>
 
       <Text>
-        In my free time, you'll find me staying up-to-date with the latest
-        developments in web development, AI, and cloud computing. I'm fascinated
-        by the potential of WebAssembly, Client-side APIs, and other emerging
-        technologies to transform the way we build and interact with software.
+        Outside work, I'm usually learning, writing, hiking, or tinkering with a
+        new idea before it has fully agreed to become a project. I am still
+        fascinated by WebAssembly, browser APIs, AI-assisted development, and
+        all the small details that make software feel a little more magical and
+        a lot less exhausting.
       </Text>
     </Wrapper>
   );
