@@ -180,15 +180,11 @@ module.exports = {
             domain: 'https://www.google-analytics.com',
             crossOrigin: true,
           },
+          {
+            domain: 'https://www.googletagmanager.com',
+            crossOrigin: true,
+          },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: config.googleAnalyticsID,
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: 'gatsby' },
       },
     },
     {

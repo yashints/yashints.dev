@@ -10,18 +10,16 @@ export const Intro = () => {
       <h1>Meet {config.shortName}</h1>
       <Box>
         <p>
-          Meet <b>Yas</b> — AKA “{config.siteTitle}”—the software whiz who codes
-          with heart, travels the globe sprouting tech wisdom, and still finds
-          time to hike and blog about it all.{' '}
+          Meet <b>Yas</b>, AKA "{config.siteTitle}", a GenAI guru and Principal
+          Software Engineer at Atlassian who spends his days bringing calm to
+          the glorious madness of the developer loop and shipping AI-powered
+          features in Jira.
         </p>
         <p>
-          He’s not just mapping out cutting-edge solutions; he’s ensuring those
-          solutions actually make people’s lives better. Almond croissants might
-          be his kryptonite, but demystifying complex code for conference
-          audiences? That’s where he truly shines. From dreamer in a café to
-          top-tier tech maestro, Yas is proof that passion, communication, and a
-          dash of pastry-fuelled creativity can change the world—one line of
-          code at a time.
+          He likes sharp architecture, helpful automation, boringly reliable
+          systems, and the tiny product details that make engineers quietly say
+          "oh, nice". Almond croissants remain a serious vulnerability, but so
+          does a messy workflow begging for a clever AI nudge.
         </p>
         <Flex>
           <ButtonLink

@@ -11,7 +11,7 @@ module.exports = {
   shortName: 'Yas',
   siteGithubRepo: 'https://github.com/yashints/yashints.dev',
   authorDescription:
-    'A front end lead engineer, international speaker, blogger and a hiker.',
+    'GenAI guru and Principal Software Engineer at Atlassian, making the dev loop calmer and Jira a little smarter.',
   socialLinks: {
     twitter: 'http://www.twitter.com/yashints',
     github: 'https://github.com/yashints',

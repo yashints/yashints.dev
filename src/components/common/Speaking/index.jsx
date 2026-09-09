@@ -163,25 +163,25 @@ export const Speaking = ({ events }) => {
       <h3 id="bio">Bio</h3>
       <Box>
         <p>
-          Although it doesn’t look like it, Yaser is an almond croissant addict
-          cleverly disguised as a successful web developer. Since it was
-          relatively clear early on that it would be slightly more than
-          difficult to make a living out of thin air, he’s focused his energy on
-          the web, which happily has proven itself to be a wonderful decision.
+          Although it doesn’t look like it, Yas is an almond croissant addict
+          cleverly disguised as a GenAI guru. He is a Principal Software
+          Engineer at Atlassian, where he works on bringing calm to the madness
+          of the developer loop and shipping AI-powered features in Jira.
         </p>
         <ul>
           <li>
-            <strong>Name:</strong> Yaser Adel Mehraban
+            <strong>Name:</strong> Yas Adel Mehraban
           </li>
           <li>
-            <strong>Tagline:</strong> AKA Yashints, a front-end lead engineer,
-            international speaker, blogger, and a hiker.
+            <strong>Tagline:</strong> AKA Yashints, GenAI guru, Principal
+            Software Engineer at Atlassian, international speaker, blogger, and
+            hiker.
           </li>
           <li>
-            <strong>Designation:</strong> Azure Technical Trainer
+            <strong>Designation:</strong> Principal Software Engineer
           </li>
           <li>
-            <strong>Company:</strong> Microsoft
+            <strong>Company:</strong> Atlassian
           </li>
           <li>
             <strong>Headshot:</strong>{' '}
