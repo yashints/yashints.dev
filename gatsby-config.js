@@ -31,17 +31,6 @@ module.exports = {
     'gatsby-plugin-use-query-params',
     'gatsby-plugin-twitter',
     {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        url: 'https://api.github.com/graphql',
-        typeName: `GitHub`,
-        fieldName: `github`,
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: config.url,

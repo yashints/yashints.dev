@@ -87,7 +87,6 @@
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "eslint-config-react-app": "^7.0.1",
     "gatsby-remark-external-links": "^0.0.4",
-    "gatsby-source-graphql": "^5.13.1",
     "prettier": "^3.2.5",
     "puppeteer": "^22.9.0",
     "unist-util-visit": "^5.0.0",
